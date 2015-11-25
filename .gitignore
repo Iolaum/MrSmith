@@ -1,0 +1,34 @@
+# *.class
+#
+# # Mobile Tools for Java (J2ME)
+# .mtj.tmp/
+
+# # Package Files #
+# *.jar
+# *.war
+# *.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Ignore follwoing for netbeans IDE
+/nbproject/
+/lib/
+
+# For Intellij  (JetBrains) #
+.idea/
+*.iml
+*.iws
+
+
+# ignore -  automatically generated logs after agent run.
+/agent/logs/
+
+
+# Ignore server files - if implemented.
+/server/
+/adx-server/
+/src/
+
+# Ignore compiled data
+/out/

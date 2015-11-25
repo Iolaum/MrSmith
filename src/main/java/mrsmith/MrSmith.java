@@ -125,12 +125,11 @@ public class MrSmith extends Agent {
 		try {
 			Transportable content = message.getContent();
 
-			// log.fine(message.getContent().getClass().toString());
+//			 log.fine(message.getContent().getClass().toString());
 
 			if (content instanceof InitialCampaignMessage) {
 				handleInitialCampaignMessage((InitialCampaignMessage) content);
 			} else if (content instanceof CampaignOpportunityMessage) {
-				log.fine("AdNet " + getName() + " simulationSetup");
 				handleICampaignOpportunityMessage((CampaignOpportunityMessage) content);
 			} else if (content instanceof CampaignReport) {
 				handleCampaignReport((CampaignReport) content);
@@ -230,6 +229,8 @@ public class MrSmith extends Agent {
 	 */
 	private void handleICampaignOpportunityMessage(
 			CampaignOpportunityMessage com) {
+
+		log.fine(com.getClass().toString());
 
 		day = com.getDay();
 
