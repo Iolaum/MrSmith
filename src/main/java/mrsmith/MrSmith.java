@@ -12,6 +12,8 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import edu.umich.eecs.tac.props.Ad;
+import edu.umich.eecs.tac.props.BankStatus;
 import se.sics.isl.transport.Transportable;
 import se.sics.tasim.aw.Agent;
 import se.sics.tasim.aw.Message;
@@ -35,14 +37,12 @@ import tau.tac.adx.report.demand.InitialCampaignMessage;
 import tau.tac.adx.report.demand.campaign.auction.CampaignAuctionReport;
 import tau.tac.adx.report.publisher.AdxPublisherReport;
 import tau.tac.adx.report.publisher.AdxPublisherReportEntry;
-import edu.umich.eecs.tac.props.Ad;
-import edu.umich.eecs.tac.props.BankStatus;
 
 /**
- * 
+ *
  * @author Mariano Schain
  * Test plug-in
- * 
+ *
  */
 public class MrSmith extends Agent {
 
@@ -58,7 +58,7 @@ public class MrSmith extends Agent {
 
 	/**
 	 * Messages received:
-	 * 
+	 *
 	 * We keep all the {@link CampaignReport campaign reports} delivered to the
 	 * agent. We also keep the initialization messages {@link PublisherCatalog}
 	 * and {@link InitialCampaignMessage} and the most recent messages and
@@ -116,6 +116,12 @@ public class MrSmith extends Agent {
 	private String[] publisherNames;
 	private CampaignData currCampaign;
 
+
+	/*
+	 * Log Text
+	 */
+	private String logText = "";
+
 	public MrSmith() {
 		campaignReports = new LinkedList<CampaignReport>();
 	}
@@ -125,13 +131,16 @@ public class MrSmith extends Agent {
 		try {
 			Transportable content = message.getContent();
 
-//			 log.fine(message.getContent().getClass().toString());
+			//			 log.fine(message.getContent().getClass().toString());
 
 			if (content instanceof InitialCampaignMessage) {
 				handleInitialCampaignMessage((InitialCampaignMessage) content);
 			} else if (content instanceof CampaignOpportunityMessage) {
 				handleICampaignOpportunityMessage((CampaignOpportunityMessage) content);
 			} else if (content instanceof CampaignReport) {
+
+				//				 For each campaign we have, we get a report
+
 				handleCampaignReport((CampaignReport) content);
 			} else if (content instanceof AdNetworkDailyNotification) {
 				handleAdNetworkDailyNotification((AdNetworkDailyNotification) content);
@@ -171,7 +180,7 @@ public class MrSmith extends Agent {
 
 	/**
 	 * Processes the start information.
-	 * 
+	 *
 	 * @param startInfo
 	 *            the start information.
 	 */
@@ -181,7 +190,7 @@ public class MrSmith extends Agent {
 
 	/**
 	 * Process the reported set of publishers
-	 * 
+	 *
 	 * @param publisherCatalog
 	 */
 	private void handlePublisherCatalog(PublisherCatalog publisherCatalog) {
@@ -230,11 +239,14 @@ public class MrSmith extends Agent {
 	private void handleICampaignOpportunityMessage(
 			CampaignOpportunityMessage com) {
 
-		log.fine(com.getClass().toString());
-
 		day = com.getDay();
 
+		logText = "Campaign Opportunity Message";
+		log.fine(logText);
+
 		pendingCampaign = new CampaignData(com);
+		log.fine("Day " + day + ": Campaign opportunity - " + pendingCampaign.toString());
+
 		System.out.println("Day " + day + ": Campaign opportunity - " + pendingCampaign);
 
 		/*
@@ -279,6 +291,8 @@ public class MrSmith extends Agent {
 	private void handleAdNetworkDailyNotification(
 			AdNetworkDailyNotification notificationMessage) {
 
+		logText = " Daily notification for campaign ";
+
 		adNetworkDailyNotification = notificationMessage;
 
 		System.out.println("Day " + day + ": Daily notification for campaign "
@@ -319,14 +333,14 @@ public class MrSmith extends Agent {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	protected void sendBidAndAds() {
 
 		bidBundle = new AdxBidBundle();
 
 		/*
-		 * 
+		 *
 		 */
 
 		int dayBiddingFor = day + 1;
@@ -342,7 +356,7 @@ public class MrSmith extends Agent {
 		/*
 		 * add bid entries w.r.t. each active campaign with remaining contracted
 		 * impressions.
-		 * 
+		 *
 		 * for now, a single entry per active campaign is added for queries of
 		 * matching target segment.
 		 */
@@ -432,7 +446,7 @@ public class MrSmith extends Agent {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param adnetReport
 	 */
 	private void handleAdNetworkReport(AdNetworkReport adnetReport) {
@@ -440,7 +454,7 @@ public class MrSmith extends Agent {
 		System.out.println("Day " + day + " : AdNetworkReport");
 		/*
 		 * for (AdNetworkKey adnetKey : adnetReport.keys()) {
-		 * 
+		 *
 		 * double rnd = Math.random(); if (rnd > 0.95) { AdNetworkReportEntry
 		 * entry = adnetReport .getAdNetworkReportEntry(adnetKey);
 		 * System.out.println(adnetKey + " " + entry); } }
@@ -468,12 +482,12 @@ public class MrSmith extends Agent {
 
 	/**
 	 * A user visit to a publisher's web-site results in an impression
-	 * opportunity (a query) that is characterized by the the publisher, the
+	 * opportunity (a query) that is characterised by the the publisher, the
 	 * market segment the user may belongs to, the device used (mobile or
 	 * desktop) and the ad type (text or video).
-	 * 
+	 *
 	 * An array of all possible queries is generated here, based on the
-	 * publisher names reported at game initialization in the publishers catalog
+	 * publisher names reported at game initialisation in the publishers catalogue
 	 * message
 	 */
 	private void generateAdxQuerySpace() {
@@ -525,8 +539,8 @@ public class MrSmith extends Agent {
 			querySet.toArray(queries);
 		}
 	}
-	
-	/*genarates an array of the publishers names
+
+	/*generates an array of the publishers names
 	 * */
 	private void getPublishersNames() {
 		if (null == publisherNames && publisherCatalog != null) {
@@ -540,7 +554,7 @@ public class MrSmith extends Agent {
 		}
 	}
 	/*
-	 * genarates the campaign queries relevant for the specific campaign, and assign them as the campaigns campaignQueries field 
+	 * genarates the campaign queries relevant for the specific campaign, and assign them as the campaigns campaignQueries field
 	 */
 	private void genCampaignQueries(CampaignData campaignData) {
 		Set<AdxQuery> campaignQueriesSet = new HashSet<AdxQuery>();
@@ -558,7 +572,7 @@ public class MrSmith extends Agent {
 		campaignData.campaignQueries = new AdxQuery[campaignQueriesSet.size()];
 		campaignQueriesSet.toArray(campaignData.campaignQueries);
 		System.out.println("!!!!!!!!!!!!!!!!!!!!!!"+Arrays.toString(campaignData.campaignQueries)+"!!!!!!!!!!!!!!!!");
-		
+
 
 	}
 
@@ -571,7 +585,7 @@ public class MrSmith extends Agent {
 		double videoCoef;
 		double mobileCoef;
 		int id;
-		private AdxQuery[] campaignQueries;//array of queries relvent for the campaign.
+		private AdxQuery[] campaignQueries;//array of queries relevant for the campaign.
 
 		/* campaign info as reported */
 		CampaignStats stats;
