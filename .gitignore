@@ -26,9 +26,9 @@ hs_err_pid*
 
 
 # Ignore server files - if implemented.
-/server/
-/adx-server/
-/src/
+/AdX/src/test/
+/Adx/adx-agent/logs/
+/Adx/adx-server/logs/
 
 # Ignore compiled data
 /out/

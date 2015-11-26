@@ -1,0 +1,10 @@
+26/11 17:11:27 INFO file.FileDatabase|infodb: database opened as /home/aandronis/projects/eclipse/workspace/mrsmith/AdX/adx-server/infodb
+26/11 17:11:27 INFO common.BlockingViewerServer|viewer server started at *:4042
+26/11 17:11:27 INFO file.FileDatabase|infodb: added table localhost_state
+26/11 17:11:27 INFO file.FileDatabase|infodb: added table localhost_comingparticipants
+26/11 17:11:27 INFO file.FileDatabase|infodb: added table localhost_comingsimulations
+26/11 17:11:27 INFO file.FileDatabase|infodb: added table localhost_competitionparts
+26/11 17:11:27 INFO file.FileDatabase|infodb: added table localhost_competitions
+26/11 17:11:27 INFO file.FileDatabase|infodb: added table localhost_competitionresults
+26/11 17:11:27 INFO sim.Admin|adding manager for simulation type tac13adx
+26/11 17:11:28 INFO server.TACTGateway|TACT Server started at *:6502
