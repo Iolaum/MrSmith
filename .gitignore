@@ -24,7 +24,10 @@ hs_err_pid*
 /Adx/adx-agent/logs/
 /AdX/adx-server/infodb/
 /AdX/adx-server/logs/
-/AdX/adx-server/*.sim1.slg
+/Adx/adx-agent/logs/*
+/AdX/adx-server/infodb/*
+/AdX/adx-server/logs/*
+/AdX/adx-server/*.slg
 
 # Ignore compiled data
 /out/
