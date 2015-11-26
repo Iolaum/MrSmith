@@ -1,5 +1,6 @@
 package agents;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,6 +13,7 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import config.GameConstants;
 import edu.umich.eecs.tac.props.Ad;
 import edu.umich.eecs.tac.props.BankStatus;
 import se.sics.isl.transport.Transportable;
@@ -60,7 +62,7 @@ public class MrSmith extends Agent {
 	 * Messages received:
 	 *
 	 * We keep all the {@link CampaignReport campaign reports} delivered to the
-	 * agent. We also keep the initialization messages {@link PublisherCatalog}
+	 * agent. We also keep the initialisation messages {@link PublisherCatalog}
 	 * and {@link InitialCampaignMessage} and the most recent messages and
 	 * reports {@link CampaignOpportunityMessage}, {@link CampaignReport}, and
 	 * {@link AdNetworkDailyNotification}.
@@ -78,7 +80,7 @@ public class MrSmith extends Agent {
 	private String adxAgentAddress;
 
 	/*
-	 * we maintain a list of queries - each characterized by the web site (the
+	 * we maintain a list of queries - each characterised by the web site (the
 	 * publisher), the device type, the ad type, and the user market segment
 	 */
 	private AdxQuery[] queries;
@@ -132,9 +134,7 @@ public class MrSmith extends Agent {
 			} else if (content instanceof CampaignOpportunityMessage) {
 				handleICampaignOpportunityMessage((CampaignOpportunityMessage) content);
 			} else if (content instanceof CampaignReport) {
-
-				//				 For each campaign we have, we get a report
-
+				//	For each campaign we have, we get a report
 				handleCampaignReport((CampaignReport) content);
 			} else if (content instanceof AdNetworkDailyNotification) {
 				handleAdNetworkDailyNotification((AdNetworkDailyNotification) content);
@@ -191,7 +191,6 @@ public class MrSmith extends Agent {
 		this.publisherCatalog = publisherCatalog;
 		generateAdxQuerySpace();
 		getPublishersNames();
-
 	}
 
 	/**
@@ -203,6 +202,7 @@ public class MrSmith extends Agent {
 	 */
 	private void handleInitialCampaignMessage(
 			InitialCampaignMessage campaignMessage) {
+		System.out.println("Simulation is starting! Days of competition: " + GameConstants.gameLength);
 		System.out.println(campaignMessage.toString());
 
 		day = 0;
