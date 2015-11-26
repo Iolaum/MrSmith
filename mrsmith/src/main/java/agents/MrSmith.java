@@ -404,7 +404,7 @@ public class MrSmith extends Agent {
 	}
 
 	/**
-	 * Campaigns performance w.r.t. each allocated campaign
+	 * Campaigns performance with respect to(w.r.t.) each allocated campaign
 	 */
 	private void handleCampaignReport(CampaignReport campaignReport) {
 

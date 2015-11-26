@@ -12,6 +12,8 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import edu.umich.eecs.tac.props.Ad;
+import edu.umich.eecs.tac.props.BankStatus;
 import se.sics.isl.transport.Transportable;
 import se.sics.tasim.aw.Agent;
 import se.sics.tasim.aw.Message;
@@ -36,13 +38,11 @@ import tau.tac.adx.report.demand.InitialCampaignMessage;
 import tau.tac.adx.report.demand.campaign.auction.CampaignAuctionReport;
 import tau.tac.adx.report.publisher.AdxPublisherReport;
 import tau.tac.adx.report.publisher.AdxPublisherReportEntry;
-import edu.umich.eecs.tac.props.Ad;
-import edu.umich.eecs.tac.props.BankStatus;
 
 /**
- * 
+ *
  * @author Mariano Schain Test plug-in
- * 
+ *
  */
 public class SampleAdNetwork extends Agent {
 
@@ -58,7 +58,7 @@ public class SampleAdNetwork extends Agent {
 
 	/**
 	 * Messages received:
-	 * 
+	 *
 	 * We keep all the {@link CampaignReport campaign reports} delivered to the
 	 * agent. We also keep the initialization messages {@link PublisherCatalog}
 	 * and {@link InitialCampaignMessage} and the most recent messages and
@@ -172,7 +172,7 @@ public class SampleAdNetwork extends Agent {
 
 	/**
 	 * Processes the start information.
-	 * 
+	 *
 	 * @param startInfo
 	 *            the start information.
 	 */
@@ -182,7 +182,7 @@ public class SampleAdNetwork extends Agent {
 
 	/**
 	 * Process the reported set of publishers
-	 * 
+	 *
 	 * @param publisherCatalog
 	 */
 	private void handlePublisherCatalog(PublisherCatalog publisherCatalog) {
@@ -211,7 +211,7 @@ public class SampleAdNetwork extends Agent {
 
 		CampaignData campaignData = new CampaignData(initialCampaignMessage);
 		campaignData
-				.setBudget(initialCampaignMessage.getBudgetMillis() / 1000.0);
+		.setBudget(initialCampaignMessage.getBudgetMillis() / 1000.0);
 		currCampaign = campaignData;
 		genCampaignQueries(currCampaign);
 
@@ -297,7 +297,7 @@ public class SampleAdNetwork extends Agent {
 
 			/* add campaign to list of won campaigns */
 			pendingCampaign
-					.setBudget(notificationMessage.getCostMillis() / 1000.0);
+			.setBudget(notificationMessage.getCostMillis() / 1000.0);
 			currCampaign = pendingCampaign;
 			genCampaignQueries(currCampaign);
 			myCampaigns.put(pendingCampaign.id, pendingCampaign);
@@ -307,12 +307,12 @@ public class SampleAdNetwork extends Agent {
 		}
 
 		System.out
-				.println("Day " + day + ": " + campaignAllocatedTo
-						+ ". UCS Level set to "
-						+ notificationMessage.getServiceLevel() + " at price "
-						+ notificationMessage.getPrice()
-						+ " Quality Score is: "
-						+ notificationMessage.getQualityScore());
+		.println("Day " + day + ": " + campaignAllocatedTo
+				+ ". UCS Level set to "
+				+ notificationMessage.getServiceLevel() + " at price "
+				+ notificationMessage.getPrice()
+				+ " Quality Score is: "
+				+ notificationMessage.getQualityScore());
 	}
 
 	/**
@@ -328,14 +328,14 @@ public class SampleAdNetwork extends Agent {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	protected void sendBidAndAds() {
 
 		bidBundle = new AdxBidBundle();
 
 		/*
-		 * 
+		 *
 		 */
 
 		int dayBiddingFor = day + 1;
@@ -353,7 +353,7 @@ public class SampleAdNetwork extends Agent {
 		/*
 		 * add bid entries w.r.t. each active campaign with remaining contracted
 		 * impressions.
-		 * 
+		 *
 		 * for now, a single entry per active campaign is added for queries of
 		 * matching target segment.
 		 */
@@ -445,7 +445,7 @@ public class SampleAdNetwork extends Agent {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param AdNetworkReport
 	 */
 	private void handleAdNetworkReport(AdNetworkReport adnetReport) {
@@ -453,7 +453,7 @@ public class SampleAdNetwork extends Agent {
 		System.out.println("Day " + day + " : AdNetworkReport");
 		/*
 		 * for (AdNetworkKey adnetKey : adnetReport.keys()) {
-		 * 
+		 *
 		 * double rnd = Math.random(); if (rnd > 0.95) { AdNetworkReportEntry
 		 * entry = adnetReport .getAdNetworkReportEntry(adnetKey);
 		 * System.out.println(adnetKey + " " + entry); } }
@@ -485,7 +485,7 @@ public class SampleAdNetwork extends Agent {
 	 * opportunity (a query) that is characterized by the the publisher, the
 	 * market segment the user may belongs to, the device used (mobile or
 	 * desktop) and the ad type (text or video).
-	 * 
+	 *
 	 * An array of all possible queries is generated here, based on the
 	 * publisher names reported at game initialization in the publishers catalog
 	 * message
@@ -590,7 +590,7 @@ public class SampleAdNetwork extends Agent {
 		double mobileCoef;
 		int id;
 		private AdxQuery[] campaignQueries;// array of queries relvent for the
-											// campaign.
+		// campaign.
 
 		/* campaign info as reported */
 		CampaignStats stats;
