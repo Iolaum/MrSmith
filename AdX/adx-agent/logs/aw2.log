@@ -1,4 +1,4 @@
-26/11 17:14:57 SEVERE agentware.ServerConnection|(1) connection to server failed
+26/11 17:15:49 SEVERE agentware.ServerConnection|(1) connection to server failed
 java.net.ConnectException: Connection refused
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -12,7 +12,7 @@ java.net.ConnectException: Connection refused
 	at tau.tac.adx.agentware.ServerConnection.connect(ServerConnection.java:136)
 	at tau.tac.adx.agentware.ServerConnection.run(ServerConnection.java:199)
 	at java.lang.Thread.run(Thread.java:745)
-26/11 17:14:57 SEVERE agentware.SimClient|************************************************************
-26/11 17:14:57 SEVERE agentware.SimClient|* Connection Failed
-26/11 17:14:57 SEVERE agentware.SimClient|* Could not connect to localhost (will retry in 30 seconds)
-26/11 17:14:57 SEVERE agentware.SimClient|************************************************************
+26/11 17:15:49 SEVERE agentware.SimClient|************************************************************
+26/11 17:15:49 SEVERE agentware.SimClient|* Connection Failed
+26/11 17:15:49 SEVERE agentware.SimClient|* Could not connect to localhost (will retry in 30 seconds)
+26/11 17:15:49 SEVERE agentware.SimClient|************************************************************
