@@ -117,21 +117,15 @@ public class MrSmith extends Agent {
 	private CampaignData currCampaign;
 
 
-	/*
-	 * Log Text
-	 */
-	private String logText = "";
-
 	public MrSmith() {
 		campaignReports = new LinkedList<CampaignReport>();
 	}
 
 	@Override
 	protected void messageReceived(Message message) {
+		log.setUseParentHandlers(false);
 		try {
 			Transportable content = message.getContent();
-
-			//			 log.fine(message.getContent().getClass().toString());
 
 			if (content instanceof InitialCampaignMessage) {
 				handleInitialCampaignMessage((InitialCampaignMessage) content);
@@ -226,7 +220,9 @@ public class MrSmith extends Agent {
 		 * The initial campaign is already allocated to our agent so we add it
 		 * to our allocated-campaigns list.
 		 */
+
 		System.out.println("Day " + day + ": Allocated campaign - " + campaignData);
+
 		myCampaigns.put(initialCampaignMessage.getId(), campaignData);
 	}
 
@@ -241,11 +237,7 @@ public class MrSmith extends Agent {
 
 		day = com.getDay();
 
-		logText = "Campaign Opportunity Message";
-		log.fine(logText);
-
 		pendingCampaign = new CampaignData(com);
-		log.fine("Day " + day + ": Campaign opportunity - " + pendingCampaign.toString());
 
 		System.out.println("Day " + day + ": Campaign opportunity - " + pendingCampaign);
 
@@ -260,7 +252,8 @@ public class MrSmith extends Agent {
 
 		Random random = new Random();
 		long cmpimps = com.getReachImps();
-		long cmpBidMillis = random.nextInt((int)cmpimps); // Campaign bid value --- Set here
+		long cmpBidMillis = random.nextInt((int)cmpimps);
+		//# Campaign bid value --- Set here
 
 		System.out.println("Day " + day + ": Campaign total budget bid (millis): " + cmpBidMillis);
 
@@ -291,8 +284,6 @@ public class MrSmith extends Agent {
 	private void handleAdNetworkDailyNotification(
 			AdNetworkDailyNotification notificationMessage) {
 
-		logText = " Daily notification for campaign ";
-
 		adNetworkDailyNotification = notificationMessage;
 
 		System.out.println("Day " + day + ": Daily notification for campaign "
@@ -306,17 +297,20 @@ public class MrSmith extends Agent {
 
 			/* add campaign to list of won campaigns */
 			pendingCampaign.setBudget(notificationMessage.getCostMillis()/1000.0);
+			//# Budget??
 			currCampaign = pendingCampaign;
 			genCampaignQueries(currCampaign);
 			myCampaigns.put(pendingCampaign.id, pendingCampaign);
 
 			campaignAllocatedTo = " WON at cost (Millis)"
 					+ notificationMessage.getCostMillis();
+			// CostMillis = Campaign Budget(?)
 		}
 
 		System.out.println("Day " + day + ": " + campaignAllocatedTo
 				+ ". UCS Level set to " + notificationMessage.getServiceLevel()
 				+ " at price " + notificationMessage.getPrice()
+				// Price: UCS price of next lower bidder
 				+ " Quality Score is: " + notificationMessage.getQualityScore());
 	}
 
@@ -471,7 +465,6 @@ public class MrSmith extends Agent {
 		ucsBid = 0.2;
 
 		myCampaigns = new HashMap<Integer, CampaignData>();
-		log.fine("AdNet " + getName() + " simulationSetup");
 	}
 
 	@Override
