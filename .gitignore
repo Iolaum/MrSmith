@@ -13,22 +13,21 @@ hs_err_pid*
 
 # Ignore follwoing for netbeans IDE
 /nbproject/
-/lib/
 
 # For Intellij  (JetBrains) #
 .idea/
 *.iml
 *.iws
 
-
-# ignore -  automatically generated logs after agent run.
-/agent/logs/
-
-
 # Ignore server files - if implemented.
 /AdX/src/test/
+AdX/src/test/*
 /Adx/adx-agent/logs/
-/Adx/adx-server/logs/
+Adx/adx-agent/logs/*
+/AdX/adx-server/infodb/
+AdX/adx-server/infodb/*
+/AdX/adx-server/logs/
+AdX/adx-server/logs/*
 
 # Ignore compiled data
 /out/
