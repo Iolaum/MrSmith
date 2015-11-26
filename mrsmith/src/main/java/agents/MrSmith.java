@@ -1,4 +1,4 @@
-package main.java.agents;
+package agents;
 
 import java.util.ArrayList;
 import java.util.Arrays;
