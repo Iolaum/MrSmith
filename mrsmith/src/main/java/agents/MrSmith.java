@@ -1,4 +1,4 @@
-package mrsmith;
+package main.java.agents;
 
 import java.util.ArrayList;
 import java.util.Arrays;
