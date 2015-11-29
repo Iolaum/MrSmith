@@ -117,9 +117,9 @@ public class MrSmith extends Agent {
 	private int day;
 	private String[] publisherNames;
 	private CampaignData currCampaign;
-	
+
 	private Double cmpBidMillis;
-	
+
 	private UcsModel ucsModel;
 
 	public MrSmith() {
@@ -257,7 +257,7 @@ public class MrSmith extends Agent {
 		long cmpimps = com.getReachImps();
 		long cmpBidMillis = random.nextInt((int)cmpimps);
 		//# Campaign bid value --- Set here
-		
+
 		//cmpBidMillis = (new Double(cmpimps)) * qualityScore - 1;
 
 
@@ -270,7 +270,14 @@ public class MrSmith extends Agent {
 
 		if (adNetworkDailyNotification != null) {
 			double ucsLevel = adNetworkDailyNotification.getServiceLevel();
-			ucsBid = 0.1 + random.nextDouble()/10.0; // UCS Bid Value --- Set here
+			//			ucsBid = 0.1 + random.nextDouble()/10.0;
+			//# UCS Bid Value --- Set here
+			ucsBid = 0;
+
+			for (CampaignData campaign : myCampaigns.values()) {
+				ucsBid += 0.5*campaign.budget;
+			}
+
 			System.out.println("Day " + day + ": ucs level reported: " + ucsLevel);
 		} else {
 			System.out.println("Day " + day + ": Initial ucs bid is " + ucsBid);
@@ -312,11 +319,11 @@ public class MrSmith extends Agent {
 					+ notificationMessage.getCostMillis();
 			// CostMillis = Campaign Budget(?)
 		}
-		
-//		ucsModel.ucsUpdate(notificationMessage.getServiceLevel(),
-//				notificationMessage.getPrice(), activeCampaigns());
 
-		
+		//		ucsModel.ucsUpdate(notificationMessage.getServiceLevel(),
+		//				notificationMessage.getPrice(), activeCampaigns());
+
+
 		System.out.println("Day " + day + ": " + campaignAllocatedTo
 				+ ". UCS Level set to " + notificationMessage.getServiceLevel()
 				+ " at price " + notificationMessage.getPrice()
@@ -332,31 +339,31 @@ public class MrSmith extends Agent {
 	private void handleSimulationStatus(SimulationStatus simulationStatus) {
 		System.out.println("Day " + day + " : Simulation Status Received");
 		sendBidAndAds();
-		
-/*		System.out.println("Day " + day + ": Ucs bid is "
+
+		/*		System.out.println("Day " + day + ": Ucs bid is "
 				+ (ucsModel != null ? ucsModel.getBid() : "...No Model"));
-		// Note: Campaign bid is in millis 
+		// Note: Campaign bid is in millis
 		AdNetBidMessage bids = new AdNetBidMessage(
 				ucsModel != null ? ucsModel.getBid() : 0,
 				pendingCampaign != null ? pendingCampaign.id : 0,
 				cmpBidMillis != null ? cmpBidMillis.longValue() : 0);
-*/		
+		 */
 		System.out.println("Day " + day + " ended. Starting next day");
 		++day;
 	}
-	
-	
-	private boolean activeCampaigns() {
-		int dayBiddingFor = day + 1;
-		for (CampaignData cmpgn : myCampaigns.values()) {
-			if ((dayBiddingFor >= cmpgn.dayStart)
-					&& (dayBiddingFor <= cmpgn.dayEnd)
-					&& (cmpgn.impsTogo() > 0)) {
-				return true;
-			}
-		}
-		return false;
-	}
+
+
+	//	private boolean activeCampaigns() {
+	//		int dayBiddingFor = day + 1;
+	//		for (CampaignData cmpgn : myCampaigns.values()) {
+	//			if ((dayBiddingFor >= cmpgn.dayStart)
+	//					&& (dayBiddingFor <= cmpgn.dayEnd)
+	//					&& (cmpgn.impsTogo() > 0)) {
+	//				return true;
+	//			}
+	//		}
+	//		return false;
+	//	}
 
 	/**
 	 *
@@ -387,46 +394,51 @@ public class MrSmith extends Agent {
 		 * matching target segment.
 		 */
 
-		if ((dayBiddingFor >= currCampaign.dayStart)
-				&& (dayBiddingFor <= currCampaign.dayEnd)
-				&& (currCampaign.impsTogo() > 0)) {
+		for (CampaignData campaign : myCampaigns.values()) {
+			if ((dayBiddingFor >= campaign.dayStart)
+					&& (dayBiddingFor <= campaign.dayEnd)
+					&& (campaign.impsTogo() > 0)) {
 
-			int entCount = 0;
+				rbid = campaign.budget/(2 + campaign.reachImps);
+				System.out.println("rbid =  " + rbid + " || budget = " + campaign.budget);
+				int entCount = 0;
 
-			for (AdxQuery query : currCampaign.campaignQueries) {
-				if (currCampaign.impsTogo() - entCount > 0) {
-					/*
-					 * among matching entries with the same campaign id, the AdX
-					 * randomly chooses an entry according to the designated
-					 * weight. by setting a constant weight 1, we create a
-					 * uniform probability over active campaigns(irrelevant because we are bidding only on one campaign)
-					 */
-					if (query.getDevice() == Device.pc) {
-						if (query.getAdType() == AdType.text) {
-							entCount++;
+				for (AdxQuery query : campaign.campaignQueries) {
+					if (campaign.impsTogo() - entCount > 0) {
+						/*
+						 * among matching entries with the same campaign id, the AdX
+						 * randomly chooses an entry according to the designated
+						 * weight. by setting a constant weight 1, we create a
+						 * uniform probability over active campaigns(irrelevant because we are bidding only on one campaign)
+						 */
+						if (query.getDevice() == Device.pc) {
+							if (query.getAdType() == AdType.text) {
+								entCount++;
+							} else {
+								entCount += campaign.videoCoef;
+							}
 						} else {
-							entCount += currCampaign.videoCoef;
-						}
-					} else {
-						if (query.getAdType() == AdType.text) {
-							entCount+=currCampaign.mobileCoef;
-						} else {
-							entCount += currCampaign.videoCoef + currCampaign.mobileCoef;
+							if (query.getAdType() == AdType.text) {
+								entCount+=campaign.mobileCoef;
+							} else {
+								entCount += campaign.videoCoef + campaign.mobileCoef;
+							}
+
 						}
 
+						bidBundle.addQuery(query, rbid, new Ad(null),
+								campaign.id, 1);
 					}
-					bidBundle.addQuery(query, rbid, new Ad(null),
-							currCampaign.id, 1);
 				}
+
+				double impressionLimit = campaign.impsTogo();
+				double budgetLimit = campaign.budget;
+				bidBundle.setCampaignDailyLimit(campaign.id,
+						(int) impressionLimit, budgetLimit);
+				//# Problem: understand why the query entry inside is a FEMALE
+				System.out.println("Day " + day + ": Updated " + entCount
+						+ " Bid Bundle entries for Campaign id " + campaign.id);
 			}
-
-			double impressionLimit = currCampaign.impsTogo();
-			double budgetLimit = currCampaign.budget;
-			bidBundle.setCampaignDailyLimit(currCampaign.id,
-					(int) impressionLimit, budgetLimit);
-
-			System.out.println("Day " + day + ": Updated " + entCount
-					+ " Bid Bundle entries for Campaign id " + currCampaign.id);
 		}
 
 		if (bidBundle != null) {
@@ -492,7 +504,7 @@ public class MrSmith extends Agent {
 
 		day = 0;
 		bidBundle = new AdxBidBundle();
-		
+
 		ucsModel = new UcsModel();
 
 		/* initial bid between 0.1 and 0.2 */
@@ -602,7 +614,7 @@ public class MrSmith extends Agent {
 
 
 	}
-	
+
 	private class UcsModel {
 		/* campaign attributes as set by server */
 		/*
@@ -744,7 +756,7 @@ public class MrSmith extends Agent {
 		}
 
 		int impsTogo() {
-			return (int) Math.max(0, reachImps - stats.getTargetedImps());
+			return (int) Math.max(0, 1.05*reachImps - stats.getTargetedImps());
 		}
 
 		void setStats(CampaignStats s) {
