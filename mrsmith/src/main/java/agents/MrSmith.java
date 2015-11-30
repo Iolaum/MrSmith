@@ -276,7 +276,8 @@ public class MrSmith extends Agent {
 
 			for (CampaignData campaign : myCampaigns.values()) {
 				if (isCampaignActive(campaign)) {
-					ucsBid += 0.5*campaign.budget;
+					ucsBid += 0.5*campaign.budget/(campaign.dayEnd - campaign.dayStart + 1);
+					//# * 0.5 to be made function with learning rate.
 				}
 			}
 
@@ -416,12 +417,15 @@ public class MrSmith extends Agent {
 								entCount++;
 							} else {
 								entCount += campaign.videoCoef;
+								rbid = campaign.videoCoef*rbid;
 							}
 						} else {
 							if (query.getAdType() == AdType.text) {
 								entCount+=campaign.mobileCoef;
+								rbid = campaign.mobileCoef*rbid;
 							} else {
 								entCount += campaign.videoCoef + campaign.mobileCoef;
+								rbid = campaign.mobileCoef*campaign.videoCoef*rbid;
 							}
 
 						}
