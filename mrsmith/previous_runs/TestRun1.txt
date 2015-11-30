@@ -1,0 +1,1350 @@
+30/11 11:34:46 INFO agentware.SimClient|next simulation starts in 13 seconds
+UNKNOWN Message Received: edu.umich.eecs.tac.props.AdvertiserInfo@bc76a1c1
+Simulation is starting! Days of competition: 60
+tau.tac.adx.report.demand.InitialCampaignMessage[5289727,6507,1,5,6507,[OLD, MALE],2.5908335872004704,1.7168365742239677,demand,[]]
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=pc, adType=video]]!!!!!!!!!!!!!!!!
+Day 0: Allocated campaign - Campaign ID 5289727: day 1 to 5 [OLD, MALE], reach: 6507 coefs: (v=2.5908335872004704, m=1.7168365742239677)
+Day 0: Campaign opportunity - Campaign ID 163131130: day 2 to 11 [FEMALE, LOW_INCOME, OLD], reach: 4802 coefs: (v=2.5051550058301446, m=1.8635820405110666)
+Day 0: Campaign total budget bid (millis): 1468
+Day 0: Initial ucs bid is 0.2
+Day 0 :BankStatus[0,000000]
+Day 0 : Simulation Status Received
+rbid =  9.996927331387309E-4 || budget = 6.507
+Day 0: Updated 48 Bid Bundle entries for Campaign id 5289727
+Day 0: Sending BidBundle
+Day 0 ended. Starting next day
+Day 1: Daily notification for campaign 163131130
+Day 1:  allocated to DummyAdnetwork-3. UCS Level set to 1.0 at price 0.17057216258932667 Quality Score is: 1.0
+Day 1: Campaign opportunity - Campaign ID 1289793159: day 3 to 7 [FEMALE, HIGH_INCOME], reach: 663 coefs: (v=2.621833884614606, m=1.7169518293890542)
+Day 1: Campaign total budget bid (millis): 255
+Day 1: ucs level reported: 1.0
+Day 1 :BankStatus[-0,170572]
+Publishers Report:
+Day 1 : Simulation Status Received
+rbid =  9.996927331387309E-4 || budget = 6.507
+Day 1: Updated 48 Bid Bundle entries for Campaign id 5289727
+Day 1: Sending BidBundle
+Day 1 ended. Starting next day
+Day 2: Updating campaign 5289727 stats: 2754.0818154208423 tgtImps 0.0 nonTgtImps. Cost of imps is 0.2641280106879658
+Day 2: Daily notification for campaign 1289793159
+Day 2:  allocated to DummyAdnetwork. UCS Level set to 1.0 at price 0.1855964970456259 Quality Score is: 1.0
+Day 2: Campaign opportunity - Campaign ID 410087571: day 4 to 13 [YOUNG, HIGH_INCOME, MALE], reach: 2585 coefs: (v=2.410257916784241, m=2.11669917596637)
+Day 2: Campaign total budget bid (millis): 2356
+Day 2: ucs level reported: 1.0
+Day 2 :BankStatus[-0,356169]
+Publishers Report:
+(publisher: tripadvisor popularity: 313 video: 135 text: 179)
+(publisher: ehow popularity: 552 video: 49 text: 504)
+(publisher: msn popularity: 3804 video: 1279 text: 2526)
+(publisher: wallmart popularity: 5532 video: 1796 text: 3737)
+(publisher: bestbuy popularity: 330 video: 114 text: 217)
+(publisher: nyt popularity: 574 video: 189 text: 386)
+Day 2 : AdNetworkReport
+Day 2 : Simulation Status Received
+rbid =  9.996927331387309E-4 || budget = 6.507
+Day 2: Updated 48 Bid Bundle entries for Campaign id 5289727
+Day 2: Sending BidBundle
+Day 2 ended. Starting next day
+Day 3: Updating campaign 5289727 stats: 5335.772647798335 tgtImps 0.0 nonTgtImps. Cost of imps is 0.43508722221796303
+Day 3: Daily notification for campaign 410087571
+Day 3:  allocated to DummyAdnetwork-6. UCS Level set to 1.0 at price 0.18807246053091403 Quality Score is: 1.0
+Day 3: Campaign opportunity - Campaign ID 1775950574: day 5 to 14 [OLD, MALE], reach: 13015 coefs: (v=2.8852414624177167, m=1.7109651221048345)
+Day 3: Campaign total budget bid (millis): 12694
+Day 3: ucs level reported: 1.0
+Day 3 :BankStatus[-0,808369]
+Publishers Report:
+(publisher: tripadvisor popularity: 320 video: 141 text: 180)
+(publisher: ehow popularity: 470 video: 37 text: 434)
+(publisher: msn popularity: 3771 video: 1277 text: 2495)
+(publisher: wallmart popularity: 5632 video: 1779 text: 3854)
+(publisher: bestbuy popularity: 326 video: 115 text: 212)
+(publisher: nyt popularity: 653 video: 194 text: 460)
+Day 3 : AdNetworkReport
+Day 3 : Simulation Status Received
+rbid =  9.996927331387309E-4 || budget = 6.507
+Day 3: Updated 48 Bid Bundle entries for Campaign id 5289727
+Day 3: Sending BidBundle
+Day 3 ended. Starting next day
+Day 4: Updating campaign 5289727 stats: 7704.941411635065 tgtImps 0.0 nonTgtImps. Cost of imps is 0.6263550794768357
+Day 4: Daily notification for campaign 1775950574
+Day 4:  allocated to DummyAdnetwork-7. UCS Level set to 1.0 at price 0.169218501376237 Quality Score is: 1.0
+Day 4: Campaign opportunity - Campaign ID 1184269072: day 6 to 15 [YOUNG, MALE], reach: 4706 coefs: (v=2.3770798099245596, m=1.6029550843943787)
+Day 4: Campaign total budget bid (millis): 2164
+Day 4: ucs level reported: 1.0
+Day 4 :BankStatus[-1,148547]
+Publishers Report:
+(publisher: tripadvisor popularity: 317 video: 118 text: 200)
+(publisher: ehow popularity: 516 video: 52 text: 465)
+(publisher: msn popularity: 3745 video: 1274 text: 2472)
+(publisher: wallmart popularity: 5593 video: 1782 text: 3812)
+(publisher: bestbuy popularity: 316 video: 105 text: 212)
+(publisher: nyt popularity: 572 video: 159 text: 414)
+Day 4 : AdNetworkReport
+Day 4 : Simulation Status Received
+Day 4: Sending BidBundle
+Day 4 ended. Starting next day
+Day 5: Updating campaign 5289727 stats: 9201.487660310517 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7642040266237008
+Day 5: Daily notification for campaign 1184269072
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, MALE], device=pc, adType=video]]!!!!!!!!!!!!!!!!
+Day 5:  WON at cost (Millis)2179. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.0
+Day 5: Campaign opportunity - Campaign ID 2047572038: day 7 to 16 [FEMALE, HIGH_INCOME], reach: 5304 coefs: (v=2.4716837869146078, m=1.893835014641195)
+Day 5: Campaign total budget bid (millis): 3641
+Day 5: ucs level reported: 0.47829690000000014
+Day 5 :BankStatus[-1,339815]
+Publishers Report:
+(publisher: tripadvisor popularity: 332 video: 136 text: 197)
+(publisher: ehow popularity: 551 video: 42 text: 510)
+(publisher: msn popularity: 3643 video: 1197 text: 2447)
+(publisher: wallmart popularity: 5686 video: 1800 text: 3887)
+(publisher: bestbuy popularity: 299 video: 111 text: 189)
+(publisher: nyt popularity: 575 video: 174 text: 402)
+Day 5 : AdNetworkReport
+Day 5 : Simulation Status Received
+rbid =  4.628292268479184E-4 || budget = 2.179
+Day 5: Updated 42 Bid Bundle entries for Campaign id 1184269072
+Day 5: Sending BidBundle
+Day 5 ended. Starting next day
+Day 6: Updating campaign 5289727 stats: 9201.487660310517 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7642040266237008
+Day 6: Daily notification for campaign 2047572038
+Day 6:  allocated to DummyAdnetwork-5. UCS Level set to 0.5904900000000002 at price 0.06316576047599241 Quality Score is: 1.1261835744466744
+Day 6: Campaign opportunity - Campaign ID 1154093630: day 8 to 17 [OLD], reach: 27055 coefs: (v=2.913781816529509, m=1.752891757405934)
+Day 6: Campaign total budget bid (millis): 20476
+Day 6: ucs level reported: 0.5904900000000002
+Day 6 :BankStatus[6,334427]
+Publishers Report:
+(publisher: tripadvisor popularity: 271 video: 124 text: 148)
+(publisher: ehow popularity: 530 video: 49 text: 482)
+(publisher: msn popularity: 3720 video: 1272 text: 2449)
+(publisher: wallmart popularity: 5613 video: 1805 text: 3809)
+(publisher: bestbuy popularity: 309 video: 111 text: 199)
+(publisher: nyt popularity: 632 video: 189 text: 444)
+Day 6 : Simulation Status Received
+rbid =  4.628292268479184E-4 || budget = 2.179
+Day 6: Updated 42 Bid Bundle entries for Campaign id 1184269072
+Day 6: Sending BidBundle
+Day 6 ended. Starting next day
+Day 7: Updating campaign 1184269072 stats: 3253.8477440709385 tgtImps 0.0 nonTgtImps. Cost of imps is 0.1445703830028775
+Day 7: Daily notification for campaign 1154093630
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 7:  WON at cost (Millis)20476. UCS Level set to 0.5314410000000002 at price 0.05508246299581549 Quality Score is: 1.1261835744466744
+Day 7: Campaign opportunity - Campaign ID 1518678857: day 9 to 18 [FEMALE, LOW_INCOME], reach: 21905 coefs: (v=2.8587499840830737, m=1.9128427875910778)
+Day 7: Campaign total budget bid (millis): 4483
+Day 7: ucs level reported: 0.5314410000000002
+Day 7 :BankStatus[6,279345]
+Publishers Report:
+(publisher: tripadvisor popularity: 311 video: 118 text: 194)
+(publisher: ehow popularity: 488 video: 39 text: 450)
+(publisher: msn popularity: 3836 video: 1311 text: 2526)
+(publisher: wallmart popularity: 5506 video: 1781 text: 3726)
+(publisher: bestbuy popularity: 313 video: 102 text: 212)
+(publisher: nyt popularity: 612 video: 193 text: 420)
+Day 7 : AdNetworkReport
+Day 7 : Simulation Status Received
+rbid =  7.56772739032413E-4 || budget = 20.476
+Day 7: Updated 48 Bid Bundle entries for Campaign id 1154093630
+rbid =  4.628292268479184E-4 || budget = 2.179
+Day 7: Updated 42 Bid Bundle entries for Campaign id 1184269072
+Day 7: Sending BidBundle
+Day 7 ended. Starting next day
+Day 8: Updating campaign 1184269072 stats: 5793.283825893781 tgtImps 0.0 nonTgtImps. Cost of imps is 0.6991485895736601
+Day 8: Daily notification for campaign 1518678857
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 8:  WON at cost (Millis)18934. UCS Level set to 1.0 at price 0.18390818470137327 Quality Score is: 1.1261835744466744
+Day 8: Campaign opportunity - Campaign ID 2054276305: day 10 to 19 [OLD, MALE], reach: 13015 coefs: (v=2.097292713536078, m=2.4913719395053455)
+Day 8: Campaign total budget bid (millis): 2073
+Day 8: ucs level reported: 1.0
+Day 8 :BankStatus[5,950866]
+Publishers Report:
+(publisher: tripadvisor popularity: 300 video: 123 text: 178)
+(publisher: ehow popularity: 510 video: 43 text: 468)
+(publisher: msn popularity: 3718 video: 1285 text: 2434)
+(publisher: wallmart popularity: 5591 video: 1760 text: 3832)
+(publisher: bestbuy popularity: 310 video: 98 text: 213)
+(publisher: nyt popularity: 619 video: 209 text: 411)
+Day 8 : AdNetworkReport
+Day 8 : Simulation Status Received
+rbid =  7.56772739032413E-4 || budget = 20.476
+Day 8: Updated 48 Bid Bundle entries for Campaign id 1154093630
+rbid =  8.642899529830648E-4 || budget = 18.934
+Day 8: Updated 48 Bid Bundle entries for Campaign id 1518678857
+Day 8: Sending BidBundle
+Day 8 ended. Starting next day
+Day 9: Updating campaign 1154093630 stats: 8523.0097395338 tgtImps 0.0 nonTgtImps. Cost of imps is 2.3220571431514307
+Day 9: Updating campaign 1184269072 stats: 7481.095470935954 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7884198011169632
+Day 9: Daily notification for campaign 2054276305
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=pc, adType=video]]!!!!!!!!!!!!!!!!
+Day 9:  WON at cost (Millis)8917. UCS Level set to 1.0 at price 0.1890437695915122 Quality Score is: 1.1261835744466744
+Day 9: Campaign opportunity - Campaign ID 1724483943: day 11 to 15 [LOW_INCOME, OLD, MALE], reach: 1795 coefs: (v=2.26982533241278, m=1.6133671749658616)
+Day 9: Campaign total budget bid (millis): 1053
+Day 9: ucs level reported: 1.0
+Day 9 :BankStatus[5,207244]
+Publishers Report:
+(publisher: tripadvisor popularity: 316 video: 148 text: 169)
+(publisher: ehow popularity: 542 video: 44 text: 499)
+(publisher: msn popularity: 3761 video: 1248 text: 2514)
+(publisher: wallmart popularity: 5528 video: 1781 text: 3748)
+(publisher: bestbuy popularity: 344 video: 136 text: 209)
+(publisher: nyt popularity: 630 video: 204 text: 427)
+Day 9 : AdNetworkReport
+Day 9 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 9: Updated 54 Bid Bundle entries for Campaign id 2054276305
+rbid =  7.56772739032413E-4 || budget = 20.476
+Day 9: Updated 48 Bid Bundle entries for Campaign id 1154093630
+rbid =  8.642899529830648E-4 || budget = 18.934
+Day 9: Updated 48 Bid Bundle entries for Campaign id 1518678857
+Day 9: Sending BidBundle
+Day 9 ended. Starting next day
+Day 10: Updating campaign 1154093630 stats: 13839.434899200922 tgtImps 0.0 nonTgtImps. Cost of imps is 3.4183129271834045
+Day 10: Updating campaign 1184269072 stats: 7481.095470935954 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7884198011169632
+Day 10: Updating campaign 1518678857 stats: 6140.730110898583 tgtImps 0.0 nonTgtImps. Cost of imps is 0.05427507147254712
+Day 10: Daily notification for campaign 1724483943
+Day 10:  allocated to DummyAdnetwork-4. UCS Level set to 1.0 at price 0.1897137777491137 Quality Score is: 1.1261835744466744
+Day 10: Campaign opportunity - Campaign ID 811306214: day 12 to 16 [OLD], reach: 13527 coefs: (v=2.708669812739426, m=2.4368991789771215)
+Day 10: Campaign total budget bid (millis): 2750
+Day 10: ucs level reported: 1.0
+Day 10 :BankStatus[2,606052]
+Publishers Report:
+(publisher: tripadvisor popularity: 305 video: 114 text: 192)
+(publisher: ehow popularity: 517 video: 37 text: 481)
+(publisher: msn popularity: 3698 video: 1270 text: 2429)
+(publisher: wallmart popularity: 5688 video: 1870 text: 3819)
+(publisher: bestbuy popularity: 301 video: 111 text: 191)
+(publisher: nyt popularity: 598 video: 197 text: 402)
+Day 10 : AdNetworkReport
+Day 10 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 10: Updated 54 Bid Bundle entries for Campaign id 2054276305
+rbid =  7.56772739032413E-4 || budget = 20.476
+Day 10: Updated 48 Bid Bundle entries for Campaign id 1154093630
+rbid =  8.642899529830648E-4 || budget = 18.934
+Day 10: Updated 48 Bid Bundle entries for Campaign id 1518678857
+Day 10: Sending BidBundle
+Day 10 ended. Starting next day
+Day 11: Updating campaign 2054276305 stats: 1914.6533571183454 tgtImps 0.0 nonTgtImps. Cost of imps is 0.10842354997863982
+Day 11: Updating campaign 1154093630 stats: 17161.762074167043 tgtImps 0.0 nonTgtImps. Cost of imps is 3.6299712790186938
+Day 11: Updating campaign 1184269072 stats: 7481.095470935954 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7884198011169632
+Day 11: Updating campaign 1518678857 stats: 10962.521924087465 tgtImps 0.0 nonTgtImps. Cost of imps is 0.14166632069765306
+Day 11: Daily notification for campaign 811306214
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 11:  WON at cost (Millis)7094. UCS Level set to 1.0 at price 0.19410481700024315 Quality Score is: 1.1261835744466744
+Day 11: Campaign opportunity - Campaign ID 1566339207: day 13 to 17 [OLD, MALE], reach: 10412 coefs: (v=2.9222351936297217, m=2.101992655681121)
+Day 11: Campaign total budget bid (millis): 7856
+Day 11: ucs level reported: 1.0
+Day 11 :BankStatus[1,261416]
+Publishers Report:
+(publisher: tripadvisor popularity: 301 video: 122 text: 180)
+(publisher: ehow popularity: 545 video: 48 text: 498)
+(publisher: msn popularity: 3788 video: 1276 text: 2513)
+(publisher: wallmart popularity: 5584 video: 1756 text: 3829)
+(publisher: bestbuy popularity: 294 video: 112 text: 183)
+(publisher: nyt popularity: 599 video: 191 text: 409)
+Day 11 : AdNetworkReport
+Day 11 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 11: Updated 54 Bid Bundle entries for Campaign id 2054276305
+rbid =  7.56772739032413E-4 || budget = 20.476
+Day 11: Updated 48 Bid Bundle entries for Campaign id 1154093630
+rbid =  8.642899529830648E-4 || budget = 18.934
+Day 11: Updated 48 Bid Bundle entries for Campaign id 1518678857
+rbid =  5.243550890679282E-4 || budget = 7.094
+Day 11: Updated 60 Bid Bundle entries for Campaign id 811306214
+Day 11: Sending BidBundle
+Day 11 ended. Starting next day
+Day 12: Updating campaign 2054276305 stats: 3610.2752769548833 tgtImps 0.0 nonTgtImps. Cost of imps is 0.23059502828729495
+Day 12: Updating campaign 1154093630 stats: 20261.252903083925 tgtImps 0.0 nonTgtImps. Cost of imps is 3.881451664405518
+Day 12: Updating campaign 1184269072 stats: 7481.095470935954 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7884198011169632
+Day 12: Updating campaign 1518678857 stats: 14907.641331704704 tgtImps 0.0 nonTgtImps. Cost of imps is 0.27212134347194006
+Day 12: Daily notification for campaign 1566339207
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=pc, adType=video]]!!!!!!!!!!!!!!!!
+Day 12:  WON at cost (Millis)9192. UCS Level set to 1.0 at price 0.17619997461321235 Quality Score is: 1.1261835744466744
+Day 12: Campaign opportunity - Campaign ID 462161724: day 14 to 18 [LOW_INCOME, MALE], reach: 14524 coefs: (v=2.8412514549203483, m=2.310009567229868)
+Day 12: Campaign total budget bid (millis): 1148
+Day 12: ucs level reported: 1.0
+Day 12 :BankStatus[0,677743]
+Publishers Report:
+(publisher: tripadvisor popularity: 294 video: 109 text: 186)
+(publisher: ehow popularity: 557 video: 42 text: 516)
+(publisher: msn popularity: 3731 video: 1221 text: 2511)
+(publisher: wallmart popularity: 5670 video: 1827 text: 3844)
+(publisher: bestbuy popularity: 305 video: 101 text: 205)
+(publisher: nyt popularity: 587 video: 182 text: 406)
+Day 12 : AdNetworkReport
+Day 12 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 12: Updated 54 Bid Bundle entries for Campaign id 2054276305
+rbid =  7.56772739032413E-4 || budget = 20.476
+Day 12: Updated 48 Bid Bundle entries for Campaign id 1154093630
+rbid =  8.826579604378722E-4 || budget = 9.192
+Day 12: Updated 60 Bid Bundle entries for Campaign id 1566339207
+rbid =  8.642899529830648E-4 || budget = 18.934
+Day 12: Updated 48 Bid Bundle entries for Campaign id 1518678857
+rbid =  5.243550890679282E-4 || budget = 7.094
+Day 12: Updated 60 Bid Bundle entries for Campaign id 811306214
+Day 12: Sending BidBundle
+Day 12 ended. Starting next day
+Day 13: Updating campaign 2054276305 stats: 5178.779458763078 tgtImps 0.0 nonTgtImps. Cost of imps is 0.34753134372233996
+Day 13: Updating campaign 1154093630 stats: 23382.951691413415 tgtImps 0.0 nonTgtImps. Cost of imps is 4.150075335157872
+Day 13: Updating campaign 1184269072 stats: 7481.095470935954 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7884198011169632
+Day 13: Updating campaign 1518678857 stats: 18460.658221728227 tgtImps 0.0 nonTgtImps. Cost of imps is 0.4459874236106952
+Day 13: Updating campaign 811306214 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 13: Daily notification for campaign 462161724
+Day 13:  allocated to DummyAdnetwork. UCS Level set to 1.0 at price 0.18435182335415973 Quality Score is: 1.1261835744466744
+Day 13: Campaign opportunity - Campaign ID 1213287724: day 15 to 17 [YOUNG, LOW_INCOME], reach: 9158 coefs: (v=2.350153587452076, m=1.5265677897118253)
+Day 13: Campaign total budget bid (millis): 7262
+Day 13: ucs level reported: 1.0
+Day 13 :BankStatus[-0,010715]
+Publishers Report:
+(publisher: tripadvisor popularity: 335 video: 141 text: 195)
+(publisher: ehow popularity: 549 video: 53 text: 497)
+(publisher: msn popularity: 3622 video: 1233 text: 2390)
+(publisher: wallmart popularity: 5680 video: 1794 text: 3887)
+(publisher: bestbuy popularity: 320 video: 131 text: 190)
+(publisher: nyt popularity: 602 video: 210 text: 393)
+Day 13 : AdNetworkReport
+Day 13 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 13: Updated 54 Bid Bundle entries for Campaign id 2054276305
+rbid =  7.56772739032413E-4 || budget = 20.476
+Day 13: Updated 48 Bid Bundle entries for Campaign id 1154093630
+rbid =  8.826579604378722E-4 || budget = 9.192
+Day 13: Updated 60 Bid Bundle entries for Campaign id 1566339207
+rbid =  8.642899529830648E-4 || budget = 18.934
+Day 13: Updated 48 Bid Bundle entries for Campaign id 1518678857
+rbid =  5.243550890679282E-4 || budget = 7.094
+Day 13: Updated 60 Bid Bundle entries for Campaign id 811306214
+Day 13: Sending BidBundle
+Day 13 ended. Starting next day
+Day 14: Updating campaign 2054276305 stats: 6683.830013344435 tgtImps 0.0 nonTgtImps. Cost of imps is 0.48786775741692934
+Day 14: Updating campaign 1154093630 stats: 26293.16100097077 tgtImps 0.0 nonTgtImps. Cost of imps is 4.424446491015304
+Day 14: Updating campaign 1184269072 stats: 7481.095470935954 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7884198011169632
+Day 14: Updating campaign 1566339207 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 14: Updating campaign 1518678857 stats: 21626.04802325863 tgtImps 0.0 nonTgtImps. Cost of imps is 0.6532438649722521
+Day 14: Updating campaign 811306214 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 14: Daily notification for campaign 1213287724
+Day 14:  allocated to DummyAdnetwork. UCS Level set to 1.0 at price 0.1671032925324777 Quality Score is: 1.1261835744466744
+Day 14: Campaign opportunity - Campaign ID 1837421890: day 16 to 25 [YOUNG, MALE], reach: 11765 coefs: (v=2.6078010650472914, m=1.8723591717535046)
+Day 14: Campaign total budget bid (millis): 3166
+Day 14: ucs level reported: 1.0
+Day 14 :BankStatus[-0,737245]
+Publishers Report:
+(publisher: tripadvisor popularity: 328 video: 129 text: 200)
+(publisher: ehow popularity: 499 video: 47 text: 453)
+(publisher: msn popularity: 3738 video: 1232 text: 2507)
+(publisher: bestbuy popularity: 318 video: 127 text: 192)
+(publisher: wallmart popularity: 5657 video: 1757 text: 3901)
+(publisher: nyt popularity: 607 video: 179 text: 429)
+Day 14 : AdNetworkReport
+Day 14 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 14: Updated 54 Bid Bundle entries for Campaign id 2054276305
+rbid =  7.56772739032413E-4 || budget = 20.476
+Day 14: Updated 48 Bid Bundle entries for Campaign id 1154093630
+rbid =  8.826579604378722E-4 || budget = 9.192
+Day 14: Updated 60 Bid Bundle entries for Campaign id 1566339207
+rbid =  8.642899529830648E-4 || budget = 18.934
+Day 14: Updated 48 Bid Bundle entries for Campaign id 1518678857
+rbid =  5.243550890679282E-4 || budget = 7.094
+Day 14: Updated 60 Bid Bundle entries for Campaign id 811306214
+Day 14: Sending BidBundle
+Day 14 ended. Starting next day
+Day 15: Updating campaign 2054276305 stats: 8235.01643432739 tgtImps 0.0 nonTgtImps. Cost of imps is 0.6506660578277568
+Day 15: Updating campaign 1154093630 stats: 29255.98312029354 tgtImps 0.0 nonTgtImps. Cost of imps is 4.717050686176848
+Day 15: Updating campaign 1184269072 stats: 7481.095470935954 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7884198011169632
+Day 15: Updating campaign 1566339207 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 15: Updating campaign 1518678857 stats: 24802.095578459448 tgtImps 0.0 nonTgtImps. Cost of imps is 0.9152274673560854
+Day 15: Updating campaign 811306214 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 15: Daily notification for campaign 1837421890
+Day 15:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.19833450858194546 Quality Score is: 1.1261835744466744
+Day 15: Campaign opportunity - Campaign ID 1808270108: day 17 to 21 [OLD, MALE], reach: 10412 coefs: (v=2.4906576384779746, m=1.6084631472267836)
+Day 15: Campaign total budget bid (millis): 6238
+Day 15: ucs level reported: 1.0
+Day 15 :BankStatus[-1,557543]
+Publishers Report:
+(publisher: tripadvisor popularity: 325 video: 118 text: 208)
+(publisher: ehow popularity: 501 video: 48 text: 454)
+(publisher: msn popularity: 3790 video: 1299 text: 2492)
+(publisher: wallmart popularity: 5572 video: 1783 text: 3790)
+(publisher: bestbuy popularity: 330 video: 111 text: 220)
+(publisher: nyt popularity: 613 video: 198 text: 416)
+Day 15 : AdNetworkReport
+Day 15 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 15: Updated 54 Bid Bundle entries for Campaign id 2054276305
+rbid =  8.826579604378722E-4 || budget = 9.192
+Day 15: Updated 60 Bid Bundle entries for Campaign id 1566339207
+rbid =  5.243550890679282E-4 || budget = 7.094
+Day 15: Updated 60 Bid Bundle entries for Campaign id 811306214
+Day 15: Sending BidBundle
+Day 15 ended. Starting next day
+Day 16: Updating campaign 2054276305 stats: 10374.504360741692 tgtImps 0.0 nonTgtImps. Cost of imps is 0.8959231798385197
+Day 16: Updating campaign 1154093630 stats: 31374.882853497154 tgtImps 0.0 nonTgtImps. Cost of imps is 4.961582490060556
+Day 16: Updating campaign 1184269072 stats: 7481.095470935954 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7884198011169632
+Day 16: Updating campaign 1566339207 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 16: Updating campaign 1518678857 stats: 26177.36178903353 tgtImps 0.0 nonTgtImps. Cost of imps is 1.0474962401735235
+Day 16: Updating campaign 811306214 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 16: Daily notification for campaign 1808270108
+Day 16:  allocated to DummyAdnetwork-6. UCS Level set to 1.0 at price 0.17687551076767177 Quality Score is: 1.1973274710199497
+Day 16: Campaign opportunity - Campaign ID 1977849252: day 18 to 22 [YOUNG, HIGH_INCOME], reach: 773 coefs: (v=2.6255344119373767, m=2.1434138835816547)
+Day 16: Campaign total budget bid (millis): 329
+Day 16: ucs level reported: 1.0
+Day 16 :BankStatus[0,260520]
+Publishers Report:
+(publisher: tripadvisor popularity: 320 video: 133 text: 188)
+(publisher: ehow popularity: 574 video: 43 text: 532)
+(publisher: msn popularity: 3699 video: 1246 text: 2454)
+(publisher: wallmart popularity: 5593 video: 1804 text: 3790)
+(publisher: bestbuy popularity: 330 video: 120 text: 211)
+(publisher: nyt popularity: 618 video: 187 text: 432)
+Day 16 : AdNetworkReport
+Day 16 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 16: Updated 54 Bid Bundle entries for Campaign id 2054276305
+rbid =  8.826579604378722E-4 || budget = 9.192
+Day 16: Updated 60 Bid Bundle entries for Campaign id 1566339207
+Day 16: Sending BidBundle
+Day 16 ended. Starting next day
+Day 17: Updating campaign 2054276305 stats: 11886.371607599185 tgtImps 0.0 nonTgtImps. Cost of imps is 1.0895655258357775
+Day 17: Updating campaign 1154093630 stats: 31374.882853497154 tgtImps 0.0 nonTgtImps. Cost of imps is 4.961582490060556
+Day 17: Updating campaign 1566339207 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 17: Updating campaign 1518678857 stats: 26177.36178903353 tgtImps 0.0 nonTgtImps. Cost of imps is 1.0474962401735235
+Day 17: Updating campaign 811306214 stats: 5391.284884016782 tgtImps 0.0 nonTgtImps. Cost of imps is 0.5744348393199121
+Day 17: Daily notification for campaign 1977849252
+Day 17:  allocated to DummyAdnetwork-3. UCS Level set to 1.0 at price 0.1750995788474493 Quality Score is: 0.563516488910312
+Day 17: Campaign opportunity - Campaign ID 2117400471: day 19 to 23 [LOW_INCOME, MALE], reach: 9077 coefs: (v=2.297774262540896, m=1.7431202075752894)
+Day 17: Campaign total budget bid (millis): 3512
+Day 17: ucs level reported: 1.0
+Day 17 :BankStatus[0,462972]
+Publishers Report:
+(publisher: tripadvisor popularity: 287 video: 115 text: 173)
+(publisher: ehow popularity: 537 video: 38 text: 500)
+(publisher: msn popularity: 3672 video: 1271 text: 2402)
+(publisher: wallmart popularity: 5671 video: 1849 text: 3823)
+(publisher: bestbuy popularity: 315 video: 111 text: 205)
+(publisher: nyt popularity: 603 video: 191 text: 413)
+Day 17 : AdNetworkReport
+Day 17 : Simulation Status Received
+rbid =  6.850272720288853E-4 || budget = 8.917
+Day 17: Updated 54 Bid Bundle entries for Campaign id 2054276305
+Day 17: Sending BidBundle
+Day 17 ended. Starting next day
+Day 18: Updating campaign 2054276305 stats: 15177.619917582317 tgtImps 0.0 nonTgtImps. Cost of imps is 1.5528694130212812
+Day 18: Updating campaign 1154093630 stats: 31374.882853497154 tgtImps 0.0 nonTgtImps. Cost of imps is 4.961582490060556
+Day 18: Updating campaign 1566339207 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 18: Updating campaign 1518678857 stats: 26177.36178903353 tgtImps 0.0 nonTgtImps. Cost of imps is 1.0474962401735235
+Day 18: Daily notification for campaign 2117400471
+Day 18:  allocated to DummyAdnetwork-5. UCS Level set to 1.0 at price 0.17998736658594064 Quality Score is: 0.35848641628655686
+Day 18: Campaign opportunity - Campaign ID 866878325: day 20 to 22 [LOW_INCOME, MALE], reach: 5446 coefs: (v=2.305475070543532, m=1.871066651653127)
+Day 18: Campaign total budget bid (millis): 3269
+Day 18: ucs level reported: 1.0
+Day 18 :BankStatus[22,407397]
+Publishers Report:
+(publisher: tripadvisor popularity: 331 video: 163 text: 169)
+(publisher: ehow popularity: 506 video: 46 text: 461)
+(publisher: msn popularity: 3766 video: 1291 text: 2476)
+(publisher: wallmart popularity: 5517 video: 1833 text: 3685)
+(publisher: bestbuy popularity: 287 video: 101 text: 187)
+(publisher: nyt popularity: 653 video: 209 text: 445)
+Day 18 : AdNetworkReport
+Day 18 : Simulation Status Received
+Day 18: Sending BidBundle
+Day 18 ended. Starting next day
+Day 19: Updating campaign 2054276305 stats: 16956.805666297932 tgtImps 0.0 nonTgtImps. Cost of imps is 1.8485057963887743
+Day 19: Updating campaign 1518678857 stats: 26177.36178903353 tgtImps 0.0 nonTgtImps. Cost of imps is 1.0474962401735235
+Day 19: Daily notification for campaign 866878325
+Day 19:  allocated to DummyAdnetwork-3. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 0.8248928141503905
+Day 19: Campaign opportunity - Campaign ID 1475288776: day 21 to 23 [LOW_INCOME], reach: 12018 coefs: (v=2.036805555443549, m=2.0118569058717872)
+Day 19: Campaign total budget bid (millis): 4989
+Day 19: ucs level reported: 0.47829690000000014
+Day 19 :BankStatus[43,449519]
+Publishers Report:
+(publisher: tripadvisor popularity: 338 video: 146 text: 193)
+(publisher: ehow popularity: 491 video: 39 text: 453)
+(publisher: msn popularity: 3763 video: 1247 text: 2517)
+(publisher: wallmart popularity: 5629 video: 1816 text: 3814)
+(publisher: bestbuy popularity: 304 video: 105 text: 200)
+(publisher: nyt popularity: 585 video: 170 text: 416)
+Day 19 : AdNetworkReport
+Day 19 : Simulation Status Received
+Day 19: Sending BidBundle
+Day 19 ended. Starting next day
+Day 20: Updating campaign 2054276305 stats: 16956.805666297932 tgtImps 0.0 nonTgtImps. Cost of imps is 1.8485057963887743
+Day 20: Daily notification for campaign 1475288776
+Day 20:  allocated to DummyAdnetwork-2. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.0371623803227612
+Day 20: Campaign opportunity - Campaign ID 53854490: day 22 to 31 [MALE], reach: 9912 coefs: (v=2.5183181808761983, m=1.614699271635423)
+Day 20: Campaign total budget bid (millis): 3159
+Day 20: ucs level reported: 0.47829690000000014
+Day 20 :BankStatus[53,663657]
+Publishers Report:
+(publisher: tripadvisor popularity: 324 video: 149 text: 176)
+(publisher: ehow popularity: 505 video: 32 text: 474)
+(publisher: msn popularity: 3874 video: 1295 text: 2580)
+(publisher: wallmart popularity: 5506 video: 1786 text: 3721)
+(publisher: bestbuy popularity: 320 video: 114 text: 207)
+(publisher: nyt popularity: 607 video: 188 text: 420)
+Day 20 : Simulation Status Received
+Day 20: Sending BidBundle
+Day 20 ended. Starting next day
+Day 21: Daily notification for campaign 53854490
+Day 21:  allocated to DummyAdnetwork-3. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.0371623803227612
+Day 21: Campaign opportunity - Campaign ID 864196145: day 23 to 25 [HIGH_INCOME, OLD], reach: 2916 coefs: (v=2.786390680549408, m=2.2803734920253387)
+Day 21: Campaign total budget bid (millis): 1638
+Day 21: ucs level reported: 0.47829690000000014
+Day 21 :BankStatus[53,663657]
+Publishers Report:
+(publisher: tripadvisor popularity: 298 video: 126 text: 173)
+(publisher: ehow popularity: 532 video: 44 text: 489)
+(publisher: msn popularity: 3797 video: 1271 text: 2527)
+(publisher: wallmart popularity: 5614 video: 1835 text: 3780)
+(publisher: bestbuy popularity: 338 video: 129 text: 210)
+(publisher: nyt popularity: 572 video: 165 text: 408)
+Day 21 : Simulation Status Received
+Day 21: Sending BidBundle
+Day 21 ended. Starting next day
+Day 22: Daily notification for campaign 864196145
+Day 22:  allocated to DummyAdnetwork-3. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.0371623803227612
+Day 22: Campaign opportunity - Campaign ID 447278495: day 24 to 28 [LOW_INCOME, MALE], reach: 3631 coefs: (v=2.215592305171449, m=2.4171741491280487)
+Day 22: Campaign total budget bid (millis): 371
+Day 22: ucs level reported: 0.47829690000000014
+Day 22 :BankStatus[53,663657]
+Publishers Report:
+(publisher: tripadvisor popularity: 327 video: 152 text: 176)
+(publisher: ehow popularity: 533 video: 46 text: 488)
+(publisher: msn popularity: 3649 video: 1235 text: 2415)
+(publisher: wallmart popularity: 5652 video: 1823 text: 3830)
+(publisher: bestbuy popularity: 310 video: 109 text: 202)
+(publisher: nyt popularity: 591 video: 181 text: 411)
+Day 22 : Simulation Status Received
+Day 22: Sending BidBundle
+Day 22 ended. Starting next day
+Day 23: Daily notification for campaign 447278495
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 23:  WON at cost (Millis)2095. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.0371623803227612
+Day 23: Campaign opportunity - Campaign ID 706758757: day 25 to 27 [YOUNG, HIGH_INCOME, MALE], reach: 310 coefs: (v=2.1997986884158807, m=2.116427701320103)
+Day 23: Campaign total budget bid (millis): 178
+Day 23: ucs level reported: 0.47829690000000014
+Day 23 :BankStatus[53,663657]
+Publishers Report:
+(publisher: tripadvisor popularity: 305 video: 136 text: 170)
+(publisher: ehow popularity: 496 video: 40 text: 457)
+(publisher: msn popularity: 3828 video: 1282 text: 2547)
+(publisher: wallmart popularity: 5518 video: 1798 text: 3721)
+(publisher: bestbuy popularity: 297 video: 109 text: 189)
+(publisher: nyt popularity: 621 video: 202 text: 420)
+Day 23 : Simulation Status Received
+rbid =  5.766584090283513E-4 || budget = 2.095
+Day 23: Updated 54 Bid Bundle entries for Campaign id 447278495
+Day 23: Sending BidBundle
+Day 23 ended. Starting next day
+Day 24: Daily notification for campaign 706758757
+Day 24:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.1865717665423488 Quality Score is: 1.0371623803227612
+Day 24: Campaign opportunity - Campaign ID 550315990: day 26 to 30 [LOW_INCOME, MALE], reach: 14524 coefs: (v=2.9244678036726617, m=1.9633735538781623)
+Day 24: Campaign total budget bid (millis): 3478
+Day 24: ucs level reported: 1.0
+Day 24 :BankStatus[53,477085]
+Publishers Report:
+(publisher: tripadvisor popularity: 318 video: 126 text: 193)
+(publisher: ehow popularity: 486 video: 49 text: 438)
+(publisher: msn popularity: 3775 video: 1308 text: 2468)
+(publisher: wallmart popularity: 5589 video: 1821 text: 3769)
+(publisher: bestbuy popularity: 321 video: 105 text: 217)
+(publisher: nyt popularity: 576 video: 185 text: 392)
+Day 24 : Simulation Status Received
+rbid =  5.766584090283513E-4 || budget = 2.095
+Day 24: Updated 54 Bid Bundle entries for Campaign id 447278495
+Day 24: Sending BidBundle
+Day 24 ended. Starting next day
+Day 25: Updating campaign 447278495 stats: 3812.702731514301 tgtImps 0.0 nonTgtImps. Cost of imps is 0.03887399027544561
+Day 25: Daily notification for campaign 550315990
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 25:  WON at cost (Millis)7804. UCS Level set to 1.0 at price 0.18122676102113272 Quality Score is: 1.0371623803227612
+Day 25: Campaign opportunity - Campaign ID 357885521: day 27 to 36 [YOUNG, LOW_INCOME], reach: 7632 coefs: (v=2.145355680778387, m=2.0690433617321267)
+Day 25: Campaign total budget bid (millis): 7036
+Day 25: ucs level reported: 1.0
+Day 25 :BankStatus[53,295859]
+Publishers Report:
+(publisher: tripadvisor popularity: 330 video: 149 text: 182)
+(publisher: ehow popularity: 526 video: 41 text: 486)
+(publisher: msn popularity: 3716 video: 1260 text: 2457)
+(publisher: wallmart popularity: 5613 video: 1794 text: 3820)
+(publisher: bestbuy popularity: 314 video: 117 text: 198)
+(publisher: nyt popularity: 639 video: 191 text: 449)
+Day 25 : AdNetworkReport
+Day 25 : Simulation Status Received
+rbid =  5.372435632658682E-4 || budget = 7.804
+Day 25: Updated 48 Bid Bundle entries for Campaign id 550315990
+Day 25: Sending BidBundle
+Day 25 ended. Starting next day
+Day 26: Updating campaign 447278495 stats: 7629.9775447054235 tgtImps 0.0 nonTgtImps. Cost of imps is 0.11550115779690805
+Day 26: Daily notification for campaign 357885521
+Day 26:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.19480289483096186 Quality Score is: 1.0371623803227612
+Day 26: Campaign opportunity - Campaign ID 1531304595: day 28 to 30 [YOUNG, LOW_INCOME, MALE], reach: 2754 coefs: (v=2.4385096126272914, m=1.6489536624410346)
+Day 26: Campaign total budget bid (millis): 914
+Day 26: ucs level reported: 1.0
+Day 26 :BankStatus[53,062182]
+Publishers Report:
+(publisher: tripadvisor popularity: 332 video: 126 text: 207)
+(publisher: ehow popularity: 497 video: 38 text: 460)
+(publisher: msn popularity: 3780 video: 1253 text: 2528)
+(publisher: wallmart popularity: 5653 video: 1777 text: 3877)
+(publisher: bestbuy popularity: 300 video: 110 text: 191)
+(publisher: nyt popularity: 616 video: 192 text: 425)
+Day 26 : AdNetworkReport
+Day 26 : Simulation Status Received
+rbid =  5.372435632658682E-4 || budget = 7.804
+Day 26: Updated 48 Bid Bundle entries for Campaign id 550315990
+Day 26: Sending BidBundle
+Day 26 ended. Starting next day
+Day 27: Updating campaign 447278495 stats: 7629.9775447054235 tgtImps 0.0 nonTgtImps. Cost of imps is 0.11550115779690805
+Day 27: Updating campaign 550315990 stats: 4460.157650081779 tgtImps 0.0 nonTgtImps. Cost of imps is 0.1576671794324739
+Day 27: Daily notification for campaign 1531304595
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, LOW_INCOME, MALE], device=pc, adType=text]]!!!!!!!!!!!!!!!!
+Day 27:  WON at cost (Millis)972. UCS Level set to 1.0 at price 0.16268389254417762 Quality Score is: 1.0371623803227612
+Day 27: Campaign opportunity - Campaign ID 461631416: day 29 to 33 [YOUNG, LOW_INCOME], reach: 9540 coefs: (v=2.338573707395808, m=1.8020748006671328)
+Day 27: Campaign total budget bid (millis): 6867
+Day 27: ucs level reported: 1.0
+Day 27 :BankStatus[52,822770]
+Publishers Report:
+(publisher: tripadvisor popularity: 333 video: 135 text: 199)
+(publisher: ehow popularity: 525 video: 56 text: 470)
+(publisher: msn popularity: 3702 video: 1280 text: 2423)
+(publisher: wallmart popularity: 5581 video: 1830 text: 3752)
+(publisher: bestbuy popularity: 328 video: 118 text: 211)
+(publisher: nyt popularity: 609 video: 191 text: 419)
+Day 27 : AdNetworkReport
+Day 27 : Simulation Status Received
+rbid =  3.5268505079825833E-4 || budget = 0.972
+Day 27: Updated 48 Bid Bundle entries for Campaign id 1531304595
+rbid =  5.372435632658682E-4 || budget = 7.804
+Day 27: Updated 48 Bid Bundle entries for Campaign id 550315990
+Day 27: Sending BidBundle
+Day 27 ended. Starting next day
+Day 28: Updating campaign 447278495 stats: 7629.9775447054235 tgtImps 0.0 nonTgtImps. Cost of imps is 0.11550115779690805
+Day 28: Updating campaign 550315990 stats: 8592.45355264228 tgtImps 0.0 nonTgtImps. Cost of imps is 0.41081938672975793
+Day 28: Daily notification for campaign 461631416
+Day 28:  allocated to DummyAdnetwork-5. UCS Level set to 1.0 at price 0.1821011917640497 Quality Score is: 1.0371623803227612
+Day 28: Campaign opportunity - Campaign ID 1537679440: day 30 to 32 [YOUNG, FEMALE, LOW_INCOME], reach: 1188 coefs: (v=2.335833988522552, m=1.9000842898704322)
+Day 28: Campaign total budget bid (millis): 971
+Day 28: ucs level reported: 1.0
+Day 28 :BankStatus[52,483002]
+Publishers Report:
+(publisher: tripadvisor popularity: 304 video: 122 text: 183)
+(publisher: ehow popularity: 506 video: 36 text: 471)
+(publisher: msn popularity: 3793 video: 1299 text: 2495)
+(publisher: wallmart popularity: 5562 video: 1801 text: 3762)
+(publisher: bestbuy popularity: 321 video: 115 text: 207)
+(publisher: nyt popularity: 588 video: 163 text: 426)
+Day 28 : AdNetworkReport
+Day 28 : Simulation Status Received
+rbid =  3.5268505079825833E-4 || budget = 0.972
+Day 28: Updated 48 Bid Bundle entries for Campaign id 1531304595
+rbid =  5.372435632658682E-4 || budget = 7.804
+Day 28: Updated 48 Bid Bundle entries for Campaign id 550315990
+Day 28: Sending BidBundle
+Day 28 ended. Starting next day
+Day 29: Updating campaign 447278495 stats: 7629.9775447054235 tgtImps 0.0 nonTgtImps. Cost of imps is 0.11550115779690805
+Day 29: Updating campaign 1531304595 stats: 546.7863588169474 tgtImps 0.0 nonTgtImps. Cost of imps is 0.054091202234833914
+Day 29: Updating campaign 550315990 stats: 11680.407115024338 tgtImps 0.0 nonTgtImps. Cost of imps is 0.6273595990772134
+Day 29: Daily notification for campaign 1537679440
+Day 29:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.19338148803522429 Quality Score is: 1.192689933929174
+Day 29: Campaign opportunity - Campaign ID 2031891480: day 31 to 35 [YOUNG, MALE], reach: 5882 coefs: (v=2.6097269104654144, m=2.1630421135465028)
+Day 29: Campaign total budget bid (millis): 5781
+Day 29: ucs level reported: 1.0
+Day 29 :BankStatus[54,752374]
+Publishers Report:
+(publisher: tripadvisor popularity: 308 video: 121 text: 188)
+(publisher: ehow popularity: 474 video: 32 text: 443)
+(publisher: msn popularity: 3719 video: 1256 text: 2464)
+(publisher: wallmart popularity: 5658 video: 1850 text: 3809)
+(publisher: bestbuy popularity: 314 video: 105 text: 210)
+(publisher: nyt popularity: 645 video: 193 text: 453)
+Day 29 : AdNetworkReport
+Day 29 : Simulation Status Received
+rbid =  3.5268505079825833E-4 || budget = 0.972
+Day 29: Updated 48 Bid Bundle entries for Campaign id 1531304595
+rbid =  5.372435632658682E-4 || budget = 7.804
+Day 29: Updated 48 Bid Bundle entries for Campaign id 550315990
+Day 29: Sending BidBundle
+Day 29 ended. Starting next day
+Day 30: Updating campaign 1531304595 stats: 1112.2461649654215 tgtImps 0.0 nonTgtImps. Cost of imps is 0.11288773679471817
+Day 30: Updating campaign 550315990 stats: 14556.56259844024 tgtImps 0.0 nonTgtImps. Cost of imps is 0.901075707537114
+Day 30: Daily notification for campaign 2031891480
+Day 30:  allocated to DummyAdnetwork-5. UCS Level set to 1.0 at price 0.18721505777288877 Quality Score is: 1.192689933929174
+Day 30: Campaign opportunity - Campaign ID 194749202: day 32 to 36 [YOUNG, FEMALE, LOW_INCOME], reach: 4950 coefs: (v=2.3706995472023413, m=1.9136071891819848)
+Day 30: Campaign total budget bid (millis): 709
+Day 30: ucs level reported: 1.0
+Day 30 :BankStatus[54,294527]
+Publishers Report:
+(publisher: tripadvisor popularity: 307 video: 124 text: 184)
+(publisher: ehow popularity: 505 video: 39 text: 467)
+(publisher: msn popularity: 3737 video: 1243 text: 2495)
+(publisher: wallmart popularity: 5595 video: 1771 text: 3825)
+(publisher: bestbuy popularity: 321 video: 112 text: 210)
+(publisher: nyt popularity: 624 video: 188 text: 437)
+Day 30 : AdNetworkReport
+Day 30 : Simulation Status Received
+Day 30: Sending BidBundle
+Day 30 ended. Starting next day
+Day 31: Updating campaign 1531304595 stats: 1665.4788243146904 tgtImps 0.0 nonTgtImps. Cost of imps is 0.18759052063480164
+Day 31: Updating campaign 550315990 stats: 17516.83189867126 tgtImps 0.0 nonTgtImps. Cost of imps is 1.206530920780446
+Day 31: Daily notification for campaign 194749202
+Day 31:  allocated to DummyAdnetwork-2. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 0.672040472536662
+Day 31: Campaign opportunity - Campaign ID 1614364243: day 33 to 37 [YOUNG, LOW_INCOME, MALE], reach: 4590 coefs: (v=2.6189435195431, m=1.8503252089365239)
+Day 31: Campaign total budget bid (millis): 2861
+Day 31: ucs level reported: 0.47829690000000014
+Day 31 :BankStatus[63,201907]
+Publishers Report:
+(publisher: tripadvisor popularity: 307 video: 129 text: 179)
+(publisher: ehow popularity: 495 video: 32 text: 464)
+(publisher: msn popularity: 3664 video: 1216 text: 2449)
+(publisher: wallmart popularity: 5676 video: 1810 text: 3867)
+(publisher: bestbuy popularity: 343 video: 129 text: 215)
+(publisher: nyt popularity: 607 video: 210 text: 398)
+Day 31 : AdNetworkReport
+Day 31 : Simulation Status Received
+Day 31: Sending BidBundle
+Day 31 ended. Starting next day
+Day 32: Daily notification for campaign 1614364243
+Day 32:  allocated to DummyAdnetwork-2. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 0.672040472536662
+Day 32: Campaign opportunity - Campaign ID 250984358: day 34 to 38 [FEMALE, HIGH_INCOME, OLD], reach: 1628 coefs: (v=2.1141097759376053, m=2.2321524130950063)
+Day 32: Campaign total budget bid (millis): 466
+Day 32: ucs level reported: 0.47829690000000014
+Day 32 :BankStatus[62,821749]
+Publishers Report:
+(publisher: tripadvisor popularity: 292 video: 122 text: 171)
+(publisher: ehow popularity: 504 video: 45 text: 460)
+(publisher: msn popularity: 3683 video: 1282 text: 2402)
+(publisher: wallmart popularity: 5669 video: 1829 text: 3841)
+(publisher: bestbuy popularity: 342 video: 131 text: 212)
+(publisher: nyt popularity: 616 video: 188 text: 429)
+Day 32 : Simulation Status Received
+Day 32: Sending BidBundle
+Day 32 ended. Starting next day
+Day 33: Daily notification for campaign 250984358
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, HIGH_INCOME, OLD], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 33:  WON at cost (Millis)466. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 0.672040472536662
+Day 33: Campaign opportunity - Campaign ID 1891227509: day 35 to 39 [OLD, MALE], reach: 2603 coefs: (v=2.96935945605138, m=2.383876122862492)
+Day 33: Campaign total budget bid (millis): 1120
+Day 33: ucs level reported: 0.47829690000000014
+Day 33 :BankStatus[62,821749]
+Publishers Report:
+(publisher: tripadvisor popularity: 294 video: 126 text: 169)
+(publisher: ehow popularity: 518 video: 46 text: 473)
+(publisher: msn popularity: 3755 video: 1223 text: 2533)
+(publisher: wallmart popularity: 5609 video: 1816 text: 3794)
+(publisher: bestbuy popularity: 318 video: 109 text: 210)
+(publisher: nyt popularity: 587 video: 193 text: 395)
+Day 33 : Simulation Status Received
+rbid =  2.8588957055214725E-4 || budget = 0.466
+Day 33: Updated 54 Bid Bundle entries for Campaign id 250984358
+Day 33: Sending BidBundle
+Day 33 ended. Starting next day
+Day 34: Daily notification for campaign 1891227509
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD, MALE], device=pc, adType=video]]!!!!!!!!!!!!!!!!
+Day 34:  WON at cost (Millis)1120. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 0.672040472536662
+Day 34: Campaign opportunity - Campaign ID 1875811453: day 36 to 38 [HIGH_INCOME, MALE], reach: 795 coefs: (v=2.132476368453442, m=1.969558125656374)
+Day 34: Campaign total budget bid (millis): 513
+Day 34: ucs level reported: 0.47829690000000014
+Day 34 :BankStatus[62,821749]
+Publishers Report:
+(publisher: tripadvisor popularity: 298 video: 125 text: 174)
+(publisher: ehow popularity: 504 video: 47 text: 458)
+(publisher: msn popularity: 3770 video: 1286 text: 2485)
+(publisher: wallmart popularity: 5625 video: 1780 text: 3846)
+(publisher: bestbuy popularity: 335 video: 119 text: 217)
+(publisher: nyt popularity: 568 video: 190 text: 379)
+Day 34 : Simulation Status Received
+rbid =  2.8588957055214725E-4 || budget = 0.466
+Day 34: Updated 54 Bid Bundle entries for Campaign id 250984358
+rbid =  4.299424184261037E-4 || budget = 1.12
+Day 34: Updated 60 Bid Bundle entries for Campaign id 1891227509
+Day 34: Sending BidBundle
+Day 34 ended. Starting next day
+Day 35: Updating campaign 250984358 stats: 742.7906247968924 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0035231121110028164
+Day 35: Daily notification for campaign 1875811453
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=bestbuy, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[HIGH_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[HIGH_INCOME, MALE], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 35:  WON at cost (Millis)534. UCS Level set to 0.6561000000000001 at price 0.09381732631575984 Quality Score is: 0.672040472536662
+Day 35: Campaign opportunity - Campaign ID 1530426988: day 37 to 39 [YOUNG, HIGH_INCOME, MALE], reach: 310 coefs: (v=2.0948939106787763, m=2.41177741483476)
+Day 35: Campaign total budget bid (millis): 26
+Day 35: ucs level reported: 0.6561000000000001
+Day 35 :BankStatus[62,727931]
+Publishers Report:
+(publisher: tripadvisor popularity: 335 video: 143 text: 193)
+(publisher: ehow popularity: 546 video: 46 text: 501)
+(publisher: msn popularity: 3743 video: 1258 text: 2486)
+(publisher: wallmart popularity: 5604 video: 1811 text: 3794)
+(publisher: bestbuy popularity: 313 video: 129 text: 185)
+(publisher: nyt popularity: 607 video: 199 text: 409)
+Day 35 : AdNetworkReport
+Day 35 : Simulation Status Received
+rbid =  4.299424184261037E-4 || budget = 1.12
+Day 35: Updated 60 Bid Bundle entries for Campaign id 1891227509
+rbid =  2.8588957055214725E-4 || budget = 0.466
+Day 35: Updated 54 Bid Bundle entries for Campaign id 250984358
+rbid =  6.70012547051443E-4 || budget = 0.534
+Day 35: Updated 48 Bid Bundle entries for Campaign id 1875811453
+Day 35: Sending BidBundle
+Day 35 ended. Starting next day
+Day 36: Updating campaign 250984358 stats: 1362.6197175370264 tgtImps 0.0 nonTgtImps. Cost of imps is 0.010422966678338275
+Day 36: Updating campaign 1891227509 stats: 2733.526065538069 tgtImps 0.0 nonTgtImps. Cost of imps is 0.027174826131602804
+Day 36: Daily notification for campaign 1530426988
+Day 36:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.19897353023026548 Quality Score is: 0.672040472536662
+Day 36: Campaign opportunity - Campaign ID 416698567: day 38 to 42 [OLD, MALE], reach: 2603 coefs: (v=2.2691067599741186, m=2.282079229191507)
+Day 36: Campaign total budget bid (millis): 1237
+Day 36: ucs level reported: 1.0
+Day 36 :BankStatus[62,525435]
+Publishers Report:
+(publisher: tripadvisor popularity: 285 video: 122 text: 164)
+(publisher: ehow popularity: 454 video: 41 text: 414)
+(publisher: msn popularity: 3723 video: 1254 text: 2470)
+(publisher: wallmart popularity: 5608 video: 1891 text: 3718)
+(publisher: bestbuy popularity: 351 video: 142 text: 210)
+(publisher: nyt popularity: 596 video: 179 text: 418)
+Day 36 : AdNetworkReport
+Day 36 : Simulation Status Received
+rbid =  2.8588957055214725E-4 || budget = 0.466
+Day 36: Updated 54 Bid Bundle entries for Campaign id 250984358
+rbid =  6.70012547051443E-4 || budget = 0.534
+Day 36: Updated 48 Bid Bundle entries for Campaign id 1875811453
+Day 36: Sending BidBundle
+Day 36 ended. Starting next day
+Day 37: Updating campaign 250984358 stats: 1849.4037652963618 tgtImps 0.0 nonTgtImps. Cost of imps is 0.02047894808599785
+Day 37: Updating campaign 1875811453 stats: 837.1030674820929 tgtImps 0.0 nonTgtImps. Cost of imps is 0.00678676065814565
+Day 37: Updating campaign 1891227509 stats: 5473.311994553461 tgtImps 0.0 nonTgtImps. Cost of imps is 0.07994151227955429
+Day 37: Daily notification for campaign 416698567
+Day 37:  allocated to DummyAdnetwork-2. UCS Level set to 0.6561000000000001 at price 0.08717928202183715 Quality Score is: 0.672040472536662
+Day 37: Campaign opportunity - Campaign ID 1111954077: day 39 to 41 [MALE], reach: 11894 coefs: (v=2.564515060069118, m=2.4318068055381303)
+Day 37: Campaign total budget bid (millis): 8229
+Day 37: ucs level reported: 0.6561000000000001
+Day 37 :BankStatus[62,404125]
+Publishers Report:
+(publisher: tripadvisor popularity: 358 video: 150 text: 209)
+(publisher: ehow popularity: 547 video: 49 text: 499)
+(publisher: msn popularity: 3704 video: 1219 text: 2486)
+(publisher: wallmart popularity: 5549 video: 1798 text: 3752)
+(publisher: bestbuy popularity: 337 video: 105 text: 233)
+(publisher: nyt popularity: 567 video: 193 text: 375)
+Day 37 : AdNetworkReport
+Day 37 : Simulation Status Received
+Day 37: Sending BidBundle
+Day 37 ended. Starting next day
+Day 38: Updating campaign 250984358 stats: 2197.2135522727544 tgtImps 0.0 nonTgtImps. Cost of imps is 0.03408495448309982
+Day 38: Updating campaign 1875811453 stats: 1672.3626244306447 tgtImps 0.0 nonTgtImps. Cost of imps is 0.40813236787043433
+Day 38: Updating campaign 1891227509 stats: 5473.311994553461 tgtImps 0.0 nonTgtImps. Cost of imps is 0.07994151227955429
+Day 38: Daily notification for campaign 1111954077
+Day 38:  allocated to . UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 0.672040472536662
+Day 38: Campaign opportunity - Campaign ID 1185151292: day 40 to 49 [LOW_INCOME, OLD], reach: 8392 coefs: (v=2.368933913583862, m=1.798351509520789)
+Day 38: Campaign total budget bid (millis): 3722
+Day 38: ucs level reported: 0.47829690000000014
+Day 38 :BankStatus[62,334324]
+Publishers Report:
+(publisher: tripadvisor popularity: 296 video: 123 text: 174)
+(publisher: ehow popularity: 518 video: 48 text: 471)
+(publisher: msn popularity: 3768 video: 1261 text: 2508)
+(publisher: wallmart popularity: 5674 video: 1879 text: 3796)
+(publisher: bestbuy popularity: 318 video: 109 text: 210)
+(publisher: nyt popularity: 592 video: 180 text: 413)
+Day 38 : AdNetworkReport
+Day 38 : Simulation Status Received
+Day 38: Sending BidBundle
+Day 38 ended. Starting next day
+Day 39: Updating campaign 250984358 stats: 2197.2135522727544 tgtImps 0.0 nonTgtImps. Cost of imps is 0.03408495448309982
+Day 39: Updating campaign 1875811453 stats: 1672.3626244306447 tgtImps 0.0 nonTgtImps. Cost of imps is 0.40813236787043433
+Day 39: Updating campaign 1891227509 stats: 5473.311994553461 tgtImps 0.0 nonTgtImps. Cost of imps is 0.07994151227955429
+Day 39: Daily notification for campaign 1185151292
+Day 39:  allocated to DummyAdnetwork-5. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.1718086970963295
+Day 39: Campaign opportunity - Campaign ID 1580759511: day 41 to 50 [FEMALE], reach: 10088 coefs: (v=2.5855998622538885, m=2.0676125789541313)
+Day 39: Campaign total budget bid (millis): 8859
+Day 39: ucs level reported: 0.47829690000000014
+Day 39 :BankStatus[63,167661]
+Publishers Report:
+(publisher: tripadvisor popularity: 322 video: 140 text: 183)
+(publisher: ehow popularity: 494 video: 47 text: 448)
+(publisher: msn popularity: 3773 video: 1249 text: 2525)
+(publisher: wallmart popularity: 5651 video: 1842 text: 3810)
+(publisher: bestbuy popularity: 295 video: 99 text: 197)
+(publisher: nyt popularity: 645 video: 208 text: 438)
+Day 39 : Simulation Status Received
+Day 39: Sending BidBundle
+Day 39 ended. Starting next day
+Day 40: Updating campaign 1891227509 stats: 5473.311994553461 tgtImps 0.0 nonTgtImps. Cost of imps is 0.07994151227955429
+Day 40: Daily notification for campaign 1580759511
+Day 40:  allocated to DummyAdnetwork-5. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2466002727758774
+Day 40: Campaign opportunity - Campaign ID 889188710: day 42 to 44 [YOUNG, FEMALE, HIGH_INCOME], reach: 614 coefs: (v=2.809568644618915, m=2.1182835749037707)
+Day 40: Campaign total budget bid (millis): 306
+Day 40: ucs level reported: 0.47829690000000014
+Day 40 :BankStatus[64,619698]
+Publishers Report:
+(publisher: tripadvisor popularity: 286 video: 120 text: 167)
+(publisher: ehow popularity: 490 video: 50 text: 441)
+(publisher: msn popularity: 3701 video: 1256 text: 2446)
+(publisher: wallmart popularity: 5683 video: 1807 text: 3877)
+(publisher: bestbuy popularity: 320 video: 105 text: 216)
+(publisher: nyt popularity: 597 video: 189 text: 409)
+Day 40 : Simulation Status Received
+Day 40: Sending BidBundle
+Day 40 ended. Starting next day
+Day 41: Daily notification for campaign 889188710
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 41:  WON at cost (Millis)645. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2466002727758774
+Day 41: Campaign opportunity - Campaign ID 1524673045: day 43 to 52 [OLD], reach: 27055 coefs: (v=2.2756626283645893, m=1.5164789278216895)
+Day 41: Campaign total budget bid (millis): 17457
+Day 41: ucs level reported: 0.47829690000000014
+Day 41 :BankStatus[64,619698]
+Publishers Report:
+(publisher: tripadvisor popularity: 292 video: 127 text: 166)
+(publisher: ehow popularity: 527 video: 44 text: 484)
+(publisher: msn popularity: 3771 video: 1281 text: 2491)
+(publisher: wallmart popularity: 5628 video: 1804 text: 3825)
+(publisher: bestbuy popularity: 331 video: 115 text: 217)
+(publisher: nyt popularity: 571 video: 182 text: 390)
+Day 41 : Simulation Status Received
+rbid =  0.001047077922077922 || budget = 0.645
+Day 41: Updated 54 Bid Bundle entries for Campaign id 889188710
+Day 41: Sending BidBundle
+Day 41 ended. Starting next day
+Day 42: Daily notification for campaign 1524673045
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 42:  WON at cost (Millis)17457. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2466002727758774
+Day 42: Campaign opportunity - Campaign ID 591786861: day 44 to 46 [YOUNG], reach: 2753 coefs: (v=2.0778734045574314, m=2.344735586680625)
+Day 42: Campaign total budget bid (millis): 2245
+Day 42: ucs level reported: 0.47829690000000014
+Day 42 :BankStatus[64,619698]
+Publishers Report:
+(publisher: tripadvisor popularity: 324 video: 137 text: 188)
+(publisher: ehow popularity: 495 video: 49 text: 447)
+(publisher: msn popularity: 3763 video: 1248 text: 2516)
+(publisher: wallmart popularity: 5647 video: 1836 text: 3812)
+(publisher: bestbuy popularity: 288 video: 105 text: 184)
+(publisher: nyt popularity: 609 video: 205 text: 405)
+Day 42 : Simulation Status Received
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 42: Updated 42 Bid Bundle entries for Campaign id 1524673045
+rbid =  0.001047077922077922 || budget = 0.645
+Day 42: Updated 54 Bid Bundle entries for Campaign id 889188710
+Day 42: Sending BidBundle
+Day 42 ended. Starting next day
+Day 43: Updating campaign 889188710 stats: 356.818509683963 tgtImps 0.0 nonTgtImps. Cost of imps is 0.4992963374511696
+Day 43: Daily notification for campaign 591786861
+Day 43:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.19433700998925185 Quality Score is: 1.2466002727758774
+Day 43: Campaign opportunity - Campaign ID 379012613: day 45 to 49 [LOW_INCOME, OLD, MALE], reach: 4487 coefs: (v=2.459215724838286, m=2.4426623616697265)
+Day 43: Campaign total budget bid (millis): 4078
+Day 43: ucs level reported: 1.0
+Day 43 :BankStatus[64,425361]
+Publishers Report:
+(publisher: tripadvisor popularity: 315 video: 148 text: 168)
+(publisher: ehow popularity: 506 video: 34 text: 473)
+(publisher: msn popularity: 3690 video: 1290 text: 2401)
+(publisher: wallmart popularity: 5669 video: 1827 text: 3843)
+(publisher: bestbuy popularity: 300 video: 101 text: 200)
+(publisher: nyt popularity: 630 video: 213 text: 418)
+Day 43 : AdNetworkReport
+Day 43 : Simulation Status Received
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 43: Updated 42 Bid Bundle entries for Campaign id 1524673045
+rbid =  0.001047077922077922 || budget = 0.645
+Day 43: Updated 54 Bid Bundle entries for Campaign id 889188710
+Day 43: Sending BidBundle
+Day 43 ended. Starting next day
+Day 44: Updating campaign 1524673045 stats: 6285.687702660014 tgtImps 0.0 nonTgtImps. Cost of imps is 1.075240621176916
+Day 44: Updating campaign 889188710 stats: 760.7034421875207 tgtImps 0.0 nonTgtImps. Cost of imps is 0.5622207055854428
+Day 44: Daily notification for campaign 379012613
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, OLD, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, OLD, MALE], device=pc, adType=text]]!!!!!!!!!!!!!!!!
+Day 44:  WON at cost (Millis)4321. UCS Level set to 1.0 at price 0.19611397599101493 Quality Score is: 1.2466002727758774
+Day 44: Campaign opportunity - Campaign ID 2066576912: day 46 to 48 [FEMALE, OLD], reach: 6739 coefs: (v=2.0766480451801215, m=1.583146141897061)
+Day 44: Campaign total budget bid (millis): 1436
+Day 44: ucs level reported: 1.0
+Day 44 :BankStatus[63,729951]
+Publishers Report:
+(publisher: tripadvisor popularity: 312 video: 120 text: 193)
+(publisher: ehow popularity: 496 video: 47 text: 450)
+(publisher: msn popularity: 3777 video: 1280 text: 2498)
+(publisher: wallmart popularity: 5600 video: 1864 text: 3737)
+(publisher: bestbuy popularity: 287 video: 106 text: 182)
+(publisher: nyt popularity: 598 video: 173 text: 426)
+Day 44 : AdNetworkReport
+Day 44 : Simulation Status Received
+rbid =  9.625751837825796E-4 || budget = 4.321
+Day 44: Updated 54 Bid Bundle entries for Campaign id 379012613
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 44: Updated 42 Bid Bundle entries for Campaign id 1524673045
+Day 44: Sending BidBundle
+Day 44 ended. Starting next day
+Day 45: Updating campaign 1524673045 stats: 11779.686210624735 tgtImps 0.0 nonTgtImps. Cost of imps is 1.145474166679206
+Day 45: Updating campaign 889188710 stats: 1048.058651054532 tgtImps 0.0 nonTgtImps. Cost of imps is 0.6116186940537177
+Day 45: Daily notification for campaign 2066576912
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=ehow, marketSegments=[FEMALE, OLD], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, OLD], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, OLD], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, OLD], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE, OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE, OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE, OLD], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, OLD], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE, OLD], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, OLD], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[FEMALE, OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[FEMALE, OLD], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE, OLD], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, OLD], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE, OLD], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, OLD], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[FEMALE, OLD], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[FEMALE, OLD], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, OLD], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[FEMALE, OLD], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, OLD], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 45:  WON at cost (Millis)6507. UCS Level set to 1.0 at price 0.16204337802647836 Quality Score is: 1.2553587856960478
+Day 45: Campaign opportunity - Campaign ID 535200354: day 47 to 56 [LOW_INCOME, OLD], reach: 33568 coefs: (v=2.324089611461352, m=1.7989779420573002)
+Day 45: Campaign total budget bid (millis): 4257
+Day 45: ucs level reported: 1.0
+Day 45 :BankStatus[63,243215]
+Publishers Report:
+(publisher: tripadvisor popularity: 326 video: 145 text: 182)
+(publisher: ehow popularity: 497 video: 44 text: 454)
+(publisher: msn popularity: 3772 video: 1273 text: 2500)
+(publisher: wallmart popularity: 5637 video: 1834 text: 3804)
+(publisher: bestbuy popularity: 313 video: 111 text: 203)
+(publisher: nyt popularity: 585 video: 179 text: 407)
+Day 45 : AdNetworkReport
+Day 45 : Simulation Status Received
+rbid =  9.625751837825796E-4 || budget = 4.321
+Day 45: Updated 54 Bid Bundle entries for Campaign id 379012613
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 45: Updated 42 Bid Bundle entries for Campaign id 1524673045
+rbid =  9.652870493991989E-4 || budget = 6.507
+Day 45: Updated 42 Bid Bundle entries for Campaign id 2066576912
+Day 45: Sending BidBundle
+Day 45 ended. Starting next day
+Day 46: Updating campaign 379012613 stats: 1368.5968293440003 tgtImps 0.0 nonTgtImps. Cost of imps is 0.03837832007960285
+Day 46: Updating campaign 1524673045 stats: 14833.052341353456 tgtImps 0.0 nonTgtImps. Cost of imps is 1.2307611689002185
+Day 46: Daily notification for campaign 535200354
+Day 46:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.17050178991898024 Quality Score is: 1.2553587856960478
+Day 46: Campaign opportunity - Campaign ID 1328236995: day 48 to 57 [YOUNG, FEMALE, LOW_INCOME], reach: 9900 coefs: (v=2.9358820534298156, m=1.8286936872575277)
+Day 46: Campaign total budget bid (millis): 4669
+Day 46: ucs level reported: 1.0
+Day 46 :BankStatus[62,953006]
+Publishers Report:
+(publisher: tripadvisor popularity: 306 video: 128 text: 179)
+(publisher: ehow popularity: 530 video: 39 text: 492)
+(publisher: msn popularity: 3787 video: 1309 text: 2479)
+(publisher: wallmart popularity: 5611 video: 1814 text: 3798)
+(publisher: bestbuy popularity: 308 video: 122 text: 187)
+(publisher: nyt popularity: 558 video: 175 text: 384)
+Day 46 : AdNetworkReport
+Day 46 : Simulation Status Received
+rbid =  9.625751837825796E-4 || budget = 4.321
+Day 46: Updated 54 Bid Bundle entries for Campaign id 379012613
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 46: Updated 42 Bid Bundle entries for Campaign id 1524673045
+rbid =  9.652870493991989E-4 || budget = 6.507
+Day 46: Updated 42 Bid Bundle entries for Campaign id 2066576912
+Day 46: Sending BidBundle
+Day 46 ended. Starting next day
+Day 47: Updating campaign 2066576912 stats: 992.2647255713739 tgtImps 0.0 nonTgtImps. Cost of imps is 0.05358732498808413
+Day 47: Updating campaign 379012613 stats: 2776.487859560833 tgtImps 0.0 nonTgtImps. Cost of imps is 0.09637099014467121
+Day 47: Updating campaign 1524673045 stats: 16276.684880086752 tgtImps 0.0 nonTgtImps. Cost of imps is 1.306402191452522
+Day 47: Daily notification for campaign 1328236995
+Day 47:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.18112038887118515 Quality Score is: 1.2553587856960478
+Day 47: Campaign opportunity - Campaign ID 634203015: day 49 to 58 [YOUNG], reach: 36712 coefs: (v=2.7128126365668144, m=2.0511552421658252)
+Day 47: Campaign total budget bid (millis): 35407
+Day 47: ucs level reported: 1.0
+Day 47 :BankStatus[62,648220]
+Publishers Report:
+(publisher: tripadvisor popularity: 305 video: 142 text: 164)
+(publisher: ehow popularity: 557 video: 32 text: 526)
+(publisher: msn popularity: 3703 video: 1272 text: 2432)
+(publisher: wallmart popularity: 5611 video: 1805 text: 3807)
+(publisher: bestbuy popularity: 295 video: 119 text: 177)
+(publisher: nyt popularity: 616 video: 183 text: 434)
+Day 47 : AdNetworkReport
+Day 47 : Simulation Status Received
+rbid =  9.625751837825796E-4 || budget = 4.321
+Day 47: Updated 54 Bid Bundle entries for Campaign id 379012613
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 47: Updated 42 Bid Bundle entries for Campaign id 1524673045
+rbid =  9.652870493991989E-4 || budget = 6.507
+Day 47: Updated 42 Bid Bundle entries for Campaign id 2066576912
+Day 47: Sending BidBundle
+Day 47 ended. Starting next day
+Day 48: Updating campaign 2066576912 stats: 1917.4522061965959 tgtImps 0.0 nonTgtImps. Cost of imps is 0.14498203930034068
+Day 48: Updating campaign 379012613 stats: 4083.5361905443824 tgtImps 0.0 nonTgtImps. Cost of imps is 0.16879365222571663
+Day 48: Updating campaign 1524673045 stats: 17611.121179378046 tgtImps 0.0 nonTgtImps. Cost of imps is 1.4352045287292985
+Day 48: Daily notification for campaign 634203015
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=bestbuy, marketSegments=[YOUNG], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[YOUNG], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[YOUNG], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 48:  WON at cost (Millis)35407. UCS Level set to 1.0 at price 0.198304915458077 Quality Score is: 1.2553587856960478
+Day 48: Campaign opportunity - Campaign ID 615998014: day 50 to 54 [OLD], reach: 5411 coefs: (v=2.521929886611226, m=2.0380077064430364)
+Day 48: Campaign total budget bid (millis): 1247
+Day 48: ucs level reported: 1.0
+Day 48 :BankStatus[62,262694]
+Publishers Report:
+(publisher: tripadvisor popularity: 318 video: 126 text: 193)
+(publisher: ehow popularity: 540 video: 42 text: 499)
+(publisher: msn popularity: 3737 video: 1260 text: 2478)
+(publisher: wallmart popularity: 5614 video: 1838 text: 3777)
+(publisher: bestbuy popularity: 323 video: 113 text: 211)
+(publisher: nyt popularity: 585 video: 193 text: 393)
+Day 48 : AdNetworkReport
+Day 48 : Simulation Status Received
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 48: Updated 54 Bid Bundle entries for Campaign id 634203015
+rbid =  9.625751837825796E-4 || budget = 4.321
+Day 48: Updated 54 Bid Bundle entries for Campaign id 379012613
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 48: Updated 42 Bid Bundle entries for Campaign id 1524673045
+Day 48: Sending BidBundle
+Day 48 ended. Starting next day
+Day 49: Updating campaign 2066576912 stats: 2768.707032592404 tgtImps 0.0 nonTgtImps. Cost of imps is 0.22377338247403591
+Day 49: Updating campaign 379012613 stats: 5367.212360936795 tgtImps 0.0 nonTgtImps. Cost of imps is 0.25684821842868305
+Day 49: Updating campaign 1524673045 stats: 18798.740141067618 tgtImps 0.0 nonTgtImps. Cost of imps is 1.5460747551497716
+Day 49: Daily notification for campaign 615998014
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[OLD], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[OLD], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 49:  WON at cost (Millis)2593. UCS Level set to 1.0 at price 0.1975439705828172 Quality Score is: 0.5915632803546866
+Day 49: Campaign opportunity - Campaign ID 331727111: day 51 to 55 [FEMALE, LOW_INCOME], reach: 17524 coefs: (v=2.337639752556468, m=2.395285889448415)
+Day 49: Campaign total budget bid (millis): 5924
+Day 49: ucs level reported: 1.0
+Day 49 :BankStatus[62,742288]
+Publishers Report:
+(publisher: tripadvisor popularity: 332 video: 133 text: 200)
+(publisher: ehow popularity: 554 video: 58 text: 497)
+(publisher: msn popularity: 3737 video: 1287 text: 2451)
+(publisher: wallmart popularity: 5569 video: 1805 text: 3765)
+(publisher: bestbuy popularity: 309 video: 107 text: 203)
+(publisher: nyt popularity: 542 video: 182 text: 361)
+Day 49 : AdNetworkReport
+Day 49 : Simulation Status Received
+rbid =  4.7903196009606503E-4 || budget = 2.593
+Day 49: Updated 54 Bid Bundle entries for Campaign id 615998014
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 49: Updated 54 Bid Bundle entries for Campaign id 634203015
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 49: Updated 42 Bid Bundle entries for Campaign id 1524673045
+Day 49: Sending BidBundle
+Day 49 ended. Starting next day
+Day 50: Updating campaign 379012613 stats: 5995.408537262818 tgtImps 0.0 nonTgtImps. Cost of imps is 0.3114412626354123
+Day 50: Updating campaign 1524673045 stats: 20658.45502048284 tgtImps 0.0 nonTgtImps. Cost of imps is 1.755375110107999
+Day 50: Updating campaign 634203015 stats: 7430.533039700833 tgtImps 0.0 nonTgtImps. Cost of imps is 3.8986408634278256
+Day 50: Daily notification for campaign 331727111
+Day 50:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.19361902956090427 Quality Score is: 0.9501630360966421
+Day 50: Campaign opportunity - Campaign ID 275691681: day 52 to 56 [YOUNG, MALE], reach: 9412 coefs: (v=2.1298562452721574, m=2.067139441932105)
+Day 50: Campaign total budget bid (millis): 6170
+Day 50: ucs level reported: 1.0
+Day 50 :BankStatus[67,409613]
+Publishers Report:
+(publisher: tripadvisor popularity: 320 video: 131 text: 190)
+(publisher: ehow popularity: 544 video: 52 text: 493)
+(publisher: msn popularity: 3724 video: 1231 text: 2494)
+(publisher: wallmart popularity: 5573 video: 1793 text: 3781)
+(publisher: bestbuy popularity: 350 video: 126 text: 225)
+(publisher: nyt popularity: 587 video: 191 text: 397)
+Day 50 : AdNetworkReport
+Day 50 : Simulation Status Received
+rbid =  4.7903196009606503E-4 || budget = 2.593
+Day 50: Updated 54 Bid Bundle entries for Campaign id 615998014
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 50: Updated 54 Bid Bundle entries for Campaign id 634203015
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 50: Updated 42 Bid Bundle entries for Campaign id 1524673045
+Day 50: Sending BidBundle
+Day 50 ended. Starting next day
+Day 51: Updating campaign 1524673045 stats: 20658.45502048284 tgtImps 0.0 nonTgtImps. Cost of imps is 1.755375110107999
+Day 51: Updating campaign 615998014 stats: 4480.439804588944 tgtImps 0.0 nonTgtImps. Cost of imps is 0.45923025340694373
+Day 51: Updating campaign 634203015 stats: 14815.233110369376 tgtImps 0.0 nonTgtImps. Cost of imps is 4.017759621020458
+Day 51: Daily notification for campaign 275691681
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, MALE], device=pc, adType=video]]!!!!!!!!!!!!!!!!
+Day 51:  WON at cost (Millis)7290. UCS Level set to 1.0 at price 0.19506044493901858 Quality Score is: 0.9501630360966421
+Day 51: Campaign opportunity - Campaign ID 872838246: day 53 to 57 [LOW_INCOME, MALE], reach: 3631 coefs: (v=2.984907415438399, m=2.498645764833219)
+Day 51: Campaign total budget bid (millis): 1222
+Day 51: ucs level reported: 1.0
+Day 51 :BankStatus[63,051814]
+Publishers Report:
+(publisher: tripadvisor popularity: 315 video: 135 text: 181)
+(publisher: ehow popularity: 500 video: 50 text: 451)
+(publisher: msn popularity: 3705 video: 1232 text: 2474)
+(publisher: wallmart popularity: 5619 video: 1774 text: 3846)
+(publisher: bestbuy popularity: 322 video: 122 text: 201)
+(publisher: nyt popularity: 612 video: 191 text: 422)
+Day 51 : AdNetworkReport
+Day 51 : Simulation Status Received
+rbid =  4.7903196009606503E-4 || budget = 2.593
+Day 51: Updated 54 Bid Bundle entries for Campaign id 615998014
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 51: Updated 54 Bid Bundle entries for Campaign id 634203015
+rbid =  7.74378585086042E-4 || budget = 7.29
+Day 51: Updated 54 Bid Bundle entries for Campaign id 275691681
+rbid =  6.45193480430203E-4 || budget = 17.457
+Day 51: Updated 42 Bid Bundle entries for Campaign id 1524673045
+Day 51: Sending BidBundle
+Day 51 ended. Starting next day
+Day 52: Updating campaign 1524673045 stats: 20658.45502048284 tgtImps 0.0 nonTgtImps. Cost of imps is 1.755375110107999
+Day 52: Updating campaign 615998014 stats: 9168.03154216113 tgtImps 0.0 nonTgtImps. Cost of imps is 0.9718340959291278
+Day 52: Updating campaign 634203015 stats: 20648.45118334767 tgtImps 0.0 nonTgtImps. Cost of imps is 5.457855525806243
+Day 52: Daily notification for campaign 872838246
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[LOW_INCOME, MALE], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 52:  WON at cost (Millis)1464. UCS Level set to 1.0 at price 0.1934022714652761 Quality Score is: 0.9501630360966421
+Day 52: Campaign opportunity - Campaign ID 1996970782: day 54 to 56 [YOUNG, FEMALE, HIGH_INCOME], reach: 384 coefs: (v=2.662392920606465, m=1.648089524896912)
+Day 52: Campaign total budget bid (millis): 330
+Day 52: ucs level reported: 1.0
+Day 52 :BankStatus[62,280063]
+Publishers Report:
+(publisher: tripadvisor popularity: 326 video: 145 text: 182)
+(publisher: ehow popularity: 486 video: 45 text: 442)
+(publisher: msn popularity: 3683 video: 1262 text: 2422)
+(publisher: wallmart popularity: 5677 video: 1843 text: 3835)
+(publisher: bestbuy popularity: 362 video: 135 text: 228)
+(publisher: nyt popularity: 585 video: 198 text: 388)
+Day 52 : AdNetworkReport
+Day 52 : Simulation Status Received
+rbid =  4.0297274979355903E-4 || budget = 1.464
+Day 52: Updated 60 Bid Bundle entries for Campaign id 872838246
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 52: Updated 54 Bid Bundle entries for Campaign id 634203015
+rbid =  7.74378585086042E-4 || budget = 7.29
+Day 52: Updated 54 Bid Bundle entries for Campaign id 275691681
+Day 52: Sending BidBundle
+Day 52 ended. Starting next day
+Day 53: Updating campaign 1524673045 stats: 20658.45502048284 tgtImps 0.0 nonTgtImps. Cost of imps is 1.755375110107999
+Day 53: Updating campaign 615998014 stats: 10371.115101497515 tgtImps 0.0 nonTgtImps. Cost of imps is 1.1329218307405138
+Day 53: Updating campaign 634203015 stats: 24450.44730215601 tgtImps 0.0 nonTgtImps. Cost of imps is 5.695847112194664
+Day 53: Updating campaign 275691681 stats: 1240.5610715825992 tgtImps 0.0 nonTgtImps. Cost of imps is 0.06543010729445915
+Day 53: Daily notification for campaign 1996970782
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=bestbuy, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=wallmart, marketSegments=[YOUNG, FEMALE, HIGH_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 53:  WON at cost (Millis)330. UCS Level set to 1.0 at price 0.19000881196946756 Quality Score is: 0.7593541364635088
+Day 53: Campaign opportunity - Campaign ID 103088299: day 55 to 57 [FEMALE, HIGH_INCOME], reach: 994 coefs: (v=2.2423374871233004, m=2.3678629296070377)
+Day 53: Campaign total budget bid (millis): 399
+Day 53: ucs level reported: 1.0
+Day 53 :BankStatus[71,172765]
+Publishers Report:
+(publisher: tripadvisor popularity: 307 video: 141 text: 167)
+(publisher: ehow popularity: 557 video: 58 text: 500)
+(publisher: msn popularity: 3797 video: 1241 text: 2557)
+(publisher: bestbuy popularity: 306 video: 110 text: 197)
+(publisher: wallmart popularity: 5495 video: 1792 text: 3704)
+(publisher: nyt popularity: 619 video: 201 text: 419)
+Day 53 : AdNetworkReport
+Day 53 : Simulation Status Received
+rbid =  4.0297274979355903E-4 || budget = 1.464
+Day 53: Updated 60 Bid Bundle entries for Campaign id 872838246
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 53: Updated 54 Bid Bundle entries for Campaign id 634203015
+rbid =  7.74378585086042E-4 || budget = 7.29
+Day 53: Updated 54 Bid Bundle entries for Campaign id 275691681
+rbid =  8.549222797927462E-4 || budget = 0.33
+Day 53: Updated 48 Bid Bundle entries for Campaign id 1996970782
+Day 53: Sending BidBundle
+Day 53 ended. Starting next day
+Day 54: Updating campaign 872838246 stats: 3441.0387568964843 tgtImps 0.0 nonTgtImps. Cost of imps is 0.35161945178449644
+Day 54: Updating campaign 615998014 stats: 10371.115101497515 tgtImps 0.0 nonTgtImps. Cost of imps is 1.1329218307405138
+Day 54: Updating campaign 634203015 stats: 27657.981857200088 tgtImps 0.0 nonTgtImps. Cost of imps is 5.902357561623879
+Day 54: Updating campaign 275691681 stats: 2113.5744834793536 tgtImps 0.0 nonTgtImps. Cost of imps is 0.1253872959325612
+Day 54: Daily notification for campaign 103088299
+Day 54:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.17956115158710562 Quality Score is: 0.7593541364635088
+Day 54 :BankStatus[70,528335]
+Publishers Report:
+(publisher: tripadvisor popularity: 308 video: 123 text: 186)
+(publisher: ehow popularity: 494 video: 43 text: 452)
+(publisher: msn popularity: 3679 video: 1244 text: 2436)
+(publisher: wallmart popularity: 5686 video: 1808 text: 3879)
+(publisher: bestbuy popularity: 325 video: 111 text: 215)
+(publisher: nyt popularity: 592 video: 175 text: 418)
+Day 54 : AdNetworkReport
+Day 54 : Simulation Status Received
+rbid =  4.0297274979355903E-4 || budget = 1.464
+Day 54: Updated 60 Bid Bundle entries for Campaign id 872838246
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 54: Updated 54 Bid Bundle entries for Campaign id 634203015
+rbid =  7.74378585086042E-4 || budget = 7.29
+Day 54: Updated 54 Bid Bundle entries for Campaign id 275691681
+rbid =  8.549222797927462E-4 || budget = 0.33
+Day 54: Updated 48 Bid Bundle entries for Campaign id 1996970782
+Day 54: Sending BidBundle
+Day 54 ended. Starting next day
+Day 55: Updating campaign 872838246 stats: 6841.345916338019 tgtImps 0.0 nonTgtImps. Cost of imps is 0.7490387525922402
+Day 55: Updating campaign 615998014 stats: 10371.115101497515 tgtImps 0.0 nonTgtImps. Cost of imps is 1.1329218307405138
+Day 55: Updating campaign 1996970782 stats: 104.17253979235225 tgtImps 0.0 nonTgtImps. Cost of imps is 0.00994623779737118
+Day 55: Updating campaign 634203015 stats: 30569.994307743655 tgtImps 0.0 nonTgtImps. Cost of imps is 6.135793490149795
+Day 55: Updating campaign 275691681 stats: 2917.712512709176 tgtImps 0.0 nonTgtImps. Cost of imps is 0.1959929105059943
+Day 55: Daily notification for campaign 0
+Day 55:  allocated to NONE. UCS Level set to 1.0 at price 0.17956115158710562 Quality Score is: 1.0733909750326178
+Day 55 :BankStatus[73,056854]
+Publishers Report:
+(publisher: tripadvisor popularity: 309 video: 136 text: 174)
+(publisher: ehow popularity: 497 video: 44 text: 454)
+(publisher: msn popularity: 3767 video: 1300 text: 2468)
+(publisher: wallmart popularity: 5596 video: 1818 text: 3779)
+(publisher: bestbuy popularity: 309 video: 99 text: 211)
+(publisher: nyt popularity: 621 video: 191 text: 431)
+Day 55 : AdNetworkReport
+Day 55 : Simulation Status Received
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 55: Updated 54 Bid Bundle entries for Campaign id 634203015
+rbid =  7.74378585086042E-4 || budget = 7.29
+Day 55: Updated 54 Bid Bundle entries for Campaign id 275691681
+rbid =  8.549222797927462E-4 || budget = 0.33
+Day 55: Updated 48 Bid Bundle entries for Campaign id 1996970782
+Day 55: Sending BidBundle
+Day 55 ended. Starting next day
+Day 56: Updating campaign 872838246 stats: 7213.510221959517 tgtImps 0.0 nonTgtImps. Cost of imps is 0.79567671210404
+Day 56: Updating campaign 1996970782 stats: 193.28612963185734 tgtImps 0.0 nonTgtImps. Cost of imps is 0.020069620466377145
+Day 56: Updating campaign 634203015 stats: 33944.3881245602 tgtImps 0.0 nonTgtImps. Cost of imps is 6.460714585843976
+Day 56: Updating campaign 275691681 stats: 3919.0909149959143 tgtImps 0.0 nonTgtImps. Cost of imps is 0.30587715516057
+Day 56: Daily notification for campaign 0
+Day 56:  allocated to NONE. UCS Level set to 1.0 at price 0.17956115158710562 Quality Score is: 1.0733909750326178
+Day 56 :BankStatus[72,165886]
+Publishers Report:
+(publisher: tripadvisor popularity: 328 video: 139 text: 190)
+(publisher: ehow popularity: 504 video: 49 text: 456)
+(publisher: msn popularity: 3705 video: 1266 text: 2440)
+(publisher: wallmart popularity: 5680 video: 1826 text: 3855)
+(publisher: bestbuy popularity: 302 video: 105 text: 198)
+(publisher: nyt popularity: 604 video: 197 text: 408)
+Day 56 : AdNetworkReport
+Day 56 : Simulation Status Received
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 56: Updated 54 Bid Bundle entries for Campaign id 634203015
+Day 56: Sending BidBundle
+Day 56 ended. Starting next day
+Day 57: Updating campaign 872838246 stats: 7213.510221959517 tgtImps 0.0 nonTgtImps. Cost of imps is 0.79567671210404
+Day 57: Updating campaign 1996970782 stats: 307.0442003711652 tgtImps 0.0 nonTgtImps. Cost of imps is 0.033682762903564964
+Day 57: Updating campaign 634203015 stats: 37293.21216336796 tgtImps 0.0 nonTgtImps. Cost of imps is 6.818052814263799
+Day 57: Updating campaign 275691681 stats: 4995.429585411427 tgtImps 0.0 nonTgtImps. Cost of imps is 0.4365463631371981
+Day 57: Daily notification for campaign 0
+Day 57:  allocated to NONE. UCS Level set to 1.0 at price 0.17956115158710562 Quality Score is: 0.6542102262582385
+Day 57 :BankStatus[73,564646]
+Publishers Report:
+(publisher: tripadvisor popularity: 294 video: 120 text: 175)
+(publisher: ehow popularity: 516 video: 45 text: 472)
+(publisher: msn popularity: 3735 video: 1285 text: 2451)
+(publisher: wallmart popularity: 5610 video: 1829 text: 3782)
+(publisher: bestbuy popularity: 318 video: 112 text: 207)
+(publisher: nyt popularity: 640 video: 191 text: 450)
+Day 57 : AdNetworkReport
+Day 57 : Simulation Status Received
+rbid =  9.644005011712152E-4 || budget = 35.407
+Day 57: Updated 54 Bid Bundle entries for Campaign id 634203015
+Day 57: Sending BidBundle
+Day 57 ended. Starting next day
+Day 58: Updating campaign 872838246 stats: 7213.510221959517 tgtImps 0.0 nonTgtImps. Cost of imps is 0.79567671210404
+Day 58: Updating campaign 634203015 stats: 41720.76042145612 tgtImps 0.0 nonTgtImps. Cost of imps is 7.389439560133036
+Day 58: Daily notification for campaign 0
+Day 58:  allocated to NONE. UCS Level set to 1.0 at price 0.17956115158710562 Quality Score is: 1.03470889497309
+Day 58 :BankStatus[74,769645]
+Publishers Report:
+(publisher: tripadvisor popularity: 308 video: 126 text: 183)
+(publisher: ehow popularity: 489 video: 51 text: 439)
+(publisher: msn popularity: 3803 video: 1245 text: 2559)
+(publisher: wallmart popularity: 5599 video: 1801 text: 3799)
+(publisher: bestbuy popularity: 326 video: 126 text: 201)
+(publisher: nyt popularity: 612 video: 178 text: 435)
+Day 58 : AdNetworkReport
+Day 58 : Simulation Status Received
+Day 58: Sending BidBundle
+Day 58 ended. Starting next day
+Day 59: Updating campaign 634203015 stats: 42976.49336077585 tgtImps 0.0 nonTgtImps. Cost of imps is 7.563113632945695
+Day 59: Daily notification for campaign 0
+Day 59:  allocated to NONE. UCS Level set to 1.0 at price 0.17956115158710562 Quality Score is: 1.0881525563472891
+Day 59 :BankStatus[113,808434]
+Publishers Report:
+(publisher: tripadvisor popularity: 293 video: 140 text: 154)
+(publisher: ehow popularity: 532 video: 43 text: 490)
+(publisher: msn popularity: 3791 video: 1287 text: 2505)
+(publisher: wallmart popularity: 5663 video: 1866 text: 3798)
+(publisher: bestbuy popularity: 277 video: 94 text: 184)
+(publisher: nyt popularity: 626 video: 205 text: 422)
+Day 59 : AdNetworkReport
+Day 59 : Simulation Status Received
+Day 59: Sending BidBundle
+Day 59 ended. Starting next day
+Day 60: Daily notification for campaign 0
+Day 60:  allocated to NONE. UCS Level set to 1.0 at price 0.17956115158710562 Quality Score is: 1.0881525563472891
+Day 60 :BankStatus[113,454911]
+Publishers Report:
+(publisher: tripadvisor popularity: 312 video: 136 text: 177)
+(publisher: ehow popularity: 497 video: 42 text: 456)
+(publisher: msn popularity: 3754 video: 1250 text: 2505)
+(publisher: wallmart popularity: 5565 video: 1822 text: 3744)
+(publisher: bestbuy popularity: 322 video: 103 text: 220)
+(publisher: nyt popularity: 593 video: 192 text: 402)
+Day 60 : Simulation Status Received
+Day 60: Sending BidBundle
+Day 60 ended. Starting next day
