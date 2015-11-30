@@ -1,0 +1,1290 @@
+30/11 13:05:52 INFO agentware.SimClient|next simulation starts in 7 seconds
+UNKNOWN Message Received: edu.umich.eecs.tac.props.AdvertiserInfo@bc76a1c1
+Simulation is starting! Days of competition: 60
+tau.tac.adx.report.demand.InitialCampaignMessage[1179191569,10952,1,5,10952,[FEM                                                                                                                ALE, LOW_INCOME],2.5640868029323522,1.950513684654823,demand,[]]
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=sears, marketSegments=[FEMALE, LOW_IN                                                                                                                COME], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[FE                                                                                                                MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegme                                                                                                                nts=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=cnn,                                                                                                                 marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [pu                                                                                                                blisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], A                                                                                                                dxQuery [publisher=target, marketSegments=[FEMALE, LOW_INCOME], device=pc, adTyp                                                                                                                e=video], AdxQuery [publisher=sears, marketSegments=[FEMALE, LOW_INCOME], device                                                                                                                =mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[FEMALE, LOW_I                                                                                                                NCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[FEMAL                                                                                                                E, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, ma                                                                                                                rketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publi                                                                                                                sher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQue                                                                                                                ry [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=pc, adTyp                                                                                                                e=text], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=m                                                                                                                obile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, L                                                                                                                OW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=                                                                                                                [FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketS                                                                                                                egments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=m                                                                                                                sn, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [pub                                                                                                                lisher=target, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video]                                                                                                                , AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=m                                                                                                                obile, adType=text], AdxQuery [publisher=target, marketSegments=[FEMALE, LOW_INC                                                                                                                OME], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[FEMALE,                                                                                                                 LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[F                                                                                                                EMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSeg                                                                                                                ments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=target,                                                                                                                 marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!                                                                                                                !!
+Day 0: Allocated campaign - Campaign ID 1179191569: day 1 to 5 [FEMALE, LOW_INCO                                                                                                                ME], reach: 10952 coefs: (v=2.5640868029323522, m=1.950513684654823)
+Day 0: Campaign opportunity - Campaign ID 1213441414: day 2 to 6 [YOUNG, FEMALE,                                                                                                                 LOW_INCOME], reach: 4950 coefs: (v=2.7313591407120246, m=1.8677753651981062)
+Day 0: Campaign total budget bid (millis): 3534
+Day 0: Initial ucs bid is 0.2
+Day 0 :BankStatus[0,000000]
+Day 0 : Simulation Status Received
+rbid =  9.99817418294687E-4 || budget = 10.952
+Day 0: Updated 48 Bid Bundle entries for Campaign id 1179191569
+Day 0: Sending BidBundle
+Day 0 ended. Starting next day
+Day 1: Daily notification for campaign 1213441414
+Day 1:  allocated to DummyAdnetwork-4. UCS Level set to 0.81 at price 0.15492113                                                                                                                725571025 Quality Score is: 1.0
+Day 1: Campaign opportunity - Campaign ID 1912565551: day 3 to 7 [YOUNG, FEMALE,                                                                                                                 LOW_INCOME], reach: 4950 coefs: (v=2.0635731301369287, m=2.4486043521845073)
+Day 1: Campaign total budget bid (millis): 2897
+Day 1: ucs level reported: 0.81
+Day 1 :BankStatus[-0,154921]
+Publishers Report:
+Day 1 : Simulation Status Received
+rbid =  9.99817418294687E-4 || budget = 10.952
+Day 1: Updated 48 Bid Bundle entries for Campaign id 1179191569
+Day 1: Sending BidBundle
+Day 1 ended. Starting next day
+Day 2: Updating campaign 1179191569 stats: 4889.839754582795 tgtImps 0.0 nonTgtI                                                                                                                mps. Cost of imps is 8.292921045524615
+Day 2: Daily notification for campaign 1912565551
+Day 2:  allocated to adv2. UCS Level set to 0.81 at price 0.1264104031558695 Qua                                                                                                                lity Score is: 1.0
+Day 2: Campaign opportunity - Campaign ID 380337496: day 4 to 6 [MALE], reach: 2                                                                                                                973 coefs: (v=2.6035424411752848, m=1.8052734208056702)
+Day 2: Campaign total budget bid (millis): 1366
+Day 2: ucs level reported: 0.81
+Day 2 :BankStatus[-0,281332]
+Publishers Report:
+(publisher: tripadvisor popularity: 642 video: 184 text: 459)
+(publisher: cnn popularity: 856 video: 462 text: 395)
+(publisher: ehow popularity: 997 video: 451 text: 547)
+(publisher: msn popularity: 7251 video: 1235 text: 6017)
+(publisher: sears popularity: 591 video: 258 text: 334)
+(publisher: target popularity: 748 video: 220 text: 529)
+Day 2 : AdNetworkReport
+Day 2 : Simulation Status Received
+rbid =  9.99817418294687E-4 || budget = 10.952
+Day 2: Updated 48 Bid Bundle entries for Campaign id 1179191569
+Day 2: Sending BidBundle
+Day 2 ended. Starting next day
+Day 3: Updating campaign 1179191569 stats: 4891.790268267449 tgtImps 0.0 nonTgtI                                                                                                                mps. Cost of imps is 30.493674793333145
+Day 3: Daily notification for campaign 380337496
+Day 3:  allocated to DummyAdnetwork-4. UCS Level set to 0.81 at price 0.15266362                                                                                                                12155295 Quality Score is: 1.0
+Day 3: Campaign opportunity - Campaign ID 570229798: day 5 to 7 [YOUNG, MALE, LO                                                                                                                W_INCOME], reach: 1101 coefs: (v=2.1181288785796797, m=1.705112442672248)
+Day 3: Campaign total budget bid (millis): 16
+Day 3: ucs level reported: 0.81
+Day 3 :BankStatus[-8,726916]
+Publishers Report:
+(publisher: tripadvisor popularity: 645 video: 236 text: 410)
+(publisher: cnn popularity: 808 video: 407 text: 402)
+(publisher: ehow popularity: 983 video: 467 text: 517)
+(publisher: msn popularity: 7284 video: 1182 text: 6103)
+(publisher: sears popularity: 606 video: 253 text: 354)
+(publisher: target popularity: 787 video: 238 text: 550)
+Day 3 : AdNetworkReport
+Day 3 : Simulation Status Received
+rbid =  9.99817418294687E-4 || budget = 10.952
+Day 3: Updated 48 Bid Bundle entries for Campaign id 1179191569
+Day 3: Sending BidBundle
+Day 3 ended. Starting next day
+Day 4: Updating campaign 1179191569 stats: 4959.0195109538245 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 59.72297833211411
+Day 4: Daily notification for campaign 570229798
+Day 4:  allocated to adv3. UCS Level set to 0.81 at price 0.1600390324556617 Qua                                                                                                                lity Score is: 1.0
+Day 4: Campaign opportunity - Campaign ID 1807447567: day 6 to 15 [YOUNG, MALE,                                                                                                                 HIGH_INCOME], reach: 1034 coefs: (v=2.098195140925866, m=1.6805910942117843)
+Day 4: Campaign total budget bid (millis): 804
+Day 4: ucs level reported: 0.81
+Day 4 :BankStatus[-31,087765]
+Publishers Report:
+(publisher: tripadvisor popularity: 575 video: 200 text: 376)
+(publisher: cnn popularity: 862 video: 487 text: 376)
+(publisher: ehow popularity: 1009 video: 458 text: 552)
+(publisher: msn popularity: 7310 video: 1215 text: 6096)
+(publisher: sears popularity: 608 video: 262 text: 347)
+(publisher: target popularity: 733 video: 214 text: 520)
+Day 4 : AdNetworkReport
+Day 4 : Simulation Status Received
+rbid =  9.99817418294687E-4 || budget = 10.952
+Day 4: Updated 48 Bid Bundle entries for Campaign id 1179191569
+Day 4: Sending BidBundle
+Day 4 ended. Starting next day
+Day 5: Updating campaign 1179191569 stats: 9444.761061636656 tgtImps 0.0 nonTgtI                                                                                                                mps. Cost of imps is 68.92382690161281
+Day 5: Daily notification for campaign 1807447567
+Day 5:  allocated to adv3. UCS Level set to 0.81 at price 0.15725059429835636 Qu                                                                                                                ality Score is: 1.0
+Day 5: Campaign opportunity - Campaign ID 704868681: day 7 to 11 [MALE, LOW_INCO                                                                                                                ME], reach: 3631 coefs: (v=2.2592579838599476, m=2.2691483371460164)
+Day 5: Campaign total budget bid (millis): 598
+Day 5: ucs level reported: 0.81
+Day 5 :BankStatus[-60,697647]
+Publishers Report:
+(publisher: tripadvisor popularity: 623 video: 175 text: 449)
+(publisher: cnn popularity: 898 video: 483 text: 416)
+(publisher: ehow popularity: 1039 video: 480 text: 560)
+(publisher: msn popularity: 7266 video: 1170 text: 6097)
+(publisher: sears popularity: 585 video: 249 text: 337)
+(publisher: target popularity: 740 video: 219 text: 522)
+Day 5 : AdNetworkReport
+Day 5 : Simulation Status Received
+Day 5: Sending BidBundle
+Day 5 ended. Starting next day
+Day 6: Updating campaign 1179191569 stats: 9478.395658486832 tgtImps 0.0 nonTgtI                                                                                                                mps. Cost of imps is 99.32971676334556
+Day 6: Daily notification for campaign 704868681
+Day 6:  allocated to adv3. UCS Level set to 0.47829690000000014 at price 0.0 Qua                                                                                                                lity Score is: 0.8935588525724096
+Day 6: Campaign opportunity - Campaign ID 1789658406: day 8 to 12 [OLD, HIGH_INC                                                                                                                OME], reach: 3037 coefs: (v=2.506136418452087, m=2.4322285985597913)
+Day 6: Campaign total budget bid (millis): 1757
+Day 6: ucs level reported: 0.47829690000000014
+Day 6 :BankStatus[-60,889401]
+Publishers Report:
+(publisher: tripadvisor popularity: 656 video: 211 text: 446)
+(publisher: cnn popularity: 807 video: 433 text: 375)
+(publisher: ehow popularity: 1031 video: 465 text: 567)
+(publisher: msn popularity: 7210 video: 1197 text: 6014)
+(publisher: sears popularity: 618 video: 270 text: 349)
+(publisher: target popularity: 773 video: 230 text: 544)
+Day 6 : AdNetworkReport
+Day 6 : Simulation Status Received
+Day 6: Sending BidBundle
+Day 6 ended. Starting next day
+Day 7: Daily notification for campaign 1789658406
+Day 7:  allocated to DummyAdnetwork-2. UCS Level set to 0.47829690000000014 at p                                                                                                                rice 0.0 Quality Score is: 0.8935588525724096
+Day 7: Campaign opportunity - Campaign ID 1210965998: day 9 to 11 [YOUNG, FEMALE                                                                                                                , HIGH_INCOME], reach: 614 coefs: (v=2.4431111524703555, m=2.3349604988343042)
+Day 7: Campaign total budget bid (millis): 404
+Day 7: ucs level reported: 0.47829690000000014
+Day 7 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 617 video: 200 text: 418)
+(publisher: cnn popularity: 874 video: 468 text: 407)
+(publisher: ehow popularity: 988 video: 480 text: 509)
+(publisher: msn popularity: 7254 video: 1194 text: 6061)
+(publisher: sears popularity: 627 video: 279 text: 349)
+(publisher: target popularity: 767 video: 226 text: 542)
+Day 7 : Simulation Status Received
+Day 7: Sending BidBundle
+Day 7 ended. Starting next day
+Day 8: Daily notification for campaign 1210965998
+Day 8:  allocated to DummyAdnetwork-5. UCS Level set to 0.47829690000000014 at p                                                                                                                rice 0.0 Quality Score is: 0.8935588525724096
+Day 8: Campaign opportunity - Campaign ID 1353165922: day 10 to 14 [FEMALE, LOW_                                                                                                                INCOME], reach: 17524 coefs: (v=2.8832407305219596, m=1.8630914668952552)
+Day 8: Campaign total budget bid (millis): 1203
+Day 8: ucs level reported: 0.47829690000000014
+Day 8 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 624 video: 219 text: 406)
+(publisher: cnn popularity: 888 video: 476 text: 413)
+(publisher: ehow popularity: 975 video: 440 text: 536)
+(publisher: msn popularity: 7185 video: 1190 text: 5996)
+(publisher: sears popularity: 657 video: 299 text: 359)
+(publisher: target popularity: 782 video: 243 text: 540)
+Day 8 : Simulation Status Received
+Day 8: Sending BidBundle
+Day 8 ended. Starting next day
+Day 9: Daily notification for campaign 1353165922
+Day 9:  allocated to DummyAdnetwork-5. UCS Level set to 0.5314410000000002 at pr                                                                                                                ice 0.0 Quality Score is: 0.8935588525724096
+Day 9: Campaign opportunity - Campaign ID 769065979: day 11 to 15 [MALE, LOW_INC                                                                                                                OME], reach: 14524 coefs: (v=2.0349471415526934, m=2.1751759602890246)
+Day 9: Campaign total budget bid (millis): 12427
+Day 9: ucs level reported: 0.5314410000000002
+Day 9 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 598 video: 190 text: 409)
+(publisher: cnn popularity: 923 video: 511 text: 413)
+(publisher: ehow popularity: 987 video: 441 text: 547)
+(publisher: msn popularity: 7162 video: 1181 text: 5982)
+(publisher: sears popularity: 569 video: 239 text: 331)
+(publisher: target popularity: 790 video: 237 text: 554)
+Day 9 : Simulation Status Received
+Day 9: Sending BidBundle
+Day 9 ended. Starting next day
+Day 10: Daily notification for campaign 769065979
+Day 10:  allocated to DummyAdnetwork-3. UCS Level set to 0.47829690000000014 at                                                                                                                 price 0.0 Quality Score is: 0.8935588525724096
+Day 10: Campaign opportunity - Campaign ID 229708584: day 12 to 16 [MALE, OLD, L                                                                                                                OW_INCOME], reach: 1795 coefs: (v=2.4795851886313303, m=2.4374295996905726)
+Day 10: Campaign total budget bid (millis): 865
+Day 10: ucs level reported: 0.47829690000000014
+Day 10 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 593 video: 192 text: 402)
+(publisher: cnn popularity: 884 video: 480 text: 405)
+(publisher: ehow popularity: 939 video: 420 text: 520)
+(publisher: msn popularity: 7241 video: 1213 text: 6029)
+(publisher: sears popularity: 631 video: 260 text: 372)
+(publisher: target popularity: 800 video: 236 text: 565)
+Day 10 : Simulation Status Received
+Day 10: Sending BidBundle
+Day 10 ended. Starting next day
+Day 11: Daily notification for campaign 229708584
+Day 11:  allocated to adv2. UCS Level set to 0.47829690000000014 at price 0.0 Qu                                                                                                                ality Score is: 0.8935588525724096
+Day 11: Campaign opportunity - Campaign ID 110799403: day 13 to 22 [FEMALE], rea                                                                                                                ch: 40352 coefs: (v=2.2689280363839606, m=1.6615359388269348)
+Day 11: Campaign total budget bid (millis): 6552
+Day 11: ucs level reported: 0.47829690000000014
+Day 11 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 660 video: 218 text: 443)
+(publisher: cnn popularity: 881 video: 466 text: 416)
+(publisher: ehow popularity: 1001 video: 472 text: 530)
+(publisher: msn popularity: 7183 video: 1176 text: 6008)
+(publisher: sears popularity: 625 video: 278 text: 348)
+(publisher: target popularity: 790 video: 221 text: 570)
+Day 11 : Simulation Status Received
+Day 11: Sending BidBundle
+Day 11 ended. Starting next day
+Day 12: Daily notification for campaign 110799403
+Day 12:  allocated to adv3. UCS Level set to 0.5314410000000002 at price 0.0 Qua                                                                                                                lity Score is: 0.8935588525724096
+Day 12: Campaign opportunity - Campaign ID 2080972843: day 14 to 23 [MALE, HIGH_                                                                                                                INCOME], reach: 10600 coefs: (v=2.926435685033108, m=2.436612365542521)
+Day 12: Campaign total budget bid (millis): 4358
+Day 12: ucs level reported: 0.5314410000000002
+Day 12 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 593 video: 203 text: 391)
+(publisher: cnn popularity: 864 video: 468 text: 397)
+(publisher: ehow popularity: 955 video: 421 text: 535)
+(publisher: msn popularity: 7344 video: 1186 text: 6159)
+(publisher: sears popularity: 612 video: 252 text: 361)
+(publisher: target popularity: 746 video: 209 text: 538)
+Day 12 : Simulation Status Received
+Day 12: Sending BidBundle
+Day 12 ended. Starting next day
+Day 13: Daily notification for campaign 2080972843
+Day 13:  allocated to adv2. UCS Level set to 0.47829690000000014 at price 0.0 Qu                                                                                                                ality Score is: 0.8935588525724096
+Day 13: Campaign opportunity - Campaign ID 523846050: day 15 to 17 [OLD, FEMALE,                                                                                                                 LOW_INCOME], reach: 3601 coefs: (v=2.5339339044816014, m=2.095344815433222)
+Day 13: Campaign total budget bid (millis): 1998
+Day 13: ucs level reported: 0.47829690000000014
+Day 13 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 631 video: 209 text: 423)
+(publisher: cnn popularity: 850 video: 452 text: 399)
+(publisher: ehow popularity: 1019 video: 457 text: 563)
+(publisher: msn popularity: 7148 video: 1184 text: 5965)
+(publisher: sears popularity: 632 video: 244 text: 389)
+(publisher: target popularity: 817 video: 244 text: 574)
+Day 13 : Simulation Status Received
+Day 13: Sending BidBundle
+Day 13 ended. Starting next day
+Day 14: Daily notification for campaign 523846050
+Day 14:  allocated to DummyAdnetwork-2. UCS Level set to 0.47829690000000014 at                                                                                                                 price 0.0 Quality Score is: 0.8935588525724096
+Day 14: Campaign opportunity - Campaign ID 540388089: day 16 to 18 [OLD, FEMALE,                                                                                                                 LOW_INCOME], reach: 3601 coefs: (v=2.037369812485327, m=2.008464157509489)
+Day 14: Campaign total budget bid (millis): 3407
+Day 14: ucs level reported: 0.47829690000000014
+Day 14 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 588 video: 197 text: 392)
+(publisher: cnn popularity: 864 video: 464 text: 401)
+(publisher: ehow popularity: 1002 video: 443 text: 560)
+(publisher: msn popularity: 7184 video: 1184 text: 6001)
+(publisher: sears popularity: 633 video: 244 text: 390)
+(publisher: target popularity: 796 video: 246 text: 551)
+Day 14 : Simulation Status Received
+Day 14: Sending BidBundle
+Day 14 ended. Starting next day
+Day 15: Daily notification for campaign 540388089
+Day 15:  allocated to DummyAdnetwork. UCS Level set to 0.47829690000000014 at pr                                                                                                                ice 0.0 Quality Score is: 0.8935588525724096
+Day 15: Campaign opportunity - Campaign ID 1920556266: day 17 to 26 [OLD, FEMALE                                                                                                                , LOW_INCOME], reach: 4802 coefs: (v=2.3990236950285873, m=1.6646162570647487)
+Day 15: Campaign total budget bid (millis): 2983
+Day 15: ucs level reported: 0.47829690000000014
+Day 15 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 627 video: 212 text: 416)
+(publisher: cnn popularity: 851 video: 464 text: 388)
+(publisher: ehow popularity: 1014 video: 458 text: 557)
+(publisher: msn popularity: 7288 video: 1217 text: 6072)
+(publisher: sears popularity: 606 video: 251 text: 356)
+(publisher: target popularity: 751 video: 231 text: 521)
+Day 15 : Simulation Status Received
+Day 15: Sending BidBundle
+Day 15 ended. Starting next day
+Day 16: Daily notification for campaign 1920556266
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=target, marketSegments=[OLD, FEMALE,                                                                                                                 LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegme                                                                                                                nts=[OLD, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=                                                                                                                sears, marketSegments=[OLD, FEMALE, LOW_INCOME], device=pc, adType=text], AdxQue                                                                                                                ry [publisher=msn, marketSegments=[OLD, FEMALE, LOW_INCOME], device=pc, adType=t                                                                                                                ext], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, FEMALE, LOW_INCOME],                                                                                                                 device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[OLD, FEMALE,                                                                                                                 LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegmen                                                                                                                ts=[OLD, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=s                                                                                                                ears, marketSegments=[OLD, FEMALE, LOW_INCOME], device=mobile, adType=video], Ad                                                                                                                xQuery [publisher=msn, marketSegments=[OLD, FEMALE, LOW_INCOME], device=pc, adTy                                                                                                                pe=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, FEMALE, LOW_INC                                                                                                                OME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[OL                                                                                                                D, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=target,                                                                                                                 marketSegments=[OLD, FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [pu                                                                                                                blisher=cnn, marketSegments=[OLD, FEMALE, LOW_INCOME], device=mobile, adType=vid                                                                                                                eo], AdxQuery [publisher=ehow, marketSegments=[OLD, FEMALE, LOW_INCOME], device=                                                                                                                pc, adType=text], AdxQuery [publisher=target, marketSegments=[OLD, FEMALE, LOW_I                                                                                                                NCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD,                                                                                                                 FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadviso                                                                                                                r, marketSegments=[OLD, FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQu                                                                                                                ery [publisher=msn, marketSegments=[OLD, FEMALE, LOW_INCOME], device=mobile, adT                                                                                                                ype=video], AdxQuery [publisher=sears, marketSegments=[OLD, FEMALE, LOW_INCOME],                                                                                                                 device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD,                                                                                                                 FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=cnn, marketSe                                                                                                                gments=[OLD, FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=e                                                                                                                how, marketSegments=[OLD, FEMALE, LOW_INCOME], device=mobile, adType=video], Adx                                                                                                                Query [publisher=ehow, marketSegments=[OLD, FEMALE, LOW_INCOME], device=pc, adTy                                                                                                                pe=video], AdxQuery [publisher=cnn, marketSegments=[OLD, FEMALE, LOW_INCOME], de                                                                                                                vice=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 16:  WON at cost (Millis)2983. UCS Level set to 0.47829690000000014 at price                                                                                                                 0.0 Quality Score is: 0.8935588525724096
+Day 16: Campaign opportunity - Campaign ID 1209475381: day 18 to 27 [LOW_INCOME]                                                                                                                , reach: 16024 coefs: (v=2.4741411135797415, m=2.4708631399621748)
+Day 16: Campaign total budget bid (millis): 3323
+Day 16: ucs level reported: 0.47829690000000014
+Day 16 :BankStatus[-91,295572]
+Publishers Report:
+(publisher: tripadvisor popularity: 626 video: 203 text: 424)
+(publisher: cnn popularity: 836 video: 444 text: 393)
+(publisher: ehow popularity: 1026 video: 477 text: 550)
+(publisher: msn popularity: 7286 video: 1210 text: 6077)
+(publisher: sears popularity: 624 video: 273 text: 352)
+(publisher: target popularity: 756 video: 215 text: 542)
+Day 16 : Simulation Status Received
+rbid =  6.209408825978351E-4 || budget = 2.983
+Day 16: Updated 48 Bid Bundle entries for Campaign id 1920556266
+Day 16: Sending BidBundle
+Day 16 ended. Starting next day
+Day 17: Daily notification for campaign 1209475381
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=target, marketSegments=[LOW_INCOME],                                                                                                                 device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[LOW_INCO                                                                                                                ME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[LOW                                                                                                                _INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[LO                                                                                                                W_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, market                                                                                                                Segments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=cnn, mar                                                                                                                ketSegments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=ehow,                                                                                                                 marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=                                                                                                                sears, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publishe                                                                                                                r=tripadvisor, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [p                                                                                                                ublisher=ehow, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [                                                                                                                publisher=ehow, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [                                                                                                                publisher=tripadvisor, marketSegments=[LOW_INCOME], device=pc, adType=video], Ad                                                                                                                xQuery [publisher=target, marketSegments=[LOW_INCOME], device=pc, adType=video],                                                                                                                 AdxQuery [publisher=sears, marketSegments=[LOW_INCOME], device=mobile, adType=t                                                                                                                ext], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME], device=mobile, adTyp                                                                                                                e=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME], device=mo                                                                                                                bile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOME], devic                                                                                                                e=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOME], d                                                                                                                evice=pc, adType=text], AdxQuery [publisher=target, marketSegments=[LOW_INCOME],                                                                                                                 device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME],                                                                                                                 device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=text], AdxQuery [publisher=target, marketSegments=[LOW_INC                                                                                                                OME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 17:  WON at cost (Millis)8056. UCS Level set to 0.6561000000000001 at price                                                                                                                 0.08420269445547961 Quality Score is: 0.8935588525724096
+Day 17: Campaign opportunity - Campaign ID 1694058986: day 19 to 21 [MALE, OLD,                                                                                                                 HIGH_INCOME], reach: 1939 coefs: (v=2.1023394717421304, m=1.9458719192001965)
+Day 17: Campaign total budget bid (millis): 1002
+Day 17: ucs level reported: 0.6561000000000001
+Day 17 :BankStatus[-91,379774]
+Publishers Report:
+(publisher: tripadvisor popularity: 625 video: 217 text: 409)
+(publisher: cnn popularity: 919 video: 489 text: 431)
+(publisher: ehow popularity: 966 video: 440 text: 527)
+(publisher: msn popularity: 7239 video: 1175 text: 6065)
+(publisher: sears popularity: 609 video: 228 text: 382)
+(publisher: target popularity: 741 video: 215 text: 527)
+Day 17 : Simulation Status Received
+rbid =  5.026831398976662E-4 || budget = 8.056
+Day 17: Updated 54 Bid Bundle entries for Campaign id 1209475381
+rbid =  6.209408825978351E-4 || budget = 2.983
+Day 17: Updated 48 Bid Bundle entries for Campaign id 1920556266
+Day 17: Sending BidBundle
+Day 17 ended. Starting next day
+Day 18: Updating campaign 1920556266 stats: 1879.7382486877248 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 2.985470134276686
+Day 18: Daily notification for campaign 1694058986
+Day 18:  allocated to adv2. UCS Level set to 0.9 at price 0.175815 Quality Score                                                                                                                 is: 0.8935588525724096
+Day 18: Campaign opportunity - Campaign ID 1624545254: day 20 to 24 [MALE, LOW_I                                                                                                                NCOME], reach: 14524 coefs: (v=2.8645169671695494, m=2.3438191979080143)
+Day 18: Campaign total budget bid (millis): 6313
+Day 18: ucs level reported: 0.9
+Day 18 :BankStatus[-91,555589]
+Publishers Report:
+(publisher: tripadvisor popularity: 635 video: 200 text: 436)
+(publisher: cnn popularity: 901 video: 500 text: 402)
+(publisher: ehow popularity: 944 video: 452 text: 493)
+(publisher: msn popularity: 7205 video: 1181 text: 6025)
+(publisher: sears popularity: 635 video: 276 text: 360)
+(publisher: target popularity: 811 video: 210 text: 602)
+Day 18 : AdNetworkReport
+Day 18 : Simulation Status Received
+rbid =  5.026831398976662E-4 || budget = 8.056
+Day 18: Updated 54 Bid Bundle entries for Campaign id 1209475381
+rbid =  6.209408825978351E-4 || budget = 2.983
+Day 18: Updated 48 Bid Bundle entries for Campaign id 1920556266
+Day 18: Sending BidBundle
+Day 18 ended. Starting next day
+Day 19: Updating campaign 1920556266 stats: 2745.299671793815 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 4.145046833912778
+Day 19: Updating campaign 1209475381 stats: 13898.974379863535 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.5380665649417318
+Day 19: Daily notification for campaign 1624545254
+Day 19:  allocated to adv3. UCS Level set to 0.9 at price 0.291465 Quality Score                                                                                                                 is: 0.8935588525724096
+Day 19: Campaign opportunity - Campaign ID 1631805285: day 21 to 30 [OLD, FEMALE                                                                                                                ], reach: 22464 coefs: (v=2.816166990724204, m=2.3317623927765485)
+Day 19: Campaign total budget bid (millis): 20012
+Day 19: ucs level reported: 0.9
+Day 19 :BankStatus[-94,835558]
+Publishers Report:
+(publisher: tripadvisor popularity: 608 video: 201 text: 408)
+(publisher: cnn popularity: 830 video: 445 text: 386)
+(publisher: ehow popularity: 979 video: 443 text: 537)
+(publisher: msn popularity: 7328 video: 1230 text: 6099)
+(publisher: sears popularity: 590 video: 258 text: 333)
+(publisher: target popularity: 804 video: 238 text: 567)
+Day 19 : AdNetworkReport
+Day 19 : Simulation Status Received
+rbid =  5.026831398976662E-4 || budget = 8.056
+Day 19: Updated 54 Bid Bundle entries for Campaign id 1209475381
+rbid =  6.209408825978351E-4 || budget = 2.983
+Day 19: Updated 48 Bid Bundle entries for Campaign id 1920556266
+Day 19: Sending BidBundle
+Day 19 ended. Starting next day
+Day 20: Updating campaign 1920556266 stats: 3668.2390534441574 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 4.175148887813545
+Day 20: Updating campaign 1209475381 stats: 25590.659010815507 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7137139125028875
+Day 20: Daily notification for campaign 1631805285
+Day 20:  allocated to adv2. UCS Level set to 0.9 at price 0.291465 Quality Score                                                                                                                 is: 0.8935588525724096
+Day 20: Campaign opportunity - Campaign ID 451737261: day 22 to 31 [MALE, OLD, H                                                                                                                IGH_INCOME], reach: 1616 coefs: (v=2.219717505876239, m=1.5370554840585142)
+Day 20: Campaign total budget bid (millis): 324
+Day 20: ucs level reported: 0.9
+Day 20 :BankStatus[-97,824666]
+Publishers Report:
+(publisher: tripadvisor popularity: 623 video: 202 text: 422)
+(publisher: cnn popularity: 885 video: 471 text: 415)
+(publisher: ehow popularity: 994 video: 455 text: 540)
+(publisher: msn popularity: 7149 video: 1150 text: 6000)
+(publisher: sears popularity: 623 video: 236 text: 388)
+(publisher: target popularity: 792 video: 241 text: 552)
+Day 20 : AdNetworkReport
+Day 20 : Simulation Status Received
+rbid =  6.209408825978351E-4 || budget = 2.983
+Day 20: Updated 48 Bid Bundle entries for Campaign id 1920556266
+Day 20: Sending BidBundle
+Day 20 ended. Starting next day
+Day 21: Updating campaign 1920556266 stats: 4853.350186194625 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 4.248875655173531
+Day 21: Updating campaign 1209475381 stats: 28516.871649648678 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7931971730827978
+Day 21: Daily notification for campaign 451737261
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=msn, marketSegments=[MALE, OLD, HIGH_                                                                                                                INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[MA                                                                                                                LE, OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, market                                                                                                                Segments=[MALE, OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publis                                                                                                                her=cnn, marketSegments=[MALE, OLD, HIGH_INCOME], device=mobile, adType=text], A                                                                                                                dxQuery [publisher=target, marketSegments=[MALE, OLD, HIGH_INCOME], device=pc, a                                                                                                                dType=text], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, OLD, HIGH_IN                                                                                                                COME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegme                                                                                                                nts=[MALE, OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=                                                                                                                tripadvisor, marketSegments=[MALE, OLD, HIGH_INCOME], device=pc, adType=video],                                                                                                                 AdxQuery [publisher=ehow, marketSegments=[MALE, OLD, HIGH_INCOME], device=pc, ad                                                                                                                Type=video], AdxQuery [publisher=sears, marketSegments=[MALE, OLD, HIGH_INCOME],                                                                                                                 device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[MALE, OLD,                                                                                                                 HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegm                                                                                                                ents=[MALE, OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=msn,                                                                                                                 marketSegments=[MALE, OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery                                                                                                                 [publisher=sears, marketSegments=[MALE, OLD, HIGH_INCOME], device=mobile, adTyp                                                                                                                e=text], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, OLD, HIGH_INCOME                                                                                                                ], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[MALE, OLD,                                                                                                                 HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=target, marketSegment                                                                                                                s=[MALE, OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, m                                                                                                                arketSegments=[MALE, OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [                                                                                                                publisher=sears, marketSegments=[MALE, OLD, HIGH_INCOME], device=mobile, adType=                                                                                                                video], AdxQuery [publisher=msn, marketSegments=[MALE, OLD, HIGH_INCOME], device                                                                                                                =mobile, adType=text], AdxQuery [publisher=target, marketSegments=[MALE, OLD, HI                                                                                                                GH_INCOME], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegment                                                                                                                s=[MALE, OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, m                                                                                                                arketSegments=[MALE, OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publi                                                                                                                sher=target, marketSegments=[MALE, OLD, HIGH_INCOME], device=mobile, adType=text                                                                                                                ]]!!!!!!!!!!!!!!!!
+Day 21:  WON at cost (Millis)485. UCS Level set to 0.5314410000000002 at price 0                                                                                                                .05457372465728361 Quality Score is: 0.8935588525724096
+Day 21: Campaign opportunity - Campaign ID 1400439394: day 23 to 27 [MALE, OLD],                                                                                                                 reach: 6507 coefs: (v=2.498413422391243, m=2.2288347553084846)
+Day 21: Campaign total budget bid (millis): 1778
+Day 21: ucs level reported: 0.5314410000000002
+Day 21 :BankStatus[-98,084989]
+Publishers Report:
+(publisher: tripadvisor popularity: 640 video: 203 text: 438)
+(publisher: cnn popularity: 899 video: 499 text: 401)
+(publisher: ehow popularity: 1015 video: 461 text: 555)
+(publisher: msn popularity: 7147 video: 1186 text: 5962)
+(publisher: sears popularity: 664 video: 272 text: 393)
+(publisher: target popularity: 769 video: 239 text: 531)
+Day 21 : AdNetworkReport
+Day 21 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 21: Updated 42 Bid Bundle entries for Campaign id 451737261
+rbid =  6.209408825978351E-4 || budget = 2.983
+Day 21: Updated 48 Bid Bundle entries for Campaign id 1920556266
+Day 21: Sending BidBundle
+Day 21 ended. Starting next day
+Day 22: Updating campaign 1920556266 stats: 4875.325581279402 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 11.74129161657724
+Day 22: Updating campaign 1209475381 stats: 28516.871649648678 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7931971730827978
+Day 22: Daily notification for campaign 1400439394
+Day 22:  allocated to DummyAdnetwork. UCS Level set to 0.81 at price 0.138980661                                                                                                                32351466 Quality Score is: 0.8935588525724096
+Day 22: Campaign opportunity - Campaign ID 1087926435: day 24 to 26 [FEMALE, HIG                                                                                                                H_INCOME], reach: 994 coefs: (v=2.774065380350025, m=1.9483544164853015)
+Day 22: Campaign total budget bid (millis): 433
+Day 22: ucs level reported: 0.81
+Day 22 :BankStatus[-98,377367]
+Publishers Report:
+(publisher: tripadvisor popularity: 644 video: 196 text: 449)
+(publisher: cnn popularity: 864 video: 493 text: 372)
+(publisher: ehow popularity: 955 video: 420 text: 536)
+(publisher: msn popularity: 7277 video: 1159 text: 6119)
+(publisher: sears popularity: 574 video: 229 text: 346)
+(publisher: target popularity: 772 video: 256 text: 517)
+Day 22 : AdNetworkReport
+Day 22 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 22: Updated 42 Bid Bundle entries for Campaign id 451737261
+rbid =  6.209408825978351E-4 || budget = 2.983
+Day 22: Updated 48 Bid Bundle entries for Campaign id 1920556266
+Day 22: Sending BidBundle
+Day 22 ended. Starting next day
+Day 23: Updating campaign 1920556266 stats: 5063.771040176455 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 11.760743255849652
+Day 23: Updating campaign 451737261 stats: 267.7428027217083 tgtImps 0.0 nonTgtI                                                                                                                mps. Cost of imps is 0.043370660085056904
+Day 23: Updating campaign 1209475381 stats: 28516.871649648678 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7931971730827978
+Day 23: Daily notification for campaign 1087926435
+Day 23:  allocated to DummyAdnetwork-5. UCS Level set to 0.7290000000000001 at p                                                                                                                rice 0.11394609668997228 Quality Score is: 0.8935588525724096
+Day 23: Campaign opportunity - Campaign ID 1164939032: day 25 to 34 [FEMALE], re                                                                                                                ach: 40352 coefs: (v=2.9111979059248796, m=2.079933119307868)
+Day 23: Campaign total budget bid (millis): 34784
+Day 23: ucs level reported: 0.7290000000000001
+Day 23 :BankStatus[-105,983973]
+Publishers Report:
+(publisher: tripadvisor popularity: 658 video: 223 text: 436)
+(publisher: cnn popularity: 868 video: 485 text: 384)
+(publisher: ehow popularity: 976 video: 456 text: 521)
+(publisher: msn popularity: 7206 video: 1186 text: 6021)
+(publisher: sears popularity: 621 video: 264 text: 358)
+(publisher: target popularity: 777 video: 259 text: 519)
+Day 23 : AdNetworkReport
+Day 23 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 23: Updated 42 Bid Bundle entries for Campaign id 451737261
+Day 23: Sending BidBundle
+Day 23 ended. Starting next day
+Day 24: Updating campaign 1920556266 stats: 5067.1002726905845 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 18.176793434911204
+Day 24: Updating campaign 451737261 stats: 490.169626643431 tgtImps 0.0 nonTgtIm                                                                                                                ps. Cost of imps is 0.08840642443576618
+Day 24: Updating campaign 1209475381 stats: 28516.871649648678 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7931971730827978
+Day 24: Daily notification for campaign 1164939032
+Day 24:  allocated to DummyAdnetwork-2. UCS Level set to 0.47829690000000014 at                                                                                                                 price 0.0 Quality Score is: 0.8935588525724096
+Day 24: Campaign opportunity - Campaign ID 649492301: day 26 to 35 [OLD, FEMALE,                                                                                                                 HIGH_INCOME], reach: 2035 coefs: (v=2.1092215172184536, m=2.202098246747152)
+Day 24: Campaign total budget bid (millis): 959
+Day 24: ucs level reported: 0.47829690000000014
+Day 24 :BankStatus[-106,047011]
+Publishers Report:
+(publisher: tripadvisor popularity: 631 video: 206 text: 426)
+(publisher: cnn popularity: 848 video: 450 text: 399)
+(publisher: ehow popularity: 1003 video: 467 text: 537)
+(publisher: msn popularity: 7271 video: 1213 text: 6059)
+(publisher: sears popularity: 617 video: 241 text: 377)
+(publisher: target popularity: 758 video: 236 text: 523)
+Day 24 : AdNetworkReport
+Day 24 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 24: Updated 42 Bid Bundle entries for Campaign id 451737261
+Day 24: Sending BidBundle
+Day 24 ended. Starting next day
+Day 25: Updating campaign 1920556266 stats: 5067.1002726905845 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 18.176793434911204
+Day 25: Updating campaign 451737261 stats: 737.9887027612018 tgtImps 0.0 nonTgtI                                                                                                                mps. Cost of imps is 0.13618784096158834
+Day 25: Updating campaign 1209475381 stats: 28516.871649648678 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7931971730827978
+Day 25: Daily notification for campaign 649492301
+Day 25:  allocated to DummyAdnetwork-2. UCS Level set to 0.5314410000000002 at p                                                                                                                rice 0.0 Quality Score is: 0.8935588525724096
+Day 25: Campaign opportunity - Campaign ID 1877881704: day 27 to 36 [YOUNG, MALE                                                                                                                , HIGH_INCOME], reach: 2585 coefs: (v=2.2792071866668575, m=2.3293374359082852)
+Day 25: Campaign total budget bid (millis): 765
+Day 25: ucs level reported: 0.5314410000000002
+Day 25 :BankStatus[-112,508420]
+Publishers Report:
+(publisher: tripadvisor popularity: 643 video: 216 text: 428)
+(publisher: cnn popularity: 892 video: 493 text: 400)
+(publisher: ehow popularity: 959 video: 414 text: 546)
+(publisher: msn popularity: 7286 video: 1169 text: 6118)
+(publisher: sears popularity: 622 video: 261 text: 362)
+(publisher: target popularity: 787 video: 243 text: 545)
+Day 25 : AdNetworkReport
+Day 25 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 25: Updated 42 Bid Bundle entries for Campaign id 451737261
+Day 25: Sending BidBundle
+Day 25 ended. Starting next day
+Day 26: Updating campaign 1920556266 stats: 5067.1002726905845 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 18.176793434911204
+Day 26: Updating campaign 451737261 stats: 947.4975608461439 tgtImps 0.0 nonTgtI                                                                                                                mps. Cost of imps is 0.18202439744053492
+Day 26: Updating campaign 1209475381 stats: 28516.871649648678 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7931971730827978
+Day 26: Daily notification for campaign 1877881704
+Day 26:  allocated to DummyAdnetwork-5. UCS Level set to 0.5314410000000002 at p                                                                                                                rice 0.0 Quality Score is: 0.8935588525724096
+Day 26: Campaign opportunity - Campaign ID 2122598976: day 28 to 30 [MALE], reac                                                                                                                h: 7434 coefs: (v=2.689499825823597, m=2.1324243450219305)
+Day 26: Campaign total budget bid (millis): 5858
+Day 26: ucs level reported: 0.5314410000000002
+Day 26 :BankStatus[-112,556202]
+Publishers Report:
+(publisher: tripadvisor popularity: 639 video: 228 text: 412)
+(publisher: cnn popularity: 851 video: 459 text: 393)
+(publisher: ehow popularity: 995 video: 432 text: 564)
+(publisher: msn popularity: 7191 video: 1186 text: 6006)
+(publisher: sears popularity: 658 video: 276 text: 383)
+(publisher: target popularity: 821 video: 231 text: 591)
+Day 26 : AdNetworkReport
+Day 26 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 26: Updated 42 Bid Bundle entries for Campaign id 451737261
+Day 26: Sending BidBundle
+Day 26 ended. Starting next day
+Day 27: Updating campaign 1920556266 stats: 5067.1002726905845 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 18.176793434911204
+Day 27: Updating campaign 451737261 stats: 1169.7841921084976 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 0.23158095145841065
+Day 27: Updating campaign 1209475381 stats: 28516.871649648678 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7931971730827978
+Day 27: Daily notification for campaign 2122598976
+Day 27:  allocated to DummyAdnetwork-2. UCS Level set to 0.5314410000000002 at p                                                                                                                rice 0.0 Quality Score is: 0.9870655715450453
+Day 27: Campaign opportunity - Campaign ID 2054889459: day 29 to 38 [OLD, FEMALE                                                                                                                ], reach: 14040 coefs: (v=2.6569538300498152, m=2.0816375217333034)
+Day 27: Campaign total budget bid (millis): 12424
+Day 27: ucs level reported: 0.5314410000000002
+Day 27 :BankStatus[-109,471668]
+Publishers Report:
+(publisher: tripadvisor popularity: 663 video: 206 text: 458)
+(publisher: cnn popularity: 825 video: 447 text: 379)
+(publisher: ehow popularity: 1049 video: 475 text: 575)
+(publisher: msn popularity: 7233 video: 1171 text: 6063)
+(publisher: sears popularity: 617 video: 247 text: 371)
+(publisher: target popularity: 749 video: 230 text: 520)
+Day 27 : AdNetworkReport
+Day 27 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 27: Updated 42 Bid Bundle entries for Campaign id 451737261
+Day 27: Sending BidBundle
+Day 27 ended. Starting next day
+Day 28: Updating campaign 451737261 stats: 1355.9471391118975 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 0.2764487905616832
+Day 28: Updating campaign 1209475381 stats: 28516.871649648678 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 1.7931971730827978
+Day 28: Daily notification for campaign 2054889459
+Day 28:  allocated to DummyAdnetwork-5. UCS Level set to 0.5314410000000002 at p                                                                                                                rice 0.0 Quality Score is: 1.1565945784563962
+Day 28: Campaign opportunity - Campaign ID 834321356: day 30 to 32 [LOW_INCOME],                                                                                                                 reach: 12018 coefs: (v=2.642171100160925, m=1.8804785284256562)
+Day 28: Campaign total budget bid (millis): 3552
+Day 28: ucs level reported: 0.5314410000000002
+Day 28 :BankStatus[-99,293215]
+Publishers Report:
+(publisher: tripadvisor popularity: 622 video: 202 text: 421)
+(publisher: cnn popularity: 837 video: 451 text: 387)
+(publisher: ehow popularity: 971 video: 415 text: 557)
+(publisher: msn popularity: 7301 video: 1150 text: 6152)
+(publisher: sears popularity: 593 video: 237 text: 357)
+(publisher: target popularity: 823 video: 259 text: 565)
+Day 28 : AdNetworkReport
+Day 28 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 28: Updated 42 Bid Bundle entries for Campaign id 451737261
+Day 28: Sending BidBundle
+Day 28 ended. Starting next day
+Day 29: Updating campaign 451737261 stats: 1563.5167903655781 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 0.32975079092921594
+Day 29: Daily notification for campaign 834321356
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=target, marketSegments=[LOW_INCOME],                                                                                                                 device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[LOW_INCO                                                                                                                ME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[LOW                                                                                                                _INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[LO                                                                                                                W_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, market                                                                                                                Segments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=cnn, mar                                                                                                                ketSegments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=ehow,                                                                                                                 marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=                                                                                                                sears, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publishe                                                                                                                r=tripadvisor, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [p                                                                                                                ublisher=ehow, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [                                                                                                                publisher=ehow, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [                                                                                                                publisher=tripadvisor, marketSegments=[LOW_INCOME], device=pc, adType=video], Ad                                                                                                                xQuery [publisher=target, marketSegments=[LOW_INCOME], device=pc, adType=video],                                                                                                                 AdxQuery [publisher=sears, marketSegments=[LOW_INCOME], device=mobile, adType=t                                                                                                                ext], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME], device=mobile, adTyp                                                                                                                e=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME], device=mo                                                                                                                bile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOME], devic                                                                                                                e=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOME], d                                                                                                                evice=pc, adType=text], AdxQuery [publisher=target, marketSegments=[LOW_INCOME],                                                                                                                 device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME],                                                                                                                 device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=text], AdxQuery [publisher=target, marketSegments=[LOW_INC                                                                                                                OME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 29:  WON at cost (Millis)6236. UCS Level set to 0.5314410000000002 at price                                                                                                                 0.0 Quality Score is: 1.1565945784563962
+Day 29: Campaign opportunity - Campaign ID 1120316554: day 31 to 35 [LOW_INCOME]                                                                                                                , reach: 32048 coefs: (v=2.9424707112062896, m=2.482702552867064)
+Day 29: Campaign total budget bid (millis): 5481
+Day 29: ucs level reported: 0.5314410000000002
+Day 29 :BankStatus[-99,338083]
+Publishers Report:
+(publisher: tripadvisor popularity: 610 video: 217 text: 394)
+(publisher: cnn popularity: 845 video: 459 text: 387)
+(publisher: ehow popularity: 963 video: 430 text: 534)
+(publisher: msn popularity: 7215 video: 1169 text: 6047)
+(publisher: sears popularity: 613 video: 274 text: 340)
+(publisher: target popularity: 808 video: 255 text: 554)
+Day 29 : AdNetworkReport
+Day 29 : Simulation Status Received
+rbid =  2.9975278121137204E-4 || budget = 0.485
+Day 29: Updated 42 Bid Bundle entries for Campaign id 451737261
+rbid =  5.188019966722129E-4 || budget = 6.236
+Day 29: Updated 48 Bid Bundle entries for Campaign id 834321356
+Day 29: Sending BidBundle
+Day 29 ended. Starting next day
+Day 30: Updating campaign 451737261 stats: 1740.0394837268968 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 0.38374653764554933
+Day 30: Daily notification for campaign 1120316554
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=target, marketSegments=[LOW_INCOME],                                                                                                                 device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[LOW_INCO                                                                                                                ME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[LOW                                                                                                                _INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[LO                                                                                                                W_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, market                                                                                                                Segments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=cnn, mar                                                                                                                ketSegments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=ehow,                                                                                                                 marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=                                                                                                                sears, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publishe                                                                                                                r=tripadvisor, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [p                                                                                                                ublisher=ehow, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [                                                                                                                publisher=ehow, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [                                                                                                                publisher=tripadvisor, marketSegments=[LOW_INCOME], device=pc, adType=video], Ad                                                                                                                xQuery [publisher=target, marketSegments=[LOW_INCOME], device=pc, adType=video],                                                                                                                 AdxQuery [publisher=sears, marketSegments=[LOW_INCOME], device=mobile, adType=t                                                                                                                ext], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME], device=mobile, adTyp                                                                                                                e=text], AdxQuery [publisher=tripadvisor, marketSegments=[LOW_INCOME], device=mo                                                                                                                bile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOME], devic                                                                                                                e=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[LOW_INCOME], d                                                                                                                evice=pc, adType=text], AdxQuery [publisher=target, marketSegments=[LOW_INCOME],                                                                                                                 device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME],                                                                                                                 device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOM                                                                                                                E], device=pc, adType=text], AdxQuery [publisher=target, marketSegments=[LOW_INC                                                                                                                OME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 30:  WON at cost (Millis)11974. UCS Level set to 1.0 at price 0.195449538268                                                                                                                4226 Quality Score is: 1.1565945784563962
+Day 30: Campaign opportunity - Campaign ID 2045808269: day 32 to 41 [OLD, FEMALE                                                                                                                , LOW_INCOME], reach: 12005 coefs: (v=2.7957003288942355, m=1.6040228694318603)
+Day 30: Campaign total budget bid (millis): 5669
+Day 30: ucs level reported: 1.0
+Day 30 :BankStatus[-99,586834]
+Publishers Report:
+(publisher: tripadvisor popularity: 624 video: 199 text: 426)
+(publisher: cnn popularity: 845 video: 476 text: 370)
+(publisher: ehow popularity: 1041 video: 492 text: 550)
+(publisher: msn popularity: 7222 video: 1181 text: 6042)
+(publisher: sears popularity: 608 video: 255 text: 354)
+(publisher: target popularity: 688 video: 207 text: 482)
+Day 30 : AdNetworkReport
+Day 30 : Simulation Status Received
+rbid =  5.188019966722129E-4 || budget = 6.236
+Day 30: Updated 48 Bid Bundle entries for Campaign id 834321356
+rbid =  3.7360374414976597E-4 || budget = 11.974
+Day 30: Updated 60 Bid Bundle entries for Campaign id 1120316554
+Day 30: Sending BidBundle
+Day 30 ended. Starting next day
+Day 31: Updating campaign 451737261 stats: 1875.0557510536996 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 0.42473447492923555
+Day 31: Updating campaign 834321356 stats: 9883.85994545597 tgtImps 0.0 nonTgtIm                                                                                                                ps. Cost of imps is 3.0347844289542323
+Day 31: Daily notification for campaign 2045808269
+Day 31:  allocated to DummyAdnetwork. UCS Level set to 1.0 at price 0.1817204353                                                                                                                1169257 Quality Score is: 1.1565945784563962
+Day 31: Campaign opportunity - Campaign ID 166245799: day 33 to 35 [YOUNG, FEMAL                                                                                                                E, HIGH_INCOME], reach: 153 coefs: (v=2.417042589082034, m=2.4575093393901906)
+Day 31: Campaign total budget bid (millis): 50
+Day 31: ucs level reported: 1.0
+Day 31 :BankStatus[-99,822550]
+Publishers Report:
+(publisher: tripadvisor popularity: 633 video: 205 text: 429)
+(publisher: cnn popularity: 882 video: 488 text: 395)
+(publisher: ehow popularity: 1038 video: 478 text: 561)
+(publisher: msn popularity: 7183 video: 1169 text: 6015)
+(publisher: sears popularity: 589 video: 243 text: 347)
+(publisher: target popularity: 830 video: 250 text: 581)
+Day 31 : AdNetworkReport
+Day 31 : Simulation Status Received
+rbid =  5.188019966722129E-4 || budget = 6.236
+Day 31: Updated 48 Bid Bundle entries for Campaign id 834321356
+rbid =  3.7360374414976597E-4 || budget = 11.974
+Day 31: Updated 60 Bid Bundle entries for Campaign id 1120316554
+Day 31: Sending BidBundle
+Day 31 ended. Starting next day
+Day 32: Updating campaign 451737261 stats: 1875.0557510536996 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 0.42473447492923555
+Day 32: Updating campaign 834321356 stats: 19473.84984117984 tgtImps 0.0 nonTgtI                                                                                                                mps. Cost of imps is 3.572689533725665
+Day 32: Updating campaign 1120316554 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of                                                                                                                 imps is 0.0
+Day 32: Daily notification for campaign 166245799
+Day 32:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.16927842                                                                                                                04459762 Quality Score is: 1.1336517521637863
+Day 32: Campaign opportunity - Campaign ID 329856870: day 34 to 36 [YOUNG, MALE,                                                                                                                 HIGH_INCOME], reach: 775 coefs: (v=2.0272122110977895, m=1.998143862583384)
+Day 32: Campaign total budget bid (millis): 232
+Day 32: ucs level reported: 1.0
+Day 32 :BankStatus[-102,525765]
+Publishers Report:
+(publisher: tripadvisor popularity: 606 video: 201 text: 406)
+(publisher: cnn popularity: 849 video: 460 text: 390)
+(publisher: ehow popularity: 1002 video: 461 text: 542)
+(publisher: msn popularity: 7235 video: 1164 text: 6072)
+(publisher: sears popularity: 608 video: 239 text: 370)
+(publisher: target popularity: 771 video: 239 text: 533)
+Day 32 : AdNetworkReport
+Day 32 : Simulation Status Received
+rbid =  3.7360374414976597E-4 || budget = 11.974
+Day 32: Updated 60 Bid Bundle entries for Campaign id 1120316554
+Day 32: Sending BidBundle
+Day 32 ended. Starting next day
+Day 33: Updating campaign 834321356 stats: 22213.749058807545 tgtImps 0.0 nonTgt                                                                                                                Imps. Cost of imps is 3.7943524481664794
+Day 33: Updating campaign 1120316554 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of                                                                                                                 imps is 0.0
+Day 33: Daily notification for campaign 329856870
+Day 33:  allocated to DummyAdnetwork-5. UCS Level set to 1.0 at price 0.19160390                                                                                                                85419982 Quality Score is: 1.2194173268103148
+Day 33: Campaign opportunity - Campaign ID 582200944: day 35 to 39 [OLD, LOW_INC                                                                                                                OME], reach: 4196 coefs: (v=2.9924430427930995, m=1.918982565436501)
+Day 33: Campaign total budget bid (millis): 2935
+Day 33: ucs level reported: 1.0
+Day 33 :BankStatus[-95,294431]
+Publishers Report:
+(publisher: tripadvisor popularity: 612 video: 199 text: 414)
+(publisher: cnn popularity: 886 video: 461 text: 426)
+(publisher: ehow popularity: 1024 video: 462 text: 563)
+(publisher: msn popularity: 7149 video: 1176 text: 5974)
+(publisher: sears popularity: 626 video: 276 text: 351)
+(publisher: target popularity: 794 video: 251 text: 544)
+Day 33 : AdNetworkReport
+Day 33 : Simulation Status Received
+rbid =  3.7360374414976597E-4 || budget = 11.974
+Day 33: Updated 60 Bid Bundle entries for Campaign id 1120316554
+Day 33: Sending BidBundle
+Day 33 ended. Starting next day
+Day 34: Updating campaign 1120316554 stats: 10892.495341072092 tgtImps 0.0 nonTg                                                                                                                tImps. Cost of imps is 0.8533071496573905
+Day 34: Daily notification for campaign 582200944
+Day 34:  allocated to DummyAdnetwork-4. UCS Level set to 1.0 at price 0.19675441                                                                                                                15916633 Quality Score is: 1.2194173268103148
+Day 34: Campaign opportunity - Campaign ID 1696618805: day 36 to 40 [YOUNG, FEMA                                                                                                                LE, HIGH_INCOME], reach: 1024 coefs: (v=2.8652119782547167, m=2.2903940332072863                                                                                                                )
+Day 34: Campaign total budget bid (millis): 306
+Day 34: ucs level reported: 1.0
+Day 34 :BankStatus[-95,712848]
+Publishers Report:
+(publisher: tripadvisor popularity: 672 video: 218 text: 455)
+(publisher: cnn popularity: 858 video: 466 text: 393)
+(publisher: ehow popularity: 996 video: 459 text: 538)
+(publisher: msn popularity: 7147 video: 1168 text: 5980)
+(publisher: sears popularity: 611 video: 246 text: 366)
+(publisher: target popularity: 822 video: 237 text: 586)
+Day 34 : AdNetworkReport
+Day 34 : Simulation Status Received
+rbid =  3.7360374414976597E-4 || budget = 11.974
+Day 34: Updated 60 Bid Bundle entries for Campaign id 1120316554
+Day 34: Sending BidBundle
+Day 34 ended. Starting next day
+Day 35: Updating campaign 1120316554 stats: 21501.111610648542 tgtImps 0.0 nonTgtImps. Cost of imps is 1.859367594828465
+Day 35: Daily notification for campaign 1696618805
+Day 35:  allocated to DummyAdnetwork. UCS Level set to 1.0 at price 0.19889448388113934 Quality Score is: 1.2194173268103148
+Day 35: Campaign opportunity - Campaign ID 226614547: day 37 to 41 [MALE, HIGH_INCOME], reach: 5300 coefs: (v=2.0293242162407963, m=1.5676941810816298)
+Day 35: Campaign total budget bid (millis): 4234
+Day 35: ucs level reported: 1.0
+Day 35 :BankStatus[-96,765050]
+Publishers Report:
+(publisher: tripadvisor popularity: 603 video: 207 text: 397)
+(publisher: cnn popularity: 840 video: 476 text: 365)
+(publisher: ehow popularity: 1015 video: 464 text: 552)
+(publisher: msn popularity: 7250 video: 1157 text: 6094)
+(publisher: sears popularity: 632 video: 260 text: 373)
+(publisher: target popularity: 793 video: 244 text: 550)
+Day 35 : AdNetworkReport
+Day 35 : Simulation Status Received
+Day 35: Sending BidBundle
+Day 35 ended. Starting next day
+Day 36: Updating campaign 1120316554 stats: 31609.69717009228 tgtImps 0.0 nonTgtImps. Cost of imps is 2.9373226286970358
+Day 36: Daily notification for campaign 226614547
+Day 36:  allocated to DummyAdnetwork-3. UCS Level set to 0.5904900000000002 at price 0.0 Quality Score is: 1.079304202964193
+Day 36: Campaign opportunity - Campaign ID 1866616141: day 38 to 42 [OLD, HIGH_INCOME], reach: 4860 coefs: (v=2.901152126647604, m=1.5291462220113705)
+Day 36: Campaign total budget bid (millis): 645
+Day 36: ucs level reported: 0.5904900000000002
+Day 36 :BankStatus[-85,965998]
+Publishers Report:
+(publisher: tripadvisor popularity: 623 video: 193 text: 431)
+(publisher: cnn popularity: 847 video: 442 text: 406)
+(publisher: ehow popularity: 1024 video: 449 text: 576)
+(publisher: msn popularity: 7212 video: 1239 text: 5974)
+(publisher: sears popularity: 601 video: 243 text: 359)
+(publisher: target popularity: 831 video: 242 text: 590)
+Day 36 : AdNetworkReport
+Day 36 : Simulation Status Received
+Day 36: Sending BidBundle
+Day 36 ended. Starting next day
+Day 37: Daily notification for campaign 1866616141
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=target, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=cnn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 37:  WON at cost (Millis)883. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.079304202964193
+Day 37: Campaign opportunity - Campaign ID 2044790030: day 39 to 41 [YOUNG, FEMALE], reach: 5366 coefs: (v=2.65777793461513, m=1.9469674619425565)
+Day 37: Campaign total budget bid (millis): 3390
+Day 37: ucs level reported: 0.47829690000000014
+Day 37 :BankStatus[-87,043953]
+Publishers Report:
+(publisher: tripadvisor popularity: 584 video: 180 text: 405)
+(publisher: cnn popularity: 879 video: 452 text: 428)
+(publisher: ehow popularity: 1002 video: 483 text: 520)
+(publisher: msn popularity: 7148 video: 1173 text: 5976)
+(publisher: sears popularity: 615 video: 263 text: 353)
+(publisher: target popularity: 841 video: 229 text: 613)
+Day 37 : Simulation Status Received
+rbid =  1.816125051419169E-4 || budget = 0.883
+Day 37: Updated 48 Bid Bundle entries for Campaign id 1866616141
+Day 37: Sending BidBundle
+Day 37 ended. Starting next day
+Day 38: Daily notification for campaign 2044790030
+Day 38:  allocated to DummyAdnetwork-3. UCS Level set to 0.5904900000000002 at price 0.0 Quality Score is: 1.079304202964193
+Day 38: Campaign opportunity - Campaign ID 1454833541: day 40 to 44 [YOUNG], reach: 18356 coefs: (v=2.8496486660947316, m=1.7413738692813445)
+Day 38: Campaign total budget bid (millis): 4612
+Day 38: ucs level reported: 0.5904900000000002
+Day 38 :BankStatus[-87,043953]
+Publishers Report:
+(publisher: tripadvisor popularity: 633 video: 195 text: 439)
+(publisher: cnn popularity: 884 video: 469 text: 416)
+(publisher: ehow popularity: 967 video: 453 text: 515)
+(publisher: msn popularity: 7229 video: 1206 text: 6024)
+(publisher: sears popularity: 661 video: 274 text: 388)
+(publisher: target popularity: 751 video: 212 text: 540)
+Day 38 : Simulation Status Received
+rbid =  1.816125051419169E-4 || budget = 0.883
+Day 38: Updated 48 Bid Bundle entries for Campaign id 1866616141
+Day 38: Sending BidBundle
+Day 38 ended. Starting next day
+Day 39: Updating campaign 1866616141 stats: 1319.9389094153626 tgtImps 0.0 nonTgtImps. Cost of imps is 0.06852610248250117
+Day 39: Daily notification for campaign 1454833541
+Day 39:  allocated to DummyAdnetwork. UCS Level set to 0.5904900000000002 at price 0.0 Quality Score is: 1.079304202964193
+Day 39: Campaign opportunity - Campaign ID 152883871: day 41 to 50 [YOUNG, MALE], reach: 11765 coefs: (v=2.222908776993072, m=2.123698996894379)
+Day 39: Campaign total budget bid (millis): 3565
+Day 39: ucs level reported: 0.5904900000000002
+Day 39 :BankStatus[-87,043953]
+Publishers Report:
+(publisher: tripadvisor popularity: 598 video: 200 text: 399)
+(publisher: cnn popularity: 855 video: 463 text: 393)
+(publisher: ehow popularity: 992 video: 466 text: 527)
+(publisher: msn popularity: 7256 video: 1175 text: 6082)
+(publisher: sears popularity: 623 video: 261 text: 363)
+(publisher: target popularity: 819 video: 270 text: 550)
+Day 39 : AdNetworkReport
+Day 39 : Simulation Status Received
+rbid =  1.816125051419169E-4 || budget = 0.883
+Day 39: Updated 48 Bid Bundle entries for Campaign id 1866616141
+Day 39: Sending BidBundle
+Day 39 ended. Starting next day
+Day 40: Updating campaign 1866616141 stats: 2739.1113419599897 tgtImps 0.0 nonTgtImps. Cost of imps is 0.08708066024309545
+Day 40: Daily notification for campaign 152883871
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=cnn, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=target, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[YOUNG, MALE], device=pc, adType=text]]!!!!!!!!!!!!!!!!
+Day 40:  WON at cost (Millis)4715. UCS Level set to 0.5904900000000002 at price 0.0 Quality Score is: 1.079304202964193
+Day 40: Campaign opportunity - Campaign ID 436480157: day 42 to 44 [LOW_INCOME], reach: 12018 coefs: (v=2.3872082282074807, m=1.5410034425620962)
+Day 40: Campaign total budget bid (millis): 1221
+Day 40: ucs level reported: 0.5904900000000002
+Day 40 :BankStatus[-87,112479]
+Publishers Report:
+(publisher: tripadvisor popularity: 607 video: 190 text: 418)
+(publisher: cnn popularity: 868 video: 457 text: 412)
+(publisher: ehow popularity: 991 video: 466 text: 526)
+(publisher: msn popularity: 7286 video: 1247 text: 6040)
+(publisher: sears popularity: 594 video: 256 text: 339)
+(publisher: target popularity: 794 video: 245 text: 550)
+Day 40 : AdNetworkReport
+Day 40 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 40: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  1.816125051419169E-4 || budget = 0.883
+Day 40: Updated 48 Bid Bundle entries for Campaign id 1866616141
+Day 40: Sending BidBundle
+Day 40 ended. Starting next day
+Day 41: Updating campaign 1866616141 stats: 3738.9429344528635 tgtImps 0.0 nonTgtImps. Cost of imps is 0.11204470603875286
+Day 41: Daily notification for campaign 436480157
+Day 41:  allocated to DummyAdnetwork-3. UCS Level set to 1.0 at price 0.17668505572221926 Quality Score is: 1.079304202964193
+Day 41: Campaign opportunity - Campaign ID 917205862: day 43 to 52 [YOUNG], reach: 22945 coefs: (v=2.5181654308756345, m=1.7134973310961983)
+Day 41: Campaign total budget bid (millis): 14352
+Day 41: ucs level reported: 1.0
+Day 41 :BankStatus[-87,307719]
+Publishers Report:
+(publisher: tripadvisor popularity: 647 video: 224 text: 424)
+(publisher: cnn popularity: 883 video: 454 text: 430)
+(publisher: ehow popularity: 952 video: 450 text: 503)
+(publisher: msn popularity: 7264 video: 1218 text: 6047)
+(publisher: sears popularity: 652 video: 272 text: 381)
+(publisher: target popularity: 774 video: 270 text: 505)
+Day 41 : AdNetworkReport
+Day 41 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 41: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  1.816125051419169E-4 || budget = 0.883
+Day 41: Updated 48 Bid Bundle entries for Campaign id 1866616141
+Day 41: Sending BidBundle
+Day 41 ended. Starting next day
+Day 42: Updating campaign 152883871 stats: 2241.5915590038026 tgtImps 0.0 nonTgtImps. Cost of imps is 2.0550687182865164
+Day 42: Updating campaign 1866616141 stats: 4497.024748558531 tgtImps 0.0 nonTgtImps. Cost of imps is 0.1419312952033724
+Day 42: Daily notification for campaign 917205862
+Day 42:  allocated to DummyAdnetwork-3. UCS Level set to 1.0 at price 0.18375935325438547 Quality Score is: 1.079304202964193
+Day 42: Campaign opportunity - Campaign ID 1216674234: day 44 to 53 [YOUNG, FEMALE, LOW_INCOME], reach: 15840 coefs: (v=2.127801628270917, m=1.6512976841950415)
+Day 42: Campaign total budget bid (millis): 1663
+Day 42: ucs level reported: 1.0
+Day 42 :BankStatus[-87,516442]
+Publishers Report:
+(publisher: tripadvisor popularity: 628 video: 204 text: 425)
+(publisher: cnn popularity: 870 video: 481 text: 390)
+(publisher: ehow popularity: 968 video: 444 text: 525)
+(publisher: msn popularity: 7143 video: 1165 text: 5979)
+(publisher: sears popularity: 679 video: 289 text: 391)
+(publisher: target popularity: 758 video: 233 text: 526)
+Day 42 : AdNetworkReport
+Day 42 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 42: Updated 54 Bid Bundle entries for Campaign id 152883871
+Day 42: Sending BidBundle
+Day 42 ended. Starting next day
+Day 43: Updating campaign 152883871 stats: 4329.4186158663 tgtImps 0.0 nonTgtImps. Cost of imps is 3.345378309758773
+Day 43: Updating campaign 1866616141 stats: 5201.781442709998 tgtImps 0.0 nonTgtImps. Cost of imps is 0.18361845811293484
+Day 43: Daily notification for campaign 1216674234
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=target, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=cnn, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=target, marketSegments=[YOUNG, FEMALE, LOW_INCOME], device=pc, adType=text]]!!!!!!!!!!!!!!!!
+Day 43:  WON at cost (Millis)1663. UCS Level set to 1.0 at price 0.194590462453327 Quality Score is: 1.0684008040217203
+Day 43: Campaign opportunity - Campaign ID 1199242098: day 45 to 49 [MALE, LOW_INCOME], reach: 14524 coefs: (v=2.315173146246562, m=1.5503609236964606)
+Day 43: Campaign total budget bid (millis): 8719
+Day 43: ucs level reported: 1.0
+Day 43 :BankStatus[-88,859009]
+Publishers Report:
+(publisher: tripadvisor popularity: 641 video: 183 text: 459)
+(publisher: cnn popularity: 877 video: 457 text: 421)
+(publisher: ehow popularity: 1004 video: 448 text: 557)
+(publisher: msn popularity: 7244 video: 1205 text: 6040)
+(publisher: sears popularity: 608 video: 249 text: 360)
+(publisher: target popularity: 764 video: 254 text: 511)
+Day 43 : AdNetworkReport
+Day 43 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 43: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 43: Updated 42 Bid Bundle entries for Campaign id 1216674234
+Day 43: Sending BidBundle
+Day 43 ended. Starting next day
+Day 44: Updating campaign 152883871 stats: 6173.001073051197 tgtImps 0.0 nonTgtImps. Cost of imps is 3.597911853447547
+Day 44: Daily notification for campaign 1199242098
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=sears, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=target, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=target, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 44:  WON at cost (Millis)8719. UCS Level set to 1.0 at price 0.19922164657829097 Quality Score is: 1.0684008040217203
+Day 44: Campaign opportunity - Campaign ID 167670533: day 46 to 55 [OLD], reach: 43288 coefs: (v=2.054453227995889, m=2.4286794361668553)
+Day 44: Campaign total budget bid (millis): 33221
+Day 44: ucs level reported: 1.0
+Day 44 :BankStatus[-90,390227]
+Publishers Report:
+(publisher: tripadvisor popularity: 596 video: 215 text: 382)
+(publisher: cnn popularity: 824 video: 444 text: 381)
+(publisher: ehow popularity: 1034 video: 497 text: 538)
+(publisher: msn popularity: 7258 video: 1171 text: 6088)
+(publisher: sears popularity: 597 video: 238 text: 360)
+(publisher: target popularity: 762 video: 232 text: 531)
+Day 44 : AdNetworkReport
+Day 44 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 44: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  6.002340630593419E-4 || budget = 8.719
+Day 44: Updated 42 Bid Bundle entries for Campaign id 1199242098
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 44: Updated 42 Bid Bundle entries for Campaign id 1216674234
+Day 44: Sending BidBundle
+Day 44 ended. Starting next day
+Day 45: Updating campaign 152883871 stats: 7847.721547362911 tgtImps 0.0 nonTgtImps. Cost of imps is 3.733347559438346
+Day 45: Updating campaign 1216674234 stats: 918.3472960989778 tgtImps 0.0 nonTgtImps. Cost of imps is 1.6642519899882613
+Day 45: Daily notification for campaign 167670533
+Day 45:  allocated to DummyAdnetwork-4. UCS Level set to 1.0 at price 0.192109916809302 Quality Score is: 1.0684008040217203
+Day 45: Campaign opportunity - Campaign ID 296781086: day 47 to 49 [OLD, FEMALE], reach: 6739 coefs: (v=2.793281483102478, m=2.066272929698964)
+Day 45: Campaign total budget bid (millis): 2921
+Day 45: ucs level reported: 1.0
+Day 45 :BankStatus[-90,834871]
+Publishers Report:
+(publisher: tripadvisor popularity: 595 video: 176 text: 420)
+(publisher: cnn popularity: 895 video: 488 text: 408)
+(publisher: ehow popularity: 997 video: 489 text: 509)
+(publisher: msn popularity: 7181 video: 1183 text: 5999)
+(publisher: sears popularity: 625 video: 259 text: 367)
+(publisher: target popularity: 842 video: 237 text: 606)
+Day 45 : AdNetworkReport
+Day 45 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 45: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  6.002340630593419E-4 || budget = 8.719
+Day 45: Updated 42 Bid Bundle entries for Campaign id 1199242098
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 45: Updated 42 Bid Bundle entries for Campaign id 1216674234
+Day 45: Sending BidBundle
+Day 45 ended. Starting next day
+Day 46: Updating campaign 152883871 stats: 8798.47599934435 tgtImps 0.0 nonTgtImps. Cost of imps is 3.8068400795232784
+Day 46: Updating campaign 1199242098 stats: 2847.3241270534045 tgtImps 0.0 nonTgtImps. Cost of imps is 0.04810961376743352
+Day 46: Updating campaign 1216674234 stats: 1978.369357278776 tgtImps 0.0 nonTgtImps. Cost of imps is 2.367930431298293
+Day 46: Daily notification for campaign 296781086
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=cnn, marketSegments=[OLD, FEMALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, FEMALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, FEMALE], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[OLD, FEMALE], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[OLD, FEMALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, FEMALE], device=mobile, adType=text], AdxQuery [publisher=target, marketSegments=[OLD, FEMALE], device=mobile, adType=text], AdxQuery [publisher=target, marketSegments=[OLD, FEMALE], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, FEMALE], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, FEMALE], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, FEMALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, FEMALE], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[OLD, FEMALE], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[OLD, FEMALE], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[OLD, FEMALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, FEMALE], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[OLD, FEMALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, FEMALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, FEMALE], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[OLD, FEMALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, FEMALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, FEMALE], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, FEMALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, FEMALE], device=pc, adType=video]]!!!!!!!!!!!!!!!!
+Day 46:  WON at cost (Millis)4330. UCS Level set to 1.0 at price 0.186314412729299 Quality Score is: 1.0684008040217203
+Day 46: Campaign opportunity - Campaign ID 1712262331: day 48 to 57 [OLD, HIGH_INCOME], reach: 6075 coefs: (v=2.3225318896138036, m=2.1896278470369377)
+Day 46: Campaign total budget bid (millis): 5509
+Day 46: ucs level reported: 1.0
+Day 46 :BankStatus[-92,825840]
+Publishers Report:
+(publisher: tripadvisor popularity: 621 video: 201 text: 421)
+(publisher: cnn popularity: 863 video: 460 text: 404)
+(publisher: ehow popularity: 911 video: 400 text: 512)
+(publisher: msn popularity: 7315 video: 1213 text: 6103)
+(publisher: sears popularity: 625 video: 261 text: 365)
+(publisher: target popularity: 816 video: 254 text: 563)
+Day 46 : AdNetworkReport
+Day 46 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 46: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  6.002340630593419E-4 || budget = 8.719
+Day 46: Updated 42 Bid Bundle entries for Campaign id 1199242098
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 46: Updated 42 Bid Bundle entries for Campaign id 1216674234
+rbid =  6.423379320575583E-4 || budget = 4.33
+Day 46: Updated 54 Bid Bundle entries for Campaign id 296781086
+Day 46: Sending BidBundle
+Day 46 ended. Starting next day
+Day 47: Updating campaign 152883871 stats: 9756.170388303843 tgtImps 0.0 nonTgtImps. Cost of imps is 3.896365090223433
+Day 47: Updating campaign 1199242098 stats: 4709.0054348449685 tgtImps 0.0 nonTgtImps. Cost of imps is 0.5673789789472587
+Day 47: Updating campaign 1216674234 stats: 2680.2273372496165 tgtImps 0.0 nonTgtImps. Cost of imps is 2.71214244152014
+Day 47: Daily notification for campaign 1712262331
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=target, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=cnn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+Day 47:  WON at cost (Millis)5509. UCS Level set to 1.0 at price 0.18936781146887313 Quality Score is: 1.0684008040217203
+Day 47: Campaign opportunity - Campaign ID 1178737194: day 49 to 51 [YOUNG, MALE], reach: 5647 coefs: (v=2.4917443870758804, m=1.9543499498389512)
+Day 47: Campaign total budget bid (millis): 3090
+Day 47: ucs level reported: 1.0
+Day 47 :BankStatus[-93,840489]
+Publishers Report:
+(publisher: tripadvisor popularity: 605 video: 194 text: 412)
+(publisher: cnn popularity: 847 video: 456 text: 392)
+(publisher: ehow popularity: 1002 video: 469 text: 534)
+(publisher: msn popularity: 7222 video: 1174 text: 6049)
+(publisher: sears popularity: 620 video: 233 text: 388)
+(publisher: target popularity: 786 video: 236 text: 551)
+Day 47 : AdNetworkReport
+Day 47 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 47: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 47: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  6.002340630593419E-4 || budget = 8.719
+Day 47: Updated 42 Bid Bundle entries for Campaign id 1199242098
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 47: Updated 42 Bid Bundle entries for Campaign id 1216674234
+rbid =  6.423379320575583E-4 || budget = 4.33
+Day 47: Updated 54 Bid Bundle entries for Campaign id 296781086
+Day 47: Sending BidBundle
+Day 47 ended. Starting next day
+Day 48: Updating campaign 152883871 stats: 10719.783507628037 tgtImps 0.0 nonTgtImps. Cost of imps is 4.001930612817653
+Day 48: Updating campaign 1199242098 stats: 6195.038196171126 tgtImps 0.0 nonTgtImps. Cost of imps is 0.8229208404158028
+Day 48: Updating campaign 1216674234 stats: 3241.7642618339623 tgtImps 0.0 nonTgtImps. Cost of imps is 2.7436169148450973
+Day 48: Updating campaign 296781086 stats: 3720.0920470163624 tgtImps 0.0 nonTgtImps. Cost of imps is 1.1548423879607377
+Day 48: Daily notification for campaign 1178737194
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=cnn, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=target, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[YOUNG, MALE], device=pc, adType=text]]!!!!!!!!!!!!!!!!
+Day 48:  WON at cost (Millis)3090. UCS Level set to 1.0 at price 0.18881988658573157 Quality Score is: 1.0684008040217203
+Day 48: Campaign opportunity - Campaign ID 1495171595: day 50 to 59 [MALE, HIGH_INCOME], reach: 10600 coefs: (v=2.8453208240493577, m=2.029779316793236)
+Day 48: Campaign total budget bid (millis): 1213
+Day 48: ucs level reported: 1.0
+Day 48 :BankStatus[-94,982315]
+Publishers Report:
+(publisher: tripadvisor popularity: 606 video: 197 text: 410)
+(publisher: cnn popularity: 857 video: 459 text: 399)
+(publisher: ehow popularity: 944 video: 446 text: 499)
+(publisher: msn popularity: 7291 video: 1207 text: 6085)
+(publisher: sears popularity: 592 video: 251 text: 342)
+(publisher: target popularity: 789 video: 247 text: 543)
+Day 48 : AdNetworkReport
+Day 48 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 48: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  6.002340630593419E-4 || budget = 8.719
+Day 48: Updated 42 Bid Bundle entries for Campaign id 1199242098
+rbid =  5.469994689325544E-4 || budget = 3.09
+Day 48: Updated 48 Bid Bundle entries for Campaign id 1178737194
+rbid =  6.423379320575583E-4 || budget = 4.33
+Day 48: Updated 54 Bid Bundle entries for Campaign id 296781086
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 48: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 48: Updated 42 Bid Bundle entries for Campaign id 1216674234
+Day 48: Sending BidBundle
+Day 48 ended. Starting next day
+Day 49: Updating campaign 152883871 stats: 11629.29913817813 tgtImps 0.0 nonTgtImps. Cost of imps is 4.1227004479376905
+Day 49: Updating campaign 1712262331 stats: 1126.9123605640013 tgtImps 0.0 nonTgtImps. Cost of imps is 1.5135663430072184
+Day 49: Updating campaign 1199242098 stats: 7554.152402320542 tgtImps 0.0 nonTgtImps. Cost of imps is 0.9881669125076614
+Day 49: Updating campaign 1216674234 stats: 3701.300251426758 tgtImps 0.0 nonTgtImps. Cost of imps is 2.783129181040592
+Day 49: Updating campaign 296781086 stats: 6773.309831238939 tgtImps 0.0 nonTgtImps. Cost of imps is 4.093555332185768
+Day 49: Daily notification for campaign 1495171595
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=tripadvisor, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=target, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=cnn, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=target, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ehow, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=target, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[MALE, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[MALE, HIGH_INCOME], device=pc, adType=text]]!!!!!!!!!!!!!!!!
+Day 49:  WON at cost (Millis)10603. UCS Level set to 1.0 at price 0.17971471024598024 Quality Score is: 1.0684008040217203
+Day 49: Campaign opportunity - Campaign ID 526840985: day 51 to 53 [OLD, FEMALE], reach: 1684 coefs: (v=2.5135168952058513, m=2.359488362549356)
+Day 49: Campaign total budget bid (millis): 555
+Day 49: ucs level reported: 1.0
+Day 49 :BankStatus[-96,709454]
+Publishers Report:
+(publisher: tripadvisor popularity: 650 video: 210 text: 441)
+(publisher: cnn popularity: 846 video: 426 text: 421)
+(publisher: ehow popularity: 1020 video: 452 text: 569)
+(publisher: msn popularity: 7214 video: 1179 text: 6036)
+(publisher: sears popularity: 610 video: 236 text: 375)
+(publisher: target popularity: 773 video: 223 text: 551)
+Day 49 : AdNetworkReport
+Day 49 : Simulation Status Received
+rbid =  4.0069686411149826E-4 || budget = 4.715
+Day 49: Updated 54 Bid Bundle entries for Campaign id 152883871
+rbid =  5.469994689325544E-4 || budget = 3.09
+Day 49: Updated 48 Bid Bundle entries for Campaign id 1178737194
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 49: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 49: Updated 54 Bid Bundle entries for Campaign id 1495171595
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 49: Updated 42 Bid Bundle entries for Campaign id 1216674234
+Day 49: Sending BidBundle
+Day 49 ended. Starting next day
+Day 50: Updating campaign 152883871 stats: 12500.377799801718 tgtImps 0.0 nonTgtImps. Cost of imps is 4.2563095698121725
+Day 50: Updating campaign 1712262331 stats: 2159.9123406796916 tgtImps 0.0 nonTgtImps. Cost of imps is 3.0784319044953
+Day 50: Updating campaign 1199242098 stats: 8793.728285454288 tgtImps 0.0 nonTgtImps. Cost of imps is 1.109756200912186
+Day 50: Updating campaign 1178737194 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 50: Updating campaign 1216674234 stats: 4134.6076774602 tgtImps 0.0 nonTgtImps. Cost of imps is 2.830098515685922
+Day 50: Updating campaign 296781086 stats: 9679.538823059116 tgtImps 0.0 nonTgtImps. Cost of imps is 6.293878920892741
+Day 50: Daily notification for campaign 526840985
+Day 50:  allocated to adv2. UCS Level set to 1.0 at price 0.18174183204213135 Quality Score is: 0.9834748853161065
+Day 50 :BankStatus[-93,383022]
+Publishers Report:
+(publisher: tripadvisor popularity: 658 video: 226 text: 433)
+(publisher: cnn popularity: 848 video: 462 text: 387)
+(publisher: ehow popularity: 971 video: 447 text: 525)
+(publisher: msn popularity: 7222 video: 1161 text: 6062)
+(publisher: sears popularity: 610 video: 236 text: 375)
+(publisher: target popularity: 784 video: 227 text: 558)
+Day 50 : AdNetworkReport
+Day 50 : Simulation Status Received
+rbid =  5.469994689325544E-4 || budget = 3.09
+Day 50: Updated 48 Bid Bundle entries for Campaign id 1178737194
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 50: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 50: Updated 54 Bid Bundle entries for Campaign id 1495171595
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 50: Updated 42 Bid Bundle entries for Campaign id 1216674234
+Day 50: Sending BidBundle
+Day 50 ended. Starting next day
+Day 51: Updating campaign 152883871 stats: 13224.779897982346 tgtImps 0.0 nonTgtImps. Cost of imps is 4.375054098978593
+Day 51: Updating campaign 1495171595 stats: 697.6702265012884 tgtImps 0.0 nonTgtImps. Cost of imps is 0.18414276699861962
+Day 51: Updating campaign 1712262331 stats: 3043.066691959749 tgtImps 0.0 nonTgtImps. Cost of imps is 3.2905412021369065
+Day 51: Updating campaign 1178737194 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+Day 51: Updating campaign 1216674234 stats: 4535.397010546885 tgtImps 0.0 nonTgtImps. Cost of imps is 2.8848010584725157
+Day 51: Daily notification for campaign 0
+Day 51:  allocated to NONE. UCS Level set to 1.0 at price 0.18174183204213135 Quality Score is: 1.0519686624881104
+Day 51: Campaign opportunity - Campaign ID 188536447: day 53 to 55 [FEMALE, LOW_INCOME], reach: 2628 coefs: (v=2.1859528191764324, m=2.278091513524814)
+Day 51: Campaign total budget bid (millis): 1091
+Day 51: ucs level reported: 1.0
+Day 51 :BankStatus[-92,456790]
+Publishers Report:
+(publisher: tripadvisor popularity: 625 video: 187 text: 439)
+(publisher: cnn popularity: 877 video: 447 text: 431)
+(publisher: ehow popularity: 1019 video: 471 text: 549)
+(publisher: msn popularity: 7192 video: 1211 text: 5982)
+(publisher: sears popularity: 632 video: 248 text: 385)
+(publisher: target popularity: 789 video: 238 text: 552)
+Day 51 : AdNetworkReport
+Day 51 : Simulation Status Received
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 51: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 51: Updated 54 Bid Bundle entries for Campaign id 1495171595
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 51: Updated 42 Bid Bundle entries for Campaign id 1216674234
+Day 51: Sending BidBundle
+Day 51 ended. Starting next day
+Day 52: Updating campaign 1495171595 stats: 1409.8193593883893 tgtImps 0.0 nonTgtImps. Cost of imps is 0.26355061006637015
+Day 52: Updating campaign 1712262331 stats: 3869.150322368056 tgtImps 0.0 nonTgtImps. Cost of imps is 3.7750099759695934
+Day 52: Updating campaign 1178737194 stats: 1193.371617288714 tgtImps 0.0 nonTgtImps. Cost of imps is 0.2329558362023734
+Day 52: Updating campaign 1216674234 stats: 4945.696664982221 tgtImps 0.0 nonTgtImps. Cost of imps is 2.9477276273202695
+Day 52: Daily notification for campaign 188536447
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=sears, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=cnn, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=target, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=cnn, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ehow, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=target, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=tripadvisor, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=target, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=cnn, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=target, marketSegments=[FEMALE, LOW_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 52:  WON at cost (Millis)1091. UCS Level set to 1.0 at price 0.1826292790200134 Quality Score is: 0.45293222837173513
+Day 52: Campaign opportunity - Campaign ID 786359883: day 54 to 58 [FEMALE, LOW_INCOME], reach: 4381 coefs: (v=2.997046138363007, m=2.4464043612222093)
+Day 52: Campaign total budget bid (millis): 16
+Day 52: ucs level reported: 1.0
+Day 52 :BankStatus[-93,043863]
+Publishers Report:
+(publisher: tripadvisor popularity: 607 video: 207 text: 401)
+(publisher: cnn popularity: 850 video: 458 text: 393)
+(publisher: ehow popularity: 979 video: 460 text: 520)
+(publisher: msn popularity: 7171 video: 1195 text: 5977)
+(publisher: sears popularity: 668 video: 280 text: 389)
+(publisher: target popularity: 775 video: 257 text: 519)
+Day 52 : AdNetworkReport
+Day 52 : Simulation Status Received
+rbid =  4.14828897338403E-4 || budget = 1.091
+Day 52: Updated 54 Bid Bundle entries for Campaign id 188536447
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 52: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 52: Updated 54 Bid Bundle entries for Campaign id 1495171595
+rbid =  1.0497411942936499E-4 || budget = 1.663
+Day 52: Updated 42 Bid Bundle entries for Campaign id 1216674234
+Day 52: Sending BidBundle
+Day 52 ended. Starting next day
+Day 53: Updating campaign 1495171595 stats: 2317.5796870277977 tgtImps 0.0 nonTgtImps. Cost of imps is 0.3834221521156028
+Day 53: Updating campaign 1712262331 stats: 4720.911254651382 tgtImps 0.0 nonTgtImps. Cost of imps is 3.838512016921338
+Day 53: Updating campaign 1216674234 stats: 5271.496180451401 tgtImps 0.0 nonTgtImps. Cost of imps is 3.0013442457264468
+Day 53: Daily notification for campaign 786359883
+Day 53:  allocated to adv2. UCS Level set to 1.0 at price 0.17310377179525738 Quality Score is: 0.45293222837173513
+Day 53: Campaign opportunity - Campaign ID 1744831090: day 55 to 59 [MALE, OLD, LOW_INCOME], reach: 1795 coefs: (v=2.3019883080572137, m=1.6130414790802194)
+Day 53: Campaign total budget bid (millis): 1527
+Day 53: ucs level reported: 1.0
+Day 53 :BankStatus[-94,076726]
+Publishers Report:
+(publisher: tripadvisor popularity: 615 video: 196 text: 420)
+(publisher: cnn popularity: 848 video: 456 text: 393)
+(publisher: ehow popularity: 933 video: 451 text: 483)
+(publisher: msn popularity: 7285 video: 1219 text: 6067)
+(publisher: sears popularity: 619 video: 265 text: 355)
+(publisher: target popularity: 753 video: 247 text: 507)
+Day 53 : AdNetworkReport
+Day 53 : Simulation Status Received
+rbid =  4.14828897338403E-4 || budget = 1.091
+Day 53: Updated 54 Bid Bundle entries for Campaign id 188536447
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 53: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 53: Updated 54 Bid Bundle entries for Campaign id 1495171595
+Day 53: Sending BidBundle
+Day 53 ended. Starting next day
+Day 54: Updating campaign 188536447 stats: 3.278091513524814 tgtImps 0.0 nonTgtImps. Cost of imps is 5.236729182923041
+Day 54: Updating campaign 1495171595 stats: 3556.848755292307 tgtImps 0.0 nonTgtImps. Cost of imps is 0.5311657641268472
+Day 54: Updating campaign 1712262331 stats: 4752.557533835765 tgtImps 0.0 nonTgtImps. Cost of imps is 16.196952496803803
+Day 54: Updating campaign 1216674234 stats: 5602.452188195998 tgtImps 0.0 nonTgtImps. Cost of imps is 3.059076600233764
+Day 54: Daily notification for campaign 1744831090
+Day 54:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.44089999999999996 Quality Score is: 0.24989655000245412
+Day 54 :BankStatus[-94,564137]
+Publishers Report:
+(publisher: tripadvisor popularity: 631 video: 208 text: 424)
+(publisher: cnn popularity: 850 video: 444 text: 407)
+(publisher: ehow popularity: 934 video: 402 text: 533)
+(publisher: msn popularity: 7299 video: 1224 text: 6076)
+(publisher: sears popularity: 620 video: 248 text: 373)
+(publisher: target popularity: 809 video: 241 text: 569)
+Day 54 : AdNetworkReport
+Day 54 : Simulation Status Received
+rbid =  4.14828897338403E-4 || budget = 1.091
+Day 54: Updated 54 Bid Bundle entries for Campaign id 188536447
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 54: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 54: Updated 54 Bid Bundle entries for Campaign id 1495171595
+Day 54: Sending BidBundle
+Day 54 ended. Starting next day
+3.7360374414976597E-4Day 55: Updating campaign 188536447 stats: 12.814075106905914 tgtImps 0.0 nonTgtImps. Cost of imps is 7.764129080454092
+Day 55: Updating campaign 1495171595 stats: 4453.659850740744 tgtImps 0.0 nonTgtImps. Cost of imps is 0.6679289582413205
+Day 55: Updating campaign 1712262331 stats: 5421.251949898574 tgtImps 0.0 nonTgtImps. Cost of imps is 16.26777508906751
+Day 55: Daily notification for campaign 0
+Day 55:  allocated to NONE. UCS Level set to 1.0 at price 0.44089999999999996 Quality Score is: 0.24989655000245412
+Day 55: Campaign opportunity - Campaign ID 586581165: day 57 to 59 [OLD, FEMALE, HIGH_INCOME], reach: 976 coefs: (v=2.6714941090505193, m=2.275908635178683)
+Day 55: Campaign total budget bid (millis): 659
+Day 55: ucs level reported: 1.0
+Day 55 :BankStatus[-112,806155]
+Publishers Report:
+(publisher: tripadvisor popularity: 595 video: 204 text: 392)
+(publisher: cnn popularity: 907 video: 488 text: 420)
+(publisher: ehow popularity: 1008 video: 479 text: 530)
+(publisher: msn popularity: 7195 video: 1189 text: 6007)
+(publisher: sears popularity: 605 video: 256 text: 350)
+(publisher: target popularity: 777 video: 216 text: 562)
+Day 55 : AdNetworkReport
+Day 55 : Simulation Status Received
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 55: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 55: Updated 54 Bid Bundle entries for Campaign id 1495171595
+Day 55: Sending BidBundle
+Day 55 ended. Starting next day
+Day 56: Updating campaign 188536447 stats: 20.0719671867622 tgtImps 0.0 nonTgtImps. Cost of imps is 12.400096888715396
+Day 56: Updating campaign 1495171595 stats: 5276.982045579651 tgtImps 0.0 nonTgtImps. Cost of imps is 0.807914904327209
+Day 56: Updating campaign 1712262331 stats: 6112.943144143171 tgtImps 0.0 nonTgtImps. Cost of imps is 16.350405435144232
+Day 56: Daily notification for campaign 586581165
+Day 56:  allocated to adv2. UCS Level set to 1.0 at price 0.44089999999999996 Quality Score is: 0.10083772359970967
+Day 56 :BankStatus[-115,980640]
+Publishers Report:
+(publisher: tripadvisor popularity: 602 video: 190 text: 413)
+(publisher: cnn popularity: 864 video: 442 text: 423)
+(publisher: ehow popularity: 958 video: 451 text: 508)
+(publisher: msn popularity: 7203 video: 1195 text: 6009)
+(publisher: sears popularity: 612 video: 247 text: 366)
+(publisher: target popularity: 813 video: 250 text: 564)
+Day 56 : AdNetworkReport
+Day 56 : Simulation Status Received
+rbid =  9.065328286983709E-4 || budget = 5.509
+Day 56: Updated 54 Bid Bundle entries for Campaign id 1712262331
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 56: Updated 54 Bid Bundle entries for Campaign id 1495171595
+Day 56: Sending BidBundle
+Day 56 ended. Starting next day
+Day 57: Updating campaign 1495171595 stats: 6087.29551482413 tgtImps 0.0 nonTgtImps. Cost of imps is 0.9550928073167014
+Day 57: Updating campaign 1712262331 stats: 6821.16930759477 tgtImps 0.0 nonTgtImps. Cost of imps is 16.450526277649832
+Day 57: Daily notification for campaign 0
+Day 57:  allocated to NONE. UCS Level set to 1.0 at price 0.44089999999999996 Quality Score is: 0.10083772359970967
+Day 57 :BankStatus[-121,280328]
+Publishers Report:
+(publisher: tripadvisor popularity: 627 video: 204 text: 424)
+(publisher: cnn popularity: 898 video: 506 text: 393)
+(publisher: ehow popularity: 994 video: 449 text: 546)
+(publisher: msn popularity: 7251 video: 1198 text: 6054)
+(publisher: sears popularity: 588 video: 249 text: 340)
+(publisher: target popularity: 789 video: 239 text: 551)
+Day 57 : AdNetworkReport
+Day 57 : Simulation Status Received
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 57: Updated 54 Bid Bundle entries for Campaign id 1495171595
+Day 57: Sending BidBundle
+Day 57 ended. Starting next day
+Day 58: Updating campaign 1495171595 stats: 7156.718456891973 tgtImps 0.0 nonTgtImps. Cost of imps is 1.1533354625349603
+Day 58: Updating campaign 1712262331 stats: 7091.0185220392295 tgtImps 0.0 nonTgtImps. Cost of imps is 16.489170989621687
+Day 58: Daily notification for campaign 0
+Day 58:  allocated to NONE. UCS Level set to 1.0 at price 0.44089999999999996 Quality Score is: 0.7135484339134054
+Day 58 :BankStatus[-115,787306]
+Publishers Report:
+(publisher: tripadvisor popularity: 639 video: 204 text: 436)
+(publisher: cnn popularity: 898 video: 467 text: 432)
+(publisher: ehow popularity: 983 video: 465 text: 519)
+(publisher: msn popularity: 7103 video: 1151 text: 5953)
+(publisher: sears popularity: 664 video: 285 text: 380)
+(publisher: target popularity: 800 video: 248 text: 553)
+Day 58 : AdNetworkReport
+Day 58 : Simulation Status Received
+rbid =  0.0010000943218260706 || budget = 10.603
+Day 58: Updated 54 Bid Bundle entries for Campaign id 1495171595
+Day 58: Sending BidBundle
+Day 58 ended. Starting next day
+Day 59: Updating campaign 1495171595 stats: 8379.513960907461 tgtImps 0.0 nonTgtImps. Cost of imps is 1.4024069493527884
+Day 59: Daily notification for campaign 0
+Day 59:  allocated to NONE. UCS Level set to 1.0 at price 0.44089999999999996 Quality Score is: 0.7135484339134054
+Day 59 :BankStatus[-116,465432]
+Publishers Report:
+(publisher: tripadvisor popularity: 625 video: 198 text: 428)
+(publisher: cnn popularity: 879 video: 484 text: 396)
+(publisher: ehow popularity: 1013 video: 488 text: 526)
+(publisher: msn popularity: 7266 video: 1235 text: 6032)
+(publisher: sears popularity: 588 video: 262 text: 327)
+(publisher: target popularity: 771 video: 235 text: 537)
+Day 59 : AdNetworkReport
+Day 59 : Simulation Status Received
+Day 59: Sending BidBundle
+Day 59 ended. Starting next day
+Day 60: Updating campaign 1495171595 stats: 9523.609231323551 tgtImps 0.0 nonTgtImps. Cost of imps is 1.6505145801513144
+Day 60: Daily notification for campaign 0
+Day 60:  allocated to NONE. UCS Level set to 1.0 at price 0.44089999999999996 Quality Score is: 0.8102074589033317
+Day 60 :BankStatus[-107,881524]
+Publishers Report:
+(publisher: tripadvisor popularity: 604 video: 197 text: 408)
+(publisher: cnn popularity: 853 video: 485 text: 369)
+(publisher: ehow popularity: 968 video: 437 text: 532)
+(publisher: msn popularity: 7248 video: 1244 text: 6005)
+(publisher: sears popularity: 640 video: 253 text: 388)
+(publisher: target popularity: 765 video: 249 text: 517)
+Day 60 : AdNetworkReport
+Day 60 : Simulation Status Received
+Day 60: Sending BidBundle
+Day 60 ended. Starting next day
