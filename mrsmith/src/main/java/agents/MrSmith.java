@@ -275,7 +275,9 @@ public class MrSmith extends Agent {
 			ucsBid = 0;
 
 			for (CampaignData campaign : myCampaigns.values()) {
-				ucsBid += 0.5*campaign.budget;
+				if (isCampaignActive(campaign)) {
+					ucsBid += 0.5*campaign.budget;
+				}
 			}
 
 			System.out.println("Day " + day + ": ucs level reported: " + ucsLevel);
@@ -395,9 +397,7 @@ public class MrSmith extends Agent {
 		 */
 
 		for (CampaignData campaign : myCampaigns.values()) {
-			if ((dayBiddingFor >= campaign.dayStart)
-					&& (dayBiddingFor <= campaign.dayEnd)
-					&& (campaign.impsTogo() > 0)) {
+			if (isCampaignActive(campaign)) {
 
 				rbid = campaign.budget/(2 + campaign.reachImps);
 				System.out.println("rbid =  " + rbid + " || budget = " + campaign.budget);
@@ -772,5 +772,16 @@ public class MrSmith extends Agent {
 		}
 
 	}
+
+	private boolean isCampaignActive(CampaignData campaign) {
+		int dayBiddingFor = day + 1;
+		if ((dayBiddingFor >= campaign.dayStart)
+				&& (dayBiddingFor <= campaign.dayEnd)
+				&& (campaign.impsTogo() > 0)) {
+			return true;
+		}
+		return false;
+	}
+
 
 }
