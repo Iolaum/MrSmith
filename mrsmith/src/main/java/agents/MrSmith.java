@@ -425,7 +425,7 @@ public class MrSmith extends Agent {
 								rbid = campaign.mobileCoef*rbid;
 							} else {
 								entCount += campaign.videoCoef + campaign.mobileCoef;
-								rbid = campaign.mobileCoef*campaign.videoCoef*rbid;
+								rbid = (campaign.mobileCoef+campaign.videoCoef)*rbid;
 							}
 
 						}
