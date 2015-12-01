@@ -111,6 +111,13 @@ public class MrSmith extends Agent {
 	 */
 	double ucsTargetLevel;
 
+	//# Learning bid coefficient
+	double fbid = 0.9;
+	//# Last bid won an auction
+	double lastWinBid;
+	//# Last won budget
+	double lastBudget;
+
 	/*
 	 * current day of simulation
 	 */
@@ -255,33 +262,34 @@ public class MrSmith extends Agent {
 
 		Random random = new Random();
 		long cmpimps = com.getReachImps();
-		//long cmpBidMillis = random.nextInt((int)cmpimps);
-		//# Campaign bid value --- Set here
+		// #Calculate cmpBidMillis START
 
-		//cmpBidMillis = (new Double(cmpimps)) * qualityScore - 1;
-		// #Calculate cmpBidMillis
 		// Get campaign Length
 		long cmpLength = com.getDayEnd() - com.getDayStart() +1;
 		System.out.println(" cmpLength : " + cmpLength);
-		//Get campaign segment and return segment probability
+		//Get campaign segment and return segment number
 		Set<MarketSegment> tgtSeg = com.getTargetSegment();
 		Map<Set<MarketSegment>,Integer> segUsrMap = MarketSegment.usersInMarketSegments();
-
 		//Unknown case?
 		int tgtSegmentProb = segUsrMap.get(tgtSeg);
-		System.out.println(" Target Segment Probability : " + tgtSegmentProb);
-
+		//Calculate reach level
 		double reachLevel = 0 ;
 		reachLevel = (double)cmpimps/(tgtSegmentProb*cmpLength);
 
 
+		cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore ;
+		lastWinBid = cmpBidMillis/1000.0;
+
+		System.out.println("\n \n Campaign BID for day: " + day + "\n");
+
+		System.out.println(" lastWinBid: " + lastWinBid);
+
+		System.out.println(" fbid: " + fbid);
+		System.out.println(" CmpBidMillis: " + cmpBidMillis);
 		System.out.println(" Reach Level: " + reachLevel);
 		System.out.println(" cmpimps: " + cmpimps);
 		System.out.println(" qualityScore: " + qualityScore);
-
-		cmpBidMillis = 0.9*reachLevel*cmpimps * qualityScore ;
-		//cmpBidMillis = ((new Double(cmpimps)) * qualityScore * 0.4) - 1;
-		System.out.println(" CmpBidMillis: " + cmpBidMillis);
+		System.out.println(" Target Segment Probability : " + tgtSegmentProb);
 
 		// #cmpBidMillis END of calculation
 
@@ -347,8 +355,13 @@ public class MrSmith extends Agent {
 			campaignAllocatedTo = " WON at cost (Millis)"
 					+ notificationMessage.getCostMillis();
 			// CostMillis = Campaign Budget(?)
-		}
+			System.out.println("\n \n WON campaign: " + day + "\n");
 
+			lastBudget = notificationMessage.getCostMillis()/1000.0;
+			fbid = fbid*(1+(lastBudget-lastWinBid)/(2*lastWinBid));
+		} else {
+			fbid = 0.95*fbid;
+		}
 		//		ucsModel.ucsUpdate(notificationMessage.getServiceLevel(),
 		//				notificationMessage.getPrice(), activeCampaigns());
 
@@ -358,6 +371,7 @@ public class MrSmith extends Agent {
 				+ " at price " + notificationMessage.getPrice()
 				// Price: UCS price of next lower bidder
 				+ " Quality Score is: " + notificationMessage.getQualityScore());
+
 	}
 
 	/**
