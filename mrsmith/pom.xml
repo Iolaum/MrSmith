@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.soton.ia</groupId>
 	<artifactId>mrsmith</artifactId>
-	<version>0.0.6-competeAgainstMe</version>
+	<version>0.0.7-basic-bidbundle-strategy</version>
 	<name>MrSmith</name>
 
 

@@ -254,23 +254,27 @@ public class MrSmith extends Agent {
 		 */
 
 		Random random = new Random();
-		long cmpimps = com.getReachImps();
+		Long cmpimps = com.getReachImps();
 		//long cmpBidMillis = random.nextInt((int)cmpimps);
 		//# Campaign bid value --- Set here
 
 		//cmpBidMillis = (new Double(cmpimps)) * qualityScore - 1;
 		// #Calculate cmpBidMillis
 		// Get campaign Length
-		long cmpLength = com.getDayEnd() - com.getDayStart() +1;
+		Long cmpLength = com.getDayEnd() - com.getDayStart() +1;
+		System.out.println(" cmpLength : " + cmpLength);
 		//Get campaign segment and return segment probability
 		Set<MarketSegment> tgtSeg = com.getTargetSegment();
 		Map<Set<MarketSegment>,Integer> segUsrMap = MarketSegment.usersInMarketSegments();
 
 		//Unknown case?
-		long tgtSegmentProb = segUsrMap.get(tgtSeg);
+		int tgtSegmentProb = segUsrMap.get(tgtSeg);
 		System.out.println(" Target Segment Probability : " + tgtSegmentProb);
 
-		long reachLevel = cmpimps/(tgtSegmentProb*cmpLength);
+		Long reachLevel = (long)((float)cmpimps/((float)tgtSegmentProb*(float)cmpLength));
+		System.out.println(" Reach Level: " + reachLevel);
+		System.out.println(" cmpimps: " + cmpimps);
+		System.out.println(" qualityScore: " + qualityScore);
 
 		cmpBidMillis = 0.9*reachLevel*cmpimps * qualityScore - 1;
 		System.out.println(" CmpBidMillis: " + cmpBidMillis);
