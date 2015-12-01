@@ -430,6 +430,9 @@ public class MrSmith extends Agent {
 
 						}
 
+						System.out.println(" CAMPAIGN SEGMENTS " + campaign.targetSegment);
+						System.out.println(" QUERY SEGMENTS " + query.getMarketSegments());
+
 						bidBundle.addQuery(query, rbid, new Ad(null),
 								campaign.id, 1);
 					}
