@@ -119,7 +119,7 @@ public class MrSmith extends Agent {
 	private CampaignData currCampaign;
 
 	private Double cmpBidMillis;
-
+	private double qualityScore;
 	private UcsModel ucsModel;
 
 	public MrSmith() {
@@ -255,13 +255,29 @@ public class MrSmith extends Agent {
 
 		Random random = new Random();
 		long cmpimps = com.getReachImps();
-		long cmpBidMillis = random.nextInt((int)cmpimps);
+		//long cmpBidMillis = random.nextInt((int)cmpimps);
 		//# Campaign bid value --- Set here
 
 		//cmpBidMillis = (new Double(cmpimps)) * qualityScore - 1;
+		// #Calculate cmpBidMillis
+		// Get campaign Length
+		long cmpLength = com.getDayEnd() - com.getDayStart() +1;
+		//Get campaign segment and return segment probability
+		Set<MarketSegment> tgtSeg = com.getTargetSegment();
+		Map<Set<MarketSegment>,Integer> segUsrMap = MarketSegment.usersInMarketSegments();
 
+		//Unknown case?
+		long tgtSegmentProb = segUsrMap.get(tgtSeg);
+		System.out.println(" Target Segment Probability : " + tgtSegmentProb);
 
-		System.out.println("Day " + day + ": Campaign total budget bid (millis): " + cmpBidMillis);
+		long reachLevel = cmpimps/(tgtSegmentProb*cmpLength);
+
+		cmpBidMillis = 0.9*reachLevel*cmpimps * qualityScore - 1;
+		System.out.println(" CmpBidMillis: " + cmpBidMillis);
+
+		// #cmpBidMillis END of calculation
+
+		System.out.println("Day " + day + ": Campaign total budget bid (millis): " + cmpBidMillis.longValue());
 
 		/*
 		 * Adjust ucs bid s.t. target level is achieved. Note: The bid for the
@@ -287,7 +303,7 @@ public class MrSmith extends Agent {
 		}
 
 		/* Note: Campaign bid is in millis */
-		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.id, cmpBidMillis);
+		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.id, cmpBidMillis.longValue());
 		sendMessage(demandAgentAddress, bids);
 	}
 
@@ -301,6 +317,8 @@ public class MrSmith extends Agent {
 			AdNetworkDailyNotification notificationMessage) {
 
 		adNetworkDailyNotification = notificationMessage;
+
+		qualityScore = notificationMessage.getQualityScore();
 
 		System.out.println("Day " + day + ": Daily notification for campaign "
 				+ adNetworkDailyNotification.getCampaignId());
@@ -511,6 +529,8 @@ public class MrSmith extends Agent {
 
 		day = 0;
 		bidBundle = new AdxBidBundle();
+
+		qualityScore = 1.0;
 
 		ucsModel = new UcsModel();
 
