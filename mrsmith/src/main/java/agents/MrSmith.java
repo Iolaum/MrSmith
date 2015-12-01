@@ -277,6 +277,7 @@ public class MrSmith extends Agent {
 		System.out.println(" qualityScore: " + qualityScore);
 
 		cmpBidMillis = 0.9*reachLevel*cmpimps * qualityScore - 1;
+		cmpBidMillis = ((new Double(cmpimps)) * qualityScore * 0.4) - 1;
 		System.out.println(" CmpBidMillis: " + cmpBidMillis);
 
 		// #cmpBidMillis END of calculation
@@ -422,7 +423,7 @@ public class MrSmith extends Agent {
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
 
-				rbid = campaign.budget/(2 + campaign.reachImps);
+				rbid = 0.5*campaign.budget/campaign.reachImps;
 				System.out.println("rbid =  " + rbid + " || budget = " + campaign.budget);
 				int entCount = 0;
 
@@ -451,9 +452,6 @@ public class MrSmith extends Agent {
 							}
 
 						}
-
-						System.out.println(" CAMPAIGN SEGMENTS " + campaign.targetSegment);
-						System.out.println(" QUERY SEGMENTS " + query.getMarketSegments());
 
 						bidBundle.addQuery(query, rbid, new Ad(null),
 								campaign.id, 1);
