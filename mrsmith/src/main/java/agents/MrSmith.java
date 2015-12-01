@@ -300,7 +300,7 @@ public class MrSmith extends Agent {
 
 			for (CampaignData campaign : myCampaigns.values()) {
 				if (isCampaignActive(campaign)) {
-					ucsBid += 0.5*campaign.budget/(campaign.dayEnd - campaign.dayStart + 1);
+					ucsBid += 0.7*campaign.budget/(campaign.dayEnd - campaign.dayStart + 1);
 					//# * 0.5 to be made function with learning rate.
 				}
 			}
@@ -413,7 +413,7 @@ public class MrSmith extends Agent {
 		 * revenue per imp
 		 */
 
-		double rbid = 10000.0;
+		double rbid = 0;
 
 		/*
 		 * add bid entries w.r.t. each active campaign with remaining contracted
@@ -426,10 +426,11 @@ public class MrSmith extends Agent {
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
 
-				rbid = 0.5*campaign.budget/campaign.reachImps;
+				rbid = 0.3*campaign.budget/campaign.reachImps;
 				System.out.println("rbid =  " + rbid + " || budget = " + campaign.budget);
 				int entCount = 0;
 
+				System.out.println("Campaign ID: " + campaign.id + " -- Impressions to go =  " + campaign.impsTogo());
 				for (AdxQuery query : campaign.campaignQueries) {
 					if (campaign.impsTogo() - entCount > 0) {
 						/*
@@ -465,7 +466,9 @@ public class MrSmith extends Agent {
 				double budgetLimit = campaign.budget;
 				bidBundle.setCampaignDailyLimit(campaign.id,
 						(int) impressionLimit, budgetLimit);
+
 				//# Problem: understand why the query entry inside is a FEMALE
+
 				System.out.println("Day " + day + ": Updated " + entCount
 						+ " Bid Bundle entries for Campaign id " + campaign.id);
 			}
@@ -738,7 +741,7 @@ public class MrSmith extends Agent {
 
 	private class CampaignData {
 		/* campaign attributes as set by server */
-		Long reachImps;
+		long reachImps;
 		long dayStart;
 		long dayEnd;
 		Set<MarketSegment> targetSegment;
