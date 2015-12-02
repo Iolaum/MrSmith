@@ -317,6 +317,7 @@ public class MrSmith extends Agent {
 			System.out.println("Day " + day + ": Initial ucs bid is " + ucsBid);
 		}
 
+		System.out.println("++ Day " + day + ": ucs bid is " + ucsBid);
 		/* Note: Campaign bid is in millis */
 		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.id, cmpBidMillis.longValue());
 		sendMessage(demandAgentAddress, bids);
@@ -357,16 +358,17 @@ public class MrSmith extends Agent {
 			System.out.println("\n \n WON campaign: " + day + "\n");
 
 			lastBudget = notificationMessage.getCostMillis()/1000.0;
+
 			//# Testing "Simple" Strategy
+
 			if (fbid*(1+(lastBudget-lastWinBid)/(4*lastWinBid)) < 0.99) {
 				fbid = fbid*(1+(lastBudget-lastWinBid)/(4*lastWinBid));
 			}
 
-		} else { if (0.95*fbid>0.1) {
+		} else if (0.95*fbid>0.1) {
 			fbid = 0.95*fbid;
 		}
 
-		}
 		//		ucsModel.ucsUpdate(notificationMessage.getServiceLevel(),
 		//				notificationMessage.getPrice(), activeCampaigns());
 
