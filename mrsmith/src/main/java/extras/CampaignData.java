@@ -2,6 +2,7 @@ package extras;
 
 import java.util.Set;
 
+import config.GameConstants;
 import tau.tac.adx.demand.CampaignStats;
 import tau.tac.adx.props.AdxQuery;
 import tau.tac.adx.report.adn.MarketSegment;
@@ -101,7 +102,11 @@ public class CampaignData {
 	}
 
 	public int impsTogo() {
-		return (int) Math.max(0, 1.075*reachImps - stats.getTargetedImps());
+		return (int) Math.max(0, GameConstants.campaignGoal*reachImps - stats.getTargetedImps());
+	}
+
+	public double getRemainingDays(int day) {
+		return (double)(dayEnd - day);
 	}
 
 	public void setStats(CampaignStats s) {

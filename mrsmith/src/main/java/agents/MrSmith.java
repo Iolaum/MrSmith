@@ -443,7 +443,8 @@ public class MrSmith extends Agent {
 		 */
 		double weightNumer = 0;
 		double weightDenom = 0;
-		int weight = 0;
+		double weight = 0;
+		int adjustedWeight = 0;
 
 		/*
 		 * add bid entries w.r.t. each active campaign with remaining contracted
@@ -455,7 +456,7 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				weightDenom += 1- (campaign.impsTogo()/campaign.getReachImps());
+				weightDenom += (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
 			}
 		}
 		for (CampaignData campaign : myCampaigns.values()) {
@@ -464,13 +465,14 @@ public class MrSmith extends Agent {
 				rbid = 0.3*campaign.getBudget()/campaign.getReachImps();
 				System.out.println("++ Day: " + day + " rbid =  " + rbid + " || budget = " + campaign.getBudget());
 
-				weightNumer = 1- (campaign.impsTogo()/campaign.getReachImps());
-				weight = (int) Math.ceil(100*weightNumer/weightDenom);
+				weightNumer = (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
+				weight = weightNumer/weightDenom;
+				adjustedWeight = (int) Math.ceil(100 / (1 + (double)campaign.getRemainingDays(day)));
 
 				int entCount = 0;
 
 				System.out.println("++ Day: " + day + " Campaign ID: " + campaign.getId() + " -- Impressions to go =  " + campaign.impsTogo()
-				+ " Campaign Weight: " + weight);
+				+ " Adjusted Weight: " + adjustedWeight);
 				for (AdxQuery query : campaign.getCampaignQueries()) {
 					if (campaign.impsTogo() - entCount > 0) {
 						/*
@@ -498,7 +500,7 @@ public class MrSmith extends Agent {
 						}
 
 						bidBundle.addQuery(query, rbid, new Ad(null),
-								campaign.getId(), weight);
+								campaign.getId(), adjustedWeight);
 					}
 				}
 
