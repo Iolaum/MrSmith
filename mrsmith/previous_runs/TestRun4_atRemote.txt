@@ -1,0 +1,1794 @@
+UNKNOWN Message Received: ReservePriceInfo[DC]
+UNKNOWN Message Received: edu.umich.eecs.tac.props.AdvertiserInfo@bc771620
+Simulation is starting! Days of competition: 60
+tau.tac.adx.report.demand.InitialCampaignMessage[16595484,3037,1,5,3037,[OLD, HIGH_INCOME],2.315594090284057,2.016757511419605,demand,[]]
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=weather, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=webmd, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=webmd, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=ebay, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[OLD, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=weather, marketSegments=[OLD, HIGH_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+Day 0: Allocated campaign - Campaign ID 16595484: day 1 to 5 [OLD, HIGH_INCOME], reach: 3037 coefs: (v=2.315594090284057, m=2.016757511419605)
+Day 0: Campaign opportunity - Campaign ID 15574867: day 2 to 4 [LOW_INCOME], reach: 19228 coefs: (v=2.486931314132888, m=1.830777020778326)
+ cmpLength : 3
+
+
+ Campaign BID for day: 0
+
+ lastWinBid: 13.843584023964054
+ fbid: 0.9
+ CmpBidMillis: 13843.584023964053
+ Reach Level: 0.799966716591779
+ cmpimps: 19228
+ qualityScore: 1.0
+ Target Segment Probability : 8012
+Day 0: Campaign total budget bid (millis): 13843
+Day 0: Initial ucs bid is 0.2
+Day 0 :BankStatus[0,000000]
+Day 0 : Simulation Status Received
+rbid =  3.0E-4 || budget = 3.037
+Campaign ID: 16595484 -- Impressions to go =  3188
+Day 0: Updated 54 Bid Bundle entries for Campaign id 16595484
+Day 0: Sending BidBundle
+Day 0 ended. Starting next day
+Day 1: Daily notification for campaign 15574867
+Day 1:  allocated to DummyAdnetwork-4. UCS Level set to 1.0 at price 0.19778803849666313 Quality Score is: 1.0
+Day 1: Campaign opportunity - Campaign ID 14133180: day 3 to 7 [HIGH_INCOME], reach: 7952 coefs: (v=2.8398073594598134, m=1.8237435319424398)
+ cmpLength : 5
+
+
+ Campaign BID for day: 1
+
+ lastWinBid: 5.4391680000000004
+ fbid: 0.855
+ CmpBidMillis: 5439.168000000001
+ Reach Level: 0.8
+ cmpimps: 7952
+ qualityScore: 1.0
+ Target Segment Probability : 1988
+Day 1: Campaign total budget bid (millis): 5439
+Day 1: ucs level reported: 1.0
+Day 1 :BankStatus[-0,197788]
+Publishers Report:
+Day 1 : Simulation Status Received
+rbid =  3.0E-4 || budget = 3.037
+Campaign ID: 16595484 -- Impressions to go =  3188
+Day 1: Updated 54 Bid Bundle entries for Campaign id 16595484
+Day 1: Sending BidBundle
+Day 1 ended. Starting next day
+Day 2: Updating campaign 16595484 stats: 802.9955850023075 tgtImps 0.0 nonTgtImps. Cost of imps is 3.0396701718791883
+Day 2: Daily notification for campaign 14133180
+Day 2:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.17992296281640108 Quality Score is: 1.0
+Day 2: Campaign opportunity - Campaign ID 5756757: day 4 to 8 [OLD, FEMALE, HIGH_INCOME], reach: 1628 coefs: (v=2.162725367154289, m=2.498149796806453)
+ cmpLength : 5
+
+
+ Campaign BID for day: 2
+
+ lastWinBid: 1.0578744
+ fbid: 0.8122499999999999
+ CmpBidMillis: 1057.8744
+ Reach Level: 0.8
+ cmpimps: 1628
+ qualityScore: 1.0
+ Target Segment Probability : 407
+Day 2: Campaign total budget bid (millis): 1057
+Day 2: ucs level reported: 1.0
+Day 2 :BankStatus[-0,377711]
+Publishers Report:
+(publisher: msn popularity: 5166 video: 1676 text: 3491)
+(publisher: webmd popularity: 696 video: 185 text: 512)
+(publisher: nyt popularity: 806 video: 368 text: 439)
+(publisher: ebay popularity: 2381 video: 714 text: 1668)
+(publisher: sears popularity: 432 video: 183 text: 250)
+(publisher: weather popularity: 1616 video: 581 text: 1036)
+Day 2 : AdNetworkReport
+Day 2 : Simulation Status Received
+rbid =  3.0E-4 || budget = 3.037
+Campaign ID: 16595484 -- Impressions to go =  2385
+Day 2: Updated 54 Bid Bundle entries for Campaign id 16595484
+Day 2: Sending BidBundle
+Day 2 ended. Starting next day
+Day 3: Updating campaign 16595484 stats: 2097.8720715619597 tgtImps 0.0 nonTgtImps. Cost of imps is 6.078446141079905
+Day 3: Daily notification for campaign 5756757
+Day 3:  allocated to DummyAdnetwork-6. UCS Level set to 1.0 at price 0.1645989391757775 Quality Score is: 1.0
+Day 3: Campaign opportunity - Campaign ID 1746711: day 5 to 14 [FEMALE], reach: 25220 coefs: (v=2.622769981905382, m=1.6203605782693944)
+ cmpLength : 10
+
+
+ Campaign BID for day: 3
+
+ lastWinBid: 9.730348874999997
+ fbid: 0.7716374999999999
+ CmpBidMillis: 9730.348874999998
+ Reach Level: 0.5
+ cmpimps: 25220
+ qualityScore: 1.0
+ Target Segment Probability : 5044
+Day 3: Campaign total budget bid (millis): 9730
+Day 3: ucs level reported: 1.0
+Day 3 :BankStatus[-3,591786]
+Publishers Report:
+(publisher: webmd popularity: 655 video: 187 text: 469)
+(publisher: msn popularity: 5128 video: 1669 text: 3460)
+(publisher: nyt popularity: 815 video: 372 text: 444)
+(publisher: ebay popularity: 2409 video: 732 text: 1678)
+(publisher: sears popularity: 418 video: 156 text: 263)
+(publisher: weather popularity: 1683 video: 574 text: 1110)
+Day 3 : AdNetworkReport
+Day 3 : Simulation Status Received
+rbid =  3.0E-4 || budget = 3.037
+Campaign ID: 16595484 -- Impressions to go =  1090
+Day 3: Updated 54 Bid Bundle entries for Campaign id 16595484
+Day 3: Sending BidBundle
+Day 3 ended. Starting next day
+Day 4: Updating campaign 16595484 stats: 4277.821231166605 tgtImps 0.0 nonTgtImps. Cost of imps is 8.25981240766011
+Day 4: Daily notification for campaign 1746711
+Day 4:  allocated to adv1. UCS Level set to 1.0 at price 0.19962393938422074 Quality Score is: 1.0
+Day 4: Campaign opportunity - Campaign ID 3515693: day 6 to 15 [OLD, LOW_INCOME], reach: 33568 coefs: (v=2.7588348713242006, m=2.302522220179188)
+ cmpLength : 10
+
+
+ Campaign BID for day: 4
+
+ lastWinBid: 19.685768975999995
+ fbid: 0.7330556249999999
+ CmpBidMillis: 19685.768975999996
+ Reach Level: 0.8
+ cmpimps: 33568
+ qualityScore: 1.0
+ Target Segment Probability : 4196
+Day 4: Campaign total budget bid (millis): 19685
+Day 4: ucs level reported: 1.0
+Day 4 :BankStatus[-6,833044]
+Publishers Report:
+(publisher: msn popularity: 5122 video: 1680 text: 3443)
+(publisher: webmd popularity: 712 video: 196 text: 517)
+(publisher: nyt popularity: 816 video: 386 text: 431)
+(publisher: ebay popularity: 2399 video: 717 text: 1683)
+(publisher: sears popularity: 405 video: 170 text: 236)
+(publisher: weather popularity: 1602 video: 551 text: 1052)
+Day 4 : AdNetworkReport
+Day 4 : Simulation Status Received
+Day 4: Sending BidBundle
+Day 4 ended. Starting next day
+Day 5: Updating campaign 16595484 stats: 5368.645064336087 tgtImps 0.0 nonTgtImps. Cost of imps is 9.13934234392954
+Day 5: Daily notification for campaign 3515693
+Day 5:  allocated to adv1. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.0
+Day 5: Campaign opportunity - Campaign ID 14778554: day 7 to 16 [YOUNG], reach: 36712 coefs: (v=2.2720297724478753, m=1.7490819409648246)
+ cmpLength : 10
+
+
+ Campaign BID for day: 5
+
+ lastWinBid: 20.453072959799997
+ fbid: 0.6964028437499998
+ CmpBidMillis: 20453.072959799996
+ Reach Level: 0.8
+ cmpimps: 36712
+ qualityScore: 1.0
+ Target Segment Probability : 4589
+Day 5: Campaign total budget bid (millis): 20453
+Day 5: ucs level reported: 0.47829690000000014
+Day 5 :BankStatus[-9,014410]
+Publishers Report:
+(publisher: msn popularity: 4986 video: 1638 text: 3349)
+(publisher: webmd popularity: 693 video: 187 text: 507)
+(publisher: nyt popularity: 852 video: 376 text: 477)
+(publisher: ebay popularity: 2480 video: 749 text: 1732)
+(publisher: sears popularity: 459 video: 180 text: 280)
+(publisher: weather popularity: 1581 video: 553 text: 1029)
+Day 5 : AdNetworkReport
+Day 5 : Simulation Status Received
+Day 5: Sending BidBundle
+Day 5 ended. Starting next day
+Day 6: Updating campaign 16595484 stats: 5368.645064336087 tgtImps 0.0 nonTgtImps. Cost of imps is 9.13934234392954
+Day 6: Daily notification for campaign 14778554
+Day 6:  allocated to DummyAdnetwork. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.1609893640348201
+Day 6: Campaign opportunity - Campaign ID 17925638: day 8 to 10 [YOUNG, MALE, LOW_INCOME], reach: 2754 coefs: (v=2.267122557588024, m=1.642247558105172)
+ cmpLength : 3
+
+
+ Campaign BID for day: 6
+
+ lastWinBid: 1.0576605908821786
+ fbid: 0.6615827015624998
+ CmpBidMillis: 1057.6605908821787
+ Reach Level: 0.5
+ cmpimps: 2754
+ qualityScore: 1.1609893640348201
+ Target Segment Probability : 1836
+Day 6: Campaign total budget bid (millis): 1057
+Day 6: ucs level reported: 0.47829690000000014
+Day 6 :BankStatus[-6,045606]
+Publishers Report:
+(publisher: msn popularity: 5056 video: 1642 text: 3415)
+(publisher: webmd popularity: 694 video: 213 text: 482)
+(publisher: nyt popularity: 810 video: 368 text: 443)
+(publisher: ebay popularity: 2405 video: 745 text: 1661)
+(publisher: sears popularity: 416 video: 168 text: 249)
+(publisher: weather popularity: 1631 video: 539 text: 1093)
+Day 6 : Simulation Status Received
+Day 6: Sending BidBundle
+Day 6 ended. Starting next day
+Day 7: Daily notification for campaign 17925638
+Day 7:  allocated to DummyAdnetwork. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.1609893640348201
+Day 7: Campaign opportunity - Campaign ID 12210402: day 9 to 13 [YOUNG, MALE, LOW_INCOME], reach: 1836 coefs: (v=2.152049480482648, m=1.8661828896093464)
+ cmpLength : 5
+
+
+ Campaign BID for day: 7
+
+ lastWinBid: 0.2679406830234852
+ fbid: 0.6285035664843748
+ CmpBidMillis: 267.94068302348524
+ Reach Level: 0.2
+ cmpimps: 1836
+ qualityScore: 1.1609893640348201
+ Target Segment Probability : 1836
+Day 7: Campaign total budget bid (millis): 267
+Day 7: ucs level reported: 0.47829690000000014
+Day 7 :BankStatus[-6,045606]
+Publishers Report:
+(publisher: msn popularity: 5078 video: 1664 text: 3415)
+(publisher: webmd popularity: 701 video: 195 text: 507)
+(publisher: nyt popularity: 820 video: 367 text: 454)
+(publisher: ebay popularity: 2382 video: 721 text: 1662)
+(publisher: sears popularity: 440 video: 176 text: 265)
+(publisher: weather popularity: 1643 video: 564 text: 1080)
+Day 7 : Simulation Status Received
+Day 7: Sending BidBundle
+Day 7 ended. Starting next day
+Day 8: Daily notification for campaign 12210402
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ebay, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=ebay, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, MALE, LOW_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+
+
+ WON campaign: 8
+
+Day 8:  WON at cost (Millis)638. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.1609893640348201
+Day 8: Campaign opportunity - Campaign ID 10121817: day 10 to 12 [OLD, LOW_INCOME], reach: 10070 coefs: (v=2.8966038133379914, m=2.330229487997102)
+ cmpLength : 3
+
+
+ Campaign BID for day: 8
+
+ lastWinBid: 9.937320605846411
+ fbid: 1.0625242570081148
+ CmpBidMillis: 9937.320605846411
+ Reach Level: 0.799968223705116
+ cmpimps: 10070
+ qualityScore: 1.1609893640348201
+ Target Segment Probability : 4196
+Day 8: Campaign total budget bid (millis): 9937
+Day 8: ucs level reported: 0.47829690000000014
+Day 8 :BankStatus[-6,045606]
+Publishers Report:
+(publisher: msn popularity: 5176 video: 1664 text: 3513)
+(publisher: webmd popularity: 656 video: 217 text: 440)
+(publisher: nyt popularity: 847 video: 392 text: 456)
+(publisher: ebay popularity: 2383 video: 739 text: 1645)
+(publisher: sears popularity: 444 video: 158 text: 287)
+(publisher: weather popularity: 1620 video: 547 text: 1074)
+Day 8 : Simulation Status Received
+rbid =  1.0424836601307188E-4 || budget = 0.638
+Campaign ID: 12210402 -- Impressions to go =  1927
+Day 8: Updated 48 Bid Bundle entries for Campaign id 12210402
+Day 8: Sending BidBundle
+Day 8 ended. Starting next day
+Day 9: Daily notification for campaign 10121817
+Day 9:  allocated to DummyAdnetwork-5. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.1609893640348201
+Day 9: Campaign opportunity - Campaign ID 32930303: day 11 to 13 [YOUNG, MALE], reach: 1411 coefs: (v=2.30732991970995, m=1.7618184353337574)
+ cmpLength : 3
+
+
+ Campaign BID for day: 9
+
+ lastWinBid: 0.3305228931885712
+ fbid: 1.009398044157709
+ CmpBidMillis: 330.5228931885712
+ Reach Level: 0.19988666949992917
+ cmpimps: 1411
+ qualityScore: 1.1609893640348201
+ Target Segment Probability : 2353
+Day 9: Campaign total budget bid (millis): 330
+Day 9: ucs level reported: 0.5314410000000002
+Day 9 :BankStatus[-6,045606]
+Publishers Report:
+(publisher: msn popularity: 5065 video: 1648 text: 3418)
+(publisher: webmd popularity: 673 video: 189 text: 485)
+(publisher: nyt popularity: 824 video: 361 text: 464)
+(publisher: ebay popularity: 2510 video: 779 text: 1732)
+(publisher: sears popularity: 425 video: 144 text: 282)
+(publisher: weather popularity: 1639 video: 566 text: 1074)
+Day 9 : Simulation Status Received
+rbid =  1.0424836601307188E-4 || budget = 0.638
+Campaign ID: 12210402 -- Impressions to go =  1927
+Day 9: Updated 48 Bid Bundle entries for Campaign id 12210402
+Day 9: Sending BidBundle
+Day 9 ended. Starting next day
+Day 10: Updating campaign 12210402 stats: 490.98515783897875 tgtImps 0.0 nonTgtImps. Cost of imps is 0.6400928685988263
+Day 10: Daily notification for campaign 32930303
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=weather, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=ebay, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=ebay, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, MALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, MALE], device=mobile, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, MALE], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+
+
+ WON campaign: 10
+
+Day 10:  WON at cost (Millis)484. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.1609893640348201
+Day 10: Campaign opportunity - Campaign ID 14940739: day 12 to 14 [YOUNG, LOW_INCOME, FEMALE], reach: 2970 coefs: (v=2.4455211389784206, m=2.3927177366757544)
+ cmpLength : 3
+
+
+ Campaign BID for day: 10
+
+ lastWinBid: 2.144316599699816
+ fbid: 1.2437532047699194
+ CmpBidMillis: 2144.316599699816
+ Reach Level: 0.5
+ cmpimps: 2970
+ qualityScore: 1.1609893640348201
+ Target Segment Probability : 1980
+Day 10: Campaign total budget bid (millis): 2144
+Day 10: ucs level reported: 0.5314410000000002
+Day 10 :BankStatus[-6,045606]
+Publishers Report:
+(publisher: msn popularity: 5072 video: 1638 text: 3435)
+(publisher: webmd popularity: 769 video: 234 text: 536)
+(publisher: nyt popularity: 846 video: 363 text: 484)
+(publisher: ebay popularity: 2400 video: 754 text: 1647)
+(publisher: sears popularity: 445 video: 163 text: 283)
+(publisher: weather popularity: 1603 video: 538 text: 1066)
+Day 10 : AdNetworkReport
+Day 10 : Simulation Status Received
+rbid =  1.0424836601307188E-4 || budget = 0.638
+Campaign ID: 12210402 -- Impressions to go =  1436
+Day 10: Updated 48 Bid Bundle entries for Campaign id 12210402
+rbid =  1.029057406094968E-4 || budget = 0.484
+Campaign ID: 32930303 -- Impressions to go =  1481
+Day 10: Updated 48 Bid Bundle entries for Campaign id 32930303
+Day 10: Sending BidBundle
+Day 10 ended. Starting next day
+Day 11: Updating campaign 12210402 stats: 872.3791219435573 tgtImps 0.0 nonTgtImps. Cost of imps is 1.2813962328989321
+Day 11: Daily notification for campaign 14940739
+Day 11:  allocated to DummyAdnetwork-5. UCS Level set to 1.0 at price 0.19629392041910215 Quality Score is: 1.1609893640348201
+Day 11: Campaign opportunity - Campaign ID 23491575: day 13 to 15 [OLD], reach: 8116 coefs: (v=2.4596181183775885, m=2.3747446287844847)
+ cmpLength : 3
+
+
+ Campaign BID for day: 11
+
+ lastWinBid: 5.566360727059368
+ fbid: 1.1815655445314233
+ CmpBidMillis: 5566.3607270593675
+ Reach Level: 0.4999691985461714
+ cmpimps: 8116
+ qualityScore: 1.1609893640348201
+ Target Segment Probability : 5411
+Day 11: Campaign total budget bid (millis): 5566
+Day 11: ucs level reported: 1.0
+Day 11 :BankStatus[-6,881992]
+Publishers Report:
+(publisher: msn popularity: 5150 video: 1642 text: 3509)
+(publisher: webmd popularity: 692 video: 193 text: 500)
+(publisher: nyt popularity: 835 video: 362 text: 474)
+(publisher: ebay popularity: 2367 video: 733 text: 1635)
+(publisher: sears popularity: 444 video: 164 text: 281)
+(publisher: weather popularity: 1630 video: 577 text: 1054)
+Day 11 : AdNetworkReport
+Day 11 : Simulation Status Received
+rbid =  1.0424836601307188E-4 || budget = 0.638
+Campaign ID: 12210402 -- Impressions to go =  1055
+Day 11: Updated 48 Bid Bundle entries for Campaign id 12210402
+rbid =  1.029057406094968E-4 || budget = 0.484
+Campaign ID: 32930303 -- Impressions to go =  1481
+Day 11: Updated 48 Bid Bundle entries for Campaign id 32930303
+Day 11: Sending BidBundle
+Day 11 ended. Starting next day
+Day 12: Updating campaign 32930303 stats: 755.8889107735882 tgtImps 0.0 nonTgtImps. Cost of imps is 0.49701251429237203
+Day 12: Updating campaign 12210402 stats: 1663.3311771239526 tgtImps 0.0 nonTgtImps. Cost of imps is 1.921034394057962
+Day 12: Daily notification for campaign 23491575
+Day 12:  allocated to DummyAdnetwork-2. UCS Level set to 1.0 at price 0.18387382424547755 Quality Score is: 1.1609893640348201
+Day 12: Campaign opportunity - Campaign ID 2430000: day 14 to 16 [LOW_INCOME, FEMALE], reach: 10514 coefs: (v=2.1205068940676535, m=1.952692756893334)
+ cmpLength : 3
+
+
+ Campaign BID for day: 12
+
+ lastWinBid: 10.961023326221769
+ fbid: 1.122487267304852
+ CmpBidMillis: 10961.023326221768
+ Reach Level: 0.7999695655482005
+ cmpimps: 10514
+ qualityScore: 1.1609893640348201
+ Target Segment Probability : 4381
+Day 12: Campaign total budget bid (millis): 10961
+Day 12: ucs level reported: 1.0
+Day 12 :BankStatus[-7,711736]
+Publishers Report:
+(publisher: msn popularity: 5204 video: 1684 text: 3521)
+(publisher: webmd popularity: 702 video: 197 text: 506)
+(publisher: nyt popularity: 792 video: 362 text: 431)
+(publisher: ebay popularity: 2432 video: 775 text: 1658)
+(publisher: sears popularity: 439 video: 172 text: 268)
+(publisher: weather popularity: 1552 video: 536 text: 1017)
+Day 12 : AdNetworkReport
+Day 12 : Simulation Status Received
+rbid =  1.0424836601307188E-4 || budget = 0.638
+Campaign ID: 12210402 -- Impressions to go =  264
+Day 12: Updated 48 Bid Bundle entries for Campaign id 12210402
+rbid =  1.029057406094968E-4 || budget = 0.484
+Campaign ID: 32930303 -- Impressions to go =  725
+Day 12: Updated 48 Bid Bundle entries for Campaign id 32930303
+Day 12: Sending BidBundle
+Day 12 ended. Starting next day
+Day 13: Updating campaign 32930303 stats: 1379.5648092544598 tgtImps 0.0 nonTgtImps. Cost of imps is 0.9853160297889731
+Day 13: Updating campaign 12210402 stats: 2335.8897807693934 tgtImps 0.0 nonTgtImps. Cost of imps is 2.5658755174433425
+Day 13: Daily notification for campaign 2430000
+Day 13:  allocated to DummyAdnetwork-3. UCS Level set to 1.0 at price 0.15890747929947147 Quality Score is: 1.1609893640348201
+Day 13: Campaign opportunity - Campaign ID 11178838: day 15 to 24 [MALE, LOW_INCOME], reach: 7262 coefs: (v=2.594398560299754, m=2.090314171421871)
+ cmpLength : 10
+
+
+ Campaign BID for day: 13
+
+ lastWinBid: 1.7981234714042187
+ fbid: 1.0663629039396094
+ CmpBidMillis: 1798.1234714042187
+ Reach Level: 0.2
+ cmpimps: 7262
+ qualityScore: 1.1609893640348201
+ Target Segment Probability : 3631
+Day 13: Campaign total budget bid (millis): 1798
+Day 13: ucs level reported: 1.0
+Day 13 :BankStatus[-9,007294]
+Publishers Report:
+(publisher: msn popularity: 5152 video: 1709 text: 3444)
+(publisher: webmd popularity: 700 video: 209 text: 492)
+(publisher: nyt popularity: 840 video: 377 text: 464)
+(publisher: ebay popularity: 2371 video: 725 text: 1647)
+(publisher: sears popularity: 417 video: 162 text: 256)
+(publisher: weather popularity: 1651 video: 541 text: 1111)
+Day 13 : AdNetworkReport
+Day 13 : Simulation Status Received
+Day 13: Sending BidBundle
+Day 13 ended. Starting next day
+Day 14: Updating campaign 32930303 stats: 2053.5571961687306 tgtImps 0.0 nonTgtImps. Cost of imps is 1.4731953138788096
+Day 14: Updating campaign 12210402 stats: 2600.1163384359816 tgtImps 0.0 nonTgtImps. Cost of imps is 2.8328603507247268
+Day 14: Daily notification for campaign 11178838
+Day 14:  allocated to DummyAdnetwork. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2082325359268462
+Day 14: Campaign opportunity - Campaign ID 29461814: day 16 to 18 [YOUNG, MALE, LOW_INCOME], reach: 4406 coefs: (v=2.7609461869822822, m=2.0650520733374176)
+ cmpLength : 3
+
+
+ Campaign BID for day: 14
+
+ lastWinBid: 4.313941132330782
+ fbid: 1.013044758742629
+ CmpBidMillis: 4313.941132330781
+ Reach Level: 0.7999273783587509
+ cmpimps: 4406
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 1836
+Day 14: Campaign total budget bid (millis): 4313
+Day 14: ucs level reported: 0.47829690000000014
+Day 14 :BankStatus[-8,777558]
+Publishers Report:
+(publisher: msn popularity: 5166 video: 1668 text: 3499)
+(publisher: webmd popularity: 708 video: 212 text: 497)
+(publisher: nyt popularity: 805 video: 371 text: 435)
+(publisher: ebay popularity: 2397 video: 751 text: 1647)
+(publisher: sears popularity: 444 video: 164 text: 281)
+(publisher: weather popularity: 1618 video: 537 text: 1082)
+Day 14 : AdNetworkReport
+Day 14 : Simulation Status Received
+Day 14: Sending BidBundle
+Day 14 ended. Starting next day
+Day 15: Daily notification for campaign 29461814
+Day 15:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2082325359268462
+Day 15: Campaign opportunity - Campaign ID 2648891: day 17 to 19 [YOUNG, LOW_INCOME], reach: 2289 coefs: (v=2.0622110998480494, m=2.3952983498400524)
+ cmpLength : 3
+
+
+ Campaign BID for day: 15
+
+ lastWinBid: 0.5321875743341316
+ fbid: 0.9623925208054975
+ CmpBidMillis: 532.1875743341316
+ Reach Level: 0.1999475890985325
+ cmpimps: 2289
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 3816
+Day 15: Campaign total budget bid (millis): 532
+Day 15: ucs level reported: 0.5314410000000002
+Day 15 :BankStatus[-9,532422]
+Publishers Report:
+(publisher: msn popularity: 5139 video: 1618 text: 3522)
+(publisher: webmd popularity: 652 video: 189 text: 464)
+(publisher: nyt popularity: 817 video: 375 text: 443)
+(publisher: ebay popularity: 2413 video: 729 text: 1685)
+(publisher: sears popularity: 440 video: 177 text: 264)
+(publisher: weather popularity: 1616 video: 572 text: 1045)
+Day 15 : Simulation Status Received
+Day 15: Sending BidBundle
+Day 15 ended. Starting next day
+Day 16: Daily notification for campaign 2648891
+Day 16:  allocated to DummyAdnetwork. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2082325359268462
+Day 16: Campaign opportunity - Campaign ID 3191175: day 18 to 27 [MALE, LOW_INCOME], reach: 29048 coefs: (v=2.563465395610008, m=1.9804347058857896)
+ cmpLength : 10
+
+
+ Campaign BID for day: 16
+
+ lastWinBid: 25.670397513089423
+ fbid: 0.9142728947652227
+ CmpBidMillis: 25670.39751308942
+ Reach Level: 0.8
+ cmpimps: 29048
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 3631
+Day 16: Campaign total budget bid (millis): 25670
+Day 16: ucs level reported: 0.47829690000000014
+Day 16 :BankStatus[-9,532422]
+Publishers Report:
+(publisher: msn popularity: 5173 video: 1671 text: 3503)
+(publisher: webmd popularity: 688 video: 193 text: 496)
+(publisher: nyt popularity: 846 video: 340 text: 507)
+(publisher: ebay popularity: 2244 video: 658 text: 1587)
+(publisher: sears popularity: 503 video: 193 text: 311)
+(publisher: weather popularity: 1595 video: 528 text: 1068)
+Day 16 : Simulation Status Received
+Day 16: Sending BidBundle
+Day 16 ended. Starting next day
+Day 17: Daily notification for campaign 3191175
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=webmd, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=ebay, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=weather, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=ebay, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=webmd, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[MALE, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[MALE, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[MALE, LOW_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+
+
+ WON campaign: 17
+
+Day 17:  WON at cost (Millis)25670. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2082325359268462
+Day 17: Campaign opportunity - Campaign ID 10899178: day 19 to 21 [YOUNG], reach: 6883 coefs: (v=2.514202717086901, m=1.6097890603061922)
+ cmpLength : 3
+
+
+ Campaign BID for day: 17
+
+ lastWinBid: 3.8013620532013395
+ fbid: 0.9142658158829656
+ CmpBidMillis: 3801.3620532013397
+ Reach Level: 0.4999636812667974
+ cmpimps: 6883
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 4589
+Day 17: Campaign total budget bid (millis): 3801
+Day 17: ucs level reported: 0.47829690000000014
+Day 17 :BankStatus[-9,532422]
+Publishers Report:
+(publisher: webmd popularity: 663 video: 198 text: 466)
+(publisher: msn popularity: 5108 video: 1650 text: 3459)
+(publisher: nyt popularity: 850 video: 371 text: 480)
+(publisher: ebay popularity: 2504 video: 756 text: 1749)
+(publisher: sears popularity: 398 video: 167 text: 232)
+(publisher: weather popularity: 1565 video: 516 text: 1050)
+Day 17 : Simulation Status Received
+rbid =  2.651129165519141E-4 || budget = 25.67
+Campaign ID: 3191175 -- Impressions to go =  30500
+Day 17: Updated 48 Bid Bundle entries for Campaign id 3191175
+Day 17: Sending BidBundle
+Day 17 ended. Starting next day
+Day 18: Daily notification for campaign 10899178
+Day 18:  allocated to DummyAdnetwork-4. UCS Level set to 1.0 at price 0.18573939597719658 Quality Score is: 1.2082325359268462
+Day 18: Campaign opportunity - Campaign ID 1322956: day 20 to 22 [OLD, FEMALE, HIGH_INCOME], reach: 244 coefs: (v=2.1834886707924657, m=2.3891691513295727)
+ cmpLength : 3
+
+
+ Campaign BID for day: 18
+
+ lastWinBid: 0.051169432736736964
+ fbid: 0.8685525250888173
+ CmpBidMillis: 51.169432736736965
+ Reach Level: 0.19983619983619982
+ cmpimps: 244
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 407
+Day 18: Campaign total budget bid (millis): 51
+Day 18: ucs level reported: 1.0
+Day 18 :BankStatus[-9,718162]
+Publishers Report:
+(publisher: msn popularity: 5067 video: 1602 text: 3466)
+(publisher: webmd popularity: 655 video: 178 text: 478)
+(publisher: nyt popularity: 856 video: 394 text: 463)
+(publisher: ebay popularity: 2418 video: 734 text: 1685)
+(publisher: sears popularity: 418 video: 166 text: 253)
+(publisher: weather popularity: 1703 video: 584 text: 1120)
+Day 18 : Simulation Status Received
+rbid =  2.651129165519141E-4 || budget = 25.67
+Campaign ID: 3191175 -- Impressions to go =  30500
+Day 18: Updated 48 Bid Bundle entries for Campaign id 3191175
+Day 18: Sending BidBundle
+Day 18 ended. Starting next day
+Day 19: Updating campaign 3191175 stats: 3700.8032895355814 tgtImps 0.0 nonTgtImps. Cost of imps is 3.5097314317249717
+Day 19: Daily notification for campaign 1322956
+Day 19:  allocated to adv1. UCS Level set to 1.0 at price 0.19959179079022754 Quality Score is: 1.2082325359268462
+Day 19: Campaign opportunity - Campaign ID 30190940: day 21 to 23 [FEMALE, HIGH_INCOME], reach: 994 coefs: (v=2.74376578316284, m=1.6829483569888555)
+ cmpLength : 3
+
+
+ Campaign BID for day: 19
+
+ lastWinBid: 0.495231435860384
+ fbid: 0.8251248988343765
+ CmpBidMillis: 495.231435860384
+ Reach Level: 0.4997486173956762
+ cmpimps: 994
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 663
+Day 19: Campaign total budget bid (millis): 495
+Day 19: ucs level reported: 1.0
+Day 19 :BankStatus[-9,917753]
+Publishers Report:
+(publisher: msn popularity: 5210 video: 1649 text: 3562)
+(publisher: webmd popularity: 689 video: 198 text: 492)
+(publisher: nyt popularity: 836 video: 367 text: 470)
+(publisher: ebay popularity: 2364 video: 709 text: 1656)
+(publisher: sears popularity: 457 video: 182 text: 276)
+(publisher: weather popularity: 1597 video: 513 text: 1085)
+Day 19 : AdNetworkReport
+Day 19 : Simulation Status Received
+rbid =  2.651129165519141E-4 || budget = 25.67
+Campaign ID: 3191175 -- Impressions to go =  26799
+Day 19: Updated 48 Bid Bundle entries for Campaign id 3191175
+Day 19: Sending BidBundle
+Day 19 ended. Starting next day
+Day 20: Updating campaign 3191175 stats: 10496.91546617974 tgtImps 0.0 nonTgtImps. Cost of imps is 15.36128870294575
+Day 20: Daily notification for campaign 30190940
+Day 20:  allocated to DummyAdnetwork-3. UCS Level set to 1.0 at price 0.1845626619660115 Quality Score is: 1.2082325359268462
+Day 20: Campaign opportunity - Campaign ID 10576626: day 22 to 24 [YOUNG, FEMALE], reach: 1341 coefs: (v=2.237750968930458, m=1.8077965099060318)
+ cmpLength : 3
+
+
+ Campaign BID for day: 20
+
+ lastWinBid: 0.2538974423659968
+ fbid: 0.7838686538926576
+ CmpBidMillis: 253.89744236599682
+ Reach Level: 0.19991055456171736
+ cmpimps: 1341
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 2236
+Day 20: Campaign total budget bid (millis): 253
+Day 20: ucs level reported: 1.0
+Day 20 :BankStatus[-13,612047]
+Publishers Report:
+(publisher: msn popularity: 5154 video: 1638 text: 3517)
+(publisher: webmd popularity: 712 video: 200 text: 513)
+(publisher: nyt popularity: 842 video: 408 text: 435)
+(publisher: ebay popularity: 2335 video: 727 text: 1609)
+(publisher: sears popularity: 399 video: 154 text: 246)
+(publisher: weather popularity: 1680 video: 606 text: 1075)
+Day 20 : AdNetworkReport
+Day 20 : Simulation Status Received
+rbid =  2.651129165519141E-4 || budget = 25.67
+Campaign ID: 3191175 -- Impressions to go =  20003
+Day 20: Updated 48 Bid Bundle entries for Campaign id 3191175
+Day 20: Sending BidBundle
+Day 20 ended. Starting next day
+Day 21: Updating campaign 3191175 stats: 17293.676589023125 tgtImps 0.0 nonTgtImps. Cost of imps is 25.32699519971555
+Day 21: Daily notification for campaign 10576626
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=ebay, marketSegments=[YOUNG, FEMALE], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, FEMALE], device=mobile, adType=text], AdxQuery [publisher=ebay, marketSegments=[YOUNG, FEMALE], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, FEMALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, FEMALE], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, FEMALE], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, FEMALE], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, FEMALE], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, FEMALE], device=mobile, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, FEMALE], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, FEMALE], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, FEMALE], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, FEMALE], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, FEMALE], device=pc, adType=text], AdxQuery [publisher=ebay, marketSegments=[YOUNG, FEMALE], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, FEMALE], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, FEMALE], device=pc, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, FEMALE], device=pc, adType=text]]!!!!!!!!!!!!!!!!
+
+
+ WON campaign: 21
+
+Day 21:  WON at cost (Millis)315. UCS Level set to 1.0 at price 0.19181728859934732 Quality Score is: 1.2082325359268462
+Day 21: Campaign opportunity - Campaign ID 11333771: day 23 to 27 [YOUNG, FEMALE], reach: 8944 coefs: (v=2.5790556575460446, m=2.4266753795886182)
+ cmpLength : 5
+
+
+ Campaign BID for day: 21
+
+ lastWinBid: 7.5920884898611645
+ fbid: 0.8781909502411992
+ CmpBidMillis: 7592.088489861165
+ Reach Level: 0.8
+ cmpimps: 8944
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 2236
+Day 21: Campaign total budget bid (millis): 7592
+Day 21: ucs level reported: 1.0
+Day 21 :BankStatus[-25,655422]
+Publishers Report:
+(publisher: msn popularity: 5135 video: 1638 text: 3498)
+(publisher: webmd popularity: 669 video: 187 text: 483)
+(publisher: nyt popularity: 827 video: 355 text: 473)
+(publisher: ebay popularity: 2338 video: 713 text: 1626)
+(publisher: sears popularity: 459 video: 168 text: 292)
+(publisher: weather popularity: 1682 video: 557 text: 1126)
+Day 21 : AdNetworkReport
+Day 21 : Simulation Status Received
+rbid =  7.046979865771812E-5 || budget = 0.315
+Campaign ID: 10576626 -- Impressions to go =  1408
+Day 21: Updated 48 Bid Bundle entries for Campaign id 10576626
+rbid =  2.651129165519141E-4 || budget = 25.67
+Campaign ID: 3191175 -- Impressions to go =  13206
+Day 21: Updated 48 Bid Bundle entries for Campaign id 3191175
+Day 21: Sending BidBundle
+Day 21 ended. Starting next day
+Day 22: Updating campaign 3191175 stats: 25068.48396022675 tgtImps 0.0 nonTgtImps. Cost of imps is 32.14366843281434
+Day 22: Daily notification for campaign 11333771
+Day 22:  allocated to adv1. UCS Level set to 1.0 at price 0.19621200599455613 Quality Score is: 1.2082325359268462
+Day 22: Campaign opportunity - Campaign ID 21354436: day 24 to 26 [YOUNG, MALE], reach: 1411 coefs: (v=2.010132436605666, m=1.911066055965155)
+ cmpLength : 3
+
+
+ Campaign BID for day: 22
+
+ lastWinBid: 0.28429808526833084
+ fbid: 0.8342814027291392
+ CmpBidMillis: 284.29808526833085
+ Reach Level: 0.19988666949992917
+ cmpimps: 1411
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 2353
+Day 22: Campaign total budget bid (millis): 284
+Day 22: ucs level reported: 1.0
+Day 22 :BankStatus[-35,817340]
+Publishers Report:
+(publisher: msn popularity: 5063 video: 1606 text: 3458)
+(publisher: webmd popularity: 693 video: 192 text: 502)
+(publisher: nyt popularity: 857 video: 371 text: 487)
+(publisher: ebay popularity: 2417 video: 773 text: 1645)
+(publisher: sears popularity: 441 video: 178 text: 264)
+(publisher: weather popularity: 1631 video: 583 text: 1049)
+Day 22 : AdNetworkReport
+Day 22 : Simulation Status Received
+rbid =  7.046979865771812E-5 || budget = 0.315
+Campaign ID: 10576626 -- Impressions to go =  1408
+Day 22: Updated 48 Bid Bundle entries for Campaign id 10576626
+rbid =  2.651129165519141E-4 || budget = 25.67
+Campaign ID: 3191175 -- Impressions to go =  5431
+Day 22: Updated 48 Bid Bundle entries for Campaign id 3191175
+Day 22: Sending BidBundle
+Day 22 ended. Starting next day
+Day 23: Updating campaign 10576626 stats: 1410.0705121644594 tgtImps 0.0 nonTgtImps. Cost of imps is 0.07548017538036425
+Day 23: Updating campaign 3191175 stats: 32712.85480251513 tgtImps 0.0 nonTgtImps. Cost of imps is 39.036052823547
+Day 23: Daily notification for campaign 21354436
+Day 23:  allocated to DummyAdnetwork-5. UCS Level set to 1.0 at price 0.19488846788218217 Quality Score is: 1.2082325359268462
+Day 23: Campaign opportunity - Campaign ID 8383878: day 25 to 29 [YOUNG, FEMALE], reach: 2236 coefs: (v=2.498407028412517, m=1.6172034835319296)
+ cmpLength : 5
+
+
+ Campaign BID for day: 23
+
+ lastWinBid: 0.42824124138123126
+ fbid: 0.7925673325926822
+ CmpBidMillis: 428.24124138123125
+ Reach Level: 0.2
+ cmpimps: 2236
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 2236
+Day 23: Campaign total budget bid (millis): 428
+Day 23: ucs level reported: 1.0
+Day 23 :BankStatus[-42,828902]
+Publishers Report:
+(publisher: msn popularity: 5120 video: 1629 text: 3492)
+(publisher: webmd popularity: 682 video: 207 text: 476)
+(publisher: nyt popularity: 828 video: 370 text: 459)
+(publisher: ebay popularity: 2426 video: 731 text: 1696)
+(publisher: sears popularity: 483 video: 209 text: 275)
+(publisher: weather popularity: 1557 video: 534 text: 1024)
+Day 23 : AdNetworkReport
+Day 23 : Simulation Status Received
+Day 23: Sending BidBundle
+Day 23 ended. Starting next day
+Day 24: Updating campaign 10576626 stats: 2819.589928140037 tgtImps 0.0 nonTgtImps. Cost of imps is 0.07548017538036425
+Day 24: Updating campaign 3191175 stats: 38144.90785800769 tgtImps 0.0 nonTgtImps. Cost of imps is 43.55140094514224
+Day 24: Daily notification for campaign 8383878
+Day 24:  allocated to DummyAdnetwork-6. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2082325359268462
+Day 24: Campaign opportunity - Campaign ID 19045037: day 26 to 35 [OLD, MALE, HIGH_INCOME], reach: 1616 coefs: (v=2.636663491432003, m=2.4472651215400942)
+ cmpLength : 10
+
+
+ Campaign BID for day: 24
+
+ lastWinBid: 0.2940232351379545
+ fbid: 0.7529389659630481
+ CmpBidMillis: 294.0232351379545
+ Reach Level: 0.2
+ cmpimps: 1616
+ qualityScore: 1.2082325359268462
+ Target Segment Probability : 808
+Day 24: Campaign total budget bid (millis): 294
+Day 24: ucs level reported: 0.5314410000000002
+Day 24 :BankStatus[-49,796767]
+Publishers Report:
+(publisher: msn popularity: 5086 video: 1670 text: 3417)
+(publisher: webmd popularity: 757 video: 206 text: 552)
+(publisher: nyt popularity: 820 video: 380 text: 441)
+(publisher: ebay popularity: 2384 video: 719 text: 1666)
+(publisher: sears popularity: 420 video: 172 text: 249)
+(publisher: weather popularity: 1595 video: 517 text: 1079)
+Day 24 : AdNetworkReport
+Day 24 : Simulation Status Received
+Day 24: Sending BidBundle
+Day 24 ended. Starting next day
+Day 25: Updating campaign 10576626 stats: 2819.589928140037 tgtImps 0.0 nonTgtImps. Cost of imps is 0.07548017538036425
+Day 25: Updating campaign 3191175 stats: 38144.90785800769 tgtImps 0.0 nonTgtImps. Cost of imps is 43.55140094514224
+Day 25: Daily notification for campaign 19045037
+Day 25:  allocated to DummyAdnetwork-5. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2611663075711683
+Day 25: Campaign opportunity - Campaign ID 19875077: day 27 to 29 [OLD, FEMALE, HIGH_INCOME], reach: 976 coefs: (v=2.1778412520194315, m=1.96394869147361)
+ cmpLength : 3
+
+
+ Campaign BID for day: 25
+
+ lastWinBid: 0.7037845195449813
+ fbid: 0.7152920176648957
+ CmpBidMillis: 703.7845195449813
+ Reach Level: 0.7993447993447993
+ cmpimps: 976
+ qualityScore: 1.2611663075711683
+ Target Segment Probability : 407
+Day 25: Campaign total budget bid (millis): 703
+Day 25: ucs level reported: 0.5314410000000002
+Day 25 :BankStatus[-53,913077]
+Publishers Report:
+(publisher: msn popularity: 5146 video: 1656 text: 3491)
+(publisher: webmd popularity: 697 video: 199 text: 499)
+(publisher: nyt popularity: 846 video: 360 text: 487)
+(publisher: ebay popularity: 2391 video: 726 text: 1666)
+(publisher: sears popularity: 431 video: 157 text: 275)
+(publisher: weather popularity: 1567 video: 566 text: 1002)
+Day 25 : Simulation Status Received
+Day 25: Sending BidBundle
+Day 25 ended. Starting next day
+Day 26: Updating campaign 3191175 stats: 38144.90785800769 tgtImps 0.0 nonTgtImps. Cost of imps is 43.55140094514224
+Day 26: Daily notification for campaign 19875077
+Day 26:  allocated to DummyAdnetwork-2. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2611663075711683
+Day 26: Campaign opportunity - Campaign ID 1566895: day 28 to 37 [OLD, HIGH_INCOME], reach: 9720 coefs: (v=2.3243924173538892, m=2.4911431115437925)
+ cmpLength : 10
+
+
+ Campaign BID for day: 26
+
+ lastWinBid: 6.664009318309153
+ fbid: 0.6795274167816509
+ CmpBidMillis: 6664.009318309153
+ Reach Level: 0.8
+ cmpimps: 9720
+ qualityScore: 1.2611663075711683
+ Target Segment Probability : 1215
+Day 26: Campaign total budget bid (millis): 6664
+Day 26: ucs level reported: 0.47829690000000014
+Day 26 :BankStatus[-53,913077]
+Publishers Report:
+(publisher: webmd popularity: 712 video: 196 text: 517)
+(publisher: msn popularity: 5096 video: 1687 text: 3410)
+(publisher: nyt popularity: 844 video: 394 text: 451)
+(publisher: ebay popularity: 2359 video: 757 text: 1603)
+(publisher: sears popularity: 432 video: 170 text: 263)
+(publisher: weather popularity: 1688 video: 578 text: 1111)
+Day 26 : Simulation Status Received
+Day 26: Sending BidBundle
+Day 26 ended. Starting next day
+Day 27: Updating campaign 3191175 stats: 38144.90785800769 tgtImps 0.0 nonTgtImps. Cost of imps is 43.55140094514224
+Day 27: Daily notification for campaign 1566895
+Day 27:  allocated to DummyAdnetwork-2. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2611663075711683
+Day 27: Campaign opportunity - Campaign ID 10934087: day 29 to 33 [MALE, LOW_INCOME], reach: 14524 coefs: (v=2.9545203734709986, m=2.41920935010306)
+ cmpLength : 5
+
+
+ Campaign BID for day: 27
+
+ lastWinBid: 9.45973948273313
+ fbid: 0.6455510459425683
+ CmpBidMillis: 9459.73948273313
+ Reach Level: 0.8
+ cmpimps: 14524
+ qualityScore: 1.2611663075711683
+ Target Segment Probability : 3631
+Day 27: Campaign total budget bid (millis): 9459
+Day 27: ucs level reported: 0.47829690000000014
+Day 27 :BankStatus[-53,913077]
+Publishers Report:
+(publisher: msn popularity: 5118 video: 1691 text: 3428)
+(publisher: webmd popularity: 703 video: 199 text: 505)
+(publisher: nyt popularity: 835 video: 373 text: 463)
+(publisher: ebay popularity: 2422 video: 742 text: 1681)
+(publisher: sears popularity: 412 video: 163 text: 250)
+(publisher: weather popularity: 1561 video: 533 text: 1029)
+Day 27 : Simulation Status Received
+Day 27: Sending BidBundle
+Day 27 ended. Starting next day
+Day 28: Updating campaign 3191175 stats: 38144.90785800769 tgtImps 0.0 nonTgtImps. Cost of imps is 43.55140094514224
+Day 28: Daily notification for campaign 10934087
+Day 28:  allocated to DummyAdnetwork-2. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2136982160547292
+Day 28: Campaign opportunity - Campaign ID 3661066: day 30 to 39 [YOUNG, FEMALE, HIGH_INCOME], reach: 2048 coefs: (v=2.650236008618951, m=2.445309589700817)
+ cmpLength : 10
+
+
+ Campaign BID for day: 28
+
+ lastWinBid: 1.2195085438011335
+ fbid: 0.6132734936454398
+ CmpBidMillis: 1219.5085438011336
+ Reach Level: 0.8
+ cmpimps: 2048
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 256
+Day 28: Campaign total budget bid (millis): 1219
+Day 28: ucs level reported: 0.5314410000000002
+Day 28 :BankStatus[-23,569781]
+Publishers Report:
+(publisher: msn popularity: 5125 video: 1625 text: 3501)
+(publisher: webmd popularity: 725 video: 201 text: 525)
+(publisher: nyt popularity: 850 video: 352 text: 499)
+(publisher: ebay popularity: 2410 video: 701 text: 1710)
+(publisher: sears popularity: 456 video: 180 text: 277)
+(publisher: weather popularity: 1568 video: 543 text: 1026)
+Day 28 : Simulation Status Received
+Day 28: Sending BidBundle
+Day 28 ended. Starting next day
+Day 29: Daily notification for campaign 3661066
+Day 29:  allocated to DummyAdnetwork-4. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2136982160547292
+Day 29: Campaign opportunity - Campaign ID 15546063: day 31 to 35 [OLD, LOW_INCOME, FEMALE], reach: 9604 coefs: (v=2.35156614018693, m=1.8700378165406744)
+ cmpLength : 5
+
+
+ Campaign BID for day: 29
+
+ lastWinBid: 5.432886744107805
+ fbid: 0.5826098189631678
+ CmpBidMillis: 5432.886744107805
+ Reach Level: 0.8
+ cmpimps: 9604
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 2401
+Day 29: Campaign total budget bid (millis): 5432
+Day 29: ucs level reported: 0.47829690000000014
+Day 29 :BankStatus[-23,569781]
+Publishers Report:
+(publisher: msn popularity: 5127 video: 1611 text: 3517)
+(publisher: webmd popularity: 682 video: 196 text: 487)
+(publisher: nyt popularity: 849 video: 378 text: 472)
+(publisher: ebay popularity: 2489 video: 768 text: 1722)
+(publisher: sears popularity: 406 video: 164 text: 243)
+(publisher: weather popularity: 1563 video: 540 text: 1024)
+Day 29 : Simulation Status Received
+Day 29: Sending BidBundle
+Day 29 ended. Starting next day
+Day 30: Daily notification for campaign 15546063
+Day 30:  allocated to DummyAdnetwork-3. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2136982160547292
+Day 30: Campaign opportunity - Campaign ID 12817996: day 32 to 36 [LOW_INCOME], reach: 8012 coefs: (v=2.6440489685703863, m=2.0784923952350476)
+ cmpLength : 5
+
+
+ Campaign BID for day: 30
+
+ lastWinBid: 1.0764232133512635
+ fbid: 0.5534793280150093
+ CmpBidMillis: 1076.4232133512635
+ Reach Level: 0.2
+ cmpimps: 8012
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 8012
+Day 30: Campaign total budget bid (millis): 1076
+Day 30: ucs level reported: 0.5314410000000002
+Day 30 :BankStatus[-23,569781]
+Publishers Report:
+(publisher: msn popularity: 5180 video: 1663 text: 3518)
+(publisher: webmd popularity: 683 video: 192 text: 492)
+(publisher: nyt popularity: 839 video: 357 text: 483)
+(publisher: ebay popularity: 2324 video: 714 text: 1611)
+(publisher: sears popularity: 430 video: 152 text: 279)
+(publisher: weather popularity: 1617 video: 558 text: 1060)
+Day 30 : Simulation Status Received
+Day 30: Sending BidBundle
+Day 30 ended. Starting next day
+Day 31: Daily notification for campaign 12817996
+Day 31:  allocated to DummyAdnetwork-4. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2136982160547292
+Day 31: Campaign opportunity - Campaign ID 12591233: day 33 to 42 [LOW_INCOME], reach: 16024 coefs: (v=2.6794182575189023, m=2.1501249239373967)
+ cmpLength : 10
+
+
+ Campaign BID for day: 31
+
+ lastWinBid: 2.0452041053674
+ fbid: 0.5258053616142588
+ CmpBidMillis: 2045.2041053674002
+ Reach Level: 0.2
+ cmpimps: 16024
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 8012
+Day 31: Campaign total budget bid (millis): 2045
+Day 31: ucs level reported: 0.47829690000000014
+Day 31 :BankStatus[-23,569781]
+Publishers Report:
+(publisher: msn popularity: 5130 video: 1653 text: 3478)
+(publisher: webmd popularity: 707 video: 195 text: 513)
+(publisher: nyt popularity: 868 video: 399 text: 470)
+(publisher: ebay popularity: 2392 video: 721 text: 1672)
+(publisher: sears popularity: 453 video: 184 text: 270)
+(publisher: weather popularity: 1597 video: 580 text: 1018)
+Day 31 : Simulation Status Received
+Day 31: Sending BidBundle
+Day 31 ended. Starting next day
+Day 32: Daily notification for campaign 12591233
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=weather, marketSegments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=weather, marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=weather, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[LOW_INCOME], device=mobile, adType=text]]!!!!!!!!!!!!!!!!
+
+
+ WON campaign: 32
+
+Day 32:  WON at cost (Millis)4893. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2136982160547292
+Day 32: Campaign opportunity - Campaign ID 15057911: day 34 to 36 [LOW_INCOME, FEMALE], reach: 6571 coefs: (v=2.9359269783197552, m=2.3399737464580954)
+ cmpLength : 3
+
+
+ Campaign BID for day: 32
+
+ lastWinBid: 3.556186839917238
+ fbid: 0.8918779570709127
+ CmpBidMillis: 3556.1868399172376
+ Reach Level: 0.4999619569352507
+ cmpimps: 6571
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 4381
+Day 32: Campaign total budget bid (millis): 3556
+Day 32: ucs level reported: 0.47829690000000014
+Day 32 :BankStatus[-23,569781]
+Publishers Report:
+(publisher: msn popularity: 5092 video: 1606 text: 3487)
+(publisher: webmd popularity: 724 video: 211 text: 514)
+(publisher: nyt popularity: 850 video: 379 text: 472)
+(publisher: ebay popularity: 2324 video: 691 text: 1634)
+(publisher: sears popularity: 464 video: 184 text: 281)
+(publisher: weather popularity: 1617 video: 599 text: 1019)
+Day 32 : Simulation Status Received
+rbid =  9.16063404892661E-5 || budget = 4.893
+Campaign ID: 12591233 -- Impressions to go =  16825
+Day 32: Updated 54 Bid Bundle entries for Campaign id 12591233
+Day 32: Sending BidBundle
+Day 32 ended. Starting next day
+Day 33: Daily notification for campaign 15057911
+Day 33:  allocated to adv1. UCS Level set to 1.0 at price 0.19423285735081558 Quality Score is: 1.2136982160547292
+Day 33: Campaign opportunity - Campaign ID 30122339: day 35 to 37 [OLD], reach: 8116 coefs: (v=2.0500147296675837, m=2.0670788966363105)
+ cmpLength : 3
+
+
+ Campaign BID for day: 33
+
+ lastWinBid: 4.1727756684719095
+ fbid: 0.8472840592173669
+ CmpBidMillis: 4172.77566847191
+ Reach Level: 0.4999691985461714
+ cmpimps: 8116
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 5411
+Day 33: Campaign total budget bid (millis): 4172
+Day 33: ucs level reported: 1.0
+Day 33 :BankStatus[-23,764014]
+Publishers Report:
+(publisher: webmd popularity: 716 video: 219 text: 498)
+(publisher: msn popularity: 5113 video: 1640 text: 3474)
+(publisher: nyt popularity: 883 video: 416 text: 468)
+(publisher: ebay popularity: 2347 video: 714 text: 1634)
+(publisher: sears popularity: 439 video: 189 text: 251)
+(publisher: weather popularity: 1637 video: 576 text: 1062)
+Day 33 : Simulation Status Received
+rbid =  9.16063404892661E-5 || budget = 4.893
+Campaign ID: 12591233 -- Impressions to go =  16825
+Day 33: Updated 54 Bid Bundle entries for Campaign id 12591233
+Day 33: Sending BidBundle
+Day 33 ended. Starting next day
+Day 34: Updating campaign 12591233 stats: 3929.87757460919 tgtImps 0.0 nonTgtImps. Cost of imps is 4.896297049173582
+Day 34: Daily notification for campaign 30122339
+Day 34:  allocated to DummyAdnetwork-5. UCS Level set to 1.0 at price 0.1921613338835862 Quality Score is: 1.2136982160547292
+Day 34: Campaign opportunity - Campaign ID 12079457: day 36 to 38 [OLD, MALE], reach: 1561 coefs: (v=2.5390520630297067, m=1.988292330610844)
+ cmpLength : 3
+
+
+ Campaign BID for day: 34
+
+ lastWinBid: 0.3048412528626314
+ fbid: 0.8049198562564985
+ CmpBidMillis: 304.8412528626314
+ Reach Level: 0.1998975541042387
+ cmpimps: 1561
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 2603
+Day 34: Campaign total budget bid (millis): 304
+Day 34: ucs level reported: 1.0
+Day 34 :BankStatus[-23,956175]
+Publishers Report:
+(publisher: msn popularity: 4978 video: 1610 text: 3369)
+(publisher: webmd popularity: 738 video: 230 text: 509)
+(publisher: nyt popularity: 866 video: 398 text: 469)
+(publisher: ebay popularity: 2384 video: 724 text: 1661)
+(publisher: sears popularity: 459 video: 195 text: 265)
+(publisher: weather popularity: 1635 video: 589 text: 1047)
+Day 34 : AdNetworkReport
+Day 34 : Simulation Status Received
+rbid =  9.16063404892661E-5 || budget = 4.893
+Campaign ID: 12591233 -- Impressions to go =  12895
+Day 34: Updated 54 Bid Bundle entries for Campaign id 12591233
+Day 34: Sending BidBundle
+Day 34 ended. Starting next day
+Day 35: Updating campaign 12591233 stats: 20757.21482132403 tgtImps 0.0 nonTgtImps. Cost of imps is 8.88341489121198
+Day 35: Daily notification for campaign 12079457
+Day 35:  allocated to DummyAdnetwork-5. UCS Level set to 1.0 at price 0.18736507804678443 Quality Score is: 1.2136982160547292
+Day 35: Campaign opportunity - Campaign ID 4759306: day 37 to 41 [LOW_INCOME, FEMALE], reach: 17524 coefs: (v=2.327582011604877, m=1.8381466820590657)
+ cmpLength : 5
+
+
+ Campaign BID for day: 35
+
+ lastWinBid: 13.010985454389065
+ fbid: 0.7646738634436736
+ CmpBidMillis: 13010.985454389065
+ Reach Level: 0.8
+ cmpimps: 17524
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 4381
+Day 35: Campaign total budget bid (millis): 13010
+Day 35: ucs level reported: 1.0
+Day 35 :BankStatus[-29,049151]
+Publishers Report:
+(publisher: msn popularity: 5171 video: 1652 text: 3520)
+(publisher: webmd popularity: 699 video: 198 text: 502)
+(publisher: nyt popularity: 858 video: 376 text: 483)
+(publisher: ebay popularity: 2363 video: 727 text: 1637)
+(publisher: sears popularity: 455 video: 177 text: 279)
+(publisher: weather popularity: 1556 video: 540 text: 1017)
+Day 35 : AdNetworkReport
+Day 35 : Simulation Status Received
+Day 35: Sending BidBundle
+Day 35 ended. Starting next day
+Day 36: Updating campaign 12591233 stats: 28117.490711984712 tgtImps 0.0 nonTgtImps. Cost of imps is 13.783807561967224
+Day 36: Daily notification for campaign 4759306
+Day 36:  allocated to adv1. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2136982160547292
+Day 36: Campaign opportunity - Campaign ID 2796038: day 38 to 40 [FEMALE], reach: 3026 coefs: (v=2.940925000957769, m=1.6652000807459486)
+ cmpLength : 3
+
+
+ Campaign BID for day: 36
+
+ lastWinBid: 0.5335216897502322
+ fbid: 0.7264401702714899
+ CmpBidMillis: 533.5216897502322
+ Reach Level: 0.1999735659529474
+ cmpimps: 3026
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 5044
+Day 36: Campaign total budget bid (millis): 533
+Day 36: ucs level reported: 0.47829690000000014
+Day 36 :BankStatus[-33,036269]
+Publishers Report:
+(publisher: msn popularity: 5217 video: 1667 text: 3551)
+(publisher: webmd popularity: 699 video: 208 text: 492)
+(publisher: nyt popularity: 879 video: 389 text: 491)
+(publisher: ebay popularity: 2322 video: 713 text: 1610)
+(publisher: sears popularity: 457 video: 169 text: 289)
+(publisher: weather popularity: 1616 video: 560 text: 1057)
+Day 36 : AdNetworkReport
+Day 36 : Simulation Status Received
+Day 36: Sending BidBundle
+Day 36 ended. Starting next day
+Day 37: Updating campaign 12591233 stats: 28117.490711984712 tgtImps 0.0 nonTgtImps. Cost of imps is 13.783807561967224
+Day 37: Daily notification for campaign 2796038
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=weather, marketSegments=[FEMALE], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[FEMALE], device=mobile, adType=video], AdxQuery [publisher=webmd, marketSegments=[FEMALE], device=mobile, adType=text], AdxQuery [publisher=ebay, marketSegments=[FEMALE], device=pc, adType=text], AdxQuery [publisher=ebay, marketSegments=[FEMALE], device=pc, adType=video], AdxQuery [publisher=nyt, marketSegments=[FEMALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[FEMALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[FEMALE], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[FEMALE], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[FEMALE], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[FEMALE], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[FEMALE], device=pc, adType=text], AdxQuery [publisher=ebay, marketSegments=[FEMALE], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[FEMALE], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[FEMALE], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[FEMALE], device=pc, adType=video], AdxQuery [publisher=weather, marketSegments=[FEMALE], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[FEMALE], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[FEMALE], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[FEMALE], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+
+
+ WON campaign: 37
+
+Day 37:  WON at cost (Millis)979. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2136982160547292
+Day 37: Campaign opportunity - Campaign ID 30294793: day 39 to 41 [FEMALE], reach: 12105 coefs: (v=2.9306339712266176, m=1.8411932012107268)
+ cmpLength : 3
+
+
+ Campaign BID for day: 37
+
+ lastWinBid: 12.102172968325707
+ fbid: 1.029720567083095
+ CmpBidMillis: 12102.172968325707
+ Reach Level: 0.7999603489294211
+ cmpimps: 12105
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 5044
+Day 37: Campaign total budget bid (millis): 12102
+Day 37: ucs level reported: 0.47829690000000014
+Day 37 :BankStatus[-37,936662]
+Publishers Report:
+(publisher: msn popularity: 5066 video: 1654 text: 3413)
+(publisher: webmd popularity: 714 video: 216 text: 499)
+(publisher: nyt popularity: 862 video: 378 text: 485)
+(publisher: ebay popularity: 2428 video: 766 text: 1663)
+(publisher: sears popularity: 425 video: 162 text: 264)
+(publisher: weather popularity: 1606 video: 543 text: 1064)
+Day 37 : Simulation Status Received
+rbid =  9.705882352941176E-5 || budget = 0.979
+Campaign ID: 2796038 -- Impressions to go =  3177
+Day 37: Updated 48 Bid Bundle entries for Campaign id 2796038
+Day 37: Sending BidBundle
+Day 37 ended. Starting next day
+Day 38: Updating campaign 12591233 stats: 28117.490711984712 tgtImps 0.0 nonTgtImps. Cost of imps is 13.783807561967224
+Day 38: Daily notification for campaign 30294793
+Day 38:  allocated to DummyAdnetwork-3. UCS Level set to 1.0 at price 0.1865944117875063 Quality Score is: 1.2136982160547292
+Day 38: Campaign opportunity - Campaign ID 32573461: day 40 to 42 [MALE], reach: 2973 coefs: (v=2.729208642987003, m=1.801052355416376)
+ cmpLength : 3
+
+
+ Campaign BID for day: 38
+
+ lastWinBid: 0.7058151435105454
+ fbid: 0.9782345387289401
+ CmpBidMillis: 705.8151435105455
+ Reach Level: 0.19995964487489912
+ cmpimps: 2973
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 4956
+Day 38: Campaign total budget bid (millis): 705
+Day 38: ucs level reported: 1.0
+Day 38 :BankStatus[-38,123256]
+Publishers Report:
+(publisher: msn popularity: 5159 video: 1645 text: 3515)
+(publisher: webmd popularity: 717 video: 213 text: 505)
+(publisher: nyt popularity: 874 video: 379 text: 496)
+(publisher: ebay popularity: 2303 video: 715 text: 1589)
+(publisher: sears popularity: 445 video: 151 text: 295)
+(publisher: weather popularity: 1565 video: 518 text: 1048)
+Day 38 : Simulation Status Received
+rbid =  9.705882352941176E-5 || budget = 0.979
+Campaign ID: 2796038 -- Impressions to go =  3177
+Day 38: Updated 48 Bid Bundle entries for Campaign id 2796038
+Day 38: Sending BidBundle
+Day 38 ended. Starting next day
+Day 39: Updating campaign 12591233 stats: 28117.490711984712 tgtImps 0.0 nonTgtImps. Cost of imps is 13.783807561967224
+Day 39: Updating campaign 2796038 stats: 3178.4805413639488 tgtImps 0.0 nonTgtImps. Cost of imps is 0.48119999999999696
+Day 39: Daily notification for campaign 32573461
+Day 39:  allocated to DummyAdnetwork-6. UCS Level set to 1.0 at price 0.18225442425492472 Quality Score is: 1.2136982160547292
+Day 39: Campaign opportunity - Campaign ID 15828290: day 41 to 43 [YOUNG, LOW_INCOME], reach: 5724 coefs: (v=2.502687831114686, m=1.8404734621379575)
+ cmpLength : 3
+
+
+ Campaign BID for day: 39
+
+ lastWinBid: 3.2280997098785518
+ fbid: 0.929322811792493
+ CmpBidMillis: 3228.099709878552
+ Reach Level: 0.5
+ cmpimps: 5724
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 3816
+Day 39: Campaign total budget bid (millis): 3228
+Day 39: ucs level reported: 1.0
+Day 39 :BankStatus[-38,305511]
+Publishers Report:
+(publisher: msn popularity: 5094 video: 1722 text: 3373)
+(publisher: webmd popularity: 671 video: 188 text: 484)
+(publisher: nyt popularity: 818 video: 364 text: 455)
+(publisher: ebay popularity: 2409 video: 723 text: 1687)
+(publisher: sears popularity: 453 video: 178 text: 276)
+(publisher: weather popularity: 1589 video: 534 text: 1056)
+Day 39 : AdNetworkReport
+Day 39 : Simulation Status Received
+Day 39: Sending BidBundle
+Day 39 ended. Starting next day
+Day 40: Updating campaign 12591233 stats: 28117.490711984712 tgtImps 0.0 nonTgtImps. Cost of imps is 13.783807561967224
+Day 40: Updating campaign 2796038 stats: 4041.486148249905 tgtImps 0.0 nonTgtImps. Cost of imps is 1.4622539737995073
+Day 40: Daily notification for campaign 15828290
+Day 40:  allocated to DummyAdnetwork-5. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2136982160547292
+Day 40: Campaign opportunity - Campaign ID 19990592: day 42 to 44 [OLD, HIGH_INCOME], reach: 1822 coefs: (v=2.4221044069538786, m=2.195335487916127)
+ cmpLength : 3
+
+
+ Campaign BID for day: 40
+
+ lastWinBid: 0.9758883405202695
+ fbid: 0.8828566712028683
+ CmpBidMillis: 975.8883405202695
+ Reach Level: 0.49986282578875174
+ cmpimps: 1822
+ qualityScore: 1.2136982160547292
+ Target Segment Probability : 1215
+Day 40: Campaign total budget bid (millis): 975
+Day 40: ucs level reported: 0.47829690000000014
+Day 40 :BankStatus[-38,787911]
+Publishers Report:
+(publisher: msn popularity: 5260 video: 1706 text: 3555)
+(publisher: webmd popularity: 690 video: 200 text: 491)
+(publisher: nyt popularity: 793 video: 354 text: 440)
+(publisher: ebay popularity: 2406 video: 738 text: 1669)
+(publisher: sears popularity: 427 video: 189 text: 239)
+(publisher: weather popularity: 1603 video: 564 text: 1040)
+Day 40 : AdNetworkReport
+Day 40 : Simulation Status Received
+Day 40: Sending BidBundle
+Day 40 ended. Starting next day
+Day 41: Updating campaign 12591233 stats: 28117.490711984712 tgtImps 0.0 nonTgtImps. Cost of imps is 13.783807561967224
+Day 41: Updating campaign 2796038 stats: 4041.486148249905 tgtImps 0.0 nonTgtImps. Cost of imps is 1.4622539737995073
+Day 41: Daily notification for campaign 19990592
+Day 41:  allocated to adv1. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.1989108957269365
+Day 41: Campaign opportunity - Campaign ID 4219280: day 43 to 45 [LOW_INCOME], reach: 12018 coefs: (v=2.214875985384495, m=2.0581320093611817)
+ cmpLength : 3
+
+
+ Campaign BID for day: 41
+
+ lastWinBid: 6.042308838506014
+ fbid: 0.8387138376427248
+ CmpBidMillis: 6042.308838506015
+ Reach Level: 0.5
+ cmpimps: 12018
+ qualityScore: 1.1989108957269365
+ Target Segment Probability : 8012
+Day 41: Campaign total budget bid (millis): 6042
+Day 41: ucs level reported: 0.5314410000000002
+Day 41 :BankStatus[-38,604882]
+Publishers Report:
+(publisher: msn popularity: 5137 video: 1675 text: 3463)
+(publisher: webmd popularity: 697 video: 191 text: 507)
+(publisher: nyt popularity: 803 video: 346 text: 458)
+(publisher: ebay popularity: 2471 video: 755 text: 1717)
+(publisher: sears popularity: 470 video: 180 text: 291)
+(publisher: weather popularity: 1527 video: 521 text: 1007)
+Day 41 : Simulation Status Received
+Day 41: Sending BidBundle
+Day 41 ended. Starting next day
+Day 42: Updating campaign 12591233 stats: 28117.490711984712 tgtImps 0.0 nonTgtImps. Cost of imps is 13.783807561967224
+Day 42: Daily notification for campaign 4219280
+Day 42:  allocated to adv1. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.1989108957269365
+Day 42: Campaign opportunity - Campaign ID 2280298: day 44 to 46 [YOUNG, LOW_INCOME], reach: 2289 coefs: (v=2.9925551191182485, m=1.737802991985442)
+ cmpLength : 3
+
+
+ Campaign BID for day: 42
+
+ lastWinBid: 0.43720617311637333
+ fbid: 0.7967781457605885
+ CmpBidMillis: 437.20617311637335
+ Reach Level: 0.1999475890985325
+ cmpimps: 2289
+ qualityScore: 1.1989108957269365
+ Target Segment Probability : 3816
+Day 42: Campaign total budget bid (millis): 437
+Day 42: ucs level reported: 0.5314410000000002
+Day 42 :BankStatus[-38,604882]
+Publishers Report:
+(publisher: msn popularity: 5051 video: 1637 text: 3415)
+(publisher: webmd popularity: 649 video: 191 text: 459)
+(publisher: nyt popularity: 855 video: 374 text: 482)
+(publisher: ebay popularity: 2454 video: 754 text: 1701)
+(publisher: sears popularity: 419 video: 160 text: 260)
+(publisher: weather popularity: 1598 video: 525 text: 1074)
+Day 42 : Simulation Status Received
+Day 42: Sending BidBundle
+Day 42 ended. Starting next day
+Day 43: Updating campaign 12591233 stats: 28117.490711984712 tgtImps 0.0 nonTgtImps. Cost of imps is 13.783807561967224
+Day 43: Daily notification for campaign 2280298
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=ebay, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=weather, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=video], AdxQuery [publisher=webmd, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, LOW_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, LOW_INCOME], device=pc, adType=text]]!!!!!!!!!!!!!!!!
+
+
+ WON campaign: 43
+
+Day 43:  WON at cost (Millis)822. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2396795287323377
+Day 43: Campaign opportunity - Campaign ID 27514817: day 45 to 49 [YOUNG, LOW_INCOME], reach: 15264 coefs: (v=2.454602414349507, m=2.399043572479784)
+ cmpLength : 5
+
+
+ Campaign BID for day: 43
+
+ lastWinBid: 17.369437356993014
+ fbid: 1.1474082726170647
+ CmpBidMillis: 17369.437356993014
+ Reach Level: 0.8
+ cmpimps: 15264
+ qualityScore: 1.2396795287323377
+ Target Segment Probability : 3816
+Day 43: Campaign total budget bid (millis): 17369
+Day 43: ucs level reported: 0.47829690000000014
+Day 43 :BankStatus[-32,406143]
+Publishers Report:
+(publisher: msn popularity: 5185 video: 1681 text: 3505)
+(publisher: webmd popularity: 655 video: 183 text: 473)
+(publisher: nyt popularity: 825 video: 356 text: 470)
+(publisher: ebay popularity: 2427 video: 758 text: 1670)
+(publisher: sears popularity: 454 video: 179 text: 276)
+(publisher: weather popularity: 1553 video: 534 text: 1020)
+Day 43 : Simulation Status Received
+rbid =  1.0773263433813892E-4 || budget = 0.822
+Campaign ID: 2280298 -- Impressions to go =  2403
+Day 43: Updated 48 Bid Bundle entries for Campaign id 2280298
+Day 43: Sending BidBundle
+Day 43 ended. Starting next day
+Day 44: Daily notification for campaign 27514817
+Day 44:  allocated to adv1. UCS Level set to 0.9 at price 0.14728644567410928 Quality Score is: 1.2396795287323377
+Day 44: Campaign opportunity - Campaign ID 25218472: day 46 to 50 [YOUNG, MALE], reach: 5882 coefs: (v=2.552835088592086, m=2.155496400116917)
+ cmpLength : 5
+
+
+ Campaign BID for day: 44
+
+ lastWinBid: 3.9738285027544458
+ fbid: 1.0900378589862114
+ CmpBidMillis: 3973.8285027544457
+ Reach Level: 0.49995750106247344
+ cmpimps: 5882
+ qualityScore: 1.2396795287323377
+ Target Segment Probability : 2353
+Day 44: Campaign total budget bid (millis): 3973
+Day 44: ucs level reported: 0.9
+Day 44 :BankStatus[-32,553429]
+Publishers Report:
+(publisher: msn popularity: 5072 video: 1614 text: 3459)
+(publisher: webmd popularity: 698 video: 204 text: 495)
+(publisher: nyt popularity: 788 video: 336 text: 453)
+(publisher: ebay popularity: 2459 video: 728 text: 1732)
+(publisher: sears popularity: 437 video: 172 text: 266)
+(publisher: weather popularity: 1605 video: 539 text: 1067)
+Day 44 : Simulation Status Received
+rbid =  1.0773263433813892E-4 || budget = 0.822
+Campaign ID: 2280298 -- Impressions to go =  2403
+Day 44: Updated 48 Bid Bundle entries for Campaign id 2280298
+Day 44: Sending BidBundle
+Day 44 ended. Starting next day
+Day 45: Updating campaign 2280298 stats: 1336.6550966443365 tgtImps 0.0 nonTgtImps. Cost of imps is 0.8270833524044091
+Day 45: Daily notification for campaign 25218472
+Day 45:  allocated to DummyAdnetwork-6. UCS Level set to 1.0 at price 0.18994264689964263 Quality Score is: 1.2396795287323377
+Day 45: Campaign opportunity - Campaign ID 2251434: day 47 to 56 [YOUNG, LOW_INCOME], reach: 19080 coefs: (v=2.4150784603373623, m=2.362046288845109)
+ cmpLength : 10
+
+
+ Campaign BID for day: 45
+
+ lastWinBid: 12.246810323973586
+ fbid: 1.0355359660369008
+ CmpBidMillis: 12246.810323973586
+ Reach Level: 0.5
+ cmpimps: 19080
+ qualityScore: 1.2396795287323377
+ Target Segment Probability : 3816
+Day 45: Campaign total budget bid (millis): 12246
+Day 45: ucs level reported: 1.0
+Day 45 :BankStatus[-32,743372]
+Publishers Report:
+(publisher: webmd popularity: 709 video: 215 text: 495)
+(publisher: msn popularity: 5197 video: 1638 text: 3560)
+(publisher: nyt popularity: 859 video: 387 text: 473)
+(publisher: ebay popularity: 2326 video: 689 text: 1638)
+(publisher: sears popularity: 427 video: 179 text: 249)
+(publisher: weather popularity: 1573 video: 535 text: 1039)
+Day 45 : AdNetworkReport
+Day 45 : Simulation Status Received
+rbid =  1.0773263433813892E-4 || budget = 0.822
+Campaign ID: 2280298 -- Impressions to go =  1066
+Day 45: Updated 48 Bid Bundle entries for Campaign id 2280298
+Day 45: Sending BidBundle
+Day 45 ended. Starting next day
+Day 46: Updating campaign 2280298 stats: 2929.766871757399 tgtImps 0.0 nonTgtImps. Cost of imps is 1.6522547437854649
+Day 46: Daily notification for campaign 2251434
+Day 46:  allocated to DummyAdnetwork-6. UCS Level set to 1.0 at price 0.16064221537326326 Quality Score is: 1.2396795287323377
+Day 46: Campaign opportunity - Campaign ID 7064165: day 48 to 50 [MALE, LOW_INCOME], reach: 5446 coefs: (v=2.1303562203398845, m=1.9444285184989494)
+ cmpLength : 3
+
+
+ Campaign BID for day: 46
+
+ lastWinBid: 3.320519175695623
+ fbid: 0.9837591677350557
+ CmpBidMillis: 3320.519175695623
+ Reach Level: 0.49995409896263654
+ cmpimps: 5446
+ qualityScore: 1.2396795287323377
+ Target Segment Probability : 3631
+Day 46: Campaign total budget bid (millis): 3320
+Day 46: ucs level reported: 1.0
+Day 46 :BankStatus[-33,732298]
+Publishers Report:
+(publisher: msn popularity: 5045 video: 1588 text: 3458)
+(publisher: webmd popularity: 653 video: 201 text: 453)
+(publisher: nyt popularity: 857 video: 378 text: 480)
+(publisher: ebay popularity: 2467 video: 766 text: 1702)
+(publisher: sears popularity: 432 video: 161 text: 272)
+(publisher: weather popularity: 1610 video: 574 text: 1037)
+Day 46 : AdNetworkReport
+Day 46 : Simulation Status Received
+Day 46: Sending BidBundle
+Day 46 ended. Starting next day
+Day 47: Updating campaign 2280298 stats: 3753.7407409243124 tgtImps 0.0 nonTgtImps. Cost of imps is 2.4776453422248355
+Day 47: Daily notification for campaign 7064165
+Day 47:  allocated to DummyAdnetwork-3. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2472479710049953
+Day 47: Campaign opportunity - Campaign ID 24754742: day 49 to 51 [YOUNG, FEMALE, HIGH_INCOME], reach: 153 coefs: (v=2.3272598780107714, m=2.2951649835462464)
+ cmpLength : 3
+
+
+ Campaign BID for day: 47
+
+ lastWinBid: 0.035529315914706365
+ fbid: 0.9345712093483028
+ CmpBidMillis: 35.529315914706366
+ Reach Level: 0.19921875
+ cmpimps: 153
+ qualityScore: 1.2472479710049953
+ Target Segment Probability : 256
+Day 47: Campaign total budget bid (millis): 35
+Day 47: ucs level reported: 0.47829690000000014
+Day 47 :BankStatus[-33,528084]
+Publishers Report:
+(publisher: msn popularity: 5103 video: 1689 text: 3415)
+(publisher: webmd popularity: 716 video: 195 text: 522)
+(publisher: nyt popularity: 828 video: 346 text: 483)
+(publisher: ebay popularity: 2454 video: 773 text: 1682)
+(publisher: sears popularity: 428 video: 167 text: 262)
+(publisher: weather popularity: 1605 video: 571 text: 1035)
+Day 47 : AdNetworkReport
+Day 47 : Simulation Status Received
+Day 47: Sending BidBundle
+Day 47 ended. Starting next day
+Day 48: Daily notification for campaign 24754742
+Day 48:  allocated to DummyAdnetwork-6. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2472479710049953
+Day 48: Campaign opportunity - Campaign ID 26785679: day 50 to 52 [YOUNG, HIGH_INCOME], reach: 463 coefs: (v=2.54276305348541, m=2.4994473721498807)
+ cmpLength : 3
+
+
+ Campaign BID for day: 48
+
+ lastWinBid: 0.10236465868471593
+ fbid: 0.8878426488808877
+ CmpBidMillis: 102.36465868471593
+ Reach Level: 0.19965502371711943
+ cmpimps: 463
+ qualityScore: 1.2472479710049953
+ Target Segment Probability : 773
+Day 48: Campaign total budget bid (millis): 102
+Day 48: ucs level reported: 0.47829690000000014
+Day 48 :BankStatus[-34,353474]
+Publishers Report:
+(publisher: msn popularity: 5053 video: 1643 text: 3411)
+(publisher: webmd popularity: 748 video: 217 text: 532)
+(publisher: nyt popularity: 825 video: 358 text: 468)
+(publisher: ebay popularity: 2372 video: 738 text: 1635)
+(publisher: sears popularity: 453 video: 170 text: 284)
+(publisher: weather popularity: 1677 video: 580 text: 1098)
+Day 48 : Simulation Status Received
+Day 48: Sending BidBundle
+Day 48 ended. Starting next day
+Day 49: Daily notification for campaign 26785679
+!!!!!!!!!!!!!!!!!!!!!![AdxQuery [publisher=weather, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=nyt, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=sears, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=ebay, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=msn, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=sears, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=weather, marketSegments=[YOUNG, HIGH_INCOME], device=pc, adType=video], AdxQuery [publisher=msn, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=nyt, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=text], AdxQuery [publisher=webmd, marketSegments=[YOUNG, HIGH_INCOME], device=mobile, adType=video]]!!!!!!!!!!!!!!!!
+
+
+ WON campaign: 49
+
+Day 49:  WON at cost (Millis)171. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2472479710049953
+Day 49: Campaign opportunity - Campaign ID 28947025: day 51 to 53 [OLD, HIGH_INCOME], reach: 1822 coefs: (v=2.8865641834139586, m=1.5833027267936148)
+ cmpLength : 3
+
+
+ Campaign BID for day: 49
+
+ lastWinBid: 1.3466364039063292
+ fbid: 1.1854911929350096
+ CmpBidMillis: 1346.6364039063292
+ Reach Level: 0.49986282578875174
+ cmpimps: 1822
+ qualityScore: 1.2472479710049953
+ Target Segment Probability : 1215
+Day 49: Campaign total budget bid (millis): 1346
+Day 49: ucs level reported: 0.5314410000000002
+Day 49 :BankStatus[-34,353474]
+Publishers Report:
+(publisher: msn popularity: 5090 video: 1632 text: 3459)
+(publisher: webmd popularity: 668 video: 170 text: 499)
+(publisher: nyt popularity: 893 video: 418 text: 476)
+(publisher: ebay popularity: 2414 video: 729 text: 1686)
+(publisher: sears popularity: 465 video: 166 text: 300)
+(publisher: weather popularity: 1567 video: 552 text: 1016)
+Day 49 : Simulation Status Received
+rbid =  1.1079913606911448E-4 || budget = 0.171
+Campaign ID: 26785679 -- Impressions to go =  486
+Day 49: Updated 60 Bid Bundle entries for Campaign id 26785679
+Day 49: Sending BidBundle
+Day 49 ended. Starting next day
+Day 50: Daily notification for campaign 28947025
+Day 50:  allocated to DummyAdnetwork-6. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2472479710049953
+Day 50 :BankStatus[-34,353474]
+Publishers Report:
+(publisher: msn popularity: 5087 video: 1643 text: 3445)
+(publisher: webmd popularity: 696 video: 185 text: 512)
+(publisher: nyt popularity: 891 video: 384 text: 508)
+(publisher: ebay popularity: 2405 video: 759 text: 1647)
+(publisher: sears popularity: 467 video: 172 text: 296)
+(publisher: weather popularity: 1543 video: 557 text: 987)
+Day 50 : Simulation Status Received
+rbid =  1.1079913606911448E-4 || budget = 0.171
+Campaign ID: 26785679 -- Impressions to go =  486
+Day 50: Updated 60 Bid Bundle entries for Campaign id 26785679
+Day 50: Sending BidBundle
+Day 50 ended. Starting next day
+Day 51: Updating campaign 26785679 stats: 487.13019824399 tgtImps 0.0 nonTgtImps. Cost of imps is 0.13918031772096442
+Day 51: Daily notification for campaign 0
+Day 51:  allocated to NONE. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2472479710049953
+Day 51: Campaign opportunity - Campaign ID 27670580: day 53 to 55 [OLD, LOW_INCOME, FEMALE], reach: 3601 coefs: (v=2.437143341320613, m=2.4276554874908247)
+ cmpLength : 3
+
+
+ Campaign BID for day: 51
+
+ lastWinBid: 2.4023217682106766
+ fbid: 1.069905801623846
+ CmpBidMillis: 2402.3217682106765
+ Reach Level: 0.49993058447868943
+ cmpimps: 3601
+ qualityScore: 1.2472479710049953
+ Target Segment Probability : 2401
+Day 51: Campaign total budget bid (millis): 2402
+Day 51: ucs level reported: 0.5314410000000002
+Day 51 :BankStatus[-34,353474]
+Publishers Report:
+(publisher: msn popularity: 5064 video: 1637 text: 3428)
+(publisher: webmd popularity: 715 video: 208 text: 508)
+(publisher: nyt popularity: 853 video: 369 text: 485)
+(publisher: ebay popularity: 2444 video: 760 text: 1685)
+(publisher: sears popularity: 439 video: 189 text: 251)
+(publisher: weather popularity: 1634 video: 539 text: 1096)
+Day 51 : AdNetworkReport
+Day 51 : Simulation Status Received
+Day 51: Sending BidBundle
+Day 51 ended. Starting next day
+Day 52: Updating campaign 26785679 stats: 977.7744416481979 tgtImps 0.0 nonTgtImps. Cost of imps is 0.13918031772096442
+Day 52: Daily notification for campaign 27670580
+Day 52:  allocated to DummyAdnetwork-3. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2472479710049953
+Day 52 :BankStatus[-34,492655]
+Publishers Report:
+(publisher: msn popularity: 5075 video: 1560 text: 3516)
+(publisher: webmd popularity: 701 video: 187 text: 515)
+(publisher: nyt popularity: 855 video: 386 text: 470)
+(publisher: ebay popularity: 2436 video: 747 text: 1690)
+(publisher: sears popularity: 456 video: 185 text: 272)
+(publisher: weather popularity: 1606 video: 557 text: 1050)
+Day 52 : AdNetworkReport
+Day 52 : Simulation Status Received
+Day 52: Sending BidBundle
+Day 52 ended. Starting next day
+Day 53: Updating campaign 26785679 stats: 977.7744416481979 tgtImps 0.0 nonTgtImps. Cost of imps is 0.13918031772096442
+Day 53: Daily notification for campaign 0
+Day 53:  allocated to NONE. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2771236354170814
+Day 53: Campaign opportunity - Campaign ID 15487099: day 55 to 59 [OLD], reach: 13527 coefs: (v=2.048198811704975, m=1.5436669094072308)
+ cmpLength : 5
+
+
+ Campaign BID for day: 53
+
+ lastWinBid: 8.340289721245632
+ fbid: 0.965589985965521
+ CmpBidMillis: 8340.289721245632
+ Reach Level: 0.49998151912770283
+ cmpimps: 13527
+ qualityScore: 1.2771236354170814
+ Target Segment Probability : 5411
+Day 53: Campaign total budget bid (millis): 8340
+Day 53: ucs level reported: 0.5314410000000002
+Day 53 :BankStatus[-34,270861]
+Publishers Report:
+(publisher: msn popularity: 5162 video: 1645 text: 3518)
+(publisher: webmd popularity: 676 video: 205 text: 472)
+(publisher: nyt popularity: 872 video: 394 text: 479)
+(publisher: ebay popularity: 2370 video: 751 text: 1620)
+(publisher: sears popularity: 423 video: 182 text: 242)
+(publisher: weather popularity: 1580 video: 566 text: 1015)
+Day 53 : Simulation Status Received
+Day 53: Sending BidBundle
+Day 53 ended. Starting next day
+Day 54: Daily notification for campaign 15487099
+Day 54:  allocated to DummyAdnetwork-6. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2771236354170814
+Day 54: Campaign opportunity - Campaign ID 16743463: day 56 to 58 [YOUNG, HIGH_INCOME], reach: 1159 coefs: (v=2.5763737592151266, m=2.099758245302543)
+ cmpLength : 3
+
+
+ Campaign BID for day: 54
+
+ lastWinBid: 0.6786024511704816
+ fbid: 0.9173104866672449
+ CmpBidMillis: 678.6024511704816
+ Reach Level: 0.49978438982319967
+ cmpimps: 1159
+ qualityScore: 1.2771236354170814
+ Target Segment Probability : 773
+Day 54: Campaign total budget bid (millis): 678
+Day 54: ucs level reported: 0.5314410000000002
+Day 54 :BankStatus[-34,270861]
+Publishers Report:
+(publisher: webmd popularity: 692 video: 185 text: 508)
+(publisher: msn popularity: 5114 video: 1680 text: 3435)
+(publisher: nyt popularity: 833 video: 346 text: 488)
+(publisher: ebay popularity: 2410 video: 695 text: 1716)
+(publisher: sears popularity: 451 video: 168 text: 284)
+(publisher: weather popularity: 1577 video: 555 text: 1023)
+Day 54 : Simulation Status Received
+Day 54: Sending BidBundle
+Day 54 ended. Starting next day
+Day 55: Daily notification for campaign 16743463
+Day 55:  allocated to adv1. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2771236354170814
+Day 55: Campaign opportunity - Campaign ID 8658811: day 57 to 59 [YOUNG, HIGH_INCOME], reach: 463 coefs: (v=2.043181764353267, m=2.401491104738714)
+ cmpLength : 3
+
+
+ Campaign BID for day: 55
+
+ lastWinBid: 0.10288075422210001
+ fbid: 0.8714449623338826
+ CmpBidMillis: 102.88075422210001
+ Reach Level: 0.19965502371711943
+ cmpimps: 463
+ qualityScore: 1.2771236354170814
+ Target Segment Probability : 773
+Day 55: Campaign total budget bid (millis): 102
+Day 55: ucs level reported: 0.47829690000000014
+Day 55 :BankStatus[-34,270861]
+Publishers Report:
+(publisher: msn popularity: 5037 video: 1620 text: 3418)
+(publisher: webmd popularity: 713 video: 196 text: 518)
+(publisher: nyt popularity: 821 video: 371 text: 451)
+(publisher: ebay popularity: 2416 video: 743 text: 1674)
+(publisher: sears popularity: 439 video: 153 text: 287)
+(publisher: weather popularity: 1643 video: 576 text: 1068)
+Day 55 : Simulation Status Received
+Day 55: Sending BidBundle
+Day 55 ended. Starting next day
+Day 56: Daily notification for campaign 8658811
+Day 56:  allocated to DummyAdnetwork-3. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2771236354170814
+Day 56 :BankStatus[-34,270861]
+Publishers Report:
+(publisher: msn popularity: 5103 video: 1626 text: 3478)
+(publisher: webmd popularity: 710 video: 191 text: 520)
+(publisher: nyt popularity: 811 video: 381 text: 431)
+(publisher: ebay popularity: 2409 video: 704 text: 1706)
+(publisher: sears popularity: 425 video: 173 text: 253)
+(publisher: weather popularity: 1595 video: 554 text: 1042)
+Day 56 : Simulation Status Received
+Day 56: Sending BidBundle
+Day 56 ended. Starting next day
+Day 57: Daily notification for campaign 0
+Day 57:  allocated to NONE. UCS Level set to 0.5314410000000002 at price 0.0 Quality Score is: 1.2771236354170814
+Day 57 :BankStatus[-34,270861]
+Publishers Report:
+(publisher: msn popularity: 5142 video: 1641 text: 3502)
+(publisher: webmd popularity: 652 video: 177 text: 476)
+(publisher: nyt popularity: 904 video: 385 text: 520)
+(publisher: ebay popularity: 2345 video: 724 text: 1622)
+(publisher: sears popularity: 449 video: 173 text: 277)
+(publisher: weather popularity: 1623 video: 559 text: 1065)
+Day 57 : Simulation Status Received
+Day 57: Sending BidBundle
+Day 57 ended. Starting next day
+Day 58: Daily notification for campaign 0
+Day 58:  allocated to NONE. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2771236354170814
+Day 58 :BankStatus[-34,270861]
+Publishers Report:
+(publisher: msn popularity: 5125 video: 1629 text: 3497)
+(publisher: webmd popularity: 678 video: 175 text: 504)
+(publisher: nyt popularity: 866 video: 380 text: 487)
+(publisher: ebay popularity: 2439 video: 712 text: 1728)
+(publisher: sears popularity: 416 video: 158 text: 259)
+(publisher: weather popularity: 1601 video: 562 text: 1040)
+Day 58 : Simulation Status Received
+Day 58: Sending BidBundle
+Day 58 ended. Starting next day
+Day 59: Daily notification for campaign 0
+Day 59:  allocated to NONE. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2771236354170814
+Day 59 :BankStatus[-34,270861]
+Publishers Report:
+(publisher: msn popularity: 5099 video: 1653 text: 3447)
+(publisher: webmd popularity: 723 video: 206 text: 518)
+(publisher: nyt popularity: 838 video: 338 text: 501)
+(publisher: ebay popularity: 2393 video: 692 text: 1702)
+(publisher: sears popularity: 449 video: 176 text: 274)
+(publisher: weather popularity: 1611 video: 572 text: 1040)
+Day 59 : Simulation Status Received
+Day 59: Sending BidBundle
+Day 59 ended. Starting next day
+Day 60: Daily notification for campaign 0
+Day 60:  allocated to NONE. UCS Level set to 0.47829690000000014 at price 0.0 Quality Score is: 1.2771236354170814
+Day 60 :BankStatus[-34,270861]
+Publishers Report:
+(publisher: msn popularity: 5044 video: 1642 text: 3403)
+(publisher: webmd popularity: 706 video: 198 text: 509)
+(publisher: nyt popularity: 860 video: 395 text: 466)
+(publisher: ebay popularity: 2397 video: 718 text: 1680)
+(publisher: sears popularity: 441 video: 169 text: 273)
+(publisher: weather popularity: 1619 video: 588 text: 1032)
+Day 60 : Simulation Status Received
+Day 60: Sending BidBundle
+Day 60 ended. Starting next day

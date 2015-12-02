@@ -266,7 +266,7 @@ public class MrSmith extends Agent {
 
 		// Get campaign Length
 		long cmpLength = com.getDayEnd() - com.getDayStart() +1;
-		System.out.println(" cmpLength : " + cmpLength);
+
 		//Get campaign segment and return segment number
 		Set<MarketSegment> tgtSeg = com.getTargetSegment();
 		Map<Set<MarketSegment>,Integer> segUsrMap = MarketSegment.usersInMarketSegments();
@@ -279,17 +279,11 @@ public class MrSmith extends Agent {
 
 		cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore ;
 		lastWinBid = cmpBidMillis/1000.0;
-
-		System.out.println("\n \n Campaign BID for day: " + day + "\n");
-
-		System.out.println(" lastWinBid: " + lastWinBid);
-
-		System.out.println(" fbid: " + fbid);
-		System.out.println(" CmpBidMillis: " + cmpBidMillis);
-		System.out.println(" Reach Level: " + reachLevel);
-		System.out.println(" cmpimps: " + cmpimps);
-		System.out.println(" qualityScore: " + qualityScore);
-		System.out.println(" Target Segment Probability : " + tgtSegmentProb);
+		System.out.println("++ Day: " + day + " Campaign BID for day: " + day + " cmpLength : " + cmpLength +
+				" Reach Level: " + reachLevel + " cmpimps: " + cmpimps +
+				" Target Segment Probability : " + tgtSegmentProb);
+		System.out.println("++ Day: " + day + " fbid: " + fbid + " CmpBidMillis: " + cmpBidMillis + " lastWinBid: " + lastWinBid +
+				" qualityScore: " + qualityScore);
 
 		// #cmpBidMillis END of calculation
 
@@ -308,8 +302,8 @@ public class MrSmith extends Agent {
 
 			for (CampaignData campaign : myCampaigns.values()) {
 				if (isCampaignActive(campaign)) {
-					ucsBid += 0.7*campaign.budget/(campaign.dayEnd - campaign.dayStart + 1);
-					//# * 0.5 to be made function with learning rate.
+					ucsBid += 0.6*campaign.budget/(campaign.dayEnd - campaign.dayStart + 1);
+					//# Decreased percentage to 0.6 so we keep 10% for profits.
 				}
 			}
 
@@ -441,10 +435,10 @@ public class MrSmith extends Agent {
 			if (isCampaignActive(campaign)) {
 
 				rbid = 0.3*campaign.budget/campaign.reachImps;
-				System.out.println("rbid =  " + rbid + " || budget = " + campaign.budget);
+				System.out.println("++ Day: " + day + " rbid =  " + rbid + " || budget = " + campaign.budget);
 				int entCount = 0;
 
-				System.out.println("Campaign ID: " + campaign.id + " -- Impressions to go =  " + campaign.impsTogo());
+				System.out.println("++ Day: " + day + " Campaign ID: " + campaign.id + " -- Impressions to go =  " + campaign.impsTogo());
 				for (AdxQuery query : campaign.campaignQueries) {
 					if (campaign.impsTogo() - entCount > 0) {
 						/*
@@ -477,9 +471,14 @@ public class MrSmith extends Agent {
 				}
 
 				double impressionLimit = campaign.impsTogo();
-				double budgetLimit = campaign.budget;
+				double budgetLimit = (1.05*0.3*campaign.budget*campaign.impsTogo())/campaign.reachImps;
+				//# addded budget limit
+				System.out.println("++ Day: " + day + " Campaign id " + campaign.id + " budgetLimit: " + budgetLimit +
+						" impressionLimit: " + impressionLimit);
 				bidBundle.setCampaignDailyLimit(campaign.id,
 						(int) impressionLimit, budgetLimit);
+				//# Problem: impressionLimit and budgetLimit are double outside but integer inside bidbundle !!!! ANTONY FIX ME !!!
+				//# or is it ok ? :(
 
 				//# Problem: understand why the query entry inside is a FEMALE
 
