@@ -16,6 +16,8 @@ import java.util.logging.Logger;
 import config.GameConstants;
 import edu.umich.eecs.tac.props.Ad;
 import edu.umich.eecs.tac.props.BankStatus;
+import extras.CampaignData;
+import extras.UcsModel;
 import se.sics.isl.transport.Transportable;
 import se.sics.tasim.aw.Agent;
 import se.sics.tasim.aw.Message;
@@ -307,7 +309,7 @@ public class MrSmith extends Agent {
 
 			for (CampaignData campaign : myCampaigns.values()) {
 				if (isCampaignActive(campaign)) {
-					ucsBid += 0.6*campaign.budget/(campaign.dayEnd - campaign.dayStart + 1);
+					ucsBid += 0.6*campaign.getBudget()/campaign.getLength();
 					//# Decreased percentage to 0.6 so we keep 10% for profits.
 				}
 			}
@@ -319,7 +321,7 @@ public class MrSmith extends Agent {
 
 		System.out.println("++ Day " + day + ": ucs bid is " + ucsBid);
 		/* Note: Campaign bid is in millis */
-		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.id, cmpBidMillis.longValue());
+		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.getId(), cmpBidMillis.longValue());
 		sendMessage(demandAgentAddress, bids);
 	}
 
@@ -342,7 +344,7 @@ public class MrSmith extends Agent {
 		String campaignAllocatedTo = " allocated to "
 				+ notificationMessage.getWinner();
 
-		if ((pendingCampaign.id == adNetworkDailyNotification.getCampaignId())
+		if ((pendingCampaign.getId() == adNetworkDailyNotification.getCampaignId())
 				&& (notificationMessage.getCostMillis() != 0)) {
 
 			/* add campaign to list of won campaigns */
@@ -350,7 +352,7 @@ public class MrSmith extends Agent {
 			//# Budget??
 			currCampaign = pendingCampaign;
 			genCampaignQueries(currCampaign);
-			myCampaigns.put(pendingCampaign.id, pendingCampaign);
+			myCampaigns.put(pendingCampaign.getId(), pendingCampaign);
 
 			campaignAllocatedTo = " WON at cost (Millis)"
 					+ notificationMessage.getCostMillis();
@@ -395,7 +397,7 @@ public class MrSmith extends Agent {
 		// Note: Campaign bid is in millis
 		AdNetBidMessage bids = new AdNetBidMessage(
 				ucsModel != null ? ucsModel.getBid() : 0,
-				pendingCampaign != null ? pendingCampaign.id : 0,
+				pendingCampaign != null ? pendingcampaign.getId() : 0,
 				cmpBidMillis != null ? cmpBidMillis.longValue() : 0);
 		 */
 		System.out.println("Day " + day + " ended. Starting next day");
@@ -438,7 +440,6 @@ public class MrSmith extends Agent {
 
 		/*
 		 *
-		 * adding variables (antony fix me lol)
 		 */
 		double weightNumer = 0;
 		double weightDenom = 0;
@@ -454,24 +455,23 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				weightDenom += 1- (campaign.impsTogo()/campaign.reachImps);
+				weightDenom += 1- (campaign.impsTogo()/campaign.getReachImps());
 			}
 		}
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
 
-				rbid = 0.3*campaign.budget/campaign.reachImps;
-				System.out.println("++ Day: " + day + " rbid =  " + rbid + " || budget = " + campaign.budget);
+				rbid = 0.3*campaign.getBudget()/campaign.getReachImps();
+				System.out.println("++ Day: " + day + " rbid =  " + rbid + " || budget = " + campaign.getBudget());
 
-				weightNumer = 1- (campaign.impsTogo()/campaign.reachImps);
+				weightNumer = 1- (campaign.impsTogo()/campaign.getReachImps());
 				weight = (int) Math.ceil(100*weightNumer/weightDenom);
-
 
 				int entCount = 0;
 
-				System.out.println("++ Day: " + day + " Campaign ID: " + campaign.id + " -- Impressions to go =  " + campaign.impsTogo()
+				System.out.println("++ Day: " + day + " Campaign ID: " + campaign.getId() + " -- Impressions to go =  " + campaign.impsTogo()
 				+ " Campaign Weight: " + weight);
-				for (AdxQuery query : campaign.campaignQueries) {
+				for (AdxQuery query : campaign.getCampaignQueries()) {
 					if (campaign.impsTogo() - entCount > 0) {
 						/*
 						 * among matching entries with the same campaign id, the AdX
@@ -484,30 +484,30 @@ public class MrSmith extends Agent {
 								entCount++;
 							} else {
 								entCount ++;
-								rbid = campaign.videoCoef*rbid;
+								rbid = campaign.getVideoCoef()*rbid;
 							}
 						} else {
 							if (query.getAdType() == AdType.text) {
 								entCount++;
-								rbid = campaign.mobileCoef*rbid;
+								rbid = campaign.getMobileCoef()*rbid;
 							} else {
 								entCount ++;
-								rbid = (campaign.mobileCoef+campaign.videoCoef)*rbid;
+								rbid = (campaign.getMobileCoef()+campaign.getVideoCoef())*rbid;
 							}
 
 						}
 
 						bidBundle.addQuery(query, rbid, new Ad(null),
-								campaign.id, weight);
+								campaign.getId(), weight);
 					}
 				}
 
 				double impressionLimit = campaign.impsTogo();
-				double budgetLimit = (1.05*0.3*campaign.budget*campaign.impsTogo())/campaign.reachImps;
+				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsTogo())/campaign.getReachImps();
 				//# addded budget limit
-				System.out.println("++ Day: " + day + " Campaign id " + campaign.id + " budgetLimit: " + budgetLimit +
+				System.out.println("++ Day: " + day + " Campaign id " + campaign.getId() + " budgetLimit: " + budgetLimit +
 						" impressionLimit: " + impressionLimit);
-				bidBundle.setCampaignDailyLimit(campaign.id,
+				bidBundle.setCampaignDailyLimit(campaign.getId(),
 						(int) impressionLimit, budgetLimit);
 				//# Problem: impressionLimit and budgetLimit are double outside but integer inside bidbundle !!!! ANTONY FIX ME !!!
 				//# or is it ok ? :(
@@ -515,7 +515,7 @@ public class MrSmith extends Agent {
 				//# Problem: understand why the query entry inside is a FEMALE
 
 				System.out.println("Day " + day + ": Updated " + entCount
-						+ " Bid Bundle entries for Campaign id " + campaign.id);
+						+ " Bid Bundle entries for Campaign id " + campaign.getId());
 			}
 		}
 
@@ -679,184 +679,26 @@ public class MrSmith extends Agent {
 		Set<AdxQuery> campaignQueriesSet = new HashSet<AdxQuery>();
 		for (String PublisherName : publisherNames) {
 			campaignQueriesSet.add(new AdxQuery(PublisherName,
-					campaignData.targetSegment, Device.mobile, AdType.text));
+					campaignData.getMarketSegment(), Device.mobile, AdType.text));
 			campaignQueriesSet.add(new AdxQuery(PublisherName,
-					campaignData.targetSegment, Device.mobile, AdType.video));
+					campaignData.getMarketSegment(), Device.mobile, AdType.video));
 			campaignQueriesSet.add(new AdxQuery(PublisherName,
-					campaignData.targetSegment, Device.pc, AdType.text));
+					campaignData.getMarketSegment(), Device.pc, AdType.text));
 			campaignQueriesSet.add(new AdxQuery(PublisherName,
-					campaignData.targetSegment, Device.pc, AdType.video));
+					campaignData.getMarketSegment(), Device.pc, AdType.video));
 		}
 
-		campaignData.campaignQueries = new AdxQuery[campaignQueriesSet.size()];
-		campaignQueriesSet.toArray(campaignData.campaignQueries);
-		System.out.println("!!!!!!!!!!!!!!!!!!!!!!"+Arrays.toString(campaignData.campaignQueries)+"!!!!!!!!!!!!!!!!");
+		campaignData.setCampaignQueries(new AdxQuery[campaignQueriesSet.size()]);
+		campaignQueriesSet.toArray(campaignData.getCampaignQueries());
+		System.out.println("!!!!!!!!!!!!!!!!!!!!!!"+Arrays.toString(campaignData.getCampaignQueries())+"!!!!!!!!!!!!!!!!");
 
-
-	}
-
-	private class UcsModel {
-		/* campaign attributes as set by server */
-		/*
-		 * The current bid and targetted percentile for the user classification
-		 * service
-		 */
-		private Random random;
-
-		private double ucsBid;
-		private double ucsBidPercentile;
-
-		// logistic regression parameters
-		private double ucsLearningRate = 0.3;
-		private double ucsAlpha;
-		private double ucsBeta;
-
-		// latest reported level level and cost, to be applicable during the
-		// following simulation day
-		@SuppressWarnings("unused")
-		private double ucsLevel;
-		@SuppressWarnings("unused")
-		private double ucsCost;
-
-		// linear regression for cost (given level) === gamma + delta*level
-		private double ucsGamma;
-		private double ucsDelta;
-
-		public UcsModel() {
-			random = new Random();
-
-			ucsLevel = 1.0;
-			ucsCost = 0.0;
-			ucsBidPercentile = 0.8;
-
-			// logistic regression initial values and constants for
-			// prob(toplevel | bid).
-			ucsAlpha = -10.0;
-			ucsBeta = 10.0;
-
-			// initial linear regression parameters
-			ucsGamma = 0.0;
-			ucsDelta = 1.0;
-
-			/* initial bid */
-			ucsBid = ucsBidByPercentile();
-
-		}
-
-		private double ucsFactor(double percentile) {
-			// We are bidding at percentile% of winning top level
-			return Math.log((1.0 / percentile) - 1.0);
-		}
-
-		private double ucsBidByPercentile() {
-			return (ucsFactor(ucsBidPercentile) - ucsAlpha) / ucsBeta;
-		}
-
-		public double getBid() {
-			return ucsBid;
-		}
-
-		@SuppressWarnings("unused")
-		public double getCost(double level) {
-			return ucsGamma + ucsDelta * level;
-		}
-
-		public void ucsUpdate(double level, double cost, boolean bidHigh) {
-			double yk = level == 1.0 ? 1.0 : 0;
-
-			// apply logistic regression update for pr(Top|bid) parameters,
-			// using current ucsBidPercentile and ucsBid
-			ucsAlpha += ucsLearningRate * (yk - ucsBidPercentile);
-			ucsBeta += ucsLearningRate * (yk - ucsBidPercentile) * ucsBid;
-
-			// set new bidPercentile and ucsBid,
-			// bid at ucsBidPercentile probability of winning top level
-			ucsBidPercentile = bidHigh ? 0.9 : 0.9 * random.nextDouble();
-			ucsBid = ucsBidByPercentile();
-
-			// apply linear regression update for (Cost|level) parameters
-			ucsGamma += ucsLearningRate
-					* (cost - (ucsGamma + ucsDelta * level));
-			ucsDelta += ucsLearningRate
-					* (cost - (ucsGamma + ucsDelta * level)) * level;
-		}
-
-	}
-
-
-	private class CampaignData {
-		/* campaign attributes as set by server */
-		long reachImps;
-		long dayStart;
-		long dayEnd;
-		Set<MarketSegment> targetSegment;
-		double videoCoef;
-		double mobileCoef;
-		int id;
-		private AdxQuery[] campaignQueries;//array of queries relevant for the campaign.
-
-		/* campaign info as reported */
-		CampaignStats stats;
-		double budget;
-
-		public CampaignData(InitialCampaignMessage icm) {
-			reachImps = icm.getReachImps();
-			dayStart = icm.getDayStart();
-			dayEnd = icm.getDayEnd();
-			targetSegment = icm.getTargetSegment();
-			videoCoef = icm.getVideoCoef();
-			mobileCoef = icm.getMobileCoef();
-			id = icm.getId();
-
-			stats = new CampaignStats(0, 0, 0);
-			budget = 0.0;
-		}
-
-		public void setBudget(double d) {
-			budget = d;
-		}
-
-		public CampaignData(CampaignOpportunityMessage com) {
-			dayStart = com.getDayStart();
-			dayEnd = com.getDayEnd();
-			id = com.getId();
-			reachImps = com.getReachImps();
-			targetSegment = com.getTargetSegment();
-			mobileCoef = com.getMobileCoef();
-			videoCoef = com.getVideoCoef();
-			stats = new CampaignStats(0, 0, 0);
-			budget = 0.0;
-		}
-
-		@Override
-		public String toString() {
-			return "Campaign ID " + id + ": " + "day " + dayStart + " to "
-					+ dayEnd + " " + targetSegment + ", reach: " + reachImps
-					+ " coefs: (v=" + videoCoef + ", m=" + mobileCoef + ")";
-		}
-
-		int impsTogo() {
-			return (int) Math.max(0, 1.075*reachImps - stats.getTargetedImps());
-		}
-
-		void setStats(CampaignStats s) {
-			stats.setValues(s);
-		}
-
-		public AdxQuery[] getCampaignQueries() {
-			return campaignQueries;
-		}
-
-		public void setCampaignQueries(AdxQuery[] campaignQueries) {
-			this.campaignQueries = campaignQueries;
-		}
 
 	}
 
 	private boolean isCampaignActive(CampaignData campaign) {
 		int dayBiddingFor = day + 1;
-		if ((dayBiddingFor >= campaign.dayStart)
-				&& (dayBiddingFor <= campaign.dayEnd)
+		if ((dayBiddingFor >= campaign.getDayStart())
+				&& (dayBiddingFor <= campaign.getDayEnd())
 				&& (campaign.impsTogo() > 0)) {
 			return true;
 		}
