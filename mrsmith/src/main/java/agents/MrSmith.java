@@ -282,7 +282,7 @@ public class MrSmith extends Agent {
 		//# but not against smarter oponents
 
 		//# trying "simpler" strategy.
-		cmpBidMillis = fbid*cmpimps ;
+		cmpBidMillis = fbid*cmpimps *qualityScore;
 		lastWinBid = cmpBidMillis/1000.0;
 		System.out.println("++ Day: " + day + " Campaign BID for day: " + day + " cmpLength : " + cmpLength +
 				" Reach Level: " + reachLevel + " cmpimps: " + cmpimps +
