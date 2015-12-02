@@ -437,6 +437,14 @@ public class MrSmith extends Agent {
 		double rbid = 0;
 
 		/*
+		 *
+		 * adding variables (antony fix me lol)
+		 */
+		double weightNumer = 0;
+		double weightDenom = 0;
+		int weight = 0;
+
+		/*
 		 * add bid entries w.r.t. each active campaign with remaining contracted
 		 * impressions.
 		 *
@@ -446,12 +454,23 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
+				weightDenom += 1- (campaign.impsTogo()/campaign.reachImps);
+			}
+		}
+		for (CampaignData campaign : myCampaigns.values()) {
+			if (isCampaignActive(campaign)) {
 
 				rbid = 0.3*campaign.budget/campaign.reachImps;
 				System.out.println("++ Day: " + day + " rbid =  " + rbid + " || budget = " + campaign.budget);
+
+				weightNumer = 1- (campaign.impsTogo()/campaign.reachImps);
+				weight = (int) Math.ceil(100*weightNumer/weightDenom);
+
+
 				int entCount = 0;
 
-				System.out.println("++ Day: " + day + " Campaign ID: " + campaign.id + " -- Impressions to go =  " + campaign.impsTogo());
+				System.out.println("++ Day: " + day + " Campaign ID: " + campaign.id + " -- Impressions to go =  " + campaign.impsTogo()
+				+ " Campaign Weight: " + weight);
 				for (AdxQuery query : campaign.campaignQueries) {
 					if (campaign.impsTogo() - entCount > 0) {
 						/*
@@ -464,22 +483,22 @@ public class MrSmith extends Agent {
 							if (query.getAdType() == AdType.text) {
 								entCount++;
 							} else {
-								entCount += campaign.videoCoef;
+								entCount ++;
 								rbid = campaign.videoCoef*rbid;
 							}
 						} else {
 							if (query.getAdType() == AdType.text) {
-								entCount+=campaign.mobileCoef;
+								entCount++;
 								rbid = campaign.mobileCoef*rbid;
 							} else {
-								entCount += campaign.videoCoef + campaign.mobileCoef;
+								entCount ++;
 								rbid = (campaign.mobileCoef+campaign.videoCoef)*rbid;
 							}
 
 						}
 
 						bidBundle.addQuery(query, rbid, new Ad(null),
-								campaign.id, 1);
+								campaign.id, weight);
 					}
 				}
 
