@@ -112,7 +112,7 @@ public class MrSmith extends Agent {
 	double ucsTargetLevel;
 
 	//# Learning bid coefficient
-	double fbid = 0.9;
+	double fbid = 0.4; // 0.9 when reachLevel is used.
 	//# Last bid won an auction
 	double lastWinBid;
 	//# Last won budget
@@ -277,7 +277,12 @@ public class MrSmith extends Agent {
 		reachLevel = (double)cmpimps/(tgtSegmentProb*cmpLength);
 
 
-		cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore ;
+		//# cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore ;
+		//# checking another strategy that will work better against random
+		//# but not against smarter oponents
+
+		//# trying "simpler" strategy.
+		cmpBidMillis = fbid*cmpimps ;
 		lastWinBid = cmpBidMillis/1000.0;
 		System.out.println("++ Day: " + day + " Campaign BID for day: " + day + " cmpLength : " + cmpLength +
 				" Reach Level: " + reachLevel + " cmpimps: " + cmpimps +
@@ -352,9 +357,15 @@ public class MrSmith extends Agent {
 			System.out.println("\n \n WON campaign: " + day + "\n");
 
 			lastBudget = notificationMessage.getCostMillis()/1000.0;
-			fbid = fbid*(1+(lastBudget-lastWinBid)/(2*lastWinBid));
-		} else {
+			//# Testing "Simple" Strategy
+			if (fbid*(1+(lastBudget-lastWinBid)/(4*lastWinBid)) < 0.99) {
+				fbid = fbid*(1+(lastBudget-lastWinBid)/(4*lastWinBid));
+			}
+
+		} else { if (0.95*fbid>0.1) {
 			fbid = 0.95*fbid;
+		}
+
 		}
 		//		ucsModel.ucsUpdate(notificationMessage.getServiceLevel(),
 		//				notificationMessage.getPrice(), activeCampaigns());
@@ -804,7 +815,7 @@ public class MrSmith extends Agent {
 		}
 
 		int impsTogo() {
-			return (int) Math.max(0, 1.05*reachImps - stats.getTargetedImps());
+			return (int) Math.max(0, 1.075*reachImps - stats.getTargetedImps());
 		}
 
 		void setStats(CampaignStats s) {
