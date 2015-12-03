@@ -8,7 +8,6 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
-import java.util.Random;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,7 +16,6 @@ import config.GameConstants;
 import edu.umich.eecs.tac.props.Ad;
 import edu.umich.eecs.tac.props.BankStatus;
 import extras.CampaignData;
-import extras.UcsModel;
 import se.sics.isl.transport.Transportable;
 import se.sics.tasim.aw.Agent;
 import se.sics.tasim.aw.Message;
@@ -129,7 +127,6 @@ public class MrSmith extends Agent {
 
 	private Double cmpBidMillis;
 	private double qualityScore;
-	private UcsModel ucsModel;
 
 	public MrSmith() {
 		campaignReports = new LinkedList<CampaignReport>();
@@ -262,7 +259,6 @@ public class MrSmith extends Agent {
 		 * (upper bound) price for the auction.
 		 */
 
-		Random random = new Random();
 		long cmpimps = com.getReachImps();
 		// #Calculate cmpBidMillis START
 
@@ -428,8 +424,6 @@ public class MrSmith extends Agent {
 		 *
 		 */
 
-		int dayBiddingFor = day + 1;
-
 		/* A fixed random bid, for all queries of the campaign */
 		/*
 		 * Note: bidding per 1000 imps (CPM) - no more than average budget
@@ -443,6 +437,8 @@ public class MrSmith extends Agent {
 		 */
 		double weightNumer = 0;
 		double weightDenom = 0;
+		double adjustedWeightNumer = 0;
+		double adjustedWeightDenom = 0;
 		double weight = 0;
 		int adjustedWeight = 0;
 
@@ -454,11 +450,22 @@ public class MrSmith extends Agent {
 		 * matching target segment.
 		 */
 
+		//# NEEDS REFACTORING!!!!!!
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
 				weightDenom += (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
 			}
 		}
+
+		for (CampaignData campaign : myCampaigns.values()) {
+			if (isCampaignActive(campaign)) {
+				weightNumer = (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
+				weight = weightNumer/weightDenom;
+
+				adjustedWeightDenom += weight / (1 + campaign.getRemainingDays(day));
+			}
+		}
+
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
 
@@ -467,12 +474,14 @@ public class MrSmith extends Agent {
 
 				weightNumer = (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
 				weight = weightNumer/weightDenom;
-				adjustedWeight = (int) Math.ceil(100 / (1 + (double)campaign.getRemainingDays(day)));
+
+				adjustedWeightNumer = weight / (1 + campaign.getRemainingDays(day));
+				adjustedWeight = (int) Math.ceil(100*adjustedWeightNumer/adjustedWeightDenom);
 
 				int entCount = 0;
 
 				System.out.println("++ Day: " + day + " Campaign ID: " + campaign.getId() + " -- Impressions to go =  " + campaign.impsTogo()
-				+ " Adjusted Weight: " + adjustedWeight);
+				+ " Weight: " + (int) Math.ceil(100*weight) + " Adjusted Weight: " + adjustedWeight);
 				for (AdxQuery query : campaign.getCampaignQueries()) {
 					if (campaign.impsTogo() - entCount > 0) {
 						/*
@@ -504,17 +513,15 @@ public class MrSmith extends Agent {
 					}
 				}
 
-				double impressionLimit = campaign.impsTogo();
+				int impressionLimit = campaign.impsTogo();
 				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsTogo())/campaign.getReachImps();
-				//# addded budget limit
-				System.out.println("++ Day: " + day + " Campaign id " + campaign.getId() + " budgetLimit: " + budgetLimit +
-						" impressionLimit: " + impressionLimit);
-				bidBundle.setCampaignDailyLimit(campaign.getId(),
-						(int) impressionLimit, budgetLimit);
-				//# Problem: impressionLimit and budgetLimit are double outside but integer inside bidbundle !!!! ANTONY FIX ME !!!
-				//# or is it ok ? :(
+				//# added budget limit
 
-				//# Problem: understand why the query entry inside is a FEMALE
+				System.out.println("++ Day: " + day + " Campaign id " + campaign.getId() + " budgetLimit: " + budgetLimit +
+						" impressionLimit: " + impressionLimit + " Days left: " + (int)campaign.getRemainingDays(day));
+
+				bidBundle.setCampaignDailyLimit(campaign.getId(),
+						impressionLimit, budgetLimit);
 
 				System.out.println("Day " + day + ": Updated " + entCount
 						+ " Bid Bundle entries for Campaign id " + campaign.getId());
@@ -586,8 +593,6 @@ public class MrSmith extends Agent {
 		bidBundle = new AdxBidBundle();
 
 		qualityScore = 1.0;
-
-		ucsModel = new UcsModel();
 
 		/* initial bid between 0.1 and 0.2 */
 		ucsBid = 0.2;
