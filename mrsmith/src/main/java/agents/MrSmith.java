@@ -450,19 +450,10 @@ public class MrSmith extends Agent {
 		 * matching target segment.
 		 */
 
-		//# NEEDS REFACTORING!!!!!!
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
 				weightDenom += (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
-			}
-		}
-
-		for (CampaignData campaign : myCampaigns.values()) {
-			if (isCampaignActive(campaign)) {
-				weightNumer = (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
-				weight = weightNumer/weightDenom;
-
-				adjustedWeightDenom += weight / (1 + campaign.getRemainingDays(day));
+				adjustedWeightDenom += 1 / (1 + campaign.getRemainingDays(day));
 			}
 		}
 
@@ -475,13 +466,18 @@ public class MrSmith extends Agent {
 				weightNumer = (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
 				weight = weightNumer/weightDenom;
 
-				adjustedWeightNumer = weight / (1 + campaign.getRemainingDays(day));
-				adjustedWeight = (int) Math.ceil(100*adjustedWeightNumer/adjustedWeightDenom);
+				adjustedWeightNumer = 1 / (1 + campaign.getRemainingDays(day));
+				adjustedWeight = (int) Math.ceil(100*adjustedWeightNumer/(weight*adjustedWeightDenom));
 
 				int entCount = 0;
 
-				System.out.println("++ Day: " + day + " Campaign ID: " + campaign.getId() + " -- Impressions to go =  " + campaign.impsTogo()
-				+ " Weight: " + (int) Math.ceil(100*weight) + " Adjusted Weight: " + adjustedWeight);
+				System.out.println("++ Day: " + day +
+						" Campaign ID: " + campaign.getId() +
+						" Impressions to go =  " + campaign.impsTogo() +
+						" Impressions to go ratio: " + weightNumer +
+						" Adjusted Weight: " + adjustedWeight +
+						" Days remaining: " + (int)campaign.getRemainingDays(day));
+
 				for (AdxQuery query : campaign.getCampaignQueries()) {
 					if (campaign.impsTogo() - entCount > 0) {
 						/*
@@ -516,9 +512,11 @@ public class MrSmith extends Agent {
 				int impressionLimit = campaign.impsTogo();
 				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsTogo())/campaign.getReachImps();
 				//# added budget limit
+				//# 1.05 is to be sure that we don't run out of money by a small change
 
-				System.out.println("++ Day: " + day + " Campaign id " + campaign.getId() + " budgetLimit: " + budgetLimit +
-						" impressionLimit: " + impressionLimit + " Days left: " + (int)campaign.getRemainingDays(day));
+				System.out.println("++ Day: " + day +
+						" Campaign id " + campaign.getId() +
+						" budgetLimit: " + budgetLimit);
 
 				bidBundle.setCampaignDailyLimit(campaign.getId(),
 						impressionLimit, budgetLimit);
