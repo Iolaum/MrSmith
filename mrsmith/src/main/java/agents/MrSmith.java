@@ -274,8 +274,7 @@ public class MrSmith extends Agent {
 		double reachLevel = 0 ;
 		reachLevel = (double)cmpimps/(tgtSegmentProb*cmpLength);
 
-
-		//# cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore ;
+		//# cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore;
 		//# checking another strategy that will work better against random
 		//# but not against smarter oponents
 
@@ -345,7 +344,7 @@ public class MrSmith extends Agent {
 
 			/* add campaign to list of won campaigns */
 			pendingCampaign.setBudget(notificationMessage.getCostMillis()/1000.0);
-			//# Budget??
+
 			currCampaign = pendingCampaign;
 			genCampaignQueries(currCampaign);
 			myCampaigns.put(pendingCampaign.getId(), pendingCampaign);
@@ -367,10 +366,6 @@ public class MrSmith extends Agent {
 			fbid = 0.95*fbid;
 		}
 
-		//		ucsModel.ucsUpdate(notificationMessage.getServiceLevel(),
-		//				notificationMessage.getPrice(), activeCampaigns());
-
-
 		System.out.println("Day " + day + ": " + campaignAllocatedTo
 				+ ". UCS Level set to " + notificationMessage.getServiceLevel()
 				+ " at price " + notificationMessage.getPrice()
@@ -387,54 +382,21 @@ public class MrSmith extends Agent {
 	private void handleSimulationStatus(SimulationStatus simulationStatus) {
 		System.out.println("Day " + day + " : Simulation Status Received");
 		sendBidAndAds();
-
-		/*		System.out.println("Day " + day + ": Ucs bid is "
-				+ (ucsModel != null ? ucsModel.getBid() : "...No Model"));
-		// Note: Campaign bid is in millis
-		AdNetBidMessage bids = new AdNetBidMessage(
-				ucsModel != null ? ucsModel.getBid() : 0,
-				pendingCampaign != null ? pendingcampaign.getId() : 0,
-				cmpBidMillis != null ? cmpBidMillis.longValue() : 0);
-		 */
 		System.out.println("Day " + day + " ended. Starting next day");
 		++day;
 	}
 
 
-	//	private boolean activeCampaigns() {
-	//		int dayBiddingFor = day + 1;
-	//		for (CampaignData cmpgn : myCampaigns.values()) {
-	//			if ((dayBiddingFor >= cmpgn.dayStart)
-	//					&& (dayBiddingFor <= cmpgn.dayEnd)
-	//					&& (cmpgn.impsTogo() > 0)) {
-	//				return true;
-	//			}
-	//		}
-	//		return false;
-	//	}
-
-	/**
-	 *
-	 */
 	protected void sendBidAndAds() {
 
 		bidBundle = new AdxBidBundle();
 
-		/*
-		 *
-		 */
-
-		/* A fixed random bid, for all queries of the campaign */
 		/*
 		 * Note: bidding per 1000 imps (CPM) - no more than average budget
 		 * revenue per imp
 		 */
 
 		double rbid = 0;
-
-		/*
-		 *
-		 */
 		double weightNumer = 0;
 		double weightDenom = 0;
 		double adjustedWeightNumer = 0;
