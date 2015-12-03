@@ -160,7 +160,7 @@ public class MrSmith extends Agent {
 			} else if (content instanceof BankStatus) {
 				handleBankStatus((BankStatus) content);
 			} else if(content instanceof CampaignAuctionReport) {
-				hadnleCampaignAuctionReport((CampaignAuctionReport) content);
+				handleCampaignAuctionReport((CampaignAuctionReport) content);
 			}
 			else {
 				System.out.println("UNKNOWN Message Received: " + content);
@@ -173,8 +173,14 @@ public class MrSmith extends Agent {
 		}
 	}
 
-	private void hadnleCampaignAuctionReport(CampaignAuctionReport content) {
-		// ingoring
+	private void handleCampaignAuctionReport(CampaignAuctionReport content) {
+		System.out.println(
+				" ++ Day" + day +
+				" Campaign Auction Report: "+
+				" Campaign ID = "+ content.getCampaignID() +
+				" Winner = "+ content.getWinner() +
+				" Winner = "+ content.isRandomAllocation()
+				);
 	}
 
 	private void handleBankStatus(BankStatus content) {
