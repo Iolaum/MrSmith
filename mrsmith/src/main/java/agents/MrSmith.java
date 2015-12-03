@@ -112,7 +112,7 @@ public class MrSmith extends Agent {
 	double ucsTargetLevel;
 
 	//# Learning bid coefficient
-	double fbid = 0.4; // 0.9 when reachLevel is used.
+	double fbid = 0.3; // 0.9 when reachLevel is used.
 	//# Last bid won an auction
 	double lastWinBid;
 	//# Last won budget
