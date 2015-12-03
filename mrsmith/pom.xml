@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.soton.ia</groupId>
 	<artifactId>mrsmith</artifactId>
-	<version>0.0.21-Adjusted-Weight-updated</version>
+	<version>0.0.22-added-auction-report</version>
 	<name>MrSmith</name>
 
 
