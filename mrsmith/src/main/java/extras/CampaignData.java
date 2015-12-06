@@ -1,5 +1,6 @@
 package extras;
 
+import java.util.Map;
 import java.util.Set;
 
 import config.GameConstants;
@@ -18,6 +19,8 @@ public class CampaignData {
 	Set<MarketSegment> targetSegment;
 	double videoCoef;
 	double mobileCoef;
+	double segmentProbability;
+	double reachLevel;
 	int id;
 	private AdxQuery[] campaignQueries;//array of queries relevant for the campaign.
 
@@ -36,6 +39,8 @@ public class CampaignData {
 
 		stats = new CampaignStats(0, 0, 0);
 		budget = 0.0;
+		this.setSegmentProbability();
+		this.setReachLevel();
 	}
 
 	public void setBudget(double d) {
@@ -52,6 +57,8 @@ public class CampaignData {
 		videoCoef = com.getVideoCoef();
 		stats = new CampaignStats(0, 0, 0);
 		budget = 0.0;
+		this.setSegmentProbability();
+		this.setReachLevel();
 	}
 
 	public long getDayStart() {
@@ -76,6 +83,14 @@ public class CampaignData {
 
 	public double getMobileCoef() {
 		return mobileCoef;
+	}
+
+	public double getSegmentProbability() {
+		return segmentProbability;
+	}
+
+	public double getReachLevel() {
+		return this.reachLevel;
 	}
 
 	public int getId() {
@@ -119,7 +134,7 @@ public class CampaignData {
 
 		double factor = 1 + (impsRatio-daysRatio);
 
-		return Math.pow(factor, GameConstants.rbidGuideFactor);
+		return (0.6+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
 	}
 
 	public void setStats(CampaignStats s) {
@@ -132,6 +147,15 @@ public class CampaignData {
 
 	public void setCampaignQueries(AdxQuery[] campaignQueries) {
 		this.campaignQueries = campaignQueries;
+	}
+
+	private void setSegmentProbability() {
+		Map<Set<MarketSegment>,Integer> segUsrMap = MarketSegment.usersInMarketSegments();
+		this.segmentProbability = segUsrMap.get(this.targetSegment);
+	}
+
+	private void setReachLevel() {
+		this.reachLevel = this.reachImps/(this.segmentProbability*this.getLength());
 	}
 
 }

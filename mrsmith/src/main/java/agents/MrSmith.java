@@ -278,21 +278,6 @@ public class MrSmith extends Agent {
 		 * (upper bound) price for the auction.
 		 */
 
-		long cmpimps = com.getReachImps();
-		// #Calculate cmpBidMillis START
-
-		// Get campaign Length
-		long cmpLength = com.getDayEnd() - com.getDayStart() +1;
-
-		//Get campaign segment and return segment number
-		Set<MarketSegment> tgtSeg = com.getTargetSegment();
-		Map<Set<MarketSegment>,Integer> segUsrMap = MarketSegment.usersInMarketSegments();
-		//Unknown case?
-		int tgtSegmentProb = segUsrMap.get(tgtSeg);
-		//Calculate reach level
-		double reachLevel = 0 ;
-		reachLevel = (double)cmpimps/(tgtSegmentProb*cmpLength);
-
 		//# cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore;
 		//# checking another strategy that will work better against random
 		//# but not against smarter oponents
@@ -330,11 +315,11 @@ public class MrSmith extends Agent {
 			fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
 		}
 		//# trying "simpler" strategy.
-		cmpBidMillis = fbid*cmpimps *qualityScore;
+		cmpBidMillis = fbid*pendingCampaign.getReachImps() *qualityScore;
 		lastWinBid = cmpBidMillis/1000.0;
-		System.out.println("++ Day: " + day + " Campaign BID for day: " + day + " cmpLength : " + cmpLength +
-				" Reach Level: " + reachLevel + " cmpimps: " + cmpimps +
-				" Target Segment Probability : " + tgtSegmentProb);
+		System.out.println("++ Day: " + day + " Campaign BID for day: " + day + " cmpLength : " + pendingCampaign.getLength() +
+				" Reach Level: " + pendingCampaign.getReachLevel() + " cmpimps: " + pendingCampaign.getReachImps() +
+				" Target Segment Probability : " + pendingCampaign.getSegmentProbability());
 		System.out.println("++ Day: " + day + " fbid: " + fbid + " CmpBidMillis: " + cmpBidMillis + " lastWinBid: " + lastWinBid +
 				" qualityScore: " + qualityScore);
 
