@@ -308,7 +308,6 @@ public class MrSmith extends Agent {
 			System.out.println("Day " + day + ": Initial ucs bid is " + ucsBid);
 		}
 
-
 		if (actCampaignNo > actCampLimit){
 			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
 		}else{

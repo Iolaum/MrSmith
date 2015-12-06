@@ -21,6 +21,9 @@ public class CampaignData {
 	double mobileCoef;
 	double segmentProbability;
 	double reachLevel;
+	double adxRatio;
+	double campaignCut;
+	double ucsRatio;
 	int id;
 	private AdxQuery[] campaignQueries;//array of queries relevant for the campaign.
 
@@ -41,6 +44,7 @@ public class CampaignData {
 		budget = 0.0;
 		this.setSegmentProbability();
 		this.setReachLevel();
+		this.initializeRatios();
 	}
 
 	public void setBudget(double d) {
@@ -59,6 +63,19 @@ public class CampaignData {
 		budget = 0.0;
 		this.setSegmentProbability();
 		this.setReachLevel();
+		this.initializeRatios();
+	}
+
+	private void initializeRatios() {
+		this.adxRatio = GameConstants.AdXRatio;
+		this.campaignCut = GameConstants.CampaignCut;
+		this.ucsRatio = GameConstants.UCSRatio;
+	}
+
+	public void updateRatios() {
+		this.adxRatio = GameConstants.AdXRatio;
+		this.campaignCut = GameConstants.CampaignCut;
+		this.ucsRatio = GameConstants.UCSRatio;
 	}
 
 	public long getDayStart() {
