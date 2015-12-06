@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.soton.ia</groupId>
 	<artifactId>mrsmith</artifactId>
-	<version>0.0.30_GameConstants+initial_UCSbid</version>
+	<version>0.0.32_GameConstants_initialUCSBid_initialAdX</version>
 	<name>MrSmith</name>
 
 
