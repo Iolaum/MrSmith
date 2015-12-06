@@ -246,6 +246,9 @@ public class MrSmith extends Agent {
 		 * to our allocated-campaigns list.
 		 */
 
+		//#  setup initial UCS Bid. - Only used on Day 0.
+		ucsBid = GameConstants.UCSRatio*campaignData.getBudget()/campaignData.getLength();
+
 		System.out.println("Day " + day + ": Allocated campaign - " + campaignData);
 
 		myCampaigns.put(initialCampaignMessage.getId(), campaignData);
@@ -308,7 +311,7 @@ public class MrSmith extends Agent {
 			actCampaignNo = 0;
 			for (CampaignData campaign : myCampaigns.values()) {
 				if (isCampaignActive(campaign)) {
-					ucsBid += 0.5*campaign.getBudget()/campaign.getLength();
+					ucsBid += GameConstants.UCSRatio*campaign.getBudget()/campaign.getLength();
 					actCampaignNo += 1;
 					//# Decreased percentage to 0.6 so we keep 10% for profits.
 				}
@@ -455,7 +458,7 @@ public class MrSmith extends Agent {
 			if (isCampaignActive(campaign)) {
 				rBidGuide = campaign.getRBidGuide(day);
 
-				rbid = 0.1*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
+				rbid = GameConstants.AdXRatio*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
 				System.out.println(
 						"++ Day: " + day
 						+ " rbid =  " + rbid
@@ -511,11 +514,7 @@ public class MrSmith extends Agent {
 
 				int impressionLimit = campaign.impsWeWant();
 
-				if (campaign.getStats().getCost() > 0.5D * campaign.getBudget()) {
-					impressionLimit = (int)(campaign.impsWeWant()/GameConstants.campaignGoal);
-				}
-
-				double budgetLimit = (1.05*rBidGuide*0.1*campaign.getBudget()*campaign.impsWeWant())/campaign.getReachImps();
+				double budgetLimit = (1.05*rBidGuide*GameConstants.AdXRatio*campaign.getBudget()*campaign.impsWeWant())/campaign.getReachImps();
 				//# added budget limit
 				//# 1.05 is to be sure that we don't run out of money by a small change
 
@@ -600,7 +599,7 @@ public class MrSmith extends Agent {
 		Rmax = 1000* GameConstants.maxCampaignCostByImpression;
 		fbidmin = 0;
 		fbidmax = 0;
-		fbidlf = 0.3;
+		fbidlf = 0.4;
 
 
 		// needed here for first day.
