@@ -308,7 +308,7 @@ public class MrSmith extends Agent {
 			actCampaignNo = 0;
 			for (CampaignData campaign : myCampaigns.values()) {
 				if (isCampaignActive(campaign)) {
-					ucsBid += 0.6*campaign.getBudget()/campaign.getLength();
+					ucsBid += 0.5*campaign.getBudget()/campaign.getLength();
 					actCampaignNo += 1;
 					//# Decreased percentage to 0.6 so we keep 10% for profits.
 				}
@@ -455,7 +455,7 @@ public class MrSmith extends Agent {
 			if (isCampaignActive(campaign)) {
 				rBidGuide = campaign.getRBidGuide(day);
 
-				rbid = 0.3*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
+				rbid = 0.1*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
 				System.out.println(
 						"++ Day: " + day
 						+ " rbid =  " + rbid
@@ -515,7 +515,7 @@ public class MrSmith extends Agent {
 					impressionLimit = (int)(campaign.impsWeWant()/GameConstants.campaignGoal);
 				}
 
-				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsWeWant())/campaign.getReachImps();
+				double budgetLimit = (1.05*rBidGuide*0.1*campaign.getBudget()*campaign.impsWeWant())/campaign.getReachImps();
 				//# added budget limit
 				//# 1.05 is to be sure that we don't run out of money by a small change
 

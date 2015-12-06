@@ -1,0 +1,395 @@
+[33mcommit 42abca9785709e6b3dc1043e37eee3fa870a38e6[m
+Author: Napoleon Koskinas <zenapolewn@gmail.com>
+Date:   Sun Dec 6 18:54:15 2015 +0000
+
+    active Campaigns limit
+
+[33mcommit 90d571819287e63ed7587f66a57d44af97bd6c03[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Sun Dec 6 18:43:15 2015 +0000
+
+    rBidFactor for BidBundle
+
+[33mcommit 4c1675330a95e54a66c204d108dd348fe10d0805[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Sun Dec 6 18:21:30 2015 +0000
+
+    fixed day 0 campaign bid
+
+[33mcommit e909fb5a84ad80a5a8a1c35632b24f55be682e08[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Sun Dec 6 17:48:24 2015 +0000
+
+    renamed to impsWeWant
+
+[33mcommit 4eff29a3c77d0e7c6f045358de83a231b782f50e[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Sun Dec 6 17:45:37 2015 +0000
+
+    added impsToGo2 with campaignGoal and kept original impsToGo
+
+[33mcommit 3c83b355980cca7e76a3ae9adc507be8e033353c[m
+Author: ep1g15 <emmpets@gmail.com>
+Date:   Sun Dec 6 17:25:17 2015 +0000
+
+    fbidlf limits
+
+[33mcommit 23c4e579e48fe92c6aec4aab929a9c3a7a6d64b4[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Sun Dec 6 14:48:04 2015 +0000
+
+    Small change in bidbundle bid
+
+[33mcommit 374c70ab9f52a0eb6027f3c6d5956dddc86fee4b[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Thu Dec 3 18:58:00 2015 +0000
+
+    adx agent 128
+
+[33mcommit bc05ba4c2dfbd07758cb4e634712606ae29927b1[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Dec 3 18:48:11 2015 +0000
+
+    added agent for auction report
+
+[33mcommit 08650fba423998540e3aea3b0910df37a43d8be2[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Dec 3 18:42:32 2015 +0000
+
+    output of campaign auction report message
+
+[33mcommit f5ec04232fccef8253e3a1effb1760c7d063a3ed[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Dec 3 18:28:48 2015 +0000
+
+    changing fbid to 0.3
+
+[33mcommit 611f744e12944d999294d0d434b7744688d5a434[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Dec 3 18:24:19 2015 +0000
+
+    Remove stuff
+
+[33mcommit ef62ec64713effd662fd242dc468b2055a27453c[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Dec 3 18:16:49 2015 +0000
+
+    updated adjusted weights
+
+[33mcommit 7de2e42fe754cd3f8f6566288d3791be8c1b079d[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Dec 3 01:45:23 2015 +0000
+
+    fixed adjusted weight. Needs refactoring
+
+[33mcommit 7eb2b5532485fbf4c55403a7f67b528f50d389a6[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Wed Dec 2 18:00:18 2015 +0000
+
+    Adjusted weight update
+
+[33mcommit 3bd62ea6b7c47fa300c25dae19a0d1d413be1042[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Wed Dec 2 16:34:04 2015 +0000
+
+    Moving away CampaignData & UcsModel
+
+[33mcommit aa153a9559cf99102633e29c4863c9665884edfd[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Wed Dec 2 16:26:27 2015 +0000
+
+    Addeed Campaign Weights+
+
+[33mcommit 9fa5123ca6cccd43eee285c4f3c7e3c18dc977d5[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Wed Dec 2 16:22:15 2015 +0000
+
+    Addeed Campaign Weights
+
+[33mcommit c066edfd6db434068ba7460d8833b639611cfcd5[m
+Author: Napoleon Koskinas <zenapolewn@gmail.com>
+Date:   Wed Dec 2 16:10:54 2015 +0000
+
+    Added qualityScore factor to campaign bid calculation
+
+[33mcommit b10f8723d3e21a1ea65a24a6352c70caad320e4a[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Wed Dec 2 15:43:06 2015 +0000
+
+    server back to version 1.2.8
+
+[33mcommit bfc36b599554797e9afdfc794f61db4b4ae69510[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Wed Dec 2 15:06:20 2015 +0000
+
+    print ucs bid
+
+[33mcommit 29a6260282574813e49afbe14695e84116844c73[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Wed Dec 2 14:29:36 2015 +0000
+
+    RunLogParser to read only from .logs file
+
+[33mcommit 5aea36a565b17c949aeda72e299fa8fa40a8f851[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Wed Dec 2 14:27:07 2015 +0000
+
+    added remote agent logs
+
+[33mcommit e8bb8d5dac0ac676d26e0d40047afc95ff7c51b9[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Wed Dec 2 04:49:46 2015 +0000
+
+    Changed Strategy
+
+[33mcommit 01dbf9f3c9cbae35e1eb4e89ebfa25ef9f858a98[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Wed Dec 2 03:08:29 2015 +0000
+
+    Fixed Logs and budget limits - hopefully ...
+
+[33mcommit 4f4c3c81566532b473ebb2ab4ce30fa0dbf92c80[m
+Author: Napoleon Koskinas <zenapolewn@gmail.com>
+Date:   Tue Dec 1 23:38:01 2015 +0000
+
+    Added learning fbid factor
+
+[33mcommit 46fa1a2af2cb133d90c74088895c415b7c8ece31[m
+Author: Napoleon Koskinas <zenapolewn@gmail.com>
+Date:   Tue Dec 1 23:35:21 2015 +0000
+
+    Added fbid,unsure about right winning bid value
+
+[33mcommit 52f9d01a6a19ab5def9105c662780afbdcbe1aa6[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Tue Dec 1 22:35:58 2015 +0000
+
+    UCS at 70% and BidBundle updates
+
+[33mcommit de1595ece47a54a0237d4c79439513c0b85ad377[m
+Author: Napoleon Koskinas <zenapolewn@gmail.com>
+Date:   Tue Dec 1 22:06:10 2015 +0000
+
+    Reach level double var,right values,values campaign bud values
+
+[33mcommit ddd3ea8329dcb0ab418e7f530a3be2180bc0c6cf[m
+Author: Napoleon Koskinas <zenapolewn@gmail.com>
+Date:   Tue Dec 1 22:01:10 2015 +0000
+
+    Reach level fixed and campaign bid values ok
+
+[33mcommit 0f523a215c1fb7e8dde86226f05caa7e4b74bfb4[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Tue Dec 1 21:28:48 2015 +0000
+
+    BidBundle additions
+
+[33mcommit 99d94e6500877cb400ab0530d6bf673d1c155029[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Tue Dec 1 21:00:55 2015 +0000
+
+    Unstable reach level
+
+[33mcommit 9bb81692d2f326fef021b7fe245a0343fc6777df[m
+Author: Napoleon Koskinas <zenapolewn@gmail.com>
+Date:   Tue Dec 1 20:35:46 2015 +0000
+
+    Calculate campaign reach level and bidBundle
+
+[33mcommit 13a0dc8e29f5ef26e72de1b36ce65391a4744799[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Tue Dec 1 20:24:31 2015 +0000
+
+    print segments for campaign and query
+
+[33mcommit 98309336725dd7fc3a68736a7ef5a4e4020d4404[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Mon Nov 30 19:24:16 2015 +0000
+
+    correct v.1.3.0 server/agent files
+
+[33mcommit 217cf3a887206ec29ec0781509a2c6b0180b69e7[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Mon Nov 30 16:00:17 2015 +0000
+
+    added both local and remote server options in config comments
+
+[33mcommit f4956db7f82a1a308adad057d53b0fc7543edb29[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Mon Nov 30 13:21:32 2015 +0000
+
+    added TestRun2
+
+[33mcommit 210b551941d4664eb73c4f45220aa2c47d5efc69[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Mon Nov 30 11:50:34 2015 +0000
+
+    Added a test run log.
+
+[33mcommit 6d81d4c790c1cb4d15d5841325e284bceca86f43[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Mon Nov 30 11:30:40 2015 +0000
+
+    UCS per day and BidBundle coeffs -2
+
+[33mcommit 35294754ca39f0aebb835c12a9c46ce10ccf38ba[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Mon Nov 30 11:27:41 2015 +0000
+
+    UCS per day and BidBundle coeffs
+
+[33mcommit 6d6f446f37c7cebca9dbe4527a4c6d1071586563[m
+Author: Nikolaos Perrakis <np4g15@soton.ac.uk>
+Date:   Mon Nov 30 10:55:04 2015 +0000
+
+    UCS for active campaigns
+
+[33mcommit 53ebf3db6149bad9b0da2ae5ec03f0d8f63f8a59[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Sun Nov 29 22:42:19 2015 +0000
+
+    50/50 ucs & bidbundle
+
+[33mcommit 77e93a313a2d5d07842d15088fac1db74adcad31[m
+Author: Napoleon Koskinas <zenapolewn@gmail.com>
+Date:   Fri Nov 27 01:57:01 2015 +0000
+
+    Added UcsModel Class,new instance,not called yet.Review UCS strategy
+
+[33mcommit 11390ca63188e119214b51e9d084ccae756c508e[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 23:44:22 2015 +0000
+
+    altering gitignore to skip server game log files
+
+[33mcommit 49b67ff29d27cd9daf5145390a57904fff76e731[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 22:48:21 2015 +0000
+
+    Creating a GameConstants class for reusable game components
+
+[33mcommit f186ca6e3842e37d35274d5c23e07f3d0625774d[m
+Author: ep1g15 <emmpets@gmail.com>
+Date:   Thu Nov 26 19:27:50 2015 +0000
+
+    adding .project files on .gitignore
+
+[33mcommit fd162fb86a7e135f27102793c39bcca0c2e021bd[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 19:20:42 2015 +0000
+
+    final change in how agent is implemented
+
+[33mcommit 5247640103a570e7607db2665f46a53e0770fd43[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 19:11:16 2015 +0000
+
+    modifying mrsmith snapshot
+
+[33mcommit b301bb18f9485634f2c49c5659481c747a471d00[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 19:05:25 2015 +0000
+
+    re-enter agent name and pw
+
+[33mcommit 22ba8728cb1886cdc0d696bb4490ad330346332b[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 19:00:38 2015 +0000
+
+    re-adding server files
+
+[33mcommit 331c4acd2505f5a9d07ebfe295ae2f5cbb471d7c[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:58:23 2015 +0000
+
+    unignore jar files
+
+[33mcommit bd62ceff26b5d0f5596d2f22f39222d106d3b642[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:33:33 2015 +0000
+
+    handling ignoring of server
+
+[33mcommit d608aad34e909587d11db72003a4045949d1bc46[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:30:02 2015 +0000
+
+    unignoring agent logs folders
+
+[33mcommit a048fd493f542cd0fac3e20acc2056951ca347b3[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:24:28 2015 +0000
+
+    more logging
+
+[33mcommit d6381dab641fb50a7dacbe1cda643c73ac4da7f2[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:18:49 2015 +0000
+
+    setting agent logs
+
+[33mcommit 68d51eb7fb091843fe0b5b7ad931b9edcb2d0149[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:15:05 2015 +0000
+
+    logs deleting
+
+[33mcommit 9ca31793ded172096170482f716b388f06062275[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:10:27 2015 +0000
+
+    gitignoring f......ing 3
+
+[33mcommit 8d085e2aeffa3d44f36cc78bfad66540b4ef1258[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:08:41 2015 +0000
+
+    gitignoring 2
+
+[33mcommit 6ec9b15f882522c6c79356cb5300096461b4a082[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 18:05:59 2015 +0000
+
+    gitignoring
+
+[33mcommit d361ece65c84e6dc4425bfab5cec1594f42b90ed[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 17:51:26 2015 +0000
+
+    Finished project structure - M&A
+
+[33mcommit 65b7c07a3453a628b24312f6511621cf704910e8[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 17:25:25 2015 +0000
+
+    adding the whole adx server/agent files v.1.3.0. Manos-Tony
+
+[33mcommit 6c1ce692ec837e1e9619e590d381fd5d7f080ecd[m
+Author: ep1g15 <emmpets@gmail.com>
+Date:   Thu Nov 26 16:20:54 2015 +0000
+
+    manos eclipse set up
+
+[33mcommit fb6b6b96ced9f3a67231950aa34e845f3c957a09[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Thu Nov 26 02:55:02 2015 +0000
+
+    adding some comments
+
+[33mcommit 92ed8cad7aecdd1c0773fd3e955ca020558612dd[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Wed Nov 25 23:31:33 2015 +0000
+
+    Snapshot 2 small changes
+
+[33mcommit d530b70c676542a5f6fcee41737203a7fcb038e4[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Wed Nov 25 21:48:43 2015 +0000
+
+    learning how to print new snapshot
+
+[33mcommit 382d991a06b4b4f79f96a69f7f439de7b6342d5a[m
+Author: Antonios Andronis <aa3e15@soton.ac.uk>
+Date:   Wed Nov 25 20:37:02 2015 +0000
+
+     Initial Maven Commit
