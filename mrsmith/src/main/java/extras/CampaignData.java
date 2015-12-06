@@ -102,11 +102,15 @@ public class CampaignData {
 	}
 
 	public int impsTogo() {
+		return (int) Math.max(0, reachImps - stats.getTargetedImps());
+	} // GameConstants.campaignGoal*
+
+	public int impsTogo2() {
 		return (int) Math.max(0, GameConstants.campaignGoal*reachImps - stats.getTargetedImps());
 	}
 
 	public double getRemainingDays(int day) {
-		return (double)(dayEnd - day);
+		return dayEnd - day;
 	}
 
 	public void setStats(CampaignStats s) {

@@ -117,14 +117,14 @@ public class MrSmith extends Agent {
 	double lastWinBid;
 	//# Last won budget
 	double lastBudget;
-	
+
 	//# fbid limits
 	double Rmin = 1000* GameConstants.minCampaignCostByImpression;
 	double Rmax = 1000* GameConstants.maxCampaignCostByImpression;
 	double fbidmin = 0;
 	double fbidmax = 0;
 	double fbidlf = 0.3;
-	
+
 	/*
 	 * current day of simulation
 	 */
@@ -290,7 +290,7 @@ public class MrSmith extends Agent {
 		//# cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore;
 		//# checking another strategy that will work better against random
 		//# but not against smarter oponents
-		
+
 		fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
 		//# trying "simpler" strategy.
 		cmpBidMillis = fbid*cmpimps *qualityScore;
@@ -352,14 +352,14 @@ public class MrSmith extends Agent {
 
 		String campaignAllocatedTo = " allocated to "
 				+ notificationMessage.getWinner();
-		
+
 		// # fbid limits calculation
 		fbidmin = Rmin/Math.pow(qualityScore,2);
 		fbidmax = 10*Rmin;
 		if (fbidmin>fbidmax){
 			System.out.println("Min & max CONGESTION");
 		}
-		
+
 		if ((pendingCampaign.getId() == adNetworkDailyNotification.getCampaignId())
 				&& (notificationMessage.getCostMillis() != 0)) {
 
@@ -435,7 +435,7 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				weightDenom += (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
+				weightDenom += (campaign.impsTogo2()/(GameConstants.campaignGoal*campaign.getReachImps()));
 				adjustedWeightDenom += 1 / (1 + campaign.getRemainingDays(day));
 			}
 		}
@@ -446,7 +446,7 @@ public class MrSmith extends Agent {
 				rbid = 0.3*campaign.getBudget()/campaign.getReachImps();
 				System.out.println("++ Day: " + day + " rbid =  " + rbid + " || budget = " + campaign.getBudget());
 
-				weightNumer = (campaign.impsTogo()/(GameConstants.campaignGoal*campaign.getReachImps()));
+				weightNumer = (campaign.impsTogo2()/(GameConstants.campaignGoal*campaign.getReachImps()));
 				weight = weightNumer/weightDenom;
 
 				adjustedWeightNumer = 1 / (1 + campaign.getRemainingDays(day));
@@ -456,13 +456,13 @@ public class MrSmith extends Agent {
 
 				System.out.println("++ Day: " + day +
 						" Campaign ID: " + campaign.getId() +
-						" Impressions to go =  " + campaign.impsTogo() +
+						" Impressions to go =  " + campaign.impsTogo2() +
 						" Impressions to go ratio: " + weightNumer +
 						" Adjusted Weight: " + adjustedWeight +
 						" Days remaining: " + (int)campaign.getRemainingDays(day));
 
 				for (AdxQuery query : campaign.getCampaignQueries()) {
-					if (campaign.impsTogo() - entCount > 0) {
+					if (campaign.impsTogo2() - entCount > 0) {
 						/*
 						 * among matching entries with the same campaign id, the AdX
 						 * randomly chooses an entry according to the designated
@@ -492,13 +492,13 @@ public class MrSmith extends Agent {
 					}
 				}
 
-				int impressionLimit = campaign.impsTogo();
+				int impressionLimit = campaign.impsTogo2();
 
 				if (campaign.getStats().getCost() > 0.5D * campaign.getBudget()) {
-					impressionLimit = (int)(campaign.impsTogo()/GameConstants.campaignGoal);
+					impressionLimit = (int)(campaign.impsTogo2()/GameConstants.campaignGoal);
 				}
 
-				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsTogo())/campaign.getReachImps();
+				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsTogo2())/campaign.getReachImps();
 				//# added budget limit
 				//# 1.05 is to be sure that we don't run out of money by a small change
 
@@ -692,7 +692,7 @@ public class MrSmith extends Agent {
 		int dayBiddingFor = day + 1;
 		if ((dayBiddingFor >= campaign.getDayStart())
 				&& (dayBiddingFor <= campaign.getDayEnd())
-				&& (campaign.impsTogo() > 0)) {
+				&& (campaign.impsTogo2() > 0)) {
 			return true;
 		}
 		return false;
