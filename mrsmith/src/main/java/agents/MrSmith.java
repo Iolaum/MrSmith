@@ -424,6 +424,7 @@ public class MrSmith extends Agent {
 		double adjustedWeightDenom = 0;
 		double weight = 0;
 		int adjustedWeight = 0;
+		double rBidGuide = 1;
 
 		/*
 		 * add bid entries w.r.t. each active campaign with remaining contracted
@@ -442,15 +443,21 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
+				rBidGuide = campaign.getRBidGuide(day);
 
-				rbid = 0.3*campaign.getBudget()/campaign.getReachImps();
-				System.out.println("++ Day: " + day + " rbid =  " + rbid + " || budget = " + campaign.getBudget());
+				rbid = 0.3*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
+				System.out.println(
+						"++ Day: " + day
+						+ " rbid =  " + rbid
+						+ " budget = " + campaign.getBudget()
+						+ " rBidGuide = " + rBidGuide);
 
 				weightNumer = (campaign.impsWeWant()/(GameConstants.campaignGoal*campaign.getReachImps()));
 				weight = weightNumer/weightDenom;
 
 				adjustedWeightNumer = 1 / (1 + campaign.getRemainingDays(day));
 				adjustedWeight = (int) Math.ceil(100*adjustedWeightNumer/(weight*adjustedWeightDenom));
+
 
 				int entCount = 0;
 

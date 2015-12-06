@@ -113,6 +113,15 @@ public class CampaignData {
 		return dayEnd - day;
 	}
 
+	public double getRBidGuide(int day) {
+		double daysRatio = this.getRemainingDays(day)/this.getLength();
+		double impsRatio = this.impsWeWant()/(GameConstants.campaignGoal*this.getReachImps());
+
+		double factor = 1 + (impsRatio-daysRatio);
+
+		return Math.pow(factor, GameConstants.rbidGuideFactor);
+	}
+
 	public void setStats(CampaignStats s) {
 		stats.setValues(s);
 	}

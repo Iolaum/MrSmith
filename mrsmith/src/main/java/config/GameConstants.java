@@ -21,4 +21,5 @@ public class GameConstants {
 	public static final Double pUcsUserRevelation = 0.9;
 	public static final Double initialDayClassificationAcc = 0.9;
 	public static final Double campaignGoal = 1.075;
+	public static final Integer rbidGuideFactor = 3;
 }
