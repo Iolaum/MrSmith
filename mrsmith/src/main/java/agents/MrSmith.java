@@ -119,12 +119,15 @@ public class MrSmith extends Agent {
 	double lastBudget;
 
 	//# fbid limits
-	double Rmin = 1000* GameConstants.minCampaignCostByImpression;
-	double Rmax = 1000* GameConstants.maxCampaignCostByImpression;
-	double fbidmin = 0;
-	double fbidmax = 0;
-	double fbidlf = 0.3;
+	double Rmin;
+	double Rmax;
+	double fbidmin;
+	double fbidmax;
+	double fbidlf;
 
+	//Active campaigns limit
+	int actCampaignNo;
+	int actCampLimit = 3;
 	/*
 	 * current day of simulation
 	 */
@@ -290,8 +293,39 @@ public class MrSmith extends Agent {
 		//# cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore;
 		//# checking another strategy that will work better against random
 		//# but not against smarter oponents
+		//if ()
 
-		fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
+		/*
+		 * Adjust ucs bid s.t. target level is achieved. Note: The bid for the
+		 * user classification service is piggybacked
+		 */
+
+		if (adNetworkDailyNotification != null) {
+			double ucsLevel = adNetworkDailyNotification.getServiceLevel();
+			//			ucsBid = 0.1 + random.nextDouble()/10.0;
+			//# UCS Bid Value --- Set here
+			ucsBid = 0;
+			actCampaignNo = 0;
+			for (CampaignData campaign : myCampaigns.values()) {
+				if (isCampaignActive(campaign)) {
+					ucsBid += 0.6*campaign.getBudget()/campaign.getLength();
+					actCampaignNo += 1;
+					//# Decreased percentage to 0.6 so we keep 10% for profits.
+				}
+			}
+
+			System.out.println("Day " + day + ": ucs level reported: " + ucsLevel);
+			System.out.println("++ Day " + day + ": ucs bid is " + ucsBid);
+		} else {
+			System.out.println("Day " + day + ": Initial ucs bid is " + ucsBid);
+		}
+
+
+		if (actCampaignNo > actCampLimit){
+			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
+		}else{
+			fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
+		}
 		//# trying "simpler" strategy.
 		cmpBidMillis = fbid*cmpimps *qualityScore;
 		lastWinBid = cmpBidMillis/1000.0;
@@ -305,30 +339,6 @@ public class MrSmith extends Agent {
 
 		System.out.println("Day " + day + ": Campaign total budget bid (millis): " + cmpBidMillis.longValue());
 
-		/*
-		 * Adjust ucs bid s.t. target level is achieved. Note: The bid for the
-		 * user classification service is piggybacked
-		 */
-
-		if (adNetworkDailyNotification != null) {
-			double ucsLevel = adNetworkDailyNotification.getServiceLevel();
-			//			ucsBid = 0.1 + random.nextDouble()/10.0;
-			//# UCS Bid Value --- Set here
-			ucsBid = 0;
-
-			for (CampaignData campaign : myCampaigns.values()) {
-				if (isCampaignActive(campaign)) {
-					ucsBid += 0.6*campaign.getBudget()/campaign.getLength();
-					//# Decreased percentage to 0.6 so we keep 10% for profits.
-				}
-			}
-
-			System.out.println("Day " + day + ": ucs level reported: " + ucsLevel);
-		} else {
-			System.out.println("Day " + day + ": Initial ucs bid is " + ucsBid);
-		}
-
-		System.out.println("++ Day " + day + ": ucs bid is " + ucsBid);
 		/* Note: Campaign bid is in millis */
 		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.getId(), cmpBidMillis.longValue());
 		sendMessage(demandAgentAddress, bids);
@@ -586,6 +596,12 @@ public class MrSmith extends Agent {
 		bidBundle = new AdxBidBundle();
 
 		qualityScore = 1.0;
+		Rmin = 1000* GameConstants.minCampaignCostByImpression;
+		Rmax = 1000* GameConstants.maxCampaignCostByImpression;
+		fbidmin = 0;
+		fbidmax = 0;
+		fbidlf = 0.3;
+
 
 		// needed here for first day.
 		fbidmin = Rmin/Math.pow(qualityScore,2);
