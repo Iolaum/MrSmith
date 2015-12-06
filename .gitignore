@@ -30,3 +30,6 @@ hs_err_pid*
 # ignore eclipse files 
 .classpath
 .project
+
+# ignore other agents
+AdX/other_agents/

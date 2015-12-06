@@ -478,6 +478,11 @@ public class MrSmith extends Agent {
 				}
 
 				int impressionLimit = campaign.impsTogo();
+
+				if (campaign.getStats().getCost() > 0.5D * campaign.getBudget()) {
+					impressionLimit = (int)(campaign.impsTogo()/GameConstants.campaignGoal);
+				}
+
 				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsTogo())/campaign.getReachImps();
 				//# added budget limit
 				//# 1.05 is to be sure that we don't run out of money by a small change
