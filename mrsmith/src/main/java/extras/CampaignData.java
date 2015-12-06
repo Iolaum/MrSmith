@@ -105,7 +105,7 @@ public class CampaignData {
 		return (int) Math.max(0, reachImps - stats.getTargetedImps());
 	} // GameConstants.campaignGoal*
 
-	public int impsTogo2() {
+	public int impsWeWant() {
 		return (int) Math.max(0, GameConstants.campaignGoal*reachImps - stats.getTargetedImps());
 	}
 

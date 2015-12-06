@@ -435,7 +435,7 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				weightDenom += (campaign.impsTogo2()/(GameConstants.campaignGoal*campaign.getReachImps()));
+				weightDenom += (campaign.impsWeWant()/(GameConstants.campaignGoal*campaign.getReachImps()));
 				adjustedWeightDenom += 1 / (1 + campaign.getRemainingDays(day));
 			}
 		}
@@ -446,7 +446,7 @@ public class MrSmith extends Agent {
 				rbid = 0.3*campaign.getBudget()/campaign.getReachImps();
 				System.out.println("++ Day: " + day + " rbid =  " + rbid + " || budget = " + campaign.getBudget());
 
-				weightNumer = (campaign.impsTogo2()/(GameConstants.campaignGoal*campaign.getReachImps()));
+				weightNumer = (campaign.impsWeWant()/(GameConstants.campaignGoal*campaign.getReachImps()));
 				weight = weightNumer/weightDenom;
 
 				adjustedWeightNumer = 1 / (1 + campaign.getRemainingDays(day));
@@ -456,13 +456,13 @@ public class MrSmith extends Agent {
 
 				System.out.println("++ Day: " + day +
 						" Campaign ID: " + campaign.getId() +
-						" Impressions to go =  " + campaign.impsTogo2() +
+						" Impressions to go =  " + campaign.impsWeWant() +
 						" Impressions to go ratio: " + weightNumer +
 						" Adjusted Weight: " + adjustedWeight +
 						" Days remaining: " + (int)campaign.getRemainingDays(day));
 
 				for (AdxQuery query : campaign.getCampaignQueries()) {
-					if (campaign.impsTogo2() - entCount > 0) {
+					if (campaign.impsWeWant() - entCount > 0) {
 						/*
 						 * among matching entries with the same campaign id, the AdX
 						 * randomly chooses an entry according to the designated
@@ -492,13 +492,13 @@ public class MrSmith extends Agent {
 					}
 				}
 
-				int impressionLimit = campaign.impsTogo2();
+				int impressionLimit = campaign.impsWeWant();
 
 				if (campaign.getStats().getCost() > 0.5D * campaign.getBudget()) {
-					impressionLimit = (int)(campaign.impsTogo2()/GameConstants.campaignGoal);
+					impressionLimit = (int)(campaign.impsWeWant()/GameConstants.campaignGoal);
 				}
 
-				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsTogo2())/campaign.getReachImps();
+				double budgetLimit = (1.05*0.3*campaign.getBudget()*campaign.impsWeWant())/campaign.getReachImps();
 				//# added budget limit
 				//# 1.05 is to be sure that we don't run out of money by a small change
 
@@ -692,7 +692,7 @@ public class MrSmith extends Agent {
 		int dayBiddingFor = day + 1;
 		if ((dayBiddingFor >= campaign.getDayStart())
 				&& (dayBiddingFor <= campaign.getDayEnd())
-				&& (campaign.impsTogo2() > 0)) {
+				&& (campaign.impsWeWant() > 0)) {
 			return true;
 		}
 		return false;
