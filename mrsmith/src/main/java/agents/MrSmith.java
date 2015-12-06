@@ -112,12 +112,19 @@ public class MrSmith extends Agent {
 	double ucsTargetLevel;
 
 	//# Learning bid coefficient
-	double fbid = 0.3; // 0.9 when reachLevel is used.
+	double fbid = 0.25; // 0.9 when reachLevel is used.
 	//# Last bid won an auction
 	double lastWinBid;
 	//# Last won budget
 	double lastBudget;
-
+	
+	//# fbid limits
+	double Rmin = 1000* GameConstants.minCampaignCostByImpression;
+	double Rmax = 1000* GameConstants.maxCampaignCostByImpression;
+	double fbidmin = 0;
+	double fbidmax = 0;
+	double fbidlf = 0.3;
+	
 	/*
 	 * current day of simulation
 	 */
@@ -283,7 +290,8 @@ public class MrSmith extends Agent {
 		//# cmpBidMillis = fbid*reachLevel*cmpimps * qualityScore;
 		//# checking another strategy that will work better against random
 		//# but not against smarter oponents
-
+		
+		fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
 		//# trying "simpler" strategy.
 		cmpBidMillis = fbid*cmpimps *qualityScore;
 		lastWinBid = cmpBidMillis/1000.0;
@@ -344,7 +352,14 @@ public class MrSmith extends Agent {
 
 		String campaignAllocatedTo = " allocated to "
 				+ notificationMessage.getWinner();
-
+		
+		// # fbid limits calculation
+		fbidmin = Rmin/Math.pow(qualityScore,2);
+		fbidmax = 10*Rmin;
+		if (fbidmin>fbidmax){
+			System.out.println("Min & max CONGESTION");
+		}
+		
 		if ((pendingCampaign.getId() == adNetworkDailyNotification.getCampaignId())
 				&& (notificationMessage.getCostMillis() != 0)) {
 
@@ -364,12 +379,12 @@ public class MrSmith extends Agent {
 
 			//# Testing "Simple" Strategy
 
-			if (fbid*(1+(lastBudget-lastWinBid)/(4*lastWinBid)) < 0.99) {
-				fbid = fbid*(1+(lastBudget-lastWinBid)/(4*lastWinBid));
+			if (fbidlf*(1+(lastBudget-lastWinBid)/(4*lastWinBid)) < 0.99) {
+				fbidlf = fbidlf*(1+(lastBudget-lastWinBid)/(4*lastWinBid));
 			}
 
-		} else if (0.95*fbid>0.1) {
-			fbid = 0.95*fbid;
+		} else if (0.95*fbidlf>0.01) {
+			fbidlf = 0.95*fbidlf;
 		}
 
 		System.out.println("Day " + day + ": " + campaignAllocatedTo
