@@ -580,6 +580,10 @@ public class MrSmith extends Agent {
 
 		qualityScore = 1.0;
 
+		// needed here for first day.
+		fbidmin = Rmin/Math.pow(qualityScore,2);
+		fbidmax = 10*Rmin;
+
 		/* initial bid between 0.1 and 0.2 */
 		ucsBid = 0.2;
 
