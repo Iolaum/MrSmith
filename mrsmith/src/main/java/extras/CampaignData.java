@@ -173,7 +173,7 @@ public class CampaignData {
 		if (factor >= 1) {
 			this.rBidGuide = (dayFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
 		} else {
-			this.rBidGuide = (dayFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor/4);
+			this.rBidGuide = (dayFactor+this.reachLevel)*Math.sqrt(factor);
 		}
 	}
 
