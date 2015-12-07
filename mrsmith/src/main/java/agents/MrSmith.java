@@ -432,12 +432,6 @@ public class MrSmith extends Agent {
 		 * matching target segment.
 		 */
 
-		for (CampaignData campaign : myCampaigns.values()) {
-			if (isCampaignActive(campaign)) {
-				weightDenom += (campaign.impsWeWant()/(GameConstants.campaignGoal*campaign.getReachImps()));
-				adjustedWeightDenom += 1 / (1 + campaign.getRemainingDays(day));
-			}
-		}
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
@@ -451,11 +445,11 @@ public class MrSmith extends Agent {
 						+ " budget = " + campaign.getBudget()
 						+ " rBidGuide = " + rBidGuide);
 
-				weightNumer = (campaign.impsWeWant()/(GameConstants.campaignGoal*campaign.getReachImps()));
-				weight = weightNumer/weightDenom;
+				weightNumer = Math.pow((campaign.impsWeWant()/(GameConstants.campaignGoal*campaign.getReachImps())), 0.5);
+				//weight = weightNumer/weightDenom;
 
 				adjustedWeightNumer = 1 / (1 + campaign.getRemainingDays(day));
-				adjustedWeight = (int) Math.ceil(100*adjustedWeightNumer*weight/(adjustedWeightDenom));
+				adjustedWeight = (int) Math.ceil(20*adjustedWeightNumer*weightNumer);
 
 
 				int entCount = 0;

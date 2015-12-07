@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.soton.ia</groupId>
 	<artifactId>mrsmith</artifactId>
-	<version>0.0.45-removed_adx_learning</version>
+	<version>0.0.46-simple_weights</version>
 	<name>MrSmith</name>
 
 
