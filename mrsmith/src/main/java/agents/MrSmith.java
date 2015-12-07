@@ -309,17 +309,18 @@ public class MrSmith extends Agent {
 			System.out.println("Day " + day + ": Initial ucs bid is " + ucsBid);
 		}
 
-		if (actCampaignNo > actCampLimit) {
-			System.out.println("++ Day " + day + ": rejected campaign");
-			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
-			//			fbid = 1000;
-		} else {
-			fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
-		}
-
-		if (day >= 40) {
-			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
-		}
+		//		if (actCampaignNo > actCampLimit) {
+		//			System.out.println("++ Day " + day + ": rejected campaign");
+		//			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
+		//			//			fbid = 1000;
+		//		} else {
+		//			fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
+		//		}
+		//
+		//		if (day >= 40) {
+		//			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
+		//		}
+		fbid = fbidmin + 0.99*(fbidmax-fbidmin);
 
 		//# trying "simpler" strategy.
 		cmpBidMillis = fbid*pendingCampaign.getReachImps()*qualityScore;
@@ -439,7 +440,7 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				rBidGuide = campaign.getRBidGuide();
+				//				rBidGuide = campaign.getRBidGuide();
 				//# set rBidGuide somewhere !!!
 
 				rbid = GameConstants.AdXRatio*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
