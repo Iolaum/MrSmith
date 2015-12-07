@@ -20,7 +20,7 @@ public class GameConstants {
 	public static final Integer realTimeSecondsPerDay = 10;
 	public static final Double pUcsUserRevelation = 0.9;
 	public static final Double initialDayClassificationAcc = 0.9;
-	public static final Double campaignGoal = 1.075;
+	public static final Double campaignGoal = 1.2;
 	public static final Double rbidGuideFactor = 8.0;
 	public static final Integer AdXGuideFactor = 4;
 	public static final Double AdXRatio = 0.7;
