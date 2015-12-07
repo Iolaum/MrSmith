@@ -172,12 +172,12 @@ public class CampaignData {
 		//			dayFactor = 0.9;
 		//		}
 		//
-		//		if (factor >= 1) {
-		//		this.rBidGuide = (reachFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
-		//		} else {
-		//			this.rBidGuide = (dayFactor+this.reachLevel)*Math.sqrt(factor);
-		//		}
-		this.rBidGuide = Math.pow(factor, GameConstants.rbidGuideFactor);
+		if (factor >= 1) {
+			this.rBidGuide = Math.pow(factor, GameConstants.rbidGuideFactor);
+		} else {
+			this.rBidGuide = Math.sqrt(factor);
+		}
+		//this.rBidGuide = Math.pow(factor, GameConstants.rbidGuideFactor);
 	}
 
 	public double getRBidGuide() {
