@@ -127,7 +127,7 @@ public class MrSmith extends Agent {
 
 	//Active campaigns limit
 	int actCampaignNo;
-	int actCampLimit = 3;
+	int actCampLimit = 2;
 	/*
 	 * current day of simulation
 	 */

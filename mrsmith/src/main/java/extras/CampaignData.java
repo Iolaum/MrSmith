@@ -88,6 +88,9 @@ public class CampaignData {
 			this.adxRatio = 0.2;
 		}
 		this.ucsRatio = 1 - this.campaignCut - this.adxRatio;
+		System.out.println("++ Day ?? Updating budget weights: adxRatio = " + this.adxRatio
+				+ " ucsRatio = " + this.ucsRatio
+				+ " campaignCut = " + this.campaignCut);
 	}
 
 	public long getDayStart() {
@@ -167,7 +170,11 @@ public class CampaignData {
 			dayFactor = 0.9;
 		}
 
-		this.rBidGuide = (dayFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
+		if (factor >= 1) {
+			this.rBidGuide = (dayFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
+		} else {
+			this.rBidGuide = (dayFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor/4);
+		}
 	}
 
 	public double getRBidGuide() {
