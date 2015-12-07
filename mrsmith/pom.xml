@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.soton.ia</groupId>
 	<artifactId>mrsmith</artifactId>
-	<version>0.1-competition-high_whip_only_first_6_days</version>
+	<version>0.1-competition-nowhip_full_attack_high_bids_nomorecamps</version>
 	<name>MrSmith</name>
 
 

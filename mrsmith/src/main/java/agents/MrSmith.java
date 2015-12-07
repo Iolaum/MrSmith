@@ -325,6 +325,11 @@ public class MrSmith extends Agent {
 		//# trying "simpler" strategy.
 		cmpBidMillis = fbid*pendingCampaign.getReachImps()*qualityScore;
 		lastWinBid = cmpBidMillis/1000.0;
+
+		if (day < 30 && (actCampaignNo >= actCampLimit) ) {
+			cmpBidMillis = 1.0;
+		}
+
 		System.out.println("++ Day: " + day + " Campaign BID for day: " + day + " cmpLength : " + pendingCampaign.getLength() +
 				" Reach Level: " + pendingCampaign.getReachLevel() + " cmpimps: " + pendingCampaign.getReachImps() +
 				" Target Segment Probability : " + pendingCampaign.getSegmentProbability());
@@ -440,9 +445,6 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				if (day <6) {
-					rBidGuide = campaign.getRBidGuide();
-				}
 				//# set rBidGuide somewhere !!!
 
 				rbid = GameConstants.AdXRatio*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
