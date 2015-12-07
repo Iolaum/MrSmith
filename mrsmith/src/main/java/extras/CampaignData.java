@@ -80,7 +80,7 @@ public class CampaignData {
 		}
 		double AdXGuide = Math.pow((1.85 - ucsLevel), GameConstants.AdXGuideFactor);
 		double rBidGuide = this.getRBidGuide();
-		this.adxRatio = rBidGuide*this.adxRatio/AdXGuide;
+		this.adxRatio = Math.pow(rBidGuide/AdXGuide, 0.2)*this.adxRatio;
 		if (this.adxRatio > 0.6) {
 			this.adxRatio = 0.6;
 		}
