@@ -310,8 +310,9 @@ public class MrSmith extends Agent {
 		}
 
 		if (actCampaignNo > actCampLimit){
-			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
-		}else{
+			//	fbid = fbidmin + 0.99*(fbidmax-fbidmin);
+			fbid = 0;
+		} else{
 			fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
 		}
 		//# trying "simpler" strategy.
@@ -353,7 +354,7 @@ public class MrSmith extends Agent {
 
 		// # fbid limits calculation
 		fbidmin = Rmin/Math.pow(qualityScore,2);
-		fbidmax = 10*Rmin;
+
 		if (fbidmin>fbidmax){
 			System.out.println("Min & max CONGESTION");
 		}
@@ -585,10 +586,7 @@ public class MrSmith extends Agent {
 		qualityScore = 1.0;
 		Rmin = 1000* GameConstants.minCampaignCostByImpression;
 		Rmax = 1000* GameConstants.maxCampaignCostByImpression;
-		fbidmin = 0;
-		fbidmax = 0;
 		fbidlf = 0.2;
-
 
 		// needed here for first day.
 		fbidmin = Rmin/Math.pow(qualityScore,2);

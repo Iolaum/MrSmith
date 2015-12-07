@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.soton.ia</groupId>
 	<artifactId>mrsmith</artifactId>
-	<version>0.0.47-remove-rbidguide</version>
+	<version>0.0.48-fbid-zero</version>
 	<name>MrSmith</name>
 
 
