@@ -185,7 +185,7 @@ public class MrSmith extends Agent {
 
 	private void handleCampaignAuctionReport(CampaignAuctionReport content) {
 		System.out.println(
-				" ++ Day" + day +
+				" ++ Day: " + day +
 				" Campaign Auction Report: "+
 				" Campaign ID = "+ content.getCampaignID() +
 				" Winner = "+ content.getWinner() +
@@ -296,6 +296,7 @@ public class MrSmith extends Agent {
 			actCampaignNo = 0;
 			for (CampaignData campaign : myCampaigns.values()) {
 				if (isCampaignActive(campaign)) {
+					campaign.updateRatios(ucsLevel, qualityScore);
 					ucsBid += GameConstants.UCSRatio*campaign.getBudget()/campaign.getLength();
 					actCampaignNo += 1;
 					//# Decreased percentage to 0.6 so we keep 10% for profits.
@@ -440,7 +441,8 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				rBidGuide = campaign.getRBidGuide(day);
+				rBidGuide = campaign.getRBidGuide();
+				//# set rBidGuide somewhere !!!
 
 				rbid = GameConstants.AdXRatio*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
 				System.out.println(
@@ -535,12 +537,20 @@ public class MrSmith extends Agent {
 			int cmpId = campaignKey.getCampaignId();
 			CampaignStats cstats = campaignReport.getCampaignReportEntry(
 					campaignKey).getCampaignStats();
-			myCampaigns.get(cmpId).setStats(cstats);
+			CampaignData campaign =	myCampaigns.get(cmpId);
+			campaign.setStats(cstats);
+			//# Check that it works properly !
+			campaign.setRBidGuide(day);
 
 			System.out.println("Day " + day + ": Updating campaign " + cmpId + " stats: "
 					+ cstats.getTargetedImps() + " tgtImps "
 					+ cstats.getOtherImps() + " nonTgtImps. Cost of imps is "
 					+ cstats.getCost());
+			System.out.println(
+					"++Day " + day
+					+ ": Updating campaign " + cmpId
+					+ " rBidGuide = " + campaign.getRBidGuide()
+					);
 		}
 	}
 

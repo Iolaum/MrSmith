@@ -24,6 +24,7 @@ public class CampaignData {
 	double adxRatio;
 	double campaignCut;
 	double ucsRatio;
+	double rBidGuide;
 	int id;
 	private AdxQuery[] campaignQueries;//array of queries relevant for the campaign.
 
@@ -45,6 +46,7 @@ public class CampaignData {
 		this.setSegmentProbability();
 		this.setReachLevel();
 		this.initializeRatios();
+		this.setRBidGuide((int) (icm.getDayStart()-1)); //# fix me!
 	}
 
 	public void setBudget(double d) {
@@ -72,10 +74,20 @@ public class CampaignData {
 		this.ucsRatio = GameConstants.UCSRatio;
 	}
 
-	public void updateRatios() {
-		this.adxRatio = GameConstants.AdXRatio;
-		this.campaignCut = GameConstants.CampaignCut;
-		this.ucsRatio = GameConstants.UCSRatio;
+	public void updateRatios(double ucsLevel, double qualityScore) {
+		if (qualityScore < 0.95){
+			this.campaignCut = qualityScore*GameConstants.CampaignCut;
+		}
+		double AdXGuide = Math.pow((1.85 - ucsLevel), GameConstants.AdXGuideFactor);
+		double rBidGuide = this.getRBidGuide();
+		this.adxRatio = rBidGuide*this.adxRatio/AdXGuide;
+		if (this.adxRatio > 0.6) {
+			this.adxRatio = 0.6;
+		}
+		if (this.adxRatio < 0.2) {
+			this.adxRatio = 0.2;
+		}
+		this.ucsRatio = 1 - this.campaignCut - this.adxRatio;
 	}
 
 	public long getDayStart() {
@@ -145,13 +157,15 @@ public class CampaignData {
 		return dayEnd - day;
 	}
 
-	public double getRBidGuide(int day) {
+	public void setRBidGuide(int day) {
 		double daysRatio = this.getRemainingDays(day)/this.getLength();
 		double impsRatio = this.impsWeWant()/(GameConstants.campaignGoal*this.getReachImps());
-
 		double factor = 1 + (impsRatio-daysRatio);
+		this.rBidGuide = (0.6+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
+	}
 
-		return (0.6+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
+	public double getRBidGuide() {
+		return this.rBidGuide;
 	}
 
 	public void setStats(CampaignStats s) {
