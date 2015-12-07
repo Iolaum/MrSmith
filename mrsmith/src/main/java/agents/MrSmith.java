@@ -381,8 +381,8 @@ public class MrSmith extends Agent {
 				fbidlf = fbidlf*(1+(lastBudget-lastWinBid)/(4*lastWinBid));
 			}
 
-		} else if (0.95*fbidlf>0.01) {
-			fbidlf = 0.95*fbidlf;
+		} else if (0.9*fbidlf>0.01) {
+			fbidlf = 0.9*fbidlf;
 		}
 
 		System.out.println("Day " + day + ": " + campaignAllocatedTo
