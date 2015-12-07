@@ -41,12 +41,11 @@ public class CampaignData {
 		mobileCoef = icm.getMobileCoef();
 		id = icm.getId();
 
-		int day = (int) (icm.getDayStart()-1);
 		stats = new CampaignStats(0, 0, 0);
 		budget = 0.0;
 		this.setSegmentProbability();
 		this.setReachLevel();
-		this.initializeRatios(day);
+		this.initializeRatios();
 		this.setRBidGuide((int) (icm.getDayStart()-1)); //# fix me!
 	}
 
@@ -71,12 +70,6 @@ public class CampaignData {
 
 	private void initializeRatios() {
 		this.adxRatio = GameConstants.AdXRatio;
-		this.campaignCut = GameConstants.CampaignCut;
-		this.ucsRatio = GameConstants.UCSRatio;
-	}
-
-	private void initializeRatios(int day) {
-		this.adxRatio = 0.6;
 		this.campaignCut = GameConstants.CampaignCut;
 		this.ucsRatio = GameConstants.UCSRatio;
 	}
@@ -183,7 +176,7 @@ public class CampaignData {
 			this.rBidGuide = Math.pow(factor, GameConstants.rbidGuideFactor);
 		} else {
 			this.rBidGuide = Math.sqrt(factor);
-		}
+			}
 		//this.rBidGuide = Math.pow(factor, GameConstants.rbidGuideFactor);
 	}
 
