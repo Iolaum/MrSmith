@@ -21,10 +21,10 @@ public class GameConstants {
 	public static final Double pUcsUserRevelation = 0.9;
 	public static final Double initialDayClassificationAcc = 0.9;
 	public static final Double campaignGoal = 1.075;
-	public static final Double rbidGuideFactor = 0.5;
+	public static final Double rbidGuideFactor = 2.0;
 	public static final Integer AdXGuideFactor = 4;
-	public static final Double AdXRatio = 0.6;
-	public static final Double CampaignCut = 0.1;
+	public static final Double AdXRatio = 0.5;
+	public static final Double CampaignCut = 0.2;
 	public static final Double UCSRatio = 0.3;
 
 }

@@ -317,6 +317,10 @@ public class MrSmith extends Agent {
 			fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
 		}
 
+		if (day >= 40) {
+			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
+		}
+
 		//# trying "simpler" strategy.
 		cmpBidMillis = fbid*pendingCampaign.getReachImps()*qualityScore;
 		lastWinBid = cmpBidMillis/1000.0;
@@ -435,7 +439,7 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				//				rBidGuide = campaign.getRBidGuide();
+				rBidGuide = campaign.getRBidGuide();
 				//# set rBidGuide somewhere !!!
 
 				rbid = GameConstants.AdXRatio*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
