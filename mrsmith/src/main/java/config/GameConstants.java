@@ -23,8 +23,8 @@ public class GameConstants {
 	public static final Double campaignGoal = 1.075;
 	public static final Integer rbidGuideFactor = 2;
 	public static final Integer AdXGuideFactor = 4;
-	public static final Double AdXRatio = 0.4;
+	public static final Double AdXRatio = 0.5;
 	public static final Double CampaignCut = 0.15;
-	public static final Double UCSRatio = 0.45;
+	public static final Double UCSRatio = 0.35;
 
 }

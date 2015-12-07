@@ -161,7 +161,13 @@ public class CampaignData {
 		double daysRatio = this.getRemainingDays(day)/this.getLength();
 		double impsRatio = this.impsWeWant()/(GameConstants.campaignGoal*this.getReachImps());
 		double factor = 1 + (impsRatio-daysRatio);
-		this.rBidGuide = (0.6+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
+		double dayFactor = 0.6;
+
+		if (this.getLength() == 3) {
+			dayFactor = 0.9;
+		}
+
+		this.rBidGuide = (dayFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
 	}
 
 	public double getRBidGuide() {

@@ -377,8 +377,8 @@ public class MrSmith extends Agent {
 
 			//# Testing "Simple" Strategy
 
-			if (fbidlf*(1+(lastBudget-lastWinBid)/(4*lastWinBid)) < 0.99) {
-				fbidlf = fbidlf*(1+(lastBudget-lastWinBid)/(4*lastWinBid));
+			if (fbidlf*(1+(lastBudget-lastWinBid)/(3*lastWinBid)) < 0.99) {
+				fbidlf = fbidlf*(1+(lastBudget-lastWinBid)/(3*lastWinBid));
 			}
 
 		} else if (0.9*fbidlf>0.01) {
@@ -593,7 +593,7 @@ public class MrSmith extends Agent {
 		Rmax = 1000* GameConstants.maxCampaignCostByImpression;
 		fbidmin = 0;
 		fbidmax = 0;
-		fbidlf = 0.4;
+		fbidlf = 0.2;
 
 
 		// needed here for first day.
