@@ -166,17 +166,18 @@ public class CampaignData {
 		double daysRatio = this.getRemainingDays(day)/this.getLength();
 		double impsRatio = this.impsWeWant()/(GameConstants.campaignGoal*this.getReachImps());
 		double factor = 1 + (impsRatio-daysRatio);
-		double reachFactor = 0.5;
+		//double reachFactor = 0.5;
 
 		//		if (this.getLength() == 3) {
 		//			dayFactor = 0.9;
 		//		}
 		//
 		//		if (factor >= 1) {
-		this.rBidGuide = (reachFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
+		//		this.rBidGuide = (reachFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
 		//		} else {
 		//			this.rBidGuide = (dayFactor+this.reachLevel)*Math.sqrt(factor);
 		//		}
+		this.rBidGuide = Math.pow(factor, GameConstants.rbidGuideFactor);
 	}
 
 	public double getRBidGuide() {

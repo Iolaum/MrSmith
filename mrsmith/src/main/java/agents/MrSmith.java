@@ -310,8 +310,8 @@ public class MrSmith extends Agent {
 		}
 
 		if (actCampaignNo > actCampLimit){
-			//	fbid = fbidmin + 0.99*(fbidmax-fbidmin);
-			fbid = 0;
+			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
+			//fbid = 0;
 		} else{
 			fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
 		}
@@ -378,12 +378,12 @@ public class MrSmith extends Agent {
 
 			//# Testing "Simple" Strategy
 
-			if (fbidlf*(1+(lastBudget-lastWinBid)/(3*lastWinBid)) < 0.99) {
-				fbidlf = fbidlf*(1+(lastBudget-lastWinBid)/(3*lastWinBid));
+			if (fbidlf*(1+(lastBudget-lastWinBid)/(2*lastWinBid)) < 0.99) {
+				fbidlf = fbidlf*(1+(lastBudget-lastWinBid)/(2*lastWinBid));
 			}
 
-		} else if (0.9*fbidlf>0.01) {
-			fbidlf = 0.9*fbidlf;
+		} else if (0.95*fbidlf>0.01) {
+			fbidlf = 0.95*fbidlf;
 		}
 
 		System.out.println("Day " + day + ": " + campaignAllocatedTo
@@ -418,10 +418,7 @@ public class MrSmith extends Agent {
 
 		double rbid = 0;
 		double weightNumer = 0;
-		double weightDenom = 0;
 		double adjustedWeightNumer = 0;
-		double adjustedWeightDenom = 0;
-		double weight = 0;
 		int adjustedWeight = 0;
 		double rBidGuide = 1;
 
@@ -436,7 +433,7 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				//				rBidGuide = campaign.getRBidGuide();
+				rBidGuide = campaign.getRBidGuide();
 				//# set rBidGuide somewhere !!!
 
 				rbid = GameConstants.AdXRatio*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
@@ -586,7 +583,7 @@ public class MrSmith extends Agent {
 		qualityScore = 1.0;
 		Rmin = 1000* GameConstants.minCampaignCostByImpression;
 		Rmax = 1000* GameConstants.maxCampaignCostByImpression;
-		fbidlf = 0.2;
+		fbidlf = 0.4;
 
 		// needed here for first day.
 		fbidmin = Rmin/Math.pow(qualityScore,2);
