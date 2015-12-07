@@ -75,22 +75,24 @@ public class CampaignData {
 	}
 
 	public void updateRatios(double ucsLevel, double qualityScore) {
-		if (qualityScore < 0.95){
-			this.campaignCut = qualityScore*GameConstants.CampaignCut;
-		}
-		double AdXGuide = Math.pow((1.85 - ucsLevel), GameConstants.AdXGuideFactor);
-		double rBidGuide = this.getRBidGuide();
-		this.adxRatio = Math.pow(rBidGuide/AdXGuide, 0.2)*this.adxRatio;
-		if (this.adxRatio > 0.6) {
-			this.adxRatio = 0.6;
-		}
-		if (this.adxRatio < 0.2) {
-			this.adxRatio = 0.2;
-		}
-		this.ucsRatio = 1 - this.campaignCut - this.adxRatio;
-		System.out.println("++ Day ?? Updating budget weights: adxRatio = " + this.adxRatio
-				+ " ucsRatio = " + this.ucsRatio
-				+ " campaignCut = " + this.campaignCut);
+		//		if (qualityScore < 0.95){
+		//			this.campaignCut = qualityScore*GameConstants.CampaignCut;
+		//		}
+
+		//		double AdXGuide = Math.pow((1.85 - ucsLevel), GameConstants.AdXGuideFactor);
+		//		double rBidGuide = this.getRBidGuide();
+		//		this.adxRatio = Math.pow(rBidGuide/AdXGuide, 0.2)*this.adxRatio;
+		//		if (this.adxRatio > 0.6) {
+		//			this.adxRatio = 0.6;
+		//		}
+		//		if (this.adxRatio < 0.2) {
+		//			this.adxRatio = 0.2;
+		//		}
+		//		this.ucsRatio = 1 - this.campaignCut - this.adxRatio;
+		//		System.out.println("++ Day ?? Updating budget weights for campaign: " + this.id
+		//				+ " adxRatio = " + this.adxRatio
+		//				+ " ucsRatio = " + this.ucsRatio
+		//				+ " campaignCut = " + this.campaignCut);
 	}
 
 	public long getDayStart() {
@@ -164,14 +166,14 @@ public class CampaignData {
 		double daysRatio = this.getRemainingDays(day)/this.getLength();
 		double impsRatio = this.impsWeWant()/(GameConstants.campaignGoal*this.getReachImps());
 		double factor = 1 + (impsRatio-daysRatio);
-		double dayFactor = 0.5;
+		double reachFactor = 0.5;
 
 		//		if (this.getLength() == 3) {
 		//			dayFactor = 0.9;
 		//		}
 		//
 		//		if (factor >= 1) {
-		this.rBidGuide = (dayFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
+		this.rBidGuide = (reachFactor+this.reachLevel)*Math.pow(factor, GameConstants.rbidGuideFactor);
 		//		} else {
 		//			this.rBidGuide = (dayFactor+this.reachLevel)*Math.sqrt(factor);
 		//		}
