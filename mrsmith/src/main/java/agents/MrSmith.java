@@ -311,8 +311,8 @@ public class MrSmith extends Agent {
 
 		if (actCampaignNo > actCampLimit) {
 			System.out.println("++ Day " + day + ": rejected campaign");
-			//			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
-			fbid = 1000;
+			fbid = fbidmin + 0.99*(fbidmax-fbidmin);
+			//			fbid = 1000;
 		} else {
 			fbid = fbidmin +fbidlf*(fbidmax-fbidmin);
 		}
@@ -435,7 +435,7 @@ public class MrSmith extends Agent {
 
 		for (CampaignData campaign : myCampaigns.values()) {
 			if (isCampaignActive(campaign)) {
-				//rBidGuide = campaign.getRBidGuide();
+				rBidGuide = campaign.getRBidGuide();
 				//# set rBidGuide somewhere !!!
 
 				rbid = GameConstants.AdXRatio*campaign.getBudget()*rBidGuide/(GameConstants.campaignGoal*campaign.getReachImps());
