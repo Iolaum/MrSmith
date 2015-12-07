@@ -455,7 +455,7 @@ public class MrSmith extends Agent {
 				weight = weightNumer/weightDenom;
 
 				adjustedWeightNumer = 1 / (1 + campaign.getRemainingDays(day));
-				adjustedWeight = (int) Math.ceil(100*adjustedWeightNumer/(weight*adjustedWeightDenom));
+				adjustedWeight = (int) Math.ceil(100*adjustedWeightNumer*weight/(adjustedWeightDenom));
 
 
 				int entCount = 0;
