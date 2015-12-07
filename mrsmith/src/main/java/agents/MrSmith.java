@@ -247,7 +247,7 @@ public class MrSmith extends Agent {
 		 */
 
 		//#  setup initial UCS Bid. - Only used on Day 0.
-		ucsBid = GameConstants.UCSRatio*campaignData.getBudget()/campaignData.getLength();
+		ucsBid = campaignData.ucsRatio*campaignData.getBudget()/campaignData.getLength();
 
 		System.out.println("Day " + day + ": Allocated campaign - " + campaignData);
 
@@ -494,7 +494,7 @@ public class MrSmith extends Agent {
 
 				int impressionLimit = campaign.impsWeWant();
 
-				double budgetLimit = (1.05*rBidGuide*GameConstants.AdXRatio*campaign.getBudget()*campaign.impsWeWant())/campaign.getReachImps();
+				double budgetLimit = (campaign.adxRatio*campaign.getBudget()*campaign.impsWeWant())/campaign.getReachImps();
 				//# added budget limit
 				//# 1.05 is to be sure that we don't run out of money by a small change
 

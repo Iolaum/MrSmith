@@ -21,9 +21,9 @@ public class CampaignData {
 	double mobileCoef;
 	double segmentProbability;
 	double reachLevel;
-	double adxRatio;
+	public double adxRatio;
 	double campaignCut;
-	double ucsRatio;
+	public double ucsRatio;
 	double rBidGuide;
 	int id;
 	private AdxQuery[] campaignQueries;//array of queries relevant for the campaign.
