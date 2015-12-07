@@ -494,7 +494,8 @@ public class MrSmith extends Agent {
 
 				int impressionLimit = campaign.impsWeWant();
 
-				double budgetLimit = (campaign.adxRatio*campaign.getBudget()*campaign.impsWeWant())/campaign.getReachImps();
+				double budgetLimit = (campaign.adxRatio*campaign.getBudget()*campaign.impsWeWant())/
+						(campaign.getReachImps()*campaign.getRemainingDays(day));
 				//# added budget limit
 				//# 1.05 is to be sure that we don't run out of money by a small change
 
